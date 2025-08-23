@@ -1,0 +1,17 @@
+{
+  "name": "Billy",
+  "fullname": "Billy Kid",
+  "rank": "A",
+  "stats": {
+    "HP": 6907,
+    "ATK": 712,
+    "DEF": 606,
+    "Impact": 91,
+    "CR": 5,
+    "CD": 50,
+    "AM": 91,
+    "AP": 92,
+    "PEN": 0,
+    "ER": 1.2
+  }
+}
