@@ -1,6 +1,8 @@
-# my-app
+# zzz-optimizer
 
-An Electron application with React
+An zzz related optimizer that also happens to be an Electron application with React
+
+i made this because i suck at programming and wanted to get better, also theres no (good) zzz optimizer i think
 
 ## Recommended IDE Setup
 
@@ -11,24 +13,24 @@ An Electron application with React
 ### Install
 
 ```bash
-$ npm install
+npm install
 ```
 
 ### Development
 
 ```bash
-$ npm run dev
+npm run dev
 ```
 
 ### Build
 
 ```bash
 # For windows
-$ npm run build:win
+npm run build:win
 
 # For macOS
-$ npm run build:mac
+npm run build:mac
 
 # For Linux
-$ npm run build:linux
+npm run build:linux
 ```

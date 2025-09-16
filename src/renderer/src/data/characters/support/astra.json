@@ -1,0 +1,20 @@
+{
+  "name": "Astra",
+  "fullname": "Astra Yao",
+  "rank": "S",
+  "attribute": "ether",
+  "specialty": "support",
+  "type": "strike",
+  "stats": {
+    "HP": 8609,
+    "ATK": 640,
+    "DEF": 600,
+    "Impact": 83,
+    "CR": 5,
+    "CD": 50,
+    "AM": 93,
+    "AP": 92,
+    "PEN": 0,
+    "ER": 0
+  }
+}

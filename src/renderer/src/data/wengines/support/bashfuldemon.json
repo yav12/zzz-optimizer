@@ -1,0 +1,15 @@
+{
+  "name": "Bashful Demon",
+  "type": "Support",
+  "description": "Increases Ice DMG by 15/17.5/20/22/24%. When launching an EX Special Attack, all squad members' ATK increases by 2/2.3/2.6/2.9/3.2% for 12s, stacking up to 4 times. Retriggering refreshes duration. Passive effects of the same name do not stack.",
+  "baseATK": 624,
+  "Bonus": {
+    "bonusAttack": 0.25,
+    "Ice Damage": [15, 17.5, 20, 22, 24]
+  },
+  "conditional": {
+    "ATKIncrease": [2, 2.3, 2.6, 2.9, 3.2],
+    "Duration": 12,
+    "Stacking": 4
+  }
+}
