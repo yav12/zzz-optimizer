@@ -4,7 +4,7 @@ function About() {
   return (
     <footer>
       <ul className="links">
-        <li className="about">hmm... about</li>
+        <li className="about">hmm...</li>
         <li className="github">
           <a href="https://github.com/yav12/zzz-optimizer" target="_blank" rel="noreferrer">
             <img src={githubMark} alt="GitHub" width={20} height={20} />

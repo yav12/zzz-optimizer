@@ -4,6 +4,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   overflow: hidden;
   background-size: cover;
@@ -118,12 +119,11 @@ code {
 .versions {
   position: absolute;
   bottom: 30px;
-  margin: 0 auto;
   padding: 15px 0;
   font-family: 'Menlo', 'Lucida Console', monospace;
   display: inline-flex;
   overflow: hidden;
-  align-items: center;
+  align-items: left;
   border-radius: 22px;
   background-color: #202127;
   backdrop-filter: blur(24px);

@@ -1,7 +1,7 @@
 .links {
-    position: absolute;
+    margin-top: auto;
+    align-content: end;
     bottom: 30px;
-    margin: 0 auto;
     padding: 15px 0;
     font-family: 'Menlo', 'Lucida Console', monospace;
     display: inline-flex;
@@ -24,4 +24,14 @@
     &:last-child {
         border: none;
     }
+}
+
+.filepicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--ev-bg);
+  color: var(--ev-text);
 }
