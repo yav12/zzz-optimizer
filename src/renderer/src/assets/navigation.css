@@ -1,8 +1,6 @@
 .navigation {
-  background-color: #282c34;
   vertical-align: top;
   align-items: center;
-  padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -11,7 +9,14 @@
 
 .navigation a {
   color: white;
+  background-color: transparent;
+  padding: 10px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
+}
+
+.navigation a:hover {
+  background-color: #3a3f47;
+  border-radius: 5px;
 }

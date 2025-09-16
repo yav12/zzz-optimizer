@@ -1,14 +1,26 @@
-import Versions from './components/Versions'
-import Navigation from './Navigation'
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+
+import About from './components/about'
+import Library from './library'
 
 function App() {
   const ipcHandle = () => window.electron.ipcRenderer.send('ping')
 
   return (
     <>
-      <Navigation />
+      {/* new navigation bar */}
+      <BrowserRouter>
+        <nav className="navigation">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/library">Library</NavLink>
+        </nav>
+        <Routes>
+          <Route path="/" element={<div>Home Page</div>} />
+          <Route path="/library" element={<Library />} />
+        </Routes>
+      </BrowserRouter>
 
-      {/* things to be deleted */}
+      {/* stuff to be deleted */}
       <div className="actions">
         <div className="action">
           <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">
@@ -21,7 +33,9 @@ function App() {
           </a>
         </div>
       </div>
-      <Versions></Versions>
+
+      {/* footer component */}
+      <About />
     </>
   )
 }

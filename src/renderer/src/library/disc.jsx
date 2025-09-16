@@ -1,5 +1,5 @@
 class Disc {
-  constructor(set, slot, ) {
+  constructor(set, slot, free) {
     this.set = set
     this.slot = slot
     this.free = free

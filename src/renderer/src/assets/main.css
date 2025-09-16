@@ -1,5 +1,6 @@
 @import './base.css';
 @import './navigation.css';
+@import './links.css';
 
 body {
   display: flex;
