@@ -1,4 +1,5 @@
 import { useFilePicker } from 'use-file-picker'
+import { useRef } from 'react'
 
 function FilePicker() {
   const { openFilePicker, filesContent, loading } = useFilePicker({

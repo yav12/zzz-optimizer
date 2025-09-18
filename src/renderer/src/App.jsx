@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 
 import About from './components/about'
-import Library from './library'
+import Library from './library/library'
 import FilePicker from './fpicker'
 
 function App() {
+  // state for disks
   return (
     <>
       {/* new navigation bar */}

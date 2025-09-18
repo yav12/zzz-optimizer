@@ -1,7 +1,14 @@
+// import Disc from './Disc'
+import { use, useEffect, useRef } from 'react'
+import { DiscContext } from './DiscContext'
+
 function LibraryContainer() {
+  useEffect(() => {
+    // fetch library data here
+  }, [])
   return (
     <div className="library-container">
-      <p>your disks will show up here</p>
+      <></>
     </div>
   )
 }

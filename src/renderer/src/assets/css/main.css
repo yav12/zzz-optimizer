@@ -1,8 +1,8 @@
-@import './css/colors.css';
-@import './css/base.css';
-@import './css/navigation.css';
-@import './css/links.css';
-@import './css/buttons.css';
+@import './colors.css';
+@import './base.css';
+@import './navigation.css';
+@import './links.css';
+@import './buttons.css';
 
 body {
   display: flex;
