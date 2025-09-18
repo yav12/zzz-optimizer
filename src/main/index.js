@@ -1,7 +1,24 @@
-import { app, shell, BrowserWindow, ipcMain } from 'electron'
+import { app, shell, BrowserWindow, ipcMain, defaultSession } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
+import {
+  installExtension,
+  REDUX_DEVTOOLS,
+  REACT_DEVELOPER_TOOLS
+} from 'electron-devtools-installer'
 import icon from '../../resources/icon.png?asset'
+
+// function to launch background workers (makes react devtools work)
+function launchExtensionBackgroundWorkers(session = defaultSession) {
+  return Promise.all(
+    session.getAllExtensions().map(async (extension) => {
+      const manifest = extension.manifest
+      if (manifest.manifest_version === 3 && manifest?.background?.service_worker) {
+        await session.serviceWorkers.startWorkerForScope(extension.url)
+      }
+    })
+  )
+}
 
 function createWindow() {
   // Create the browser window.
@@ -51,6 +68,14 @@ app.whenReady().then(() => {
 
   // IPC test
   ipcMain.on('ping', () => console.log('pong'))
+
+  // Install React Devtools in development mode
+  installExtension([REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS], {
+    loadExtensionOptions: { allowFileAccess: true }
+  })
+    .then(([redux, react]) => console.log(`Added Extensions:  ${redux.name}, ${react.name}`))
+    .catch((err) => console.log('An error occurred: ', err))
+    .finally(() => launchExtensionBackgroundWorkers())
 
   createWindow()
 

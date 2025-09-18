@@ -2,7 +2,28 @@ import { contextBridge } from 'electron'
 import { electronAPI } from '@electron-toolkit/preload'
 
 // Custom APIs for renderer
-const api = {}
+const api = {
+  readFile: (filePath) => {
+    try {
+      const fs = require('fs')
+      return fs.readFileSync(filePath, 'utf-8')
+    } catch (e) {
+      console.error(`Error reading file at ${filePath}:`, e)
+      return null
+    }
+  },
+
+  saveFile: (filePath, content) => {
+    try {
+      const fs = require('fs')
+      fs.writeFileSync(filePath, content, 'utf-8')
+      return true
+    } catch (e) {
+      console.error(`Error writing file at ${filePath}:`, e)
+      return false
+    }
+  }
+}
 
 // Use `contextBridge` APIs to expose Electron APIs to
 // renderer only if context isolation is enabled, otherwise

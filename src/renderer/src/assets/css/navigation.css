@@ -1,5 +1,7 @@
 .navigation {
   vertical-align: top;
+  position: sticky;
+  top: 0;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;

@@ -1,8 +1,10 @@
 import { useFilePicker } from 'use-file-picker'
 
-export default function App() {
+function FilePicker() {
   const { openFilePicker, filesContent, loading } = useFilePicker({
-    accept: '.txt'
+    accept: '.json',
+    multiple: false,
+    readAs: 'text'
   })
 
   if (loading) {
@@ -11,15 +13,19 @@ export default function App() {
 
   return (
     <div>
-      <a className="filepicker" onClick={() => openFilePicker()}>
-        Select files
+      <a className="button" onClick={() => openFilePicker()}>
+        Select file
       </a>
       {filesContent.map((file, index) => (
         <div key={index}>
           <h2>{file.name}</h2>
-          <div key={index}>{file.content}</div>
+          <div className="file-content" key={index}>
+            {file.content}
+          </div>
         </div>
       ))}
     </div>
   )
 }
+
+export default FilePicker
