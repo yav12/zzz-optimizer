@@ -1,0 +1,113 @@
+<RCC>
+    <qresource prefix="/wengines/anomaly">
+        <file>assets/wengines/anomaly/(MagneticStorm)Alpha.png</file>
+        <file>assets/wengines/anomaly/(MagneticStorm)Bravo.png</file>
+        <file>assets/wengines/anomaly/(MagneticStorm)Charlie.png</file>
+        <file>assets/wengines/anomaly/Electro-LipGloss.png</file>
+        <file>assets/wengines/anomaly/FlamemakerShaker.png</file>
+        <file>assets/wengines/anomaly/FlightofFancy.png</file>
+        <file>assets/wengines/anomaly/FusionCompiler.png</file>
+        <file>assets/wengines/anomaly/HailstormShrine.png</file>
+        <file>assets/wengines/anomaly/PracticedPerfection.png</file>
+        <file>assets/wengines/anomaly/RainforestGourmet.png</file>
+        <file>assets/wengines/anomaly/RoaringRide.png</file>
+        <file>assets/wengines/anomaly/SharpenedStinger.png</file>
+        <file>assets/wengines/anomaly/Timeweaver.png</file>
+        <file>assets/wengines/anomaly/WeepingGemini.png</file>
+    </qresource>
+    <qresource prefix="/wengines/attack">
+        <file>assets/wengines/attack/(Lunar)Decrescent.png</file>
+        <file>assets/wengines/attack/(Lunar)Noviluna.png</file>
+        <file>assets/wengines/attack/(Lunar)Pleniluna.png</file>
+        <file>assets/wengines/attack/BellicoseBlaze.png</file>
+        <file>assets/wengines/attack/CannonRotor.png</file>
+        <file>assets/wengines/attack/CordisGermina.png</file>
+        <file>assets/wengines/attack/DeepSeaVisitor.png</file>
+        <file>assets/wengines/attack/DrillRig-RedAxis.png</file>
+        <file>assets/wengines/attack/GildedBlossom.png</file>
+        <file>assets/wengines/attack/HeartstringNocturne.png</file>
+        <file>assets/wengines/attack/Housekeeper.png</file>
+        <file>assets/wengines/attack/MarcatoDesire.png</file>
+        <file>assets/wengines/attack/MyriadEclipse.png</file>
+        <file>assets/wengines/attack/RiotSuppressorMarkVI.png</file>
+        <file>assets/wengines/attack/SeveredInnocence.png</file>
+        <file>assets/wengines/attack/StarlightEngine.png</file>
+        <file>assets/wengines/attack/StarlightEngineReplica.png</file>
+        <file>assets/wengines/attack/SteelCushion.png</file>
+        <file>assets/wengines/attack/StreetSuperstar.png</file>
+        <file>assets/wengines/attack/TheBrimstone.png</file>
+        <file>assets/wengines/attack/ZanshinHerbCase.png</file>
+    </qresource>
+    <qresource prefix="/wengines/defense">
+        <file>assets/wengines/defense/(Identity)Base.png</file>
+        <file>assets/wengines/defense/(Identity)Inflection.png</file>
+        <file>assets/wengines/defense/BigCylinder.png</file>
+        <file>assets/wengines/defense/BunnyBand.png</file>
+        <file>assets/wengines/defense/OriginalTransmorpher.png</file>
+        <file>assets/wengines/defense/Peacekeeper-Specialized.png</file>
+        <file>assets/wengines/defense/ReelProjector.png</file>
+        <file>assets/wengines/defense/SpringEmbrace.png</file>
+        <file>assets/wengines/defense/TremorTrigramVessel.png</file>
+        <file>assets/wengines/defense/TusksofFury.png</file>
+    </qresource>
+    <qresource prefix="/wengines/stun">
+        <file>assets/wengines/stun/(Vortex)Arrow.png</file>
+        <file>assets/wengines/stun/(Vortex)Hatchet.png</file>
+        <file>assets/wengines/stun/(Vortex)Revolver.png</file>
+        <file>assets/wengines/stun/BlazingLaurel.png</file>
+        <file>assets/wengines/stun/BoxCutter.png</file>
+        <file>assets/wengines/stun/DemaraBatteryMarkII.png</file>
+        <file>assets/wengines/stun/HellfireGears.png</file>
+        <file>assets/wengines/stun/Ice-JadeTeapot.png</file>
+        <file>assets/wengines/stun/PreciousFossilizedCore.png</file>
+        <file>assets/wengines/stun/RoaringFur-nace.png</file>
+        <file>assets/wengines/stun/SixShooter.png</file>
+        <file>assets/wengines/stun/SpectralGaze.png</file>
+        <file>assets/wengines/stun/SteamOven.png</file>
+        <file>assets/wengines/stun/TheRestrained.png</file>
+    </qresource>
+    <qresource prefix="/wengines/rupture">
+        <file>assets/wengines/rupture/(Cinder)Cobalt.png</file>
+        <file>assets/wengines/rupture/PuzzleSphere.png</file>
+        <file>assets/wengines/rupture/QingmingBirdcage.png</file>
+        <file>assets/wengines/rupture/RadiowaveJourney.png</file>
+    </qresource>
+    <qresource prefix="/wengines/support">
+        <file>assets/wengines/support/(Reverb)MarkI.png</file>
+        <file>assets/wengines/support/(Reverb)MarkII.png</file>
+        <file>assets/wengines/support/(Reverb)MarkIII.png</file>
+        <file>assets/wengines/support/BashfulDemon.png</file>
+        <file>assets/wengines/support/ElegantVanity.png</file>
+        <file>assets/wengines/support/KaboomtheCannon.png</file>
+        <file>assets/wengines/support/Metanukimorphosis.png</file>
+        <file>assets/wengines/support/SliceofTime.png</file>
+        <file>assets/wengines/support/TheVault.png</file>
+        <file>assets/wengines/support/UnfetteredGameBall.png</file>
+        <file>assets/wengines/support/WeepingCradle.png</file>
+    </qresource>
+    <qresource prefix="/discs">
+        <file>assets/discs/AstralVoice.png</file>
+        <file>assets/discs/BranchBladeSong.png</file>
+        <file>assets/discs/ChaosJazz.png</file>
+        <file>assets/discs/ChaoticMetal.png</file>
+        <file>assets/discs/DawnsBloom.png</file>
+        <file>assets/discs/FangedMetal.png</file>
+        <file>assets/discs/FreedomBlues.png</file>
+        <file>assets/discs/HormonePunk.png</file>
+        <file>assets/discs/InfernoMetal.png</file>
+        <file>assets/discs/KingoftheSummit.png</file>
+        <file>assets/discs/MoonlightLullaby.png</file>
+        <file>assets/discs/PhaethonsMelody.png</file>
+        <file>assets/discs/PolarMetal.png</file>
+        <file>assets/discs/ProtoPunk.png</file>
+        <file>assets/discs/PufferElectro.png</file>
+        <file>assets/discs/ShadowHarmony.png</file>
+        <file>assets/discs/ShockstarDisco.png</file>
+        <file>assets/discs/SoulRock.png</file>
+        <file>assets/discs/SwingJazz.png</file>
+        <file>assets/discs/WoodpeckerElectro.png</file>
+        <file>assets/discs/YunkuiTales.png</file>
+        <file>assets/discs/ThunderMetal.png</file>
+    </qresource>
+    <qresource prefix="/characters"/>
+</RCC>
