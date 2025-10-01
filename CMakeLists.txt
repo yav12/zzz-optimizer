@@ -40,6 +40,7 @@ else()
             ${PROJECT_SOURCES}
             disc.h disc.cpp
             discrender.h discrender.cpp discrender.ui
+            assets/discs/AstralVoice.png assets/discs/BranchBladeSong.png assets/discs/ChaosJazz.png assets/discs/ChaoticMetal.png assets/discs/DawnsBloom.png assets/discs/FangedMetal.png assets/discs/FreedomBlues.png assets/discs/HormonePunk.png assets/discs/InfernoMetal.png assets/discs/KingoftheSummit.png assets/discs/MoonlightLullaby.png assets/discs/PhaethonsMelody.png assets/discs/PolarMetal.png assets/discs/ProtoPunk.png assets/discs/PufferElectro.png assets/discs/ShadowHarmony.png assets/discs/ShockstarDisco.png assets/discs/SoulRock.png assets/discs/SwingJazz.png assets/discs/ThunderMetal.png assets/discs/WoodpeckerElectro.png assets/discs/YunkuiTales.png
         )
     endif()
 endif()
