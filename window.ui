@@ -87,6 +87,19 @@
      <layout class="QGridLayout" name="gridLayout"/>
     </widget>
    </widget>
+   <widget class="QLabel" name="testimage">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>390</y>
+      <width>131</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

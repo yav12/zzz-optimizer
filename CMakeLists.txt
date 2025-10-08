@@ -5,13 +5,15 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 
 qt_standard_project_setup()
 
+set(CMAKE_AUTORCC ON)
+
 qt_add_executable(zzz-optimizer
     WIN32 MACOSX_BUNDLE
     main.cpp
     window.cpp
     window.h
     window.ui
-    resources.qrc
+    assets.qrc
     disc.h disc.cpp
     discrender.h discrender.cpp discrender.ui
 )

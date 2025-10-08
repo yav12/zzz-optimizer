@@ -3,6 +3,7 @@
 
 #include "QFileDialog"
 #include "QStringList"
+#include "QDirIterator"
 #include <nlohmann/json.hpp>
 #include <qlabel.h>
 #include <qdebug.h>
@@ -62,8 +63,8 @@ void window::updateLibrary() {
 
 void window::test() {
     // QPushButton *button = new QPushButton(this);
-    QPixmap pix(":/discs/AstralVoice.png");
-    QFile testfile(":/discs/SwingJazz.png");
+    QPixmap pix(":/discs/DawnsBloom.png");
+    QFile testfile(":/discs/DawnsBloom.png");
     qDebug() << "pix.isNull:" << pix.isNull(); // Should be false
     qDebug() << "testfile.isNull:" << testfile.exists();
     qDebug() << "Qt Version:" << qVersion();
