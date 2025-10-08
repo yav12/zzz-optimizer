@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>701</width>
-    <height>360</height>
+    <width>656</width>
+    <height>394</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
+     <x>30</x>
+     <y>30</y>
      <width>411</width>
      <height>181</height>
     </rect>
@@ -78,8 +78,8 @@
   <widget class="QLabel" name="slotLabel">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
+     <x>30</x>
+     <y>30</y>
      <width>68</width>
      <height>18</height>
     </rect>
@@ -91,8 +91,8 @@
   <widget class="QLabel" name="levelLabel">
    <property name="geometry">
     <rect>
-     <x>147</x>
-     <y>20</y>
+     <x>167</x>
+     <y>30</y>
      <width>71</width>
      <height>20</height>
     </rect>

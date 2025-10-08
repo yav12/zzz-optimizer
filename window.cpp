@@ -1,16 +1,14 @@
 #include "window.h"
-#include "./ui_window.h"
-#include "disc.h"
-#include "discrender.h"
+#include "ui_window.h"
+
 #include "QFileDialog"
 #include "QStringList"
+#include <nlohmann/json.hpp>
 #include <qlabel.h>
 #include <qdebug.h>
 #include <string>
 #include <fstream>
 #include <nlohmann/json.hpp>
-
-using json = nlohmann::json;
 
 window::window(QWidget *parent)
     : QMainWindow(parent)
@@ -27,6 +25,7 @@ window::~window()
 {
     delete ui;
 }
+
 
 void window::import() {
     QFileDialog importfile;
@@ -51,7 +50,7 @@ void window::import() {
 // test to see if this will work
 void window::updateLibrary() {
     std::ifstream librarytemp("/tmp/zzzlibrary.json");
-    json j;
+    nlohmann::json j;
     librarytemp >> j;
 
     for (const auto& i : j["discs"]) {
@@ -63,12 +62,14 @@ void window::updateLibrary() {
 
 void window::test() {
     // QPushButton *button = new QPushButton(this);
-    QLabel *disk = new QLabel;
-    disk->setPixmap(QPixmap(":/discs/AstralVoice.png"));
-    qDebug() << QPixmap(":/discs/AstralVoice.png").isNull();
-    QStringList files = QDir(":/discs").entryList();
-    qDebug() << files;
-    disk->setFixedSize(128, 128);
+    QPixmap pix(":/discs/AstralVoice.png");
+    QFile testfile(":/discs/SwingJazz.png");
+    qDebug() << "pix.isNull:" << pix.isNull(); // Should be false
+    qDebug() << "testfile.isNull:" << testfile.exists();
+    qDebug() << "Qt Version:" << qVersion();
+    QLabel *disk = new QLabel();
+    disk->setPixmap(pix);
+    disk->setScaledContents(true);
     ui->gridLayout->addWidget(disk);
 }
 
