@@ -21,5 +21,6 @@ private:
     Ui::window *ui;
     void import();
     void updateLibrary();
+    void test();
 };
 #endif // WINDOW_H

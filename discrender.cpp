@@ -8,6 +8,11 @@ discRender::discRender(QWidget *parent)
     ui->setupUi(this);
 }
 
+void discRender::setDiscInfo(disc d) {
+    ui->set->setText(QString::fromStdString(d.getSet()));
+
+}
+
 discRender::~discRender()
 {
     delete ui;

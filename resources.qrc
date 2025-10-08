@@ -1,113 +1,113 @@
 <RCC>
     <qresource prefix="/wengines/anomaly">
-        <file>assets/wengines/anomaly/(MagneticStorm)Alpha.png</file>
-        <file>assets/wengines/anomaly/(MagneticStorm)Bravo.png</file>
-        <file>assets/wengines/anomaly/(MagneticStorm)Charlie.png</file>
-        <file>assets/wengines/anomaly/Electro-LipGloss.png</file>
-        <file>assets/wengines/anomaly/FlamemakerShaker.png</file>
-        <file>assets/wengines/anomaly/FlightofFancy.png</file>
-        <file>assets/wengines/anomaly/FusionCompiler.png</file>
-        <file>assets/wengines/anomaly/HailstormShrine.png</file>
-        <file>assets/wengines/anomaly/PracticedPerfection.png</file>
-        <file>assets/wengines/anomaly/RainforestGourmet.png</file>
-        <file>assets/wengines/anomaly/RoaringRide.png</file>
-        <file>assets/wengines/anomaly/SharpenedStinger.png</file>
-        <file>assets/wengines/anomaly/Timeweaver.png</file>
-        <file>assets/wengines/anomaly/WeepingGemini.png</file>
+        <file alias="MagneticStormAlpha.png">assets/wengines/anomaly/(MagneticStorm)Alpha.png</file>
+        <file alias="MagneticStormBravo.png">assets/wengines/anomaly/(MagneticStorm)Bravo.png</file>
+        <file alias="MagneticStormCharlie.png">assets/wengines/anomaly/(MagneticStorm)Charlie.png</file>
+        <file alias="ElectroLipGloss.png">assets/wengines/anomaly/Electro-LipGloss.png</file>
+        <file alias="FlamemakerShaker.png">assets/wengines/anomaly/FlamemakerShaker.png</file>
+        <file alias="FlightofFancy.png">assets/wengines/anomaly/FlightofFancy.png</file>
+        <file alias="FusionCompiler.png">assets/wengines/anomaly/FusionCompiler.png</file>
+        <file alias="HailstormShrine.png">assets/wengines/anomaly/HailstormShrine.png</file>
+        <file alias="PracticedPerfection.png">assets/wengines/anomaly/PracticedPerfection.png</file>
+        <file alias="RainforestGourmet.png">assets/wengines/anomaly/RainforestGourmet.png</file>
+        <file alias="RoaringRide.png">assets/wengines/anomaly/RoaringRide.png</file>
+        <file alias="SharpenedStinger.png">assets/wengines/anomaly/SharpenedStinger.png</file>
+        <file alias="Timeweaver.png">assets/wengines/anomaly/Timeweaver.png</file>
+        <file alias="WeepingGemini.png">assets/wengines/anomaly/WeepingGemini.png</file>
     </qresource>
     <qresource prefix="/wengines/attack">
-        <file>assets/wengines/attack/(Lunar)Decrescent.png</file>
-        <file>assets/wengines/attack/(Lunar)Noviluna.png</file>
-        <file>assets/wengines/attack/(Lunar)Pleniluna.png</file>
-        <file>assets/wengines/attack/BellicoseBlaze.png</file>
-        <file>assets/wengines/attack/CannonRotor.png</file>
-        <file>assets/wengines/attack/CordisGermina.png</file>
-        <file>assets/wengines/attack/DeepSeaVisitor.png</file>
-        <file>assets/wengines/attack/DrillRig-RedAxis.png</file>
-        <file>assets/wengines/attack/GildedBlossom.png</file>
-        <file>assets/wengines/attack/HeartstringNocturne.png</file>
-        <file>assets/wengines/attack/Housekeeper.png</file>
-        <file>assets/wengines/attack/MarcatoDesire.png</file>
-        <file>assets/wengines/attack/MyriadEclipse.png</file>
-        <file>assets/wengines/attack/RiotSuppressorMarkVI.png</file>
-        <file>assets/wengines/attack/SeveredInnocence.png</file>
-        <file>assets/wengines/attack/StarlightEngine.png</file>
-        <file>assets/wengines/attack/StarlightEngineReplica.png</file>
-        <file>assets/wengines/attack/SteelCushion.png</file>
-        <file>assets/wengines/attack/StreetSuperstar.png</file>
-        <file>assets/wengines/attack/TheBrimstone.png</file>
-        <file>assets/wengines/attack/ZanshinHerbCase.png</file>
+        <file alias="LunarDecrescent.png">assets/wengines/attack/(Lunar)Decrescent.png</file>
+        <file alias="LunarNoviluna.png">assets/wengines/attack/(Lunar)Noviluna.png</file>
+        <file alias="LunarPleniluna.png">assets/wengines/attack/(Lunar)Pleniluna.png</file>
+        <file alias="BellicoseBlaze.png">assets/wengines/attack/BellicoseBlaze.png</file>
+        <file alias="CannonRotor.png">assets/wengines/attack/CannonRotor.png</file>
+        <file alias="CordisGermina.png">assets/wengines/attack/CordisGermina.png</file>
+        <file alias="DeepSeaVisitor.png">assets/wengines/attack/DeepSeaVisitor.png</file>
+        <file alias="DrillRig-RedAxis.png">assets/wengines/attack/DrillRig-RedAxis.png</file>
+        <file alias="GildedBlossom.png">assets/wengines/attack/GildedBlossom.png</file>
+        <file alias="HeartstringNocturne.png">assets/wengines/attack/HeartstringNocturne.png</file>
+        <file alias="Housekeeper.png">assets/wengines/attack/Housekeeper.png</file>
+        <file alias="MarcatoDesire.png">assets/wengines/attack/MarcatoDesire.png</file>
+        <file alias="MyriadEclipse.png">assets/wengines/attack/MyriadEclipse.png</file>
+        <file alias="RiotSuppressorMarkVI.png">assets/wengines/attack/RiotSuppressorMarkVI.png</file>
+        <file alias="SeveredInnocence.png">assets/wengines/attack/SeveredInnocence.png</file>
+        <file alias="StarlightEngine.png">assets/wengines/attack/StarlightEngine.png</file>
+        <file alias="StarlightEngineReplica.png">assets/wengines/attack/StarlightEngineReplica.png</file>
+        <file alias="SteelCushion.png">assets/wengines/attack/SteelCushion.png</file>
+        <file alias="StreetSuperstar.png">assets/wengines/attack/StreetSuperstar.png</file>
+        <file alias="TheBrimstone.png">assets/wengines/attack/TheBrimstone.png</file>
+        <file alias="ZanshinHerbCase.png">assets/wengines/attack/ZanshinHerbCase.png</file>
     </qresource>
     <qresource prefix="/wengines/defense">
-        <file>assets/wengines/defense/(Identity)Base.png</file>
-        <file>assets/wengines/defense/(Identity)Inflection.png</file>
-        <file>assets/wengines/defense/BigCylinder.png</file>
-        <file>assets/wengines/defense/BunnyBand.png</file>
-        <file>assets/wengines/defense/OriginalTransmorpher.png</file>
-        <file>assets/wengines/defense/Peacekeeper-Specialized.png</file>
-        <file>assets/wengines/defense/ReelProjector.png</file>
-        <file>assets/wengines/defense/SpringEmbrace.png</file>
-        <file>assets/wengines/defense/TremorTrigramVessel.png</file>
-        <file>assets/wengines/defense/TusksofFury.png</file>
+        <file alias="IdentityBase.png">assets/wengines/defense/(Identity)Base.png</file>
+        <file alias="IdentityInflection.png">assets/wengines/defense/(Identity)Inflection.png</file>
+        <file alias="BigCylinder.png">assets/wengines/defense/BigCylinder.png</file>
+        <file alias="BunnyBand.png">assets/wengines/defense/BunnyBand.png</file>
+        <file alias="OriginalTransmorpher.png">assets/wengines/defense/OriginalTransmorpher.png</file>
+        <file alias="Peacekeeper-Specialized.png">assets/wengines/defense/Peacekeeper-Specialized.png</file>
+        <file alias="ReelProjector.png">assets/wengines/defense/ReelProjector.png</file>
+        <file alias="SpringEmbrace.png">assets/wengines/defense/SpringEmbrace.png</file>
+        <file alias="TremorTrigramVessel.png">assets/wengines/defense/TremorTrigramVessel.png</file>
+        <file alias="TusksofFury.png">assets/wengines/defense/TusksofFury.png</file>
     </qresource>
     <qresource prefix="/wengines/stun">
-        <file>assets/wengines/stun/(Vortex)Arrow.png</file>
-        <file>assets/wengines/stun/(Vortex)Hatchet.png</file>
-        <file>assets/wengines/stun/(Vortex)Revolver.png</file>
-        <file>assets/wengines/stun/BlazingLaurel.png</file>
-        <file>assets/wengines/stun/BoxCutter.png</file>
-        <file>assets/wengines/stun/DemaraBatteryMarkII.png</file>
-        <file>assets/wengines/stun/HellfireGears.png</file>
-        <file>assets/wengines/stun/Ice-JadeTeapot.png</file>
-        <file>assets/wengines/stun/PreciousFossilizedCore.png</file>
-        <file>assets/wengines/stun/RoaringFur-nace.png</file>
-        <file>assets/wengines/stun/SixShooter.png</file>
-        <file>assets/wengines/stun/SpectralGaze.png</file>
-        <file>assets/wengines/stun/SteamOven.png</file>
-        <file>assets/wengines/stun/TheRestrained.png</file>
+        <file alias="VortexArrow.png">assets/wengines/stun/(Vortex)Arrow.png</file>
+        <file alias="VortexHatchet.png">assets/wengines/stun/(Vortex)Hatchet.png</file>
+        <file alias="VortexRevolver.png">assets/wengines/stun/(Vortex)Revolver.png</file>
+        <file alias="BlazingLaurel.png">assets/wengines/stun/BlazingLaurel.png</file>
+        <file alias="BoxCutter.png">assets/wengines/stun/BoxCutter.png</file>
+        <file alias="DemaraBatteryMarkII.png">assets/wengines/stun/DemaraBatteryMarkII.png</file>
+        <file alias="HellfireGears.png">assets/wengines/stun/HellfireGears.png</file>
+        <file alias="Ice-JadeTeapot.png">assets/wengines/stun/Ice-JadeTeapot.png</file>
+        <file alias="PreciousFossilizedCore.png">assets/wengines/stun/PreciousFossilizedCore.png</file>
+        <file alias="RoaringFur-nace.png">assets/wengines/stun/RoaringFur-nace.png</file>
+        <file alias="SixShooter.png">assets/wengines/stun/SixShooter.png</file>
+        <file alias="SpectralGaze.png">assets/wengines/stun/SpectralGaze.png</file>
+        <file alias="SteamOven.png">assets/wengines/stun/SteamOven.png</file>
+        <file alias="TheRestrained.png">assets/wengines/stun/TheRestrained.png</file>
     </qresource>
     <qresource prefix="/wengines/rupture">
-        <file>assets/wengines/rupture/(Cinder)Cobalt.png</file>
-        <file>assets/wengines/rupture/PuzzleSphere.png</file>
-        <file>assets/wengines/rupture/QingmingBirdcage.png</file>
-        <file>assets/wengines/rupture/RadiowaveJourney.png</file>
+        <file alias="CinderCobalt.png">assets/wengines/rupture/(Cinder)Cobalt.png</file>
+        <file alias="PuzzleSphere.png">assets/wengines/rupture/PuzzleSphere.png</file>
+        <file alias="QingmingBirdcage.png">assets/wengines/rupture/QingmingBirdcage.png</file>
+        <file alias="RadiowaveJourney.png">assets/wengines/rupture/RadiowaveJourney.png</file>
     </qresource>
     <qresource prefix="/wengines/support">
-        <file>assets/wengines/support/(Reverb)MarkI.png</file>
-        <file>assets/wengines/support/(Reverb)MarkII.png</file>
-        <file>assets/wengines/support/(Reverb)MarkIII.png</file>
-        <file>assets/wengines/support/BashfulDemon.png</file>
-        <file>assets/wengines/support/ElegantVanity.png</file>
-        <file>assets/wengines/support/KaboomtheCannon.png</file>
-        <file>assets/wengines/support/Metanukimorphosis.png</file>
-        <file>assets/wengines/support/SliceofTime.png</file>
-        <file>assets/wengines/support/TheVault.png</file>
-        <file>assets/wengines/support/UnfetteredGameBall.png</file>
-        <file>assets/wengines/support/WeepingCradle.png</file>
+        <file alias="ReverbMarkI.png">assets/wengines/support/(Reverb)MarkI.png</file>
+        <file alias="ReverbMarkII.png">assets/wengines/support/(Reverb)MarkII.png</file>
+        <file alias="ReverbMarkIII.png">assets/wengines/support/(Reverb)MarkIII.png</file>
+        <file alias="BashfulDemon.png">assets/wengines/support/BashfulDemon.png</file>
+        <file alias="ElegantVanity.png">assets/wengines/support/ElegantVanity.png</file>
+        <file alias="KaboomtheCannon.png">assets/wengines/support/KaboomtheCannon.png</file>
+        <file alias="Metanukimorphosis.png">assets/wengines/support/Metanukimorphosis.png</file>
+        <file alias="SliceofTime.png">assets/wengines/support/SliceofTime.png</file>
+        <file alias="TheVault.png">assets/wengines/support/TheVault.png</file>
+        <file alias="UnfetteredGameBall.png">assets/wengines/support/UnfetteredGameBall.png</file>
+        <file alias="WeepingCradle.png">assets/wengines/support/WeepingCradle.png</file>
     </qresource>
     <qresource prefix="/discs">
-        <file>assets/discs/AstralVoice.png</file>
-        <file>assets/discs/BranchBladeSong.png</file>
-        <file>assets/discs/ChaosJazz.png</file>
-        <file>assets/discs/ChaoticMetal.png</file>
-        <file>assets/discs/DawnsBloom.png</file>
-        <file>assets/discs/FangedMetal.png</file>
-        <file>assets/discs/FreedomBlues.png</file>
-        <file>assets/discs/HormonePunk.png</file>
-        <file>assets/discs/InfernoMetal.png</file>
-        <file>assets/discs/KingoftheSummit.png</file>
-        <file>assets/discs/MoonlightLullaby.png</file>
-        <file>assets/discs/PhaethonsMelody.png</file>
-        <file>assets/discs/PolarMetal.png</file>
-        <file>assets/discs/ProtoPunk.png</file>
-        <file>assets/discs/PufferElectro.png</file>
-        <file>assets/discs/ShadowHarmony.png</file>
-        <file>assets/discs/ShockstarDisco.png</file>
-        <file>assets/discs/SoulRock.png</file>
-        <file>assets/discs/SwingJazz.png</file>
-        <file>assets/discs/WoodpeckerElectro.png</file>
-        <file>assets/discs/YunkuiTales.png</file>
-        <file>assets/discs/ThunderMetal.png</file>
+        <file alias="AstralVoice.png">assets/discs/AstralVoice.png</file>
+        <file alias="BranchBladeSong.png">assets/discs/BranchBladeSong.png</file>
+        <file alias="ChaosJazz.png">assets/discs/ChaosJazz.png</file>
+        <file alias="ChaoticMetal.png">assets/discs/ChaoticMetal.png</file>
+        <file alias="DawnsBloom.png">assets/discs/DawnsBloom.png</file>
+        <file alias="FangedMetal.png">assets/discs/FangedMetal.png</file>
+        <file alias="FreedomBlues.png">assets/discs/FreedomBlues.png</file>
+        <file alias="HormonePunk.png">assets/discs/HormonePunk.png</file>
+        <file alias="InfernoMetal.png">assets/discs/InfernoMetal.png</file>
+        <file alias="KingOfTheSummit.png">assets/discs/KingOfTheSummit.png</file>
+        <file alias="MoonlightLullaby.png">assets/discs/MoonlightLullaby.png</file>
+        <file alias="PhaethonsMelody.png">assets/discs/PhaethonsMelody.png</file>
+        <file alias="PolarMetal.png">assets/discs/PolarMetal.png</file>
+        <file alias="ProtoPunk.png">assets/discs/ProtoPunk.png</file>
+        <file alias="PufferElectro.png">assets/discs/PufferElectro.png</file>
+        <file alias="ShadowHarmony.png">assets/discs/ShadowHarmony.png</file>
+        <file alias="ShockstarDisco.png">assets/discs/ShockstarDisco.png</file>
+        <file alias="SoulRock.png">assets/discs/SoulRock.png</file>
+        <file alias="SwingJazz.png">assets/discs/SwingJazz.png</file>
+        <file alias="WoodpeckerElectro.png">assets/discs/WoodpeckerElectro.png</file>
+        <file alias="YunkuiTales.png">assets/discs/YunkuiTales.png</file>
+        <file alias="ThunderMetal.png">assets/discs/ThunderMetal.png</file>
     </qresource>
     <qresource prefix="/characters"/>
 </RCC>

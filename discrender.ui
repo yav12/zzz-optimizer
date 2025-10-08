@@ -6,73 +6,106 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>432</width>
-    <height>218</height>
+    <width>701</width>
+    <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QGraphicsView" name="setImage">
+  <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>211</width>
-     <height>211</height>
+     <x>10</x>
+     <y>20</y>
+     <width>411</width>
+     <height>181</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>209</x>
-     <y>-1</y>
-     <width>221</width>
-     <height>211</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="whole">
     <item>
-     <widget class="QLabel" name="set">
+     <widget class="QLabel" name="label">
       <property name="text">
-       <string>TextLabel</string>
+       <string>pic</string>
       </property>
      </widget>
     </item>
     <item>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="0">
-       <widget class="QLabel" name="sub3">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="set">
         <property name="text">
-         <string>TextLabel</string>
+         <string>set</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="sub1">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLabel" name="sub2">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLabel" name="sub4">
-        <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="sub1">
+          <property name="text">
+           <string>substat 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="sub4">
+          <property name="text">
+           <string>substat 4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="sub2">
+          <property name="text">
+           <string>substat 2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="sub3">
+          <property name="text">
+           <string>substat 3</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="slotLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>68</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>slot</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="levelLabel">
+   <property name="geometry">
+    <rect>
+     <x>147</x>
+     <y>20</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>level</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
   </widget>
  </widget>
  <resources/>

@@ -47,13 +47,32 @@
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="importFrame">
+   <widget class="QPushButton" name="testButton">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>90</y>
-      <width>501</width>
-      <height>381</height>
+      <x>350</x>
+      <y>60</y>
+      <width>98</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>test</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>179</x>
+      <y>149</y>
+      <width>461</width>
+      <height>311</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -62,17 +81,17 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>610</x>
-      <y>480</y>
-      <width>160</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout"/>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>441</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
