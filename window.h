@@ -2,12 +2,10 @@
 #define WINDOW_H
 
 #include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class window;
-}
-QT_END_NAMESPACE
+#include <QWidget>
+#include <qboxlayout.h>
+#include <qpushbutton.h>
+#include <qlabel.h>
 
 class window : public QMainWindow
 {
@@ -15,12 +13,17 @@ class window : public QMainWindow
 
 public:
     window(QWidget *parent = nullptr);
+    void setupWindow();
     ~window();
-
 private:
-    Ui::window *ui;
-    void import();
-    void updateLibrary();
-    void test();
+    QWidget *windowWidget;
+    QVBoxLayout *layout;
+    QHBoxLayout *navLayout;
+    QPushButton *homeButton;
+    QPushButton *referenceButton;
+    QPushButton *calculatorButton;
+    QPushButton *libraryButton;
+    QPushButton *importButton;
+    QLabel *placeholder;
 };
 #endif // WINDOW_H

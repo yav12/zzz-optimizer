@@ -109,5 +109,11 @@
         <file alias="YunkuiTales.png">assets/discs/YunkuiTales.png</file>
         <file alias="ThunderMetal.png">assets/discs/ThunderMetal.png</file>
     </qresource>
-    <qresource prefix="/characters"/>
+    <qresource prefix="/characters/jufufu">
+        <file alias="icon.png">assets/characters/Ju Fufu/icon.png</file>
+        <file alias="iconCircle.png">assets/characters/Ju Fufu/iconCircle.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Ju Fufu/MindscapeFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Ju Fufu/MindscapeHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Ju Fufu/MindscapeNone.png</file>
+    </qresource>
 </RCC>

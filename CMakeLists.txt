@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.19)
 project(zzz-optimizer LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_standard_project_setup()
 
@@ -12,10 +14,9 @@ qt_add_executable(zzz-optimizer
     main.cpp
     window.cpp
     window.h
-    window.ui
-    assets.qrc
-    disc.h disc.cpp
-    discrender.h discrender.cpp discrender.ui
+    resources.qrc
+    calculatorwidget.h calculatorwidget.cpp
+    librarywidget.h librarywidget.cpp
 )
 
 target_link_libraries(zzz-optimizer
@@ -23,6 +24,8 @@ target_link_libraries(zzz-optimizer
         Qt::Core
         Qt::Widgets
 )
+target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
+target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
 
 include(GNUInstallDirs)
 
