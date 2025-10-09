@@ -1,34 +1,17 @@
 # zzz-optimizer
 
-An zzz related optimizer that also happens to be an ~~Electron application with React~~ a PyQt project
+An zzz related optimizer that also happens to be an ~~Electron application with React~~ a ~~PyQt~~ normal Qt project
 
 i made this because i suck at programming and wanted to get better, also theres no (good) zzz optimizer i think
 
 ## Project Setup
 
-### Install
+you clone the repo as you do, and then i have no clue how you are supposed to generically compile this. i add it as a project in qt creator, and i am too lazy to figure out a different way 
 
-ill figure this out later, everything here is wrong, i refuse to use electron anymore cuz it sucks
+## building
 
-```bash
-npm install
-```
+imagine that
 
-### Development
+i dont even know how to do that yet
 
-```bash
-npm run dev
-```
-
-### Build
-
-```bash
-# For windows
-npm run build:win
-
-# For macOS
-npm run build:mac
-
-# For Linux
-npm run build:linux
-```
+when i figure it out ill put something useful here instead 
