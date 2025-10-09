@@ -105,9 +105,9 @@
         <file alias="ShockstarDisco.png">assets/discs/ShockstarDisco.png</file>
         <file alias="SoulRock.png">assets/discs/SoulRock.png</file>
         <file alias="SwingJazz.png">assets/discs/SwingJazz.png</file>
+        <file alias="ThunderMetal.png">assets/discs/ThunderMetal.png</file>
         <file alias="WoodpeckerElectro.png">assets/discs/WoodpeckerElectro.png</file>
         <file alias="YunkuiTales.png">assets/discs/YunkuiTales.png</file>
-        <file alias="ThunderMetal.png">assets/discs/ThunderMetal.png</file>
     </qresource>
     <qresource prefix="/characters/jufufu">
         <file alias="icon.png">assets/characters/Ju Fufu/icon.png</file>
@@ -115,5 +115,26 @@
         <file alias="MindscapeFull.png">assets/characters/Ju Fufu/MindscapeFull.png</file>
         <file alias="MindscapeHalf.png">assets/characters/Ju Fufu/MindscapeHalf.png</file>
         <file alias="MindscapeNone.png">assets/characters/Ju Fufu/MindscapeNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/nekomata">
+        <file alias="icon.png">assets/characters/Nekomata/icon.png</file>
+        <file alias="iconCircle.png">assets/characters/Nekomata/iconCircle.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Nekomata/MindscapeFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Nekomata/MindscapeHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Nekomata/MindscapeNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/anby">
+        <file alias="icon.png">assets/characters/Anby/icon.png</file>
+        <file alias="iconCircle.png">assets/characters/Anby/iconCircle.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Anby/MindscapeFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Anby/MindscapeHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Anby/MindscapeNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/yixuan">
+        <file alias="icon.png">assets/characters/Yixuan/icon.png</file>
+        <file alias="iconCircle.png">assets/characters/Yixuan/iconCircle.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Yixuan/MindscapeFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Yixuan/MindscapeHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Yixuan/MindscapeNone.png</file>
     </qresource>
 </RCC>
