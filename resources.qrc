@@ -109,32 +109,324 @@
         <file alias="WoodpeckerElectro.png">assets/discs/WoodpeckerElectro.png</file>
         <file alias="YunkuiTales.png">assets/discs/YunkuiTales.png</file>
     </qresource>
-    <qresource prefix="/characters/jufufu">
-        <file alias="icon.png">assets/characters/Ju Fufu/icon.png</file>
-        <file alias="iconCircle.png">assets/characters/Ju Fufu/iconCircle.png</file>
-        <file alias="MindscapeFull.png">assets/characters/Ju Fufu/MindscapeFull.png</file>
-        <file alias="MindscapeHalf.png">assets/characters/Ju Fufu/MindscapeHalf.png</file>
-        <file alias="MindscapeNone.png">assets/characters/Ju Fufu/MindscapeNone.png</file>
-    </qresource>
-    <qresource prefix="/characters/nekomata">
-        <file alias="icon.png">assets/characters/Nekomata/icon.png</file>
-        <file alias="iconCircle.png">assets/characters/Nekomata/iconCircle.png</file>
-        <file alias="MindscapeFull.png">assets/characters/Nekomata/MindscapeFull.png</file>
-        <file alias="MindscapeHalf.png">assets/characters/Nekomata/MindscapeHalf.png</file>
-        <file alias="MindscapeNone.png">assets/characters/Nekomata/MindscapeNone.png</file>
+    <qresource prefix="/characters/alice">
+        <file alias="portrait.png">assets/characters/Alice/AlicePortrait.png</file>
+        <file alias="icon.png">assets/characters/Alice/AliceIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Alice/AliceCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Alice/MindscapeAliceFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Alice/MindscapeAliceHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Alice/MindscapeAliceNone.png</file>
     </qresource>
     <qresource prefix="/characters/anby">
-        <file alias="icon.png">assets/characters/Anby/icon.png</file>
-        <file alias="iconCircle.png">assets/characters/Anby/iconCircle.png</file>
-        <file alias="MindscapeFull.png">assets/characters/Anby/MindscapeFull.png</file>
-        <file alias="MindscapeHalf.png">assets/characters/Anby/MindscapeHalf.png</file>
-        <file alias="MindscapeNone.png">assets/characters/Anby/MindscapeNone.png</file>
+        <file alias="portrait.png">assets/characters/Anby/AnbyPortrait.png</file>
+        <file alias="icon.png">assets/characters/Anby/AnbyIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Anby/AnbyCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Anby/MindscapeAnbyFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Anby/MindscapeAnbyHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Anby/MindscapeAnbyNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/anton">
+        <file alias="portrait.png">assets/characters/Anton/AntonPortrait.png</file>
+        <file alias="icon.png">assets/characters/Anton/AntonIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Anton/AntonCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Anton/MindscapeAntonFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Anton/MindscapeAntonHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Anton/MindscapeAntonNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/astra">
+        <file alias="portrait.png">assets/characters/Astra/AstraPortrait.png</file>
+        <file alias="icon.png">assets/characters/Astra/AstraIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Astra/AstraCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Astra/MindscapeAstraFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Astra/MindscapeAstraHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Astra/MindscapeAstraNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/ben">
+        <file alias="portrait.png">assets/characters/Ben/BenPortrait.png</file>
+        <file alias="icon.png">assets/characters/Ben/BenIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Ben/BenCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Ben/MindscapeBenFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Ben/MindscapeBenHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Ben/MindscapeBenNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/billy">
+        <file alias="portrait.png">assets/characters/Billy/BillyPortrait.png</file>
+        <file alias="icon.png">assets/characters/Billy/BillyIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Billy/BillyCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Billy/MindscapeBillyFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Billy/MindscapeBillyHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Billy/MindscapeBillyNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/burnice">
+        <file alias="portrait.png">assets/characters/Burnice/BurnicePortrait.png</file>
+        <file alias="icon.png">assets/characters/Burnice/BurniceIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Burnice/BurniceCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Burnice/MindscapeBurniceFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Burnice/MindscapeBurniceHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Burnice/MindscapeBurniceNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/caesar">
+        <file alias="portrait.png">assets/characters/Caesar/CaesarPortrait.png</file>
+        <file alias="icon.png">assets/characters/Caesar/CaesarIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Caesar/CaesarCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Caesar/MindscapeCaesarFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Caesar/MindscapeCaesarHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Caesar/MindscapeCaesarNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/corin">
+        <file alias="portrait.png">assets/characters/Corin/CorinPortrait.png</file>
+        <file alias="icon.png">assets/characters/Corin/CorinIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Corin/CorinCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Corin/MindscapeCorinFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Corin/MindscapeCorinHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Corin/MindscapeCorinNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/ellen">
+        <file alias="portrait.png">assets/characters/Ellen/EllenPortrait.png</file>
+        <file alias="icon.png">assets/characters/Ellen/EllenIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Ellen/EllenCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Ellen/MindscapeEllenFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Ellen/MindscapeEllenHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Ellen/MindscapeEllenNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/evelyn">
+        <file alias="portrait.png">assets/characters/Evelyn/EvelynPortrait.png</file>
+        <file alias="icon.png">assets/characters/Evelyn/EvelynIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Evelyn/EvelynCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Evelyn/MindscapeEvelynFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Evelyn/MindscapeEvelynHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Evelyn/MindscapeEvelynNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/grace">
+        <file alias="portrait.png">assets/characters/Grace/GracePortrait.png</file>
+        <file alias="icon.png">assets/characters/Grace/GraceIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Grace/GraceCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Grace/MindscapeGraceFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Grace/MindscapeGraceHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Grace/MindscapeGraceNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/harumasa">
+        <file alias="portrait.png">assets/characters/Harumasa/HarumasaPortrait.png</file>
+        <file alias="icon.png">assets/characters/Harumasa/HarumasaIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Harumasa/HarumasaCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Harumasa/MindscapeHarumasaFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Harumasa/MindscapeHarumasaHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Harumasa/MindscapeHarumasaNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/hugo">
+        <file alias="portrait.png">assets/characters/Hugo/HugoPortrait.png</file>
+        <file alias="icon.png">assets/characters/Hugo/HugoIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Hugo/HugoCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Hugo/MindscapeHugoFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Hugo/MindscapeHugoHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Hugo/MindscapeHugoNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/jane">
+        <file alias="portrait.png">assets/characters/Jane/JanePortrait.png</file>
+        <file alias="icon.png">assets/characters/Jane/JaneIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Jane/JaneCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Jane/MindscapeJaneFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Jane/MindscapeJaneHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Jane/MindscapeJaneNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/jufufu">
+        <file alias="portrait.png">assets/characters/Ju Fufu/JuFufuPortrait.png</file>
+        <file alias="icon.png">assets/characters/Ju Fufu/JuFufuIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Ju Fufu/JuFufuCircleIcon.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Ju Fufu/MindscapeJuFufuFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Ju Fufu/MindscapeJuFufuHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Ju Fufu/MindscapeJuFufuNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/koleda">
+        <file alias="portrait.png">assets/characters/Koleda/KoledaPortrait.png</file>
+        <file alias="icon.png">assets/characters/Koleda/KoledaIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Koleda/KoledaCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Koleda/MindscapeKoledaFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Koleda/MindscapeKoledaHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Koleda/MindscapeKoledaNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/lighter">
+        <file alias="portrait.png">assets/characters/Lighter/LighterPortrait.png</file>
+        <file alias="icon.png">assets/characters/Lighter/LighterIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Lighter/LighterCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Lighter/MindscapeLighterFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Lighter/MindscapeLighterHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Lighter/MindscapeLighterNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/lucy">
+        <file alias="portrait.png">assets/characters/Lucy/LucyPortrait.png</file>
+        <file alias="icon.png">assets/characters/Lucy/LucyIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Lucy/LucyCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Lucy/MindscapeLucyFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Lucy/MindscapeLucyHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Lucy/MindscapeLucyNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/lycaon">
+        <file alias="portrait.png">assets/characters/Lycaon/LycaonPortrait.png</file>
+        <file alias="icon.png">assets/characters/Lycaon/LycaonIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Lycaon/LycaonCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Lycaon/MindscapeLycaonFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Lycaon/MindscapeLycaonHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Lycaon/MindscapeLycaonNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/miyabi">
+        <file alias="portrait.png">assets/characters/Miyabi/MiyabiPortrait.png</file>
+        <file alias="icon.png">assets/characters/Miyabi/MiyabiIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Miyabi/MiyabiCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Miyabi/MindscapeMiyabiFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Miyabi/MindscapeMiyabiHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Miyabi/MindscapeMiyabiNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/nekomata">
+        <file alias="portrait.png">assets/characters/Nekomata/NekomataPortrait.png</file>
+        <file alias="icon.png">assets/characters/Nekomata/NekomataIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Nekomata/NekomataCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Nekomata/MindscapeNekomataFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Nekomata/MindscapeNekomataHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Nekomata/MindscapeNekomataNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/nicole">
+        <file alias="portrait.png">assets/characters/Nicole/NicolePortrait.png</file>
+        <file alias="icon.png">assets/characters/Nicole/NicoleIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Nicole/NicoleCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Nicole/MindscapeNicoleFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Nicole/MindscapeNicoleHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Nicole/MindscapeNicoleNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/orphiemagus">
+        <file alias="portrait.png">assets/characters/OrphieMagus/OrphieMagusPortrait.png</file>
+        <file alias="icon.png">assets/characters/OrphieMagus/OrphieMagusIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/OrphieMagus/OrphieMagusCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/OrphieMagus/MindscapeOrphieMagusFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/OrphieMagus/MindscapeOrphieMagusHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/OrphieMagus/MindscapeOrphieMagusNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/piper">
+        <file alias="portrait.png">assets/characters/Piper/PiperPortrait.png</file>
+        <file alias="icon.png">assets/characters/Piper/PiperIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Piper/PiperCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Piper/MindscapePiperFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Piper/MindscapePiperHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Piper/MindscapePiperNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/pulchra">
+        <file alias="portrait.png">assets/characters/Pulchra/PulchraPortrait.png</file>
+        <file alias="icon.png">assets/characters/Pulchra/PulchraIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Pulchra/PulchraCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Pulchra/MindscapePulchraFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Pulchra/MindscapePulchraHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Pulchra/MindscapePulchraNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/qingyi">
+        <file alias="portrait.png">assets/characters/Qingyi/QingyiPortrait.png</file>
+        <file alias="icon.png">assets/characters/Qingyi/QingyiIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Qingyi/QingyiCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Qingyi/MindscapeQingyiFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Qingyi/MindscapeQingyiHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Qingyi/MindscapeQingyiNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/rina">
+        <file alias="portrait.png">assets/characters/Rina/RinaPortrait.png</file>
+        <file alias="icon.png">assets/characters/Rina/RinaIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Rina/RinaCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Rina/MindscapeRinaFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Rina/MindscapeRinaHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Rina/MindscapeRinaNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/s0anby">
+        <file alias="portrait.png">assets/characters/S0Anby/S0-AnbyPortrait.png</file>
+        <file alias="icon.png">assets/characters/S0Anby/S0-AnbyIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/S0Anby/S0-AnbyIcon.png</file>
+        <file alias="MindscapeFull.png">assets/characters/S0Anby/MindscapeS0-AnbyFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/S0Anby/MindscapeS0-AnbyHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/S0Anby/MindscapeS0-AnbyNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/seed">
+        <file alias="portrait.png">assets/characters/Seed/SeedPortrait.png</file>
+        <file alias="icon.png">assets/characters/Seed/SeedIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Seed/SeedCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Seed/MindscapeSeedFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Seed/MindscapeSeedHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Seed/MindscapeSeedNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/seth">
+        <file alias="portrait.png">assets/characters/Seth/SethPortrait.png</file>
+        <file alias="icon.png">assets/characters/Seth/SethIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Seth/SethCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Seth/MindscapeSethFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Seth/MindscapeSethHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Seth/MindscapeSethNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/soldier11">
+        <file alias="portrait.png">assets/characters/Soldier11/Soldier11Portrait.png</file>
+        <file alias="icon.png">assets/characters/Soldier11/Soldier11Icon.png</file>
+        <file alias="iconCircle.png">assets/characters/Soldier11/Soldier11CircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Soldier11/MindscapeSoldier11Full.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Soldier11/MindscapeSoldier11Half.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Soldier11/MindscapeSoldier11None.png</file>
+    </qresource>
+    <qresource prefix="/characters/soukaku">
+        <file alias="portrait.png">assets/characters/Soukaku/SoukakuPortrait.png</file>
+        <file alias="icon.png">assets/characters/Soukaku/SoukakuIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Soukaku/SoukakuCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Soukaku/MindscapeSoukakuFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Soukaku/MindscapeSoukakuHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Soukaku/MindscapeSoukakuNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/trigger">
+        <file alias="portrait.png">assets/characters/Trigger/TriggerPortrait.png</file>
+        <file alias="icon.png">assets/characters/Trigger/TriggerIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Trigger/TriggerCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Trigger/MindscapeTriggerFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Trigger/MindscapeTriggerHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Trigger/MindscapeTriggerNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/vivian">
+        <file alias="portrait.png">assets/characters/Vivian/VivianPortrait.png</file>
+        <file alias="icon.png">assets/characters/Vivian/VivianIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Vivian/VivianCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Vivian/MindscapeVivianFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Vivian/MindscapeVivianHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Vivian/MindscapeVivianNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/yanagi">
+        <file alias="portrait.png">assets/characters/Yanagi/YanagiPortrait.png</file>
+        <file alias="icon.png">assets/characters/Yanagi/YanagiIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Yanagi/YanagiCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Yanagi/MindscapeYanagiFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Yanagi/MindscapeYanagiHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Yanagi/MindscapeYanagiNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/yinhu">
+        <file alias="portrait.png">assets/characters/Yinhu/YinhuPortrait.png</file>
+        <file alias="icon.png">assets/characters/Yinhu/YinhuIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Yinhu/YinhuCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Yinhu/MindscapeYinhuFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Yinhu/MindscapeYinhuHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Yinhu/MindscapeYinhuNone.png</file>
     </qresource>
     <qresource prefix="/characters/yixuan">
-        <file alias="icon.png">assets/characters/Yixuan/icon.png</file>
-        <file alias="iconCircle.png">assets/characters/Yixuan/iconCircle.png</file>
-        <file alias="MindscapeFull.png">assets/characters/Yixuan/MindscapeFull.png</file>
-        <file alias="MindscapeHalf.png">assets/characters/Yixuan/MindscapeHalf.png</file>
-        <file alias="MindscapeNone.png">assets/characters/Yixuan/MindscapeNone.png</file>
+        <file alias="portrait.png">assets/characters/Yixuan/YixuanPortrait.png</file>
+        <file alias="icon.png">assets/characters/Yixuan/YixuanIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Yixuan/YixuanCircleIcon.png</file>
+    <file alias="MindscapeFull.png">assets/characters/Yixuan/MindscapeYixuanFull.png</file>
+    <file alias="MindscapeHalf.png">assets/characters/Yixuan/MindscapeYixuanHalf.png</file>
+    <file alias="MindscapeNone.png">assets/characters/Yixuan/MindscapeYixuanNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/yuzuha">
+        <file alias="portrait.png">assets/characters/Yuzuha/YuzuhaPortrait.png</file>
+        <file alias="icon.png">assets/characters/Yuzuha/YuzuhaIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Yuzuha/YuzuhaCircleIcon.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Yuzuha/MindscapeYuzuhaFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Yuzuha/MindscapeYuzuhaHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Yuzuha/MindscapeYuzuhaNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/zhuyuan">
+        <file alias="portrait.png">assets/characters/ZhuYuan/ZhuYuanPortrait.png</file>
+        <file alias="icon.png">assets/characters/ZhuYuan/ZhuYuanIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/ZhuYuan/ZhuYuanCircleIcon.png</file>
+        <file alias="MindscapeFull.png">assets/characters/ZhuYuan/MindscapeZhuYuanFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/ZhuYuan/MindscapeZhuYuanHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/ZhuYuan/MindscapeZhuYuanNone.png</file>
     </qresource>
 </RCC>
