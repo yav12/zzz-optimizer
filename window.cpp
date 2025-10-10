@@ -93,7 +93,7 @@ void window::initializations() {
     referenceLayout = new QHBoxLayout();
     calc = new QWidget(this);
     calcLayout = new QHBoxLayout();
-    library = new QWidget(this);
+    library = new libraryWidget(this);
     libraryLayout = new QHBoxLayout();
 }
 
