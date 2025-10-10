@@ -10,8 +10,9 @@ you clone the repo as you do, and then i have no clue how you are supposed to ge
 
 ## building
 
-imagine that
-
-i dont even know how to do that yet
-
-when i figure it out ill put something useful here instead 
+i think this is how you do it, if it doesnt work, go back to qt creator and press run i guess: 
+```
+cmake -G Ninja -S . -B build
+cd build
+ninja
+```
