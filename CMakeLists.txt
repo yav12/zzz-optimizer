@@ -21,7 +21,14 @@ qt_add_executable(zzz-optimizer
 
 
     test.h test.cpp test.ui
-    librarywidget.h librarywidget.cpp
+
+    character.h character.cpp
+    library.cpp
+    navigation.cpp
+    home.cpp
+    calc.cpp
+    reference.cpp
+
 
 )
 

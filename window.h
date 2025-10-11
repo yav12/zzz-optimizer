@@ -7,7 +7,6 @@
 #include <QBoxLayout>
 #include <QPushButton>
 #include <QLabel>
-#include "librarywidget.h"
 
 class window : public QMainWindow
 {
@@ -16,6 +15,12 @@ class window : public QMainWindow
 public:
     window(QWidget *parent = nullptr);
     void setupWindow();
+    void setupNavigation();
+    void setupCharacters();
+    void setupHome();
+    void setupReference();
+    void setupCalculator();
+    void setupLibrary();
     ~window();
 private:
     void initializations();
@@ -34,7 +39,7 @@ private:
     QWidget *home;
     QWidget *reference;
     QWidget *calc;
-    libraryWidget *library;
+    QWidget *library;
     //home content
     QHBoxLayout *homeLayout;
     QLabel *homePlaceholderLabel;

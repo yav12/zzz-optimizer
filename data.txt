@@ -1,0 +1,40 @@
+nekomata: Nekomiya Mana, physical
+anby: Anby Demara, electric
+billy: Billy Kid, physical
+nicole: Nicole Demara, ether
+grace: Grace Howard, electric
+koleda: Koleda Belobog, fire
+anton: Anton Ivanov, electric
+ben: Ben Bigger, fire
+rina: Alexandrina Sebastiane, electric
+ellen: Ellen Joe, ice
+lycaon: Von Lycaon, ice
+corin: Corin Wickes, physical
+soldier11: Soldier 11, fire
+trigger: Trigger, electric
+seed: Seed, electric
+orphiemagus: Orphie Magnusson & Magus, fire
+zhuyuan: Zhu Yuan, ether
+qingyi: Qingyi, electric
+jane: Jane Doe, physical
+seth: Seth Lowell, electric
+caesar: Caesar King, physical
+burnice: Burnice White, fire
+lighter: Lighter, fire
+lucy: Luciana de Montefio, fire
+piper: Piper Wheel, physical
+pulchra: Pulchra Fellini, physical
+yanagi: Tsukishiro Yanagi, electric
+harumasa: Asaba Harumasa, electric
+miyabi: Hoshimi Miyabi, frost
+soukaku: Soukaku, ice
+astra: Astra Yao, ether
+evelyn: Evelyn Chevalier, fire
+s0anby: Soldier 0 - Anby, electric
+vivian: Vivian Banshee, ether
+hugo: Hugo Vlad, ice
+yixuan: Yixuan, auric ink
+jufufu: Ju Fufu, fire, 
+yinhu: Pan Yinhu, physical
+yuzuha: Ukinami Yuzuha, physical
+alice: Alice Thymefield, physical
