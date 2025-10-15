@@ -18,7 +18,10 @@ void window::setupReference() {
         refCharacterSelect->addItem(QString::fromStdString(character.nickname));
     }
     referenceLayout->addWidget(refCharacterSelect,0,0);
-    connect(refCharacterSelect, &QComboBox::currentTextChanged, [=] {});
+    connect(refCharacterSelect, &QComboBox::currentTextChanged, [this](const QString &selection) {
+        std::string comboString = selection.toStdString();
+        setCurrentRefCharacter(comboString);
+    });
 
     //display stuff
     referencePlaceholderLabel = new QLabel;
@@ -34,6 +37,7 @@ void window::setCurrentRefCharacter(std::string &comboString) {
             break;
         } //no catch cuz its not possible for it to miss (i think)
     }
+    updateReference();
 }
 
 void window::updateReference() {
