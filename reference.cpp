@@ -17,14 +17,14 @@ void window::setupReference() {
     for (const auto& character : character::characterList) {
         refCharacterSelect->addItem(QString::fromStdString(character.nickname));
     }
-    calcLayout->addWidget(refCharacterSelect,0,0);
+    referenceLayout->addWidget(refCharacterSelect,0,0);
     connect(refCharacterSelect, &QComboBox::currentTextChanged, [=] {});
 
     //display stuff
     referencePlaceholderLabel = new QLabel;
     referencePlaceholderLabel->setPixmap(QPixmap(QString::fromStdString(character::nekomata.images.mindscapeFull)));
     referencePlaceholderLabel->setAlignment(Qt::AlignCenter);
-    referenceLayout->addWidget(referencePlaceholderLabel);
+    referenceLayout->addWidget(referencePlaceholderLabel, 2, 0, 1, 2);
 }
 
 void window::setCurrentRefCharacter(std::string &comboString) {
