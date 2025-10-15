@@ -1,12 +1,14 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
+#include "character.h"
 #include <QMainWindow>
 #include <QWidget>
 #include <QStackedWidget>
 #include <QBoxLayout>
 #include <QPushButton>
 #include <QLabel>
+#include <QComboBox>
 
 class window : public QMainWindow
 {
@@ -44,10 +46,14 @@ private:
     QHBoxLayout *homeLayout;
     QLabel *homePlaceholderLabel;
     //reference content
-    QHBoxLayout *referenceLayout;
+    QGridLayout *referenceLayout;
+    QComboBox *refCharacterSelect;
+    void setCurrentRefCharacter(std::string &);
+    character::character currentRefCharacter;
+    void updateReference();
     QLabel *referencePlaceholderLabel;
     //calculator content
-    QHBoxLayout *calcLayout;
+    QGridLayout *calcLayout;
     QLabel *calcPlaceholderLabel;
     //library content
     QHBoxLayout *libraryLayout;

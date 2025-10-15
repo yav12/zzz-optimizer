@@ -28,6 +28,8 @@ qt_add_executable(zzz-optimizer
     home.cpp
     calc.cpp
     reference.cpp
+    calculator.h calculator.cpp
+    wengine.h wengine.cpp
 
 
 )

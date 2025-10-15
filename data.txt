@@ -1,40 +1,1561 @@
-nekomata: Nekomiya Mana, physical
-anby: Anby Demara, electric
-billy: Billy Kid, physical
-nicole: Nicole Demara, ether
-grace: Grace Howard, electric
-koleda: Koleda Belobog, fire
-anton: Anton Ivanov, electric
-ben: Ben Bigger, fire
-rina: Alexandrina Sebastiane, electric
-ellen: Ellen Joe, ice
-lycaon: Von Lycaon, ice
-corin: Corin Wickes, physical
-soldier11: Soldier 11, fire
-trigger: Trigger, electric
-seed: Seed, electric
-orphiemagus: Orphie Magnusson & Magus, fire
-zhuyuan: Zhu Yuan, ether
-qingyi: Qingyi, electric
-jane: Jane Doe, physical
-seth: Seth Lowell, electric
-caesar: Caesar King, physical
-burnice: Burnice White, fire
-lighter: Lighter, fire
-lucy: Luciana de Montefio, fire
-piper: Piper Wheel, physical
-pulchra: Pulchra Fellini, physical
-yanagi: Tsukishiro Yanagi, electric
-harumasa: Asaba Harumasa, electric
-miyabi: Hoshimi Miyabi, frost
-soukaku: Soukaku, ice
-astra: Astra Yao, ether
-evelyn: Evelyn Chevalier, fire
-s0anby: Soldier 0 - Anby, electric
-vivian: Vivian Banshee, ether
-hugo: Hugo Vlad, ice
-yixuan: Yixuan, auric ink
-jufufu: Ju Fufu, fire, 
-yinhu: Pan Yinhu, physical
-yuzuha: Ukinami Yuzuha, physical
-alice: Alice Thymefield, physical
+Image 	Title 	Rank 	Specialty 	Attribute 	Exclusive 	Base Stat 	Advanced Stat 	Effect 	Version
+	[Lunar] Pleniluna 	Item Rank B 	Attack
+Attack 		— 	Base ATK:
+32-475 	ATK:
+8%-20% 	Full Moon
+Basic Attack, Dash Attack, and Dodge Counter DMG increases by 12~20% 	1.0
+	[Lunar] Decrescent 	Item Rank B 	Attack
+Attack 		— 	Base ATK:
+32-475 	ATK:
+8%-20% 	Waning Moon
+Launching a Chain Attack or Ultimate increases the equipper's DMG by 15~25% for 6s. 	1.0
+	[Lunar] Noviluna 	Item Rank B 	Attack
+Attack 		— 	Base ATK:
+32-475 	CRIT Rate:
+6.4%-16% 	New Moon
+Launching an EX Special Attack generates 3~5 Energy for the equipper. This effect can trigger once every 12s. 	1.0
+	[Reverb] Mark I 	Item Rank B 	Support
+Support 		— 	Base ATK:
+32-475 	ATK:
+8%-20% 	Changing Tides
+Launching an EX Special Attack increases all squad members' Impact by 8~12% for 10s. This effect can trigger every 20s. Passive effects of the same name do not stack. 	1.0
+	[Reverb] Mark II 	Item Rank B 	Support
+Support 		— 	Base ATK:
+32-475 	Energy Regen:
+16%-40% 	Roaring Waves
+Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 10~16 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack. 	1.0
+	[Reverb] Mark III 	Item Rank B 	Support
+Support 		— 	Base ATK:
+32-475 	HP:
+8%-20% 	Booming Sound
+Launching a Chain Attack or Ultimate increases all squad members' ATK by 8~12% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack. 	1.0
+	[Vortex] Revolver 	Item Rank B 	Stun
+Stun 		— 	Base ATK:
+32-475 	ATK:
+8%-20% 	Undercurrent
+EX Special Attacks inflict 10~16% more Daze. 	1.0
+	[Vortex] Arrow 	Item Rank B 	Stun
+Stun 		— 	Base ATK:
+32-475 	Impact:
+4.8%-12% 	Tsunami
+The equipper's attacks inflict 8~12% more Daze on their main target. 	1.0
+	[Vortex] Hatchet 	Item Rank B 	Stun
+Stun 		— 	Base ATK:
+32-475 	Energy Regen:
+16%-40% 	Riptide
+Upon entering combat or switching in, the equipper's Impact increases by 9~13% for 10s. This effect can trigger once every 20s. 	1.0
+	[Magnetic Storm] Alpha 	Item Rank B 	Anomaly
+Anomaly 		— 	Base ATK:
+32-475 	ATK:
+8%-20% 	Disordered Current
+Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 25~40 for 10s. This effect can trigger once every 20s. 	1.0
+	[Magnetic Storm] Bravo 	Item Rank B 	Anomaly
+Anomaly 		— 	Base ATK:
+32-475 	Anomaly Proficiency:
+24-60 	High-Voltage Surge
+Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 25~40 for 10s. This effect can trigger once every 20s. 	1.0
+	[Magnetic Storm] Charlie 	Item Rank B 	Anomaly
+Anomaly 		— 	Base ATK:
+32-475 	PEN Ratio:
+6.4%-16% 	Charge Overload
+Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 3.5~5.5 Energy. This effect can trigger once every 12s. 	1.0
+	[Identity] Base 	Item Rank B 	Defense
+Defense 		— 	Base ATK:
+32-475 	DEF:
+12.8%-32% 	Sinking Strike
+When attacked, equipper's DEF increases by 20~32% for 8s. 	1.0
+	[Identity] Inflection 	Item Rank B 	Defense
+Defense 		— 	Base ATK:
+32-475 	DEF:
+12.8%-32% 	Dazzle
+When attacked, reduces the attacker's DMG by 6~10% for 12s. 	1.0
+	[Cinder] Cobalt 	Item Rank B 	Rupture
+Rupture 		— 	Base ATK:
+32-475 	HP:
+8%-20% 	Dim Flame
+Upon entering combat or switching in, the equipper's ATK increases by 7.2~11.5% for 10s. This effect can trigger once every 20s. 	2.0
+	Street Superstar 	Item Rank A 	Attack
+Attack 		— 	Base ATK:
+40-594 	ATK:
+10%-25% 	Flaming Bars
+Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill's DMG by 15~24%. 	1.0
+	Slice of Time 	Item Rank A 	Support
+Support 		— 	Base ATK:
+40-594 	PEN Ratio:
+8%-20% 	Say Cheese
+Any squad members' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 20~32/25~40/30~48/35~55 more Decibels and generates 0.7~1.1 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack. 	1.0
+	Rainforest Gourmet 	Item Rank A 	Anomaly
+Anomaly 		— 	Base ATK:
+40-594 	Anomaly Proficiency:
+30-75 	Dinner's Ready!
+For every 10 Energy consumed, the equipper gains a buff that increases ATK by 2.5~4% for 10s, stacking up to 10 times. The duration of each stack is calculated separately. 	1.0
+	Starlight Engine 	Item Rank A 	Attack
+Attack 		— 	Base ATK:
+40-594 	ATK:
+10%-25% 	Knight's Combo
+Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 12~19.2% for 12s. 	1.0
+	Steam Oven 	Item Rank A 	Stun
+Stun 		— 	Base ATK:
+40-594 	Energy Regen:
+20%-50% 	Thick Broth
+For every 10 Energy accumulated, the equipper's Impact is increased by 2~3.2%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately. 	1.0
+	Precious Fossilized Core 	Item Rank A 	Stun
+Stun 		— 	Base ATK:
+40-594 	Impact:
+6%-15% 	Behemoth Hunter
+When the target's HP is no lower than 50%, the equipper inflicts 10~16% more Daze. When the target's HP is no lower than 75%, this bonus is further enhanced by 10~16%. 	1.0
+	Original Transmorpher 	Item Rank A 	Defense
+Defense 		— 	Base ATK:
+40-594 	HP:
+10%-25% 	Starlight Knight Flying Kick
+Increases Max HP by 8~12.5%. When attacked, the equipper's Impact is increased by 10~16% for 12s. 	1.0
+	Weeping Gemini 	Item Rank A 	Anomaly
+Anomaly 		— 	Base ATK:
+40-594 	ATK:
+10%-25% 	Lingering Cries
+Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 30~46, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately. 	1.0
+	Electro-Lip Gloss 	Item Rank A 	Anomaly
+Anomaly 		— 	Base ATK:
+40-594 	Anomaly Proficiency:
+30-75 	Kiss of Death
+When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 10~16% and they deal an additional 15~25% more DMG to the target. 	1.0
+	Bunny Band 	Item Rank A 	Defense
+Defense 		— 	Base ATK:
+40-594 	DEF:
+16%-40% 	Pet the Bunny
+Increases Max HP by 8~12.8%. Increases the equipper's ATK by 10~16% when they are shielded. 	1.0
+	Spring Embrace 	Item Rank A 	Defense
+Defense 		— 	Base ATK:
+40-594 	ATK:
+10%-25% 	Hot Spring Soup
+Reduces DMG taken by 7.5~12%. When attacked, the equipper's Energy Generation Rate increased by 10~16% for 12s. When the equipper switches off-field, this buff will be transferred to the new on-field character with its duration refreshed. Passive effects of the same name do not stack. 	1.0
+	Puzzle Sphere 	Item Rank A 	Rupture
+Rupture 		— 	Base ATK:
+40-594 	ATK:
+10%-25% 	Ingenious Craft
+Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 16~25.6% for 12s. Additionally, if the target's current HP is below 50% of their Max HP, EX Special Attack DMG increases by 20~32%. 	2.0
+	Gilded Blossom 	Item Rank A 	Attack
+Attack 		— 	Base ATK:
+40-594 	ATK:
+10-25% 	Extraordinary Anti-Theft Measures
+ATK increases by 6~9.6%, and DMG dealt by EX Special Attacks increases by 15~24%. 	1.1
+	Radiowave Journey 	Item Rank A 	Rupture
+Rupture 		— 	Base ATK:
+40-594 	HP:
+10%-25% 	Easy Strides
+When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 80~128, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately. 	2.0
+	Marcato Desire 	Item Rank A 	Attack
+Attack 		— 	Base ATK:
+40-594 	Crit Rate:
+8-20% 	Get Everyone Fired Up
+When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 6~9.6% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 6~9.6%. 	1.4
+	Reel Projector 	Item Rank A 	Defense
+Defense 		— 	Base ATK:
+40-594 	Impact:
+6%-15% 	Flash Engraving
+When a squad member's HP is greater than or equal to 50%, they take 7.5~12% less DMG, and 10~16 less Miasma Contamination. Only one instance of this effect can exist in the same squad. 	2.0
+	Demara Battery Mark II 	Item Rank A 	Stun
+Stun 	Electric
+Electric 	Anby Demara
+Anby Demara 	Base ATK:
+42-624 	Impact:
+6%-15% 	In a Flash of Light
+Increases Electric DMG by 15~24%. When the equipper hits an enemy with Dodge Counter or Assist Attack, their Energy Generation Rate increases by 18~27.5% for 8s. 	1.0
+	The Vault 	Item Rank A 	Support
+Support 	Ether
+Ether 	Nicole Demara
+Nicole Demara 	Base ATK:
+42-624 	Energy Regen:
+20%-50% 	Money-Lover
+Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 15~24% and increases the equipper's Energy Regen by 0.5~0.8/s for 2s. Passive effects of the same name do not stack. 	1.0
+	Housekeeper 	Item Rank A 	Attack
+Attack 	Physical
+Physical 	Corin Wickes
+Corin Wickes 	Base ATK:
+42-624 	ATK:
+10%-25% 	Safe Household Saw
+While off-field, the equipper's Energy Regen increases by 0.45~0.72/s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 3~4.8%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration. 	1.0
+	Starlight Engine Replica 	Item Rank A 	Attack
+Attack 	Physical
+Physical 	Billy Kid
+Billy Kid 	Base ATK:
+42-624 	Attack:
+10%-25% 	Knight Beam: Change
+Increases the equipper's Physical DMG by 36~57.5% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack. 	1.0
+	Drill Rig - Red Axis 	Item Rank A 	Attack
+Attack 	Electric
+Electric 	Anton Ivanov
+Anton Ivanov 	Base ATK:
+42-624 	Energy Regen:
+20%-50% 	Hell's Generator
+When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 50~80% for 10s. This effect can trigger once every 15s. 	1.0
+	Big Cylinder 	Item Rank A 	Defense
+Defense 		Ben Bigger
+Ben Bigger 	Base ATK:
+42-624 	Defense:
+16%-40% 	Ten Top Ten
+Reduces DMG taken by 7.5~12%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 600~960% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s. 	1.0
+	Bashful Demon 	Item Rank A 	Support
+Support 	Ice
+Ice 	Soukaku
+Soukaku 	Base ATK:
+42-624 	ATK:
+10%-25% 	Visage of Greed
+Increases Ice DMG by 15~24%. When launching an EX Special Attack, all squad members' ATK increases by 2~3.2% for 12s, stacking up to 4 times. Retriggering refreshes duration. Passive effects of the same name do not stack. 	1.0
+	Kaboom the Cannon 	Item Rank A 	Support
+Support 		Luciana de Montefio
+Luciana de Montefio 	Base ATK:
+42-624 	Energy Regen:
+20%-50% 	Stampede Accident
+When any friendly unit in the squad attacks and hits an enemy, all squad members' ATK increases by 2.5~4% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack. 	1.0
+	Peacekeeper - Specialized 	Item Rank A 	Defense
+Defense 		Seth Lowell
+Seth Lowell 	Base ATK:
+42-624 	ATK:
+10%-25% 	Standard Blocking Technique
+While Shielded, the equipper's Energy Regen increases by 0.4~0.64/s. The Anomaly Buildup of EX Special Attacks and Assist Follow-Ups increases by 36~55%. 	1.1
+	Roaring Ride 	Item Rank A 	Anomaly
+Anomaly 		Piper Wheel
+Piper Wheel 	Base ATK:
+42-624 	ATK:
+10%-25% 	Collision Potential
+When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. the same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once: Increases the equipper's ATK by 8~12.8%, increases the equipper's Anomaly Proficiency by 40~64, or increases the equipper's Anomaly Buildup Rate by 25~40%. 	1.0
+	Box Cutter 	Item Rank A 	Stun
+Stun 	Physical
+Physical 	Pulchra Fellini
+Pulchra Fellini 	Base ATK:
+42-624 	Impact:
+6%-15% 	Watch your Fingers
+When launching an Aftershock, the equipper's Physical DMG increases by 15~24%, and their Daze inflicted increases by 10~16% for 10s. 	1.6
+	Tremor Trigram Vessel 	Item Rank A 	Defense
+Defense 		Pan Yinhu
+Pan Yinhu 	Base ATK:
+42-624 	ATK:
+10%-25% 	Meridian Mapping
+The equipper's EX Special Attack and Ultimate DMG increases by 25~40%. Whenever any squad member takes DMG or recovers HP, the equipper gains 2~3.2 Energy. This effect can trigger once every 5s. 	2.0
+	Cannon Rotor 	Item Rank A 	Attack
+Attack 		— 	Base ATK:
+40-594 	Crit Rate:
+8%-20% 	Oversized Barrel
+Increases ATK by 7.5~12%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 8~6s. 	1.0
+	Unfettered Game Ball 	Item Rank A 	Support
+Support 		— 	Base ATK:
+40-594 	Energy Regen:
+20%-50% 	Game Start!
+Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 12~20% for 12s. The bonuses triggered by the same type of passive effects do not stack. 	1.0
+	Six Shooter 	Item Rank A 	Stun
+Stun 		— 	Base ATK:
+40-594 	Impact:
+6%-15% 	Fire!
+The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted by 4~6.4%. 	1.0
+	Steel Cushion 	Item Rank S 	Attack
+Attack 	Physical
+Physical 	Nekomiya Mana
+Nekomiya Mana 	Base ATK:
+46-684 	CRIT Rate:
+9.6%-24% 	Metal Cat Claws
+Increases Physical DMG by 20~40%. The equipper's DMG increases by 25~50% when attacking the enemy from behind. 	1.0
+	The Brimstone 	Item Rank S 	Attack
+Attack 		Soldier 11
+Soldier 11 	Base ATK:
+46-684 	ATK:
+12%-30% 	Scorching Breath
+Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 3.5~7% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately. 	1.0
+	Tusks of Fury 	Item Rank S 	Defense
+Defense 		Caesar King
+Caesar King 	Base ATK:
+48-713 	Impact:
+7.2%-18% 	Invincible Rider
+The Shield value provided by the equipper increases by 30~60%. When any squad member triggers Interrupt or Perfect Dodge, all squad members' DMG increases by 18~36% and Daze dealt increases by 12~24% for 20s. Passive effects of the same name do not stack. 	1.2
+	Hailstorm Shrine 	Item Rank S 	Anomaly
+Anomaly 	Ice
+Ice 	Hoshimi Miyabi
+Hoshimi Miyabi 	Base ATK:
+50-743 	CRIT Rate:
+9.6-24% 	Frost-Stained Star
+CRIT DMG increases by 50~80%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 20~32%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately 	1.4
+	Hellfire Gears 	Item Rank S 	Stun
+Stun 		Koleda Belobog
+Koleda Belobog 	Base ATK:
+46-684 	Impact:
+7.2%-18% 	Passionate Construction
+While off-field, the equipper's Energy Regen increases by 0.6~1.2/s.
+When using an EX Special Attack, the equipper's Impact is increased by 10~20% for 10s, stacking up to 2 times. The duration of each stack is calculated separately. 	1.0
+	The Restrained 	Item Rank S 	Stun
+Stun 		Von Lycaon
+Von Lycaon 	Base ATK:
+46-684 	Impact:
+7.2%-18% 	Binding Chains
+When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 6~12% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately. 	1.0
+	Blazing Laurel 	Item Rank S 	Stun
+Stun 	Fire
+Fire Ice
+Ice 	Lighter
+Lighter 	Base ATK:
+48-713 	Impact:
+7.2%-18% 	Flowing Flame
+Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 25~40% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 1.5~2.4%. Only one of this effect can be active at a time in the same squad. 	1.3
+	Flamemaker Shaker 	Item Rank S 	Anomaly
+Anomaly 		Burnice White
+Burnice White 	Base ATK:
+48-713 	ATK:
+12%-30% 	Fuel on the Rocks
+While off-field, the equipper's Energy Regen increases by 0.6~1.2/s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 3.5~7%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off-field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 50~100. This Anomaly Proficiency increase does not stack and lasts for 6s. 	1.2
+	Fusion Compiler 	Item Rank S 	Anomaly
+Anomaly 		Grace Howard
+Grace Howard 	Base ATK:
+46-684 	PEN Ratio:
+9.6%-24% 	Data Flood
+Increases ATK by 12~24%.
+When using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 25~50 for 8s, stacking up to 3 times. The duration of each stack is calculated separately. 	1.0
+	Deep Sea Visitor 	Item Rank S 	Attack
+Attack 	Ice
+Ice 	Ellen Joe
+Ellen Joe 	Base ATK:
+48-713 	CRIT Rate:
+9.6%-24% 	Lord of Seas
+Increases Ice DMG by 25~50%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 10~20% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 10~20% for 15s. The duration of each effect is calculated separately. 	1.0
+	Zanshin Herb Case 	Item Rank S 	Attack
+Attack 	Electric
+Electric 	Asaba Harumasa
+Asaba Harumasa 	Base ATK:
+48-713 	CRIT DMG:
+19.2%-48% 	Growth Through Adversity
+CRIT Rate increases by 10~16%. Dash Attack Electric DMG increases by 40~64%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 10~16% for 12s. 	1.4
+	Weeping Cradle 	Item Rank S 	Support
+Support 		Alexandrina Sebastiane
+Alexandrina Sebastiane 	Base ATK:
+46-684 	PEN Ratio:
+9.6%-24% 	Punishment
+While off-field, Energy Regen increases by 0.6~1.2/s. Attacks from the equipper increase all units' DMG against a struck target by 10~20% for 3 seconds. During this period, this effect is further increased by 1.7~3.3% every 0.5s, up to a maximum additional increase of 10.2~19.8%. Repeated triggers only refresh its duration without refreshing the DMG increase effect. Passive effects of the same name do not stack. 	1.0
+	Timeweaver 	Item Rank S 	Anomaly
+Anomaly 	Electric
+Electric 	Tsukishiro Yanagi
+Tsukishiro Yanagi 	Base ATK:
+48-713 	ATK%:
+12-30% 	Time-Devouring Stratagem
+The equipper's Electric Anomaly Buildup Rate increases by 30~50%. When Special Attacks or EX Special Attacks hit enemies under Attribute Anomalies, the equipper's Anomaly Proficiency increases by 75~115 for 15s.
+When the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 25~35%. 	1.3
+	Riot Suppressor Mark VI 	Item Rank S 	Attack
+Attack 	Ether
+Ether 	Zhu Yuan
+Zhu Yuan 	Base ATK:
+48-713 	Crit DMG:
+19.2%-48% 	Security Patrol
+Increases CRIT Rate by 15~30%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill's DMG by 35~70%. 	1.0
+	Ice-Jade Teapot 	Item Rank S 	Stun
+Stun 		Qingyi
+Qingyi 	Base ATK:
+48-713 	Impact:
+7.2%-18% 	Ringing Melody
+When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack of Tea-riffic increases the user's Impact by 0.7~1.4%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea-riffic, if the equipper possesses stacks of Tea-riffic greater than or equal to 15, all squad members' DMG is increased by 20~32% for 10s. Passive effects of the same name do not stack. 	1.1
+	Sharpened Stinger 	Item Rank S 	Anomaly
+Anomaly 	Physical
+Physical 	Jane Doe
+Jane Doe 	Base ATK:
+48-713 	Anomaly Proficiency:
+36-90 	Indulge in the Hunt
+Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 12~24% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 40~80%. 	1.1
+	Myriad Eclipse 	Item Rank S 	Attack
+Attack 	Ice
+Ice 	Hugo Vlad
+Hugo Vlad 	Base ATK:
+48-713 	CRIT Rate:
+9.6%-24% 	False Personas
+Increases CRIT DMG by 45~72%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 25~40% of the enemy's DEF when landing a hit. 	1.7
+	Elegant Vanity 	Item Rank S 	Support
+Support 		Astra Yao
+Astra Yao 	Base ATK:
+48-713 	ATK:
+12%-30% 	Untold Beauty
+When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist or Evasive Assist, the equipper gains 5~7 Energy. This effect can trigger once every 5s.
+
+When the equipper consumes 25 Energy or more, the damage dealt by all squad members increases by 10~16%, stacking up to 2 times, and lasting 20s. Repeated triggers refresh the duration. Only one instance of this effect can exist in the same squad.
+	1.5
+	Heartstring Nocturne 	Item Rank S 	Attack
+Attack 	Fire
+Fire 	Evelyn Chevalier
+Evelyn Chevalier 	Base ATK:
+48-713 	CRIT Rate:
+9.6%-24% 	String & Melody
+CRIT DMG increases by 50~80%. When the equipper enters the battlefield, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 12.5~20% of the target's Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration. 	1.5
+	Flight of Fancy 	Item Rank S 	Anomaly
+Anomaly 	Ether
+Ether 	Vivian Banshee
+Vivian Banshee 	Base ATK:
+48-713 	Anomaly Proficiency:
+36-90 	Silver Spiked Feathers
+Increases Anomaly Buildup Rate by 40~64%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 20~32 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration. 	1.7
+	Spectral Gaze 	Item Rank S 	Stun
+Stun 	Electric
+Electric 	Trigger
+Trigger 	Base ATK:
+48-713 	CRIT Rate:
+9.6%-24% 	Wind Seeker
+When the equipper hits an enemy with Aftershock, causing Electric DMG, the target's DEF is reduced by 25~40% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 4~6.4%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 8~12.8%. 	1.6
+	Qingming Birdcage 	Item Rank S 	Rupture
+Rupture 	Ether
+Ether 	Yixuan
+Yixuan 	Base ATK:
+50-743 	HP:
+12%-30% 	Cloud Flow
+CRIT Rate increases by 20~32%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 8~12.8%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 10~16%. 	2.0
+	Severed Innocence 	Item Rank S 	Attack
+Attack 	Electric
+Electric 	Soldier 0 - Anby
+Soldier 0 - Anby 	Base ATK:
+48-713 	CRIT DMG:
+19.2%-48% 	Tranquil Blossom
+CRIT DMG increased by 30~48%.
+When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 10~16%, stacking up to 3 times. The effect lasts for 30s, with each stack's duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 20~32%. 	1.6
+	Roaring Fur-nace 	Item Rank S 	Stun
+Stun 	Fire
+Fire 	Ju Fufu
+Ju Fufu 	Base ATK:
+48-713 	ATK:
+12%-30% 	Tiger Spirit Rising
+The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 28~44.8%.
+When using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 10~16%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad. 	2.0
+	Practiced Perfection 	Item Rank S 	Anomaly
+Anomaly 	Physical
+Physical 	Alice Thymefield
+Alice Thymefield 	Base ATK:
+48-713 	ATK:
+12%-30% 	Gift of Stardust
+The equipper's Anomaly Mastery increases by 60~96. When inflicting Assault, the equipper's Physical DMG increases by 20~32% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks. 	2.1
+	Metanukimorphosis 	Item Rank S 	Support
+Support 	Physical
+Physical 	Ukinami Yuzuha
+Ukinami Yuzuha 	Base ATK:
+48-713 	Energy Regen:
+24%-60% 	Exquisitely Ingenious
+When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 30~48 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 60~96 for 40s. Only one instance of this effect can exist in the same squad. 	2.1
+	Cordis Germina 	Item Rank S 	Attack
+Attack 	Electric
+Electric 	Seed
+Seed 	Base ATK:
+48-713 	CRIT Rate:
+9.6%-24% 	Sprouting Core
+Increases CRIT Rate by 15~23%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 12.5~20%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 20~32% of enemy DEF. 	2.2
+	Bellicose Blaze 	Item Rank S 	Attack
+Attack 	Fire
+Fire 	Orphie Magnusson & Magus
+Orphie Magnusson & Magus 	Base ATK:
+48-713 	Energy Regen:
+24%-60% 	Flame-Devouring Choir
+Increases CRIT Rate by 20~32%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 15~24% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration. 	2.2
+
+
+
+
+
+wengine data: 
+
+Big Cylinder
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+Reduces DMG taken by 7.5%/8.5%/9.5%/10.5%/12%. After being attacked, the next attack to hit an enemy will trigger a critical hit and deal 600%/690%/780%/870%/960% of the equipper's DEF as additional DMG. This effect can be triggered once every 7.5s.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+DEF
+40%
+Blazing Laurel
+
+Blazing Laurel
+
+W-Engine
+presentationS Rank
+presentationStun
+
+Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 25%/28.75%/32.5%/36.25%/40% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 1.5%/1.72%/1.95%/2.17%/2.4%. Only one instance of this effect can exist in the same squad.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+Impact
+18%
+Box Cutter
+
+Box Cutter
+
+W-Engine
+presentationA Rank
+presentationStun
+
+Upon launching an Aftershock, the equipper's Physical DMG increases by 15%/17.3%/19.5%/21.8%/24%, and Daze increases by 10%/11.5%/13%/14.5%/16%, lasting 10s.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+Impact
+15%
+Bunny Band
+
+Bunny Band
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+Increases Max HP by 8%/9.2%/10.4%/11.6%/12.8%. Increases the equipper's ATK by 10%/11.5%/13%/14.5%/16% when they are shielded.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+DEF
+40%
+Cannon Rotor
+
+Cannon Rotor
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+Increases ATK by 7.5%/8.6%/9.7%/10.8%/12%. Landing a critical hit on an enemy will inflict an additional 200% of ATK as DMG. This effect can trigger once every 8s./7.5s/7s./6.5s/6s.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+CRIT Rate
+20%
+[Cinder] Cobalt
+
+[Cinder] Cobalt
+
+W-Engine
+presentationB Rank
+presentationRupture
+
+Upon entering combat or switching in, the equipper's ATK increases by 7.2%/8.2%/9.3%/10.4%/11.5% for 10s. This effect can trigger once every 20s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+HP
+20%
+Cordis Germina
+
+Cordis Germina
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+Increases CRIT Rate by 15%/17%/19%/21%/23%. When the equipper deals DMG with a Basic Attack or EX Special Attack, they gain 1 stack of a buff. Each stack increases the equipper's Electric DMG by 12.5%/14.5%/16.5%/18.5%/20%, up to 2 stacks. Each stack lasts 40s. The duration of each stack is calculated separately. Can trigger once per use of a skill. At 2 stacks, the wearer's Basic Attack and Ultimate DMG ignore 20%/23%/26%/29%/32% of enemy DEF.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT Rate
+24%
+Deep Sea Visitor
+
+Deep Sea Visitor
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+Increases Ice DMG by 25%/31.5%/38%/44.5%/50%. Upon hitting an enemy with a Basic Attack, the equipper's CRIT Rate increases by 10%/12.5%/15%/17.5%/20% for 8s. When dealing Ice DMG with a Dash Attack, the equipper's CRIT Rate increases by an additional 10%/12.5%/15%/17.5%/20% for 15s. The duration of each effect is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT Rate
+24%
+Demara Battery Mark II
+
+Demara Battery Mark II
+
+W-Engine
+presentationA Rank
+presentationStun
+
+Increases Electric DMG by 15%/17.5%/20%/22%/24%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 18%/20.5%/23%/25%/27.5% for 8s.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+Impact
+15%
+Dreamlit Hearth
+
+Dreamlit Hearth
+
+W-Engine
+presentationS Rank
+presentationSupport
+
+The equipper's Energy Regen increases by 0.4/0.46/0.52/0.58/0.64/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 25%/28.8%/32.5%/36.3%/40% increased DMG and 15%/17.3%/19.5%/21.8%/24% increased Max HP for 45/45/45/45/45s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+HP
+30%
+Drill Rig - Red Axis
+
+Drill Rig - Red Axis
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 50%/57.5%/65%/72.5%/80% for 10s. This effect can trigger once every 15s.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+Energy Regen
+50%
+Electro-Lip Gloss
+
+Electro-Lip Gloss
+
+W-Engine
+presentationA Rank
+presentationAnomaly
+
+When there are enemies inflicted with Attribute Anomaly on the field, the equipper's ATK increases by 10%/11.5%/13%/14.5%/16% and they deal an additional 15%/17.5%/20%/22.5%/25% more DMG to the target.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Anomaly Proficiency
+75
+Elegant Vanity
+
+Elegant Vanity
+
+W-Engine
+presentationS Rank
+presentationSupport
+
+When any squad member enters the field through a Quick Assist, Chain Attack, Defensive Assist, or Evasive Assist, the equipper gains 5/5.5/6/6.5/7 Energy. This effect can trigger once every 5s. When the equipper consumes 25 or more Energy, the DMG dealt by all squad members increases by 10%/11.5%/13%/14.5%/16%, stacking up to 2 times, and lasting 20s. Repeated triggers reset the duration. Only one instance of this effect can exist in the same squad.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+ATK
+30%
+Flamemaker Shaker
+
+Flamemaker Shaker
+
+W-Engine
+presentationS Rank
+presentationAnomaly
+
+While off - field, the equipper's Energy Regen increases by 0.6/0.75/0.9/1.05/1.2 /s. When hitting an enemy with an EX Special Attack or Assist Attack, the equipper's DMG increases by 3.5%/4.4%/5.2%/6.1%/7%, stacking up to 10 times and lasting for 6s. This effect can trigger once every 0.3s. While off - field, the stack effect is doubled. Repeated triggers reset the duration. Upon obtaining the DMG increase effect, if the number of current stacks is greater than or equal to 5, then the equipper's Anomaly Proficiency increases by 50./62./75./87./100. This Anomaly Proficiency increase does not stack and lasts for 6s.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+ATK
+30%
+Flight of Fancy
+
+Flight of Fancy
+
+W-Engine
+presentationS Rank
+presentationAnomaly
+
+Increases Anomaly Buildup Rate by 40%/46%/52%/58%/64%. When the equipper deals Ether DMG, their Anomaly Proficiency increases by 20/23/26/29/32 for 5s, stacking up to 6 times. This effect can trigger once every 0.5s, and repeated triggers reset the duration.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+Anomaly Proficiency
+90
+Fusion Compiler
+
+Fusion Compiler
+
+W-Engine
+presentationS Rank
+presentationAnomaly
+
+Increases ATK by 12%/15%/18%/21%/24%. When using a Special Attack or EX Special Attack, the equipper's Anomaly Proficiency is increased by 25/31/37/43/50 for 8s, stacking up to 3 times. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+684
+PEN Ratio
+24%
+Gilded Blossom
+
+Gilded Blossom
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+ATK increases by 6%/6.9%/7.8%/8.7%/9.6%, and DMG dealt by EX Special Attacks increases by 15%/17.2%/19.5%/21.8%/24%.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+ATK
+25%
+Grill O'Wisp
+
+Grill O'Wisp
+
+W-Engine
+presentationA Rank
+presentationRupture
+
+The equipper's Fire DMG increases by 15%/17.25%/19.5%/21.75%/24%. When the equipper's HP decreases, their CRIT Rate increases by 15%/17.25%/19.5%/21.75%/24% for 5/5/5/5/5s.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+HP
+25%
+Hailstorm Shrine
+
+Hailstorm Shrine
+
+W-Engine
+presentationS Rank
+presentationAnomaly
+
+CRIT DMG increases by 50%/57%/65%/72%/80%. When using an EX Special Attack or when any squad member applies an Attribute Anomaly to an enemy, the equipper's Ice DMG increases by 20%/23%/26%/29%/32%, stacking up to 2 times and lasting 15s. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+743
+CRIT Rate
+24%
+Heartstring Nocturne
+
+Heartstring Nocturne
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+CRIT DMG increases by 50%/57.5%/65%/72.5%/80%. When the equipper enters combat, or activates a Chain Attack or Ultimate, they gain 1 stack of Heartstring. Each stack of Heartstring allows the equipper's Chain Attack and Ultimate to ignore 12.5%/14.5%/16.5%/18.5%/20% of the target ' s Fire RES, stacking up to 2 times and lasting 30s. Repeated triggers reset the duration.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT Rate
+24%
+Hellfire Gears
+
+Hellfire Gears
+
+W-Engine
+presentationS Rank
+presentationStun
+
+While off - field, the equipper's Energy Regen increases by 0.6/0.75/0.9/1.05/1.2 /s.When using an EX Special Attack, the equipper's Impact is increased by 10%/12.5%/15%/17.5%/20% for 10s, stacking up to 2 times. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+684
+Impact
+18%
+Housekeeper
+
+Housekeeper
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+While off - field, the equipper's Energy Regen increases by 0.45/0.52/0.58/0.65/0.72 /s. When an EX Special Attack hits an enemy, the equipper's Physical DMG increases by 3%/3.5%/4%/4.4%/4.8%, stacking up to 15 times and lasting 1s. Repeated triggers reset the duration.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+ATK
+25%
+Ice-Jade Teapot
+
+Ice-Jade Teapot
+
+W-Engine
+presentationS Rank
+presentationStun
+
+When a Basic Attack hits an enemy, gain 1 stack of Tea - riffic. Each stack of Tea - riffic increases the user ' s Impact by 0.7%/0.88%/1.05%/1.22%/1.4%, stacking up to 30 times, and lasting for 8s. The duration of each stack is calculated separately. Upon acquiring Tea - riffic, if the equipper possesses stacks of Tea - riffic greater than or equal to 15, all squad members ' DMG is increased by 20%/23%/26%/29%/32% for 10s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+Impact
+18%
+[Identity] Base
+
+[Identity] Base
+
+W-Engine
+presentationB Rank
+presentationDefense
+
+When attacked, the equipper's DEF increases by 20%/23%/26%/29%/32% for 8s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+DEF
+32%
+[Identity] Inflection
+
+[Identity] Inflection
+
+W-Engine
+presentationB Rank
+presentationDefense
+
+When attacked, reduces the attacker ' s DMG by 6%/7%/8%/9%/10% for 12s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+DEF
+32%
+Kaboom the Cannon
+
+Kaboom the Cannon
+
+W-Engine
+presentationA Rank
+presentationSupport
+
+When any friendly unit in the squad attacks and hits an enemy, all friendly units ' ATK increases by 2.5%/2.8%/3.2%/3.6%/4% for 8s, stacking up to 4 times. The duration of each stack is calculated separately, and each friendly unit can provide 1 stack of the buff. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+Energy Regen
+50%
+[Lunar] Decrescent
+
+[Lunar] Decrescent
+
+W-Engine
+presentationB Rank
+presentationAttack
+
+Launching a Chain Attack or Ultimate increases the equipper's DMG by 15%/17.5%/20%/22.5%/25% for 6s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+ATK
+20%
+[Lunar] Noviluna
+
+[Lunar] Noviluna
+
+W-Engine
+presentationB Rank
+presentationAttack
+
+Launching an EX Special Attack generates 3/3.5/4/4.5/5 Energy for the equipper. This effect can trigger once every 12s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+CRIT Rate
+16%
+[Lunar] Pleniluna
+
+[Lunar] Pleniluna
+
+W-Engine
+presentationB Rank
+presentationAttack
+
+Basic Attack, Dash Attack, and Dodge Counter DMG increases by 12%/14%/16%/18%/20%.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+ATK
+20%
+[Magnetic Storm] Alpha
+
+[Magnetic Storm] Alpha
+
+W-Engine
+presentationB Rank
+presentationAnomaly
+
+Accumulating Anomaly Buildup increases the equipper's Anomaly Mastery by 25 for 10s. This effect can trigger once every 20s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+ATK
+20%
+[Magnetic Storm] Bravo
+
+[Magnetic Storm] Bravo
+
+W-Engine
+presentationB Rank
+presentationAnomaly
+
+Accumulating Anomaly Buildup increases the equipper's Anomaly Proficiency by 25/28/32/36/40 for 10s. This effect can trigger once every 20s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+Anomaly Proficiency
+60
+[Magnetic Storm] Charlie
+
+[Magnetic Storm] Charlie
+
+W-Engine
+presentationB Rank
+presentationAnomaly
+
+Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper generates 3.5/4/4.5/5/5.5 Energy. This effect can trigger once every 12s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+PEN Ratio
+16%
+Marcato Desire
+
+Marcato Desire
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+When an EX Special Attack or Chain Attack hits an enemy, the equipper's ATK increases by 6%/6.9%/7.8%/8.7%/9.6% for 8s. While the target is under an Attribute Anomaly, this effect is increased by an additional 6%/6.9%/7.8%/8.7%/9.6%.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+CRIT Rate
+20%
+Metanukimorphosis
+
+Metanukimorphosis
+
+Weapon
+presentationS Rank
+presentationSupport
+
+When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 30/34/39/43/48 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 60 for 40s. Only one instance of this effect can exist in the same squad.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+Energy Regen
+60%
+Myriad Eclipse
+
+Myriad Eclipse
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+Increases CRIT DMG by 45%/51.75%/58.5%/65.25%/72%. When using an EX Special Attack, Chain Attack, or Ultimate to deal Ice DMG, the equipper gains the Absolute Zero Death Sentence effect for 3s. While Absolute Zero Death Sentence is active, the character ignores 25%/28.75%/32.5%/36.25%/40% of the enemy ' s DEF when landing a hit.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT Rate
+24%
+Original Transmorpher
+
+Original Transmorpher
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+Increases Max HP by 8%/9%/10%/11%/12.5%. When attacked, the equipper's Impact is increased by 10%/11.5%/13%/14.5%/16% for 12s.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+HP
+25%
+Peacekeeper - Specialized
+
+Peacekeeper - Specialized
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+While Shielded, the equipper's Energy Regen increases by 0.4/0.46/0.52/0.58/0.64 /s. The Anomaly Buildup of EX Special Attacks and// Assist Follow - Ups increase by 36%/40%/45%/50%/55%.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+ATK
+25%
+Practiced Perfection
+
+Practiced Perfection
+
+Weapon
+presentationS Rank
+presentationAnomaly
+
+The equipper's Anomaly Mastery increases by 60/69/78/87/96. When inflicting Assault, the equipper's Physical DMG increases by 20%/23%/26%/29%/32% for 20s, stacking up to 2 times. Repeated triggers reset the duration. When the equipper enters combat, immediately gain 2 stacks.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+ATK
+30%
+Precious Fossilized Core
+
+Precious Fossilized Core
+
+W-Engine
+presentationA Rank
+presentationStun
+
+When the target ' s HP is no lower than 50%, the equipper inflicts 10%/11.5%/13%/14.5%/16% more Daze to the target. When the target ' s HP is no lower than 75%, this bonus is further increased by 10%/11.5%/13%/14.5%/16%.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Impact
+15%
+Puzzle Sphere
+
+Puzzle Sphere
+
+W-Engine
+presentationA Rank
+presentationRupture
+
+Upon launching an EX Special Attack, the equipper's CRIT DMG increases by 16%/18.4%/20.8%/23.2%/25.6% for 12s. Additionally, if the target ' s current HP is below 50% of their Max HP, EX Special Attack DMG increases by 20%/23%/26%/29%/32%.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+ATK
+25%
+Qingming Birdcage
+
+Qingming Birdcage
+
+W-Engine
+presentationS Rank
+presentationRupture
+
+CRIT Rate increases by 20%/23%/26%/29%/32%. When the equipper launches an EX Special Attack, the character gains 1 stack of Qingming Companion effect, stacking up to 2 times and lasting 15s. On entering combat, immediately gain 2 stacks. Repeated triggers reset the duration. Each stack of the Qingming Companion effect increases the equipper's Ether DMG by 8%/9.2%/10.4%/11.6%/12.8%, and increases Ultimate and EX Special Attack Ether Sheer DMG by 10%/11.5%/13%/14.5%/16%.
+Stat (LVL. 60)
+Value
+Base ATK
+743
+HP
+30%
+Radiowave Journey
+
+Radiowave Journey
+
+W-Engine
+presentationA Rank
+presentationRupture
+
+When launching a Chain Attack or Ultimate, the equipper gains 1 stack of a buff effect. Each stack increases the equipper's Sheer Force by 80/92/104/116/128, stacking up to 3 times, and lasting 12s. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+HP
+25%
+Rainforest Gourmet
+
+Rainforest Gourmet
+
+W-Engine
+presentationA Rank
+presentationAnomaly
+
+For every 10 Energy consumed, the equipper gains a buff that increases ATK by 2.5%/2.8%/3.2%/3.6%/4% for 10s, stacking up to 10 times. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Anomaly Proficiency
+75
+Reel Projector
+
+Reel Projector
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+When a squad member ' s HP is greater than or equal to 50%, they take 7.5%/8.6%/9.7%/10.8%/12% less DMG, and 10%/11.5%/13%/14.5%/16% less Miasma Contamination. Only one instance of this effect can exist in the same squad.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Impact
+15%
+[Reverb] Mark I
+
+[Reverb] Mark I
+
+W-Engine
+presentationB Rank
+presentationSupport
+
+Launching an EX Special Attack increases all squad members ' Impact by 8%/9%/10%/11%/12% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+ATK
+20%
+[Reverb] Mark II
+
+[Reverb] Mark II
+
+W-Engine
+presentationB Rank
+presentationSupport
+
+Launching an EX Special Attack or Chain Attack increases all squad members ' Anomaly Mastery and Anomaly Proficiency by 10/12/13/15/16 for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+Energy Regen
+40%
+[Reverb] Mark III
+
+[Reverb] Mark III
+
+W-Engine
+presentationB Rank
+presentationSupport
+
+Launching a Chain Attack or Ultimate increases all squad members ' ATK by 8%/9%/10%/11%/12% for 10s. This effect can trigger once every 20s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+HP
+20%
+Riot Suppressor Mark VI
+
+Riot Suppressor Mark VI
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+Increases CRIT Rate by 15%/18.8%/22.6%/26.4%/30%. Launching an EX Special Attack grants the equipper 8 Charge stacks, up to a maximum of 8 stacks. Whenever the equipper's Basic Attack or Dash Attack deals Ether DMG, consumes a Charge stack and increases the skill ' s DMG by 35%/43.5%/52%/60.5%/70%.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT DMG
+48%
+Roaring Fur-nace
+
+Roaring Fur-nace
+
+W-Engine
+presentationS Rank
+presentationStun
+
+The Daze dealt by the equipper's EX Special Attack, Chain Attack, and Ultimate increases by 28%/32.2%/36.4%/40.6%/44.8%. When using a Chain Attack or Ultimate to deal Fire DMG, the DMG dealt by all squad members increases by 10%/11.5%/13%/14.5%/16%, stacking up to 2 times and lasting 30s. The duration of each stack is calculated separately. Triggers once per use of a skill. Only one instance of this effect can exist in the same squad.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+ATK
+30%
+Roaring Ride
+
+Roaring Ride
+
+W-Engine
+presentationA Rank
+presentationAnomaly
+
+When EX Special Attack hits an enemy, one of three possible effects is randomly triggered for 5 seconds. This effect can trigger once every 0.3s. The same types of effects cannot stack. Repeated triggers reset the duration, allowing several effects to be active at once: Increases the equipper's ATK by 8%/9.2%/10.4%/11.6%/12.8%, increases the equipper's Anomaly Proficiency by 40/46/52/58/64, or increases the equipper's Anomaly Buildup Rate by 25%/28%/32%/36%/40%.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+ATK
+25%
+Severed Innocence
+
+Severed Innocence
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+CRIT DMG is increased by 30%/34.5%/39%/43.5%/48%. When the equipper lands a hit with a Basic Attack, Special Attack, or Aftershock, they gain 1 stack of a buff. Each stack increases the equipper's CRIT DMG by an additional 10%/11.5%/13%/14.5%/16%, stacking up to 3 times. The effect lasts for 30s, with each stack ' s duration calculated separately, and can only be triggered once per use of a skill. With all 3 stacks, the equipper's Electric DMG increases by 20%/23%/26%/29%/32%.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT DMG
+48%
+Sharpened Stinger
+
+Sharpened Stinger
+
+W-Engine
+presentationS Rank
+presentationAnomaly
+
+Upon activating a Dash Attack, gain 1 stack of Predatory Instinct. Each stack of Predatory Instinct increases the equipper's Physical DMG by 12%/15%/18%/21%/24% for 10s, stacking up to 3 times. This effect can trigger once every 0.5s and repeated triggers reset the duration. When entering combat or triggering Perfect Dodge, gain 3 stacks of Predatory Instinct. While Predatory Instinct is at maximum stacks, the equipper's Anomaly Buildup Rate increases by 40%/50%/60%/70%/80%.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+Anomaly Proficiency
+90
+Six Shooter
+
+Six Shooter
+
+W-Engine
+presentationA Rank
+presentationStun
+
+The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill ' s Daze inflicted by 4%/4.6%/5.2%/5.8%/6.4%.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Impact
+15%
+Slice of Time
+
+Slice of Time
+
+W-Engine
+presentationA Rank
+presentationSupport
+
+Any squad members ' Dodge Counter, EX Special Attack, Assist Attack, or Chain Attack respectively generates 20/23/26/29/32 /25/28.5/32/35.5/40 /30/34.5/39/43.5/48 /35/40/45/50/55 more Decibels and generates 0.7/0.8/0.9/1/1.1 Energy for the equipper. This effect can trigger once every 12s. The cooldown for each type of attack is independent of others. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+PEN Ratio
+20%
+Spectral Gaze
+
+Spectral Gaze
+
+W-Engine
+presentationS Rank
+presentationStun
+
+When the equipper's Aftershock hits an enemy, causing Electric DMG, the target ' s DEF is reduced by 25%/28.75%/32.5%/36.25%/40% for 5s. Passive effects of the same name do not stack. When this effect is triggered, if the equipper is not the active character, they gain 1 stack of Spirit Lock, up to a maximum of 3 stacks. This can trigger only once per use of a skill. Each stack of Spirit Lock increases the equipper's Impact by 4%/4.6%/5.2%/5.8%/6.4%, lasting 12s. The duration of each stack is calculated separately. At full stacks of Spirit Lock, the equipper's Impact increases by an additional 8%/9.2%/10.4%/11.6%/12.8%.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT Rate
+24%
+Spring Embrace
+
+Spring Embrace
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+Reduces DMG taken by 7.5%/8.5%/9.5%/10.5%/12%. When attacked, the equipper's Energy Generation Rate increases by 10%/11.5%/13%/14.5%/16% for 12s. When the equipper switches off - field, this buff will be transferred to the new on - field character with its duration refreshed. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+ATK
+25%
+Starlight Engine
+
+Starlight Engine
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+Launching a Dodge Counter or Quick Assist increases the equipper's ATK by 12%/13.8%/15.6%/17.4%/19.2% for 12s.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+ATK
+25%
+Starlight Engine Replica
+
+Starlight Engine Replica
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+Increases the equipper's Physical DMG against the target by 36%/41%/46.5%/52%/57.5% for 8s upon hitting an enemy at least 6 meters away with a Basic Attack or Dash Attack.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+ATK
+25%
+Steam Oven
+
+Steam Oven
+
+W-Engine
+presentationA Rank
+presentationStun
+
+For every 10 Energy accumulated, the equipper's Impact is increased by 2%/2.3%/2.6%/2.9%/3.2%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Energy Regen
+50%
+Steel Cushion
+
+Steel Cushion
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+Increases Physical DMG by 20%/25%/30%/35%/40%. The equipper's DMG increases by 25%/31.5%/38%/44%/50% when hitting the enemy from behind.
+Stat (LVL. 60)
+Value
+Base ATK
+684
+CRIT Rate
+24%
+Street Superstar
+
+Street Superstar
+
+W-Engine
+presentationA Rank
+presentationAttack
+
+Whenever a squad member launches a Chain Attack, the equipper gains 1 Charge stack, stacking up to 3 times. Upon activating their own Ultimate, the equipper consumes all Charge stacks, and each stack increases the skill ' s DMG by 15%/17.2%/19.5%/21.7%/24%.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+ATK
+25%
+The Brimstone
+
+The Brimstone
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+Upon hitting an enemy with a Basic Attack, Dash Attack, or Dodge Counter, the equipper's ATK increases by 3.5%/4.4%/5.2%/6%/7% for 8s, stacking up to 8 times. This effect can trigger once every 0.5s. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+684
+ATK
+30%
+The Restrained
+
+The Restrained
+
+W-Engine
+presentationS Rank
+presentationStun
+
+When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 6%/7.5%/9%/10.5%/12% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+684
+Impact
+18%
+The Vault
+
+The Vault
+
+W-Engine
+presentationA Rank
+presentationSupport
+
+Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units ' DMG against the target by 15%/17.5%/20%/22%/24% and increases the equipper's Energy Regen by 0.5/0.58/0.65/0.72/0.8 /s for 2s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+Energy Regen
+50%
+Timeweaver
+
+Timeweaver
+
+W-Engine
+presentationS Rank
+presentationAnomaly
+
+The equipper's Electric Anomaly Buildup Rate increases by 30%/35%/40%/45%/50%. When Special Attacks or EX Special Attacks hit enemies suffering an Attribute Anomaly, the equipper's Anomaly Proficiency increases by 75/85/95/105/115 for 15s.When the equipper's Anomaly Proficiency is greater than or equal to 375, Disorder DMG inflicted by the equipper increases by 25%/27.5%/30%/32.5%/35%.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+ATK
+30%
+Tremor Trigram Vessel
+
+Tremor Trigram Vessel
+
+W-Engine
+presentationA Rank
+presentationDefense
+
+The equipper's EX Special Attack and Ultimate DMG increases by 25%/28.7%/32.5%/36.2%/40%. Whenever any squad member takes DMG or recovers HP, the equipper gains 2/2.3/2.6/2.9/3.2 Energy. This effect can trigger once every 5s.
+Stat (LVL. 60)
+Value
+Base ATK
+624
+ATK
+25%
+Tusks of Fury
+
+Tusks of Fury
+
+W-Engine
+presentationS Rank
+presentationDefense
+
+The Shield value provided by the equipper increases by 30%/38%/46%/52%/60%. When any squad member triggers Interrupt or Perfect Dodge, all squad members ' DMG increases by 18%/22.5%/27%/31.5%/36% and Daze dealt increases by 12%/15%/18%/21%/24% for 20s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+Impact
+18%
+Unfettered Game Ball
+
+Unfettered Game Ball
+
+W-Engine
+presentationA Rank
+presentationSupport
+
+Whenever the equipper's attack triggers an Attribute Counter effect, all units ' CRIT Rate against the struck enemy increases by 12%/13.5%/15.5%/17.5%/20% for 12s. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+Energy Regen
+50%
+[Vortex] Arrow
+
+[Vortex] Arrow
+
+W-Engine
+presentationB Rank
+presentationStun
+
+The equipper's attacks inflict 8%/9%/10%/11%/12% more Daze on their main target.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+Impact
+12%
+[Vortex] Hatchet
+
+[Vortex] Hatchet
+
+W-Engine
+presentationB Rank
+presentationStun
+
+Upon entering combat or switching in, the equipper's Impact increases by 9%/10%/11%/12%/13% for 10s. This effect can trigger once every 20s.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+Energy Regen
+40%
+[Vortex] Revolver
+
+[Vortex] Revolver
+
+W-Engine
+presentationB Rank
+presentationStun
+
+EX Special Attacks inflict 10%/11.5%/13%/14.5%/16% more Daze.
+Stat (LVL. 60)
+Value
+Base ATK
+475
+ATK
+20%
+Weeping Cradle
+
+Weeping Cradle
+
+W-Engine
+presentationS Rank
+presentationSupport
+
+While off - field, the equipper's Energy Regen increases by 0.6/0.75/0.9/1.05/1.2 /s. Attacks from the equipper increase all units ' DMG against a struck target by 10%/12.5%/15%/17.5%/20% for 3 seconds. During this period, this effect is further increased by 1.7%/2%/2.5%/3%/3.3% every 0.5s, up to a maximum additional increase of 10.2%/12%/15%/18%/19.8%. Repeated triggers only refresh the duration without refreshing the DMG increase effect. Passive effects of the same name do not stack.
+Stat (LVL. 60)
+Value
+Base ATK
+684
+PEN Ratio
+24%
+Weeping Gemini
+
+Weeping Gemini
+
+W-Engine
+presentationA Rank
+presentationAnomaly
+
+Whenever a squad member inflicts an Attribute Anomaly on an enemy, the equipper gains a buff that increases Anomaly Proficiency by 30/34/38/42/48, stacking up to 4 times. This effect expires when the target recovers from Stun or is defeated. The duration of each stack is calculated separately.
+Stat (LVL. 60)
+Value
+Base ATK
+594
+ATK
+25%
+Zanshin Herb Case
+
+Zanshin Herb Case
+
+W-Engine
+presentationS Rank
+presentationAttack
+
+CRIT Rate increases by 10%/11.5%/13%/14.5%/16%. Dash Attack Electric DMG increases by 40%/46%/52%/58%/64%. When any squad member applies an Attribute Anomaly or Stuns an enemy, the equipper's CRIT Rate increases by an additional 10%/11.5%/13%/14.5%/16% for 15s.
+Stat (LVL. 60)
+Value
+Base ATK
+713
+CRIT DMG
+48%

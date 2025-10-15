@@ -2,6 +2,8 @@
 #define CHARACTER_H
 
 #include <string>
+#include <vector>
+#include "wengine.h"
 
 namespace character {
 struct character {
@@ -34,8 +36,11 @@ struct character {
         std::string mindscapeHalf;
         std::string mindscapeFull;
     };
+    wengine::wengine preferredWengine;
     assets images;
 };
+inline std::vector<character> characterList;
+
 void setCharacterData();
 inline character alice;
 inline character anby;
@@ -77,6 +82,7 @@ inline character yinhu;
 inline character yixuan;
 inline character yuzuha;
 inline character zhuyuan;
+
 }
 
 #endif // CHARACTER_H

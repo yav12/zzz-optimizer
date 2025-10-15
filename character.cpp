@@ -26,6 +26,7 @@ void character::setCharacterData() {
     alice.images.mindscapeNone = ":/characters/alice/MindscapeNone.png";
     alice.images.mindscapeHalf = ":/characters/alice/MindscapeHalf.png";
     alice.images.mindscapeFull = ":/characters/alice/MindscapeFull.png";
+    alice.preferredWengine = wengine::practicedPerfection;
 
     // anby
     anby.name = "Anby Demara";
@@ -52,6 +53,7 @@ void character::setCharacterData() {
     anby.images.mindscapeNone = ":/characters/anby/MindscapeNone.png";
     anby.images.mindscapeHalf = ":/characters/anby/MindscapeHalf.png";
     anby.images.mindscapeFull = ":/characters/anby/MindscapeFull.png";
+    anby.preferredWengine = wengine::demaraBatteryMarkII;
 
     // anton
     anton.name = "Anton Ivanov";
@@ -78,6 +80,7 @@ void character::setCharacterData() {
     anton.images.mindscapeNone = ":/characters/anton/MindscapeNone.png";
     anton.images.mindscapeHalf = ":/characters/anton/MindscapeHalf.png";
     anton.images.mindscapeFull = ":/characters/anton/MindscapeFull.png";
+    anton.preferredWengine = wengine::drillRigRedAxis;
 
     // astra
     astra.name = "Astra Yao";
@@ -104,6 +107,7 @@ void character::setCharacterData() {
     astra.images.mindscapeNone = ":/characters/astra/MindscapeNone.png";
     astra.images.mindscapeHalf = ":/characters/astra/MindscapeHalf.png";
     astra.images.mindscapeFull = ":/characters/astra/MindscapeFull.png";
+    astra.preferredWengine = wengine::elegantVanity;
 
     // ben
     ben.name = "Ben Bigger";
@@ -130,6 +134,7 @@ void character::setCharacterData() {
     ben.images.mindscapeNone = ":/characters/ben/MindscapeNone.png";
     ben.images.mindscapeHalf = ":/characters/ben/MindscapeHalf.png";
     ben.images.mindscapeFull = ":/characters/ben/MindscapeFull.png";
+    ben.preferredWengine = wengine::bigCylinder;
 
     // billy
     billy.name = "Billy Kid";
@@ -156,6 +161,7 @@ void character::setCharacterData() {
     billy.images.mindscapeNone = ":/characters/billy/MindscapeNone.png";
     billy.images.mindscapeHalf = ":/characters/billy/MindscapeHalf.png";
     billy.images.mindscapeFull = ":/characters/billy/MindscapeFull.png";
+    billy.preferredWengine = wengine::starlightEngineReplica;
 
     // burnice
     burnice.name = "Burnice White";
@@ -182,6 +188,7 @@ void character::setCharacterData() {
     burnice.images.mindscapeNone = ":/characters/burnice/MindscapeNone.png";
     burnice.images.mindscapeHalf = ":/characters/burnice/MindscapeHalf.png";
     burnice.images.mindscapeFull = ":/characters/burnice/MindscapeFull.png";
+    burnice.preferredWengine = wengine::flamemakerShaker;
 
     // caesar
     caesar.name = "Caesar King";
@@ -208,6 +215,7 @@ void character::setCharacterData() {
     caesar.images.mindscapeNone = ":/characters/caesar/MindscapeNone.png";
     caesar.images.mindscapeHalf = ":/characters/caesar/MindscapeHalf.png";
     caesar.images.mindscapeFull = ":/characters/caesar/MindscapeFull.png";
+    caesar.preferredWengine = wengine::originalTransmorpher;
 
     // corin
     corin.name = "Corin Wickes";
@@ -234,6 +242,7 @@ void character::setCharacterData() {
     corin.images.mindscapeNone = ":/characters/corin/MindscapeNone.png";
     corin.images.mindscapeHalf = ":/characters/corin/MindscapeHalf.png";
     corin.images.mindscapeFull = ":/characters/corin/MindscapeFull.png";
+    corin.preferredWengine = wengine::housekeeper;
 
     // ellen
     ellen.name = "Ellen Joe";
@@ -260,6 +269,7 @@ void character::setCharacterData() {
     ellen.images.mindscapeNone = ":/characters/ellen/MindscapeNone.png";
     ellen.images.mindscapeHalf = ":/characters/ellen/MindscapeHalf.png";
     ellen.images.mindscapeFull = ":/characters/ellen/MindscapeFull.png";
+    ellen.preferredWengine = wengine::deepSeaVisitor;
 
     // evelyn
     evelyn.name = "Evelyn Chevalier";
@@ -286,6 +296,7 @@ void character::setCharacterData() {
     evelyn.images.mindscapeNone = ":/characters/evelyn/MindscapeNone.png";
     evelyn.images.mindscapeHalf = ":/characters/evelyn/MindscapeHalf.png";
     evelyn.images.mindscapeFull = ":/characters/evelyn/MindscapeFull.png";
+    evelyn.preferredWengine = wengine::heartstringNocturne;
 
     // grace
     grace.name = "Grace Howard";
@@ -312,6 +323,7 @@ void character::setCharacterData() {
     grace.images.mindscapeNone = ":/characters/grace/MindscapeNone.png";
     grace.images.mindscapeHalf = ":/characters/grace/MindscapeHalf.png";
     grace.images.mindscapeFull = ":/characters/grace/MindscapeFull.png";
+    grace.preferredWengine = wengine::electroLipGloss;
 
     // harumasa
     harumasa.name = "Asaba Harumasa";
@@ -338,6 +350,7 @@ void character::setCharacterData() {
     harumasa.images.mindscapeNone = ":/characters/harumasa/MindscapeNone.png";
     harumasa.images.mindscapeHalf = ":/characters/harumasa/MindscapeHalf.png";
     harumasa.images.mindscapeFull = ":/characters/harumasa/MindscapeFull.png";
+    harumasa.preferredWengine = wengine::drillRigRedAxis;
 
     // hugo
     hugo.name = "Hugo Vlad";
@@ -364,6 +377,7 @@ void character::setCharacterData() {
     hugo.images.mindscapeNone = ":/characters/hugo/MindscapeNone.png";
     hugo.images.mindscapeHalf = ":/characters/hugo/MindscapeHalf.png";
     hugo.images.mindscapeFull = ":/characters/hugo/MindscapeFull.png";
+    hugo.preferredWengine = wengine::myriadEclipse;
 
     // jane
     jane.name = "Jane Doe";
@@ -390,6 +404,7 @@ void character::setCharacterData() {
     jane.images.mindscapeNone = ":/characters/jane/MindscapeNone.png";
     jane.images.mindscapeHalf = ":/characters/jane/MindscapeHalf.png";
     jane.images.mindscapeFull = ":/characters/jane/MindscapeFull.png";
+    jane.preferredWengine = wengine::sharpenedStinger; // matches declaration in wengine.h
 
     // jufufu
     jufufu.name = "Ju Fufu";
@@ -416,6 +431,7 @@ void character::setCharacterData() {
     jufufu.images.mindscapeNone = ":/characters/jufufu/MindscapeNone.png";
     jufufu.images.mindscapeHalf = ":/characters/jufufu/MindscapeHalf.png";
     jufufu.images.mindscapeFull = ":/characters/jufufu/MindscapeFull.png";
+    jufufu.preferredWengine = wengine::boxCutter;
 
     // koleda
     koleda.name = "Koleda Belobog";
@@ -442,6 +458,7 @@ void character::setCharacterData() {
     koleda.images.mindscapeNone = ":/characters/koleda/MindscapeNone.png";
     koleda.images.mindscapeHalf = ":/characters/koleda/MindscapeHalf.png";
     koleda.images.mindscapeFull = ":/characters/koleda/MindscapeFull.png";
+    koleda.preferredWengine = wengine::hellfireGears;
 
     // lighter
     lighter.name = "Lighter";
@@ -468,6 +485,7 @@ void character::setCharacterData() {
     lighter.images.mindscapeNone = ":/characters/lighter/MindscapeNone.png";
     lighter.images.mindscapeHalf = ":/characters/lighter/MindscapeHalf.png";
     lighter.images.mindscapeFull = ":/characters/lighter/MindscapeFull.png";
+    lighter.preferredWengine = wengine::blazingLaurel;
 
     // lucy
     lucy.name = "Luciana de Montefio";
@@ -494,6 +512,7 @@ void character::setCharacterData() {
     lucy.images.mindscapeNone = ":/characters/lucy/MindscapeNone.png";
     lucy.images.mindscapeHalf = ":/characters/lucy/MindscapeHalf.png";
     lucy.images.mindscapeFull = ":/characters/lucy/MindscapeFull.png";
+    lucy.preferredWengine = wengine::kaboomTheCannon;
 
     // lycaon
     lycaon.name = "Von Lycaon";
@@ -520,6 +539,7 @@ void character::setCharacterData() {
     lycaon.images.mindscapeNone = ":/characters/lycaon/MindscapeNone.png";
     lycaon.images.mindscapeHalf = ":/characters/lycaon/MindscapeHalf.png";
     lycaon.images.mindscapeFull = ":/characters/lycaon/MindscapeFull.png";
+    lycaon.preferredWengine = wengine::theRestrained; // not present in wengine.h
 
     // miyabi
     miyabi.name = "Hoshimi Miyabi";
@@ -546,6 +566,7 @@ void character::setCharacterData() {
     miyabi.images.mindscapeNone = ":/characters/miyabi/MindscapeNone.png";
     miyabi.images.mindscapeHalf = ":/characters/miyabi/MindscapeHalf.png";
     miyabi.images.mindscapeFull = ":/characters/miyabi/MindscapeFull.png";
+    miyabi.preferredWengine = wengine::hailstormShrine;
 
     // nekomata
     nekomata.name = "Nekomiya Mana";
@@ -572,6 +593,7 @@ void character::setCharacterData() {
     nekomata.images.mindscapeNone = ":/characters/nekomata/MindscapeNone.png";
     nekomata.images.mindscapeHalf = ":/characters/nekomata/MindscapeHalf.png";
     nekomata.images.mindscapeFull = ":/characters/nekomata/MindscapeFull.png";
+    nekomata.preferredWengine = wengine::steelCushion;
 
     // nicole
     nicole.name = "Nicole Demara";
@@ -598,10 +620,11 @@ void character::setCharacterData() {
     nicole.images.mindscapeNone = ":/characters/nicole/MindscapeNone.png";
     nicole.images.mindscapeHalf = ":/characters/nicole/MindscapeHalf.png";
     nicole.images.mindscapeFull = ":/characters/nicole/MindscapeFull.png";
+    nicole.preferredWengine = wengine::theVault;
 
     // orphiemagus
     orphiemagus.name = "Orphie Magnusson & Magus";
-    orphiemagus.nickname = "OrphieMagus";
+    orphiemagus.nickname = "Orphie & Magus";
     orphiemagus.rarity = "S";
     orphiemagus.specialty = "Attack";
     orphiemagus.attribute = "fire";
@@ -624,6 +647,7 @@ void character::setCharacterData() {
     orphiemagus.images.mindscapeNone = ":/characters/orphiemagus/MindscapeNone.png";
     orphiemagus.images.mindscapeHalf = ":/characters/orphiemagus/MindscapeHalf.png";
     orphiemagus.images.mindscapeFull = ":/characters/orphiemagus/MindscapeFull.png";
+    orphiemagus.preferredWengine = wengine::kaboomTheCannon;
 
     // piper
     piper.name = "Piper Wheel";
@@ -650,6 +674,7 @@ void character::setCharacterData() {
     piper.images.mindscapeNone = ":/characters/piper/MindscapeNone.png";
     piper.images.mindscapeHalf = ":/characters/piper/MindscapeHalf.png";
     piper.images.mindscapeFull = ":/characters/piper/MindscapeFull.png";
+    piper.preferredWengine = wengine::roaringRide;
 
     // pulchra
     pulchra.name = "Pulchra Fellini";
@@ -676,6 +701,7 @@ void character::setCharacterData() {
     pulchra.images.mindscapeNone = ":/characters/pulchra/MindscapeNone.png";
     pulchra.images.mindscapeHalf = ":/characters/pulchra/MindscapeHalf.png";
     pulchra.images.mindscapeFull = ":/characters/pulchra/MindscapeFull.png";
+    pulchra.preferredWengine = wengine::boxCutter;
 
     // qingyi
     qingyi.name = "Qingyi";
@@ -702,6 +728,7 @@ void character::setCharacterData() {
     qingyi.images.mindscapeNone = ":/characters/qingyi/MindscapeNone.png";
     qingyi.images.mindscapeHalf = ":/characters/qingyi/MindscapeHalf.png";
     qingyi.images.mindscapeFull = ":/characters/qingyi/MindscapeFull.png";
+    qingyi.preferredWengine = wengine::iceJadeTeapot;
 
     // rina
     rina.name = "Alexandrina Sebastiane";
@@ -728,10 +755,11 @@ void character::setCharacterData() {
     rina.images.mindscapeNone = ":/characters/rina/MindscapeNone.png";
     rina.images.mindscapeHalf = ":/characters/rina/MindscapeHalf.png";
     rina.images.mindscapeFull = ":/characters/rina/MindscapeFull.png";
+    rina.preferredWengine = wengine::reelProjector;
 
     // s0anby
     s0anby.name = "Soldier 0 - Anby";
-    s0anby.nickname = "S0Anby";
+    s0anby.nickname = "Soldier 0 - Anby";
     s0anby.rarity = "S";
     s0anby.specialty = "Attack";
     s0anby.attribute = "electric";
@@ -754,6 +782,7 @@ void character::setCharacterData() {
     s0anby.images.mindscapeNone = ":/characters/s0anby/MindscapeNone.png";
     s0anby.images.mindscapeHalf = ":/characters/s0anby/MindscapeHalf.png";
     s0anby.images.mindscapeFull = ":/characters/s0anby/MindscapeFull.png";
+    s0anby.preferredWengine = wengine::bunnyBand;
 
     // seed
     seed.name = "Seed";
@@ -780,6 +809,7 @@ void character::setCharacterData() {
     seed.images.mindscapeNone = ":/characters/seed/MindscapeNone.png";
     seed.images.mindscapeHalf = ":/characters/seed/MindscapeHalf.png";
     seed.images.mindscapeFull = ":/characters/seed/MindscapeFull.png";
+    seed.preferredWengine = wengine::fusionCompiler;
 
     // seth
     seth.name = "Seth Lowell";
@@ -806,6 +836,34 @@ void character::setCharacterData() {
     seth.images.mindscapeNone = ":/characters/seth/MindscapeNone.png";
     seth.images.mindscapeHalf = ":/characters/seth/MindscapeHalf.png";
     seth.images.mindscapeFull = ":/characters/seth/MindscapeFull.png";
+    seth.preferredWengine = wengine::peacekeeperSpecialized;
+
+    // soldier11
+    soldier11.name = "Soldier 11";
+    soldier11.nickname = "Soldier 11";
+    soldier11.rarity = "S";
+    soldier11.specialty = "Attack";
+    soldier11.attribute = "fire";
+    soldier11.faction = "New Eridu Defense Force";
+    soldier11.stats.hp = 7673;
+    soldier11.stats.atk = 888;
+    soldier11.stats.def = 612;
+    soldier11.stats.impact = 93;
+    soldier11.stats.cr = 19.4;
+    soldier11.stats.cd = 50;
+    soldier11.stats.am = 94;
+    soldier11.stats.ap = 93;
+    soldier11.stats.penr = 0;
+    soldier11.stats.sf = 0;
+    soldier11.stats.er = 1.2;
+    soldier11.stats.aaa = 0;
+    soldier11.images.normalIcon = ":/characters/soldier11/icon.png";
+    soldier11.images.circleIcon = ":/characters/soldier11/iconCircle.png";
+    soldier11.images.portrait = ":/characters/soldier11/portrait.png";
+    soldier11.images.mindscapeNone = ":/characters/soldier11/MindscapeNone.png";
+    soldier11.images.mindscapeHalf = ":/characters/soldier11/MindscapeHalf.png";
+    soldier11.images.mindscapeFull = ":/characters/soldier11/MindscapeFull.png";
+    soldier11.preferredWengine = wengine::steelCushion;
 
     // soukaku
     soukaku.name = "Soukaku";
@@ -832,6 +890,7 @@ void character::setCharacterData() {
     soukaku.images.mindscapeNone = ":/characters/soukaku/MindscapeNone.png";
     soukaku.images.mindscapeHalf = ":/characters/soukaku/MindscapeHalf.png";
     soukaku.images.mindscapeFull = ":/characters/soukaku/MindscapeFull.png";
+    soukaku.preferredWengine = wengine::bashfulDemon;
 
     // trigger
     trigger.name = "Trigger";
@@ -858,6 +917,7 @@ void character::setCharacterData() {
     trigger.images.mindscapeNone = ":/characters/trigger/MindscapeNone.png";
     trigger.images.mindscapeHalf = ":/characters/trigger/MindscapeHalf.png";
     trigger.images.mindscapeFull = ":/characters/trigger/MindscapeFull.png";
+    trigger.preferredWengine = wengine::spectralGaze;
 
     // vivian
     vivian.name = "Vivian Banshee";
@@ -884,6 +944,7 @@ void character::setCharacterData() {
     vivian.images.mindscapeNone = ":/characters/vivian/MindscapeNone.png";
     vivian.images.mindscapeHalf = ":/characters/vivian/MindscapeHalf.png";
     vivian.images.mindscapeFull = ":/characters/vivian/MindscapeFull.png";
+    vivian.preferredWengine = wengine::flightOfFancy;
 
     // yanagi
     yanagi.name = "Tsukishiro Yanagi";
@@ -910,6 +971,7 @@ void character::setCharacterData() {
     yanagi.images.mindscapeNone = ":/characters/yanagi/MindscapeNone.png";
     yanagi.images.mindscapeHalf = ":/characters/yanagi/MindscapeHalf.png";
     yanagi.images.mindscapeFull = ":/characters/yanagi/MindscapeFull.png";
+    yanagi.preferredWengine = wengine::timeweaver;
 
     // yinhu
     yinhu.name = "Pan Yinhu";
@@ -936,6 +998,7 @@ void character::setCharacterData() {
     yinhu.images.mindscapeNone = ":/characters/yinhu/MindscapeNone.png";
     yinhu.images.mindscapeHalf = ":/characters/yinhu/MindscapeHalf.png";
     yinhu.images.mindscapeFull = ":/characters/yinhu/MindscapeFull.png";
+    yinhu.preferredWengine = wengine::tremorTrigramVessel;
 
     // yixuan
     yixuan.name = "Yixuan";
@@ -962,6 +1025,7 @@ void character::setCharacterData() {
     yixuan.images.mindscapeNone = ":/characters/yixuan/MindscapeNone.png";
     yixuan.images.mindscapeHalf = ":/characters/yixuan/MindscapeHalf.png";
     yixuan.images.mindscapeFull = ":/characters/yixuan/MindscapeFull.png";
+    yixuan.preferredWengine = wengine::qingmingBirdcage;
 
     // yuzuha
     yuzuha.name = "Ukinami Yuzuha";
@@ -988,6 +1052,7 @@ void character::setCharacterData() {
     yuzuha.images.mindscapeNone = ":/characters/yuzuha/MindscapeNone.png";
     yuzuha.images.mindscapeHalf = ":/characters/yuzuha/MindscapeHalf.png";
     yuzuha.images.mindscapeFull = ":/characters/yuzuha/MindscapeFull.png";
+    yuzuha.preferredWengine = wengine::sliceOfTime;
 
     // zhuyuan
     zhuyuan.name = "Zhu Yuan";
@@ -1014,4 +1079,13 @@ void character::setCharacterData() {
     zhuyuan.images.mindscapeNone = ":/characters/zhuyuan/MindscapeNone.png";
     zhuyuan.images.mindscapeHalf = ":/characters/zhuyuan/MindscapeHalf.png";
     zhuyuan.images.mindscapeFull = ":/characters/zhuyuan/MindscapeFull.png";
+    zhuyuan.preferredWengine = wengine::riotSuppressorMarkVI;
+
+    characterList = {
+        alice, anby, anton, astra, ben, billy, burnice, caesar, corin, ellen,
+        evelyn, grace, harumasa, hugo, jane, jufufu, koleda, lighter, lucy,
+        lycaon, miyabi, nekomata, nicole, orphiemagus, piper, pulchra, qingyi,
+        rina, s0anby, seed, seth, soldier11, soukaku, trigger, vivian, yanagi,
+        yinhu, yixuan, yuzuha, zhuyuan
+    };
 }
