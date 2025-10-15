@@ -51,7 +51,15 @@ private:
     void setCurrentRefCharacter(std::string &);
     character::character currentRefCharacter;
     void updateReference();
-    QLabel *referencePlaceholderLabel;
+    QGridLayout *refInfo;
+    QLabel *refCharacter;
+    QLabel *refRarity;
+    QLabel *refSpecialty;
+    QLabel *refAttribute;
+    QLabel *refFactionText;
+    QLabel *refFaction;
+    QLabel *refPortrait;
+    QLabel *refMindscapeImage;
     //calculator content
     QGridLayout *calcLayout;
     QLabel *calcPlaceholderLabel;
