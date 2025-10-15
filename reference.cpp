@@ -23,10 +23,7 @@ void window::setupReference() {
     refFaction = new QLabel;
     refPortrait = new QLabel;
     refMindscapeImage = new QLabel;
-    //default image
-    refMindscapeImage->setPixmap(QPixmap(QString::fromStdString(character::nekomata.images.mindscapeFull)));
-    refMindscapeImage->setScaledContents(true);
-    refMindscapeImage->setAlignment(Qt::AlignCenter);
+    
 
     //reference combobox
     QComboBox *refCharacterSelect = new QComboBox;
@@ -48,9 +45,9 @@ void window::setupReference() {
     refInfo->addWidget(refFaction, 5, 0);
     referenceLayout->addWidget(refMindscapeImage, 1, 0, 1, 2);
 
-    referenceLayout->activate();
-    reference->updateGeometry();
-    reference->update();
+    //set default character
+    refCharacterSelect->setCurrentIndex(0);
+
 }
 
 void window::setCurrentRefCharacter(std::string &comboString) {
@@ -72,7 +69,9 @@ void window::updateReference() {
     refFactionText->setText("Faction:");
     refFaction->setText(QString::fromStdString(currentRefCharacter.faction));
     //image
-    refMindscapeImage->setPixmap(QPixmap(QString::fromStdString(currentRefCharacter.images.mindscapeFull)));
+    QPixmap pix(QString::fromStdString(currentRefCharacter.images.mindscapeFull));
+    QSize size = refMindscapeImage->contentsRect().size();
+    QPixmap scaledPix = pix.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    refMindscapeImage->setPixmap(scaledPix);
     refMindscapeImage->setAlignment(Qt::AlignCenter);
-    refMindscapeImage->setScaledContents(true);
 }
