@@ -53,9 +53,17 @@ void window::setupCalculator() {
         setCurrentCalcWEngine(comboString);
     });
 
+    //calculate button
+    calcCalculateButton = new QPushButton("Calculate");
+    calcSelectLayout->addWidget(calcCalculateButton,1,0,1,2);
+    connect(calcCalculateButton, &QPushButton::clicked, [this]() {
+        performCalculation(currentCalcCharacter, currentWEngine);
+    });
+
     //set default character and w engine
-    calcCharacterSelect->setCurrentIndex(0);
-    calcWEngineSelect->setCurrentIndex(0);
+    calcCharacterSelect->setCurrentText(QString::fromStdString(character::anby.nickname));
+    calcWEngineSelect->setCurrentText(QString::fromStdString(character::anby.preferredWengine.name));
+    updateCalculator();
 }
 
 void window::setCurrentCalcCharacter(std::string &comboString) {
@@ -88,6 +96,8 @@ void window::updateCalculator() {
 
     QPixmap characterPix(QString::fromStdString(currentCalcCharacter.images.mindscapeFull));
     QSize characterAvailableSize = calc->size() * 3 / 4; // rough estimate of available space
+    qDebug() << "Calc widget size:" << calc->size();
+    qDebug() << "Character available size:" << characterAvailableSize;
     QPixmap scaledCharacterPix = characterPix.scaled(characterAvailableSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
     calcMindscapeImage->setPixmap(scaledCharacterPix);
 }
