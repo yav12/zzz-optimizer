@@ -95,10 +95,10 @@ void window::updateCalculator() {
     calcWengineImage->setAlignment(Qt::AlignCenter);
 
     QPixmap characterPix(QString::fromStdString(currentCalcCharacter.images.mindscapeFull));
-    QSize characterAvailableSize = calc->size() * 3 / 4; // rough estimate of available space
-    qDebug() << "Calc widget size:" << calc->size();
-    qDebug() << "Character available size:" << characterAvailableSize;
-    QPixmap scaledCharacterPix = characterPix.scaled(characterAvailableSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    QSize characterAvailableSize = this->size(); // rough estimate of available space
+    qDebug() << "window size:" << this->size();
+    QPixmap scaledCharacterPix = characterPix.scaledToWidth(1908, Qt::SmoothTransformation);
+    qDebug() << "Scaled character pix size:" << scaledCharacterPix.size();
     calcMindscapeImage->setPixmap(scaledCharacterPix);
 }
 

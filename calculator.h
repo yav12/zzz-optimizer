@@ -1,11 +1,15 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
 
+#include <QWidget>
 #include "character.h"
 #include <string>
 
-class calculator
+
+class calculator : public QWidget
 {
+    Q_OBJECT
+
 public:
 
     void setCharacter(character::character);

@@ -42,8 +42,18 @@ struct character {
 // List of all characters
 inline std::vector<character> characterList;
 
-
+//set all the character data
 void setCharacterData();
+
+struct AutoInitCharacters
+{
+    AutoInitCharacters() { setCharacterData(); }
+};
+
+// construct the object at static init time
+static AutoInitCharacters _autoInitCharacters;
+
+//character definitions
 inline character alice;
 inline character anby;
 inline character anton;
@@ -85,6 +95,6 @@ inline character yixuan;
 inline character yuzuha;
 inline character zhuyuan;
 
-}
+};
 
 #endif // CHARACTER_H
