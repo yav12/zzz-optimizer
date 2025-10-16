@@ -2,6 +2,7 @@
 #define WINDOW_H
 
 #include "character.h"
+#include "calculator.h"
 #include <QMainWindow>
 #include <QWidget>
 #include <QStackedWidget>
@@ -18,8 +19,6 @@ public:
     window(QWidget *parent = nullptr);
     void setupWindow();
     void setupNavigation();
-    void setupWengines();
-    void setupCharacters();
     void setupHome();
     void setupReference();
     void setupCalculator();
@@ -62,21 +61,7 @@ private:
     QLabel *refPortrait;
     QLabel *refMindscapeImage;
     //calculator content
-    QGridLayout *calcLayout;
-    QGridLayout *calcSelectLayout;
-    QComboBox *calcCharacterSelect;
-    QComboBox *calcWEngineSelect;
-    void setCurrentCalcCharacter(std::string &);
-    void setCurrentCalcWEngine(std::string &);
-    character::character currentCalcCharacter;
-    wengine::wengine currentWEngine;
-    character::character calcStats;
-    void updateCalculator();
-    QGridLayout *calcInfo;
-    QPushButton *calcCalculateButton;
-    QLabel *calcWengineImage;
-    QLabel *calcMindscapeImage;
-    void performCalculation(character::character&, wengine::wengine&);
+    calculator *calcWidget;
     //library content
     QHBoxLayout *libraryLayout;
     QLabel *libraryPlaceholderLabel;

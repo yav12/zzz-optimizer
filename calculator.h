@@ -1,8 +1,14 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
+#pragma once
 
 #include <QWidget>
+#include <QLabel>
+#include <QGridLayout>
+#include <QComboBox>
+#include <QPushButton>
 #include "character.h"
+#include "wengine.h"
 #include <string>
 
 
@@ -11,9 +17,10 @@ class calculator : public QWidget
     Q_OBJECT
 
 public:
-
+    calculator(QWidget *parent = nullptr);
+    ~calculator();
     void setCharacter(character::character);
-    void setCurrentWengine(std::string);
+    void setWengine(wengine::wengine);
     void setDisc1();
     void setDisc2();
     void setDisc3();
@@ -25,20 +32,43 @@ public:
 
 private:
     character::character currentCharacter;
-    std::string currentWengine;
+    wengine::wengine currentWengine;
     
-    double statHP;
-    double statDEF;
-    double statATK;
-    double statCR;
-    double statCD;
-    double statAM;
-    double statAP;
-    double statPENR;
-    double statSF;
-    double statER;
-    double statAAA;
-    double statImpact;
+    void redrawStats();
+    void redrawImages();
+    //display items
+    QGridLayout *layout;
+    QComboBox *characterSelect;
+    QComboBox *wengineSelect;
+    QPushButton *calculateButton;
+    QLabel *characterImage;
+    QLabel *wengineImage;
+    QGridLayout *statsLayout;
+    //stats labels
+    QLabel *hpLabel;
+    QLabel *statsHP;
+    QLabel *atkLabel;
+    QLabel *statsATK;
+    QLabel *defLabel;
+    QLabel *statsDEF;
+    QLabel *impactLabel;
+    QLabel *statsImpact;
+    QLabel *crLabel;
+    QLabel *statsCR;
+    QLabel *cdLabel;
+    QLabel *statsCD;
+    QLabel *amLabel;
+    QLabel *statsAM;
+    QLabel *apLabel;
+    QLabel *statsAP;
+    QLabel *penrLabel;
+    QLabel *statsPENR;
+    QLabel *sfLabel;
+    QLabel *statsSF;
+    QLabel *erLabel;
+    QLabel *statsER;
+    QLabel *aaaLabel;
+    QLabel *statsAAA;
 
 
 };

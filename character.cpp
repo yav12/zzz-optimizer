@@ -17,6 +17,7 @@ void character::setCharacterData() {
     alice.stats.am = 142;
     alice.stats.ap = 118;
     alice.stats.penr = 0;
+    alice.stats.pen = 0;
     alice.stats.sf = 0;
     alice.stats.er = 1.2;
     alice.stats.aaa = 0;
@@ -44,6 +45,7 @@ void character::setCharacterData() {
     anby.stats.am = 94;
     anby.stats.ap = 93;
     anby.stats.penr = 0;
+    anby.stats.pen = 0;
     anby.stats.sf = 0;
     anby.stats.er = 1.2;
     anby.stats.aaa = 0;
@@ -71,6 +73,7 @@ void character::setCharacterData() {
     anton.stats.am = 86;
     anton.stats.ap = 90;
     anton.stats.penr = 0;
+    anton.stats.pen = 0;
     anton.stats.sf = 0;
     anton.stats.er = 1.2;
     anton.stats.aaa = 0;
@@ -98,6 +101,7 @@ void character::setCharacterData() {
     astra.stats.am = 93;
     astra.stats.ap = 92;
     astra.stats.penr = 0;
+    astra.stats.pen = 0;
     astra.stats.sf = 0;
     astra.stats.er = 1.56;
     astra.stats.aaa = 0;
@@ -125,6 +129,7 @@ void character::setCharacterData() {
     ben.stats.am = 86;
     ben.stats.ap = 90;
     ben.stats.penr = 0;
+    ben.stats.pen = 0;
     ben.stats.sf = 0;
     ben.stats.er = 1.56;
     ben.stats.aaa = 0;
@@ -152,6 +157,7 @@ void character::setCharacterData() {
     billy.stats.am = 92;
     billy.stats.ap = 91;
     billy.stats.penr = 0;
+    billy.stats.pen = 0;
     billy.stats.sf = 0;
     billy.stats.er = 1.2;
     billy.stats.aaa = 0;
@@ -179,6 +185,7 @@ void character::setCharacterData() {
     burnice.stats.am = 118;
     burnice.stats.ap = 120;
     burnice.stats.penr = 0;
+    burnice.stats.pen = 0;
     burnice.stats.sf = 0;
     burnice.stats.er = 1.56;
     burnice.stats.aaa = 0;
@@ -206,6 +213,7 @@ void character::setCharacterData() {
     caesar.stats.am = 87;
     caesar.stats.ap = 90;
     caesar.stats.penr = 0;
+    caesar.stats.pen = 0;
     caesar.stats.sf = 0;
     caesar.stats.er = 1.2;
     caesar.stats.aaa = 0;
@@ -233,6 +241,7 @@ void character::setCharacterData() {
     corin.stats.am = 93;
     corin.stats.ap = 96;
     corin.stats.penr = 0;
+    corin.stats.pen = 0;
     corin.stats.sf = 0;
     corin.stats.er = 1.2;
     corin.stats.aaa = 0;
@@ -260,6 +269,7 @@ void character::setCharacterData() {
     ellen.stats.am = 94;
     ellen.stats.ap = 93;
     ellen.stats.penr = 0;
+    ellen.stats.pen = 0;
     ellen.stats.sf = 0;
     ellen.stats.er = 1.2;
     ellen.stats.aaa = 0;
@@ -287,6 +297,7 @@ void character::setCharacterData() {
     evelyn.stats.am = 92;
     evelyn.stats.ap = 90;
     evelyn.stats.penr = 0;
+    evelyn.stats.pen = 0;
     evelyn.stats.sf = 0;
     evelyn.stats.er = 1.2;
     evelyn.stats.aaa = 0;
@@ -314,6 +325,7 @@ void character::setCharacterData() {
     grace.stats.am = 151;
     grace.stats.ap = 116;
     grace.stats.penr = 0;
+    grace.stats.pen = 0;
     grace.stats.sf = 0;
     grace.stats.er = 1.2;
     grace.stats.aaa = 0;
@@ -341,6 +353,7 @@ void character::setCharacterData() {
     harumasa.stats.am = 80;
     harumasa.stats.ap = 95;
     harumasa.stats.penr = 0;
+    harumasa.stats.pen = 0;
     harumasa.stats.sf = 0;
     harumasa.stats.er = 1.2;
     harumasa.stats.aaa = 0;
@@ -368,6 +381,7 @@ void character::setCharacterData() {
     hugo.stats.am = 86;
     hugo.stats.ap = 90;
     hugo.stats.penr = 0;
+    hugo.stats.pen = 0;
     hugo.stats.sf = 0;
     hugo.stats.er = 1.2;
     hugo.stats.aaa = 0;
@@ -395,6 +409,7 @@ void character::setCharacterData() {
     jane.stats.am = 148;
     jane.stats.ap = 114;
     jane.stats.penr = 0;
+    jane.stats.pen = 0;
     jane.stats.sf = 0;
     jane.stats.er = 1.2;
     jane.stats.aaa = 0;
@@ -422,6 +437,7 @@ void character::setCharacterData() {
     jufufu.stats.am = 93;
     jufufu.stats.ap = 96;
     jufufu.stats.penr = 0;
+    jufufu.stats.pen = 0;
     jufufu.stats.sf = 0;
     jufufu.stats.er = 1.2;
     jufufu.stats.aaa = 0;
@@ -449,6 +465,7 @@ void character::setCharacterData() {
     koleda.stats.am = 97;
     koleda.stats.ap = 96;
     koleda.stats.penr = 0;
+    koleda.stats.pen = 0;
     koleda.stats.sf = 0;
     koleda.stats.er = 1.2;
     koleda.stats.aaa = 0;
@@ -476,6 +493,7 @@ void character::setCharacterData() {
     lighter.stats.am = 91;
     lighter.stats.ap = 90;
     lighter.stats.penr = 0;
+    lighter.stats.pen = 0;
     lighter.stats.sf = 0;
     lighter.stats.er = 1.2;
     lighter.stats.aaa = 0;
@@ -487,6 +505,34 @@ void character::setCharacterData() {
     lighter.images.mindscapeFull = ":/characters/lighter/MindscapeFull.png";
     lighter.preferredWengine = wengine::blazingLaurel;
 
+    // lucia
+    lucia.name = "Lucia Elowen";
+    lucia.nickname = "Lucia";
+    lucia.rarity = "S";
+    lucia.specialty = "Support";
+    lucia.attribute = "ether";
+    lucia.faction = "Spook Shack";
+    lucia.stats.hp = 8477;
+    lucia.stats.atk = 758;
+    lucia.stats.def = 594;
+    lucia.stats.impact = 83;
+    lucia.stats.cr = 5;
+    lucia.stats.cd = 50;
+    lucia.stats.am = 96;
+    lucia.stats.ap = 95;
+    lucia.stats.penr = 0;
+    lucia.stats.pen = 0;
+    lucia.stats.sf = 0;
+    lucia.stats.er = 1.56;
+    lucia.stats.aaa = 0;
+    lucia.images.normalIcon = ":/characters/lucia/icon.png";
+    lucia.images.circleIcon = ":/characters/lucia/iconCircle.png";
+    lucia.images.portrait = ":/characters/lucia/portrait.png";
+    lucia.images.mindscapeNone = ":/characters/lucia/MindscapeNone.png";
+    lucia.images.mindscapeHalf = ":/characters/lucia/MindscapeHalf.png";
+    lucia.images.mindscapeFull = ":/characters/lucia/MindscapeFull.png";
+    lucia.preferredWengine = wengine::dreamlitHearth;
+    
     // lucy
     lucy.name = "Luciana de Montefio";
     lucy.nickname = "Lucy";
@@ -503,6 +549,7 @@ void character::setCharacterData() {
     lucy.stats.am = 94;
     lucy.stats.ap = 93;
     lucy.stats.penr = 0;
+    lucy.stats.pen = 0;
     lucy.stats.sf = 0;
     lucy.stats.er = 1.56;
     lucy.stats.aaa = 0;
@@ -530,6 +577,7 @@ void character::setCharacterData() {
     lycaon.stats.am = 91;
     lycaon.stats.ap = 90;
     lycaon.stats.penr = 0;
+    lycaon.stats.pen = 0;
     lycaon.stats.sf = 0;
     lycaon.stats.er = 1.2;
     lycaon.stats.aaa = 0;
@@ -557,6 +605,7 @@ void character::setCharacterData() {
     miyabi.stats.am = 116;
     miyabi.stats.ap = 238;
     miyabi.stats.penr = 0;
+    miyabi.stats.pen = 0;
     miyabi.stats.sf = 0;
     miyabi.stats.er = 1.2;
     miyabi.stats.aaa = 0;
@@ -584,6 +633,7 @@ void character::setCharacterData() {
     nekomata.stats.am = 97;
     nekomata.stats.ap = 96;
     nekomata.stats.penr = 0;
+    nekomata.stats.pen = 0;
     nekomata.stats.sf = 0;
     nekomata.stats.er = 1.2;
     nekomata.stats.aaa = 0;
@@ -611,6 +661,7 @@ void character::setCharacterData() {
     nicole.stats.am = 90;
     nicole.stats.ap = 93;
     nicole.stats.penr = 0;
+    nicole.stats.pen = 0;
     nicole.stats.sf = 0;
     nicole.stats.er = 1.56;
     nicole.stats.aaa = 0;
@@ -638,6 +689,7 @@ void character::setCharacterData() {
     orphiemagus.stats.am = 92;
     orphiemagus.stats.ap = 90;
     orphiemagus.stats.penr = 0;
+    orphiemagus.stats.pen = 0;
     orphiemagus.stats.sf = 0;
     orphiemagus.stats.er = 1.56;
     orphiemagus.stats.aaa = 0;
@@ -665,6 +717,7 @@ void character::setCharacterData() {
     piper.stats.am = 116;
     piper.stats.ap = 118;
     piper.stats.penr = 0;
+    piper.stats.pen = 0;
     piper.stats.sf = 0;
     piper.stats.er = 1.56;
     piper.stats.aaa = 0;
@@ -692,6 +745,7 @@ void character::setCharacterData() {
     pulchra.stats.am = 92;
     pulchra.stats.ap = 90;
     pulchra.stats.penr = 0;
+    pulchra.stats.pen = 0;
     pulchra.stats.sf = 0;
     pulchra.stats.er = 1.2;
     pulchra.stats.aaa = 0;
@@ -719,6 +773,7 @@ void character::setCharacterData() {
     qingyi.stats.am = 94;
     qingyi.stats.ap = 93;
     qingyi.stats.penr = 0;
+    qingyi.stats.pen = 0;
     qingyi.stats.sf = 0;
     qingyi.stats.er = 1.2;
     qingyi.stats.aaa = 0;
@@ -746,6 +801,7 @@ void character::setCharacterData() {
     rina.stats.am = 93;
     rina.stats.ap = 92;
     rina.stats.penr = 14.4;
+    rina.stats.pen = 0;
     rina.stats.sf = 0;
     rina.stats.er = 1.2;
     rina.stats.aaa = 0;
@@ -773,6 +829,7 @@ void character::setCharacterData() {
     s0anby.stats.am = 94;
     s0anby.stats.ap = 93;
     s0anby.stats.penr = 0;
+    s0anby.stats.pen = 0;
     s0anby.stats.sf = 0;
     s0anby.stats.er = 1.2;
     s0anby.stats.aaa = 0;
@@ -800,6 +857,7 @@ void character::setCharacterData() {
     seed.stats.am = 94;
     seed.stats.ap = 93;
     seed.stats.penr = 0;
+    seed.stats.pen = 0;
     seed.stats.sf = 0;
     seed.stats.er = 1.2;
     seed.stats.aaa = 0;
@@ -827,6 +885,7 @@ void character::setCharacterData() {
     seth.stats.am = 86;
     seth.stats.ap = 90;
     seth.stats.penr = 0;
+    seth.stats.pen = 0;
     seth.stats.sf = 0;
     seth.stats.er = 1.56;
     seth.stats.aaa = 0;
@@ -854,6 +913,7 @@ void character::setCharacterData() {
     soldier11.stats.am = 94;
     soldier11.stats.ap = 93;
     soldier11.stats.penr = 0;
+    soldier11.stats.pen = 0;
     soldier11.stats.sf = 0;
     soldier11.stats.er = 1.2;
     soldier11.stats.aaa = 0;
@@ -881,6 +941,7 @@ void character::setCharacterData() {
     soukaku.stats.am = 93;
     soukaku.stats.ap = 96;
     soukaku.stats.penr = 0;
+    soukaku.stats.pen = 0;
     soukaku.stats.sf = 0;
     soukaku.stats.er = 1.56;
     soukaku.stats.aaa = 0;
@@ -908,6 +969,7 @@ void character::setCharacterData() {
     trigger.stats.am = 96;
     trigger.stats.ap = 95;
     trigger.stats.penr = 0;
+    trigger.stats.pen = 0;
     trigger.stats.sf = 0;
     trigger.stats.er = 1.2;
     trigger.stats.aaa = 0;
@@ -935,6 +997,7 @@ void character::setCharacterData() {
     vivian.stats.am = 144;
     vivian.stats.ap = 118;
     vivian.stats.penr = 0;
+    vivian.stats.pen = 0;
     vivian.stats.sf = 0;
     vivian.stats.er = 1.2;
     vivian.stats.aaa = 0;
@@ -962,6 +1025,7 @@ void character::setCharacterData() {
     yanagi.stats.am = 148;
     yanagi.stats.ap = 114;
     yanagi.stats.penr = 0;
+    yanagi.stats.pen = 0;
     yanagi.stats.sf = 0;
     yanagi.stats.er = 1.2;
     yanagi.stats.aaa = 0;
@@ -989,6 +1053,7 @@ void character::setCharacterData() {
     yinhu.stats.am = 91;
     yinhu.stats.ap = 90;
     yinhu.stats.penr = 0;
+    yinhu.stats.pen = 0;
     yinhu.stats.sf = 0;
     yinhu.stats.er = 1.56;
     yinhu.stats.aaa = 0;
@@ -1016,6 +1081,7 @@ void character::setCharacterData() {
     yixuan.stats.am = 92;
     yixuan.stats.ap = 90;
     yixuan.stats.penr = 0;
+    yixuan.stats.pen = 0;
     yixuan.stats.sf = 1099;
     yixuan.stats.er = 0;
     yixuan.stats.aaa = 2;
@@ -1043,6 +1109,7 @@ void character::setCharacterData() {
     yuzuha.stats.am = 124;
     yuzuha.stats.ap = 93;
     yuzuha.stats.penr = 0;
+    yuzuha.stats.pen = 0;
     yuzuha.stats.sf = 0;
     yuzuha.stats.er = 1.2;
     yuzuha.stats.aaa = 0;
@@ -1070,6 +1137,7 @@ void character::setCharacterData() {
     zhuyuan.stats.am = 93;
     zhuyuan.stats.ap = 92;
     zhuyuan.stats.penr = 0;
+    zhuyuan.stats.pen = 0;
     zhuyuan.stats.sf = 0;
     zhuyuan.stats.er = 1.2;
     zhuyuan.stats.aaa = 0;
@@ -1083,7 +1151,7 @@ void character::setCharacterData() {
 
     characterList = {
         alice, anby, anton, astra, ben, billy, burnice, caesar, corin, ellen,
-        evelyn, grace, harumasa, hugo, jane, jufufu, koleda, lighter, lucy,
+        evelyn, grace, harumasa, hugo, jane, jufufu, koleda, lighter, lucia, lucy,
         lycaon, miyabi, nekomata, nicole, orphiemagus, piper, pulchra, qingyi,
         rina, s0anby, seed, seth, soldier11, soukaku, trigger, vivian, yanagi,
         yinhu, yixuan, yuzuha, zhuyuan

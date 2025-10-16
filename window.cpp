@@ -9,18 +9,9 @@
 window::window(QWidget *parent)
     : QMainWindow(parent)
 {
-    setupWengines();
-    setupCharacters();
-    setupWindow();
-
-}
-
-void window::setupWengines() {
-    wengine::setWengineData(); // populate image paths & stats
-}
-
-void window::setupCharacters() {
+    wengine::setWengineData(); 
     character::setCharacterData(); // populate image paths & stats
+    setupWindow();
 }
 
 void window::setupWindow() {
@@ -41,8 +32,12 @@ void window::setupWindow() {
     layout->addWidget(content);
     setupHome();
     setupReference();
-    setupCalculator();
+    calcWidget = new calculator(this);
+    content->addWidget(calcWidget);
     setupLibrary();
+
+    //navigation connects
+    connect(calculatorButton, &QPushButton::clicked, [=]() { content->setCurrentWidget(calcWidget); });
 }
 
 

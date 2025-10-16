@@ -23,6 +23,7 @@ struct character {
         double am;
         double ap;
         double penr;
+        double pen;
         double sf;
         double er;
         double aaa;
@@ -45,14 +46,6 @@ inline std::vector<character> characterList;
 //set all the character data
 void setCharacterData();
 
-struct AutoInitCharacters
-{
-    AutoInitCharacters() { setCharacterData(); }
-};
-
-// construct the object at static init time
-static AutoInitCharacters _autoInitCharacters;
-
 //character definitions
 inline character alice;
 inline character anby;
@@ -72,6 +65,7 @@ inline character jane;
 inline character jufufu;
 inline character koleda;
 inline character lighter;
+inline character lucia;
 inline character lucy;
 inline character lycaon;
 inline character miyabi;

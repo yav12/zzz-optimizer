@@ -68,8 +68,8 @@ void wengine::setWengineData() {
     cinderCobalt.rarity = "B";
     cinderCobalt.specialty = "Rupture";
     cinderCobalt.baseAtk = 475;
-    cinderCobalt.stat = "";
-    cinderCobalt.statPercent = 0;
+    cinderCobalt.stat = "HP";
+    cinderCobalt.statPercent = 20;
     cinderCobalt.effect = R"(Upon entering combat or switching in, the equipper's ATK increases by 7.2%/8.2%/9.3%/10.4%/11.5% for 10s. This effect can trigger once every 20s.)";
     cinderCobalt.image = ":/wengines/rupture/CinderCobalt.png";
 
@@ -107,7 +107,8 @@ void wengine::setWengineData() {
     dreamlitHearth.stat = "HP";
     dreamlitHearth.statPercent = 30;
     dreamlitHearth.effect = R"(The equipper's Energy Regen increases by 0.4/0.46/0.52/0.58/0.64/s. When the equipper activates Ether Veil or extends its duration, all squad members gain 25%/28.8%/32.5%/36.3%/40% increased DMG and 15%/17.3%/19.5%/21.8%/24% increased Max HP for 45s. Only one instance of this effect can exist in the same squad.)";
-    dreamlitHearth.image = "";
+    dreamlitHearth.image = ":/wengines/support/DreamlitHearth.png";
+
     drillRigRedAxis.name = "Drill Rig - Red Axis";
     drillRigRedAxis.rarity = "A";
     drillRigRedAxis.specialty = "Attack";
@@ -151,7 +152,7 @@ void wengine::setWengineData() {
     grillOWisp.stat = "HP";
     grillOWisp.statPercent = 25;
     grillOWisp.effect = R"(The equipper's Fire DMG increases by 15%/17.25%/19.5%/21.75%/24%. When the equipper's HP decreases, their CRIT Rate increases by 15%/17.25%/19.5%/21.75%/24% for 5s.)";
-    grillOWisp.image = "";
+    grillOWisp.image = ":/wengines/rupture/GrillOWisp.png";
 
     hailstormShrine.name = "Hailstorm Shrine";
     hailstormShrine.rarity = "S";

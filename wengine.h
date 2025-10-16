@@ -18,8 +18,9 @@ struct wengine {
 // List of all W-engines
 inline std::vector<wengine> wengineList;
 
-
+//set all the w engine data
 void setWengineData();
+
 // W-engines parsed from data.txt (alphabetical)
 inline wengine bashfulDemon;
 inline wengine bellicoseBlaze;
