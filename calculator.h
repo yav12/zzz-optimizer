@@ -33,11 +33,16 @@ public:
 private:
     character::character currentCharacter;
     wengine::wengine currentWengine;
-    
+    //discs
+    QComboBox *setBonus1;
+    QComboBox *setBonus2;
+    QComboBox *setBonus3;
+
     void redrawStats();
     void redrawImages();
     //display items
     QGridLayout *layout;
+    QGridLayout *selectionsLayout;
     QComboBox *characterSelect;
     QComboBox *wengineSelect;
     QPushButton *calculateButton;

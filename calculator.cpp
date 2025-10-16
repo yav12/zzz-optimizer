@@ -4,13 +4,18 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     //layout
     layout = new QGridLayout();
     setLayout(layout);
+    selectionsLayout = new QGridLayout(); // layout for selections & buttons
+    layout->addLayout(selectionsLayout, 0, 0, 1, 1);
+    statsLayout = new QGridLayout(); // layout for stats display
+    layout->addLayout(statsLayout, 0, 1, 1, 1);
 
+    
     //character select combobox
     characterSelect = new QComboBox();
     for (const auto& character : character::characterList) {
         characterSelect->addItem(QString::fromStdString(character.nickname));
     }
-    layout->addWidget(characterSelect, 0, 0);
+    selectionsLayout->addWidget(characterSelect, 0, 0);
     connect(characterSelect, &QComboBox::currentTextChanged, [this]() {
         setCharacter(character::characterList[characterSelect->currentIndex()]);
     });
@@ -20,24 +25,27 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     for (const auto& wengine : wengine::wengineList) {
         wengineSelect->addItem(QString::fromStdString(wengine.name));
     }
-    layout->addWidget(wengineSelect, 0, 1);
+    selectionsLayout->addWidget(wengineSelect, 0, 1);
     connect(wengineSelect, &QComboBox::currentTextChanged, [this]() {
         setWengine(wengine::wengineList[wengineSelect->currentIndex()]);
     });
     //calculate button
     calculateButton = new QPushButton("Calculate");
-    layout->addWidget(calculateButton, 1, 0, 1, 2);
+    selectionsLayout->addWidget(calculateButton, 1, 0, 1, 2);
     connect(calculateButton, &QPushButton::clicked, this, &calculator::recalculate);
 
     //images
     characterImage = new QLabel;
     wengineImage = new QLabel;
+    characterImage->setScaledContents(false);
+    characterImage->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    characterImage->setAlignment(Qt::AlignCenter);
+
+    wengineImage->setScaledContents(false);
+    wengineImage->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    wengineImage->setAlignment(Qt::AlignCenter);
     layout->addWidget(characterImage, 2, 0);
     layout->addWidget(wengineImage, 2, 1);
-
-    //stats layout
-    statsLayout = new QGridLayout();
-    layout->addLayout(statsLayout, 0, 1, 1, 1);
 
     //stats labels
     hpLabel = new QLabel("HP:");
@@ -63,13 +71,32 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
 }
 
 void calculator::redrawImages() {
-    //character image
-    QPixmap charPix(QString::fromStdString(currentCharacter.images.portrait));
-    characterImage->setPixmap(charPix.scaled(200, 200, Qt::KeepAspectRatio));
+    // compute available area for the character image
+    QSize availChar = characterImage->contentsRect().size();
+    if (availChar.width() <= 0 || availChar.height() <= 0) availChar = this->size();
 
-    //wengine image
+    QPixmap charPix(QString::fromStdString(currentCharacter.images.portrait));
+    if (!charPix.isNull()) {
+        // never upscale: target is bounded to both available area and original pix size
+        QSize target = charPix.size().boundedTo(availChar);
+        QPixmap scaledChar = charPix.scaled(target, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        characterImage->setPixmap(scaledChar);
+    } else {
+        characterImage->clear();
+    }
+
+    // same for wengine image
+    QSize availW = wengineImage->contentsRect().size();
+    if (availW.width() <= 0 || availW.height() <= 0) availW = this->size();
+
     QPixmap wengPix(QString::fromStdString(currentWengine.image));
-    wengineImage->setPixmap(wengPix.scaled(200, 200, Qt::KeepAspectRatio));
+    if (!wengPix.isNull()) {
+        QSize targetW = wengPix.size().boundedTo(availW);
+        QPixmap scaledW = wengPix.scaled(targetW, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        wengineImage->setPixmap(scaledW);
+    } else {
+        wengineImage->clear();
+    }
 }
 
 void calculator::redrawStats() {
