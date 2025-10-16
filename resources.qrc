@@ -69,6 +69,7 @@
     <qresource prefix="/wengines/rupture">
         <file alias="CinderCobalt.png">assets/wengines/rupture/(Cinder)Cobalt.png</file>
         <file alias="PuzzleSphere.png">assets/wengines/rupture/PuzzleSphere.png</file>
+        <file alias="GrillOWisp.png">assets/wengines/rupture/GrillOWisp.png</file>
         <file alias="QingmingBirdcage.png">assets/wengines/rupture/QingmingBirdcage.png</file>
         <file alias="RadiowaveJourney.png">assets/wengines/rupture/RadiowaveJourney.png</file>
     </qresource>
@@ -77,6 +78,7 @@
         <file alias="ReverbMarkII.png">assets/wengines/support/(Reverb)MarkII.png</file>
         <file alias="ReverbMarkIII.png">assets/wengines/support/(Reverb)MarkIII.png</file>
         <file alias="BashfulDemon.png">assets/wengines/support/BashfulDemon.png</file>
+        <file alias="DreamlitHearth.png">assets/wengines/support/DreamlitHearth.png</file>
         <file alias="ElegantVanity.png">assets/wengines/support/ElegantVanity.png</file>
         <file alias="KaboomtheCannon.png">assets/wengines/support/KaboomtheCannon.png</file>
         <file alias="Metanukimorphosis.png">assets/wengines/support/Metanukimorphosis.png</file>
@@ -252,6 +254,14 @@
     <file alias="MindscapeFull.png">assets/characters/Lighter/MindscapeLighterFull.png</file>
     <file alias="MindscapeHalf.png">assets/characters/Lighter/MindscapeLighterHalf.png</file>
     <file alias="MindscapeNone.png">assets/characters/Lighter/MindscapeLighterNone.png</file>
+    </qresource>
+    <qresource prefix="/characters/lucia">
+        <file alias="portrait.png">assets/characters/Lucia/LuciaPortrait.png</file>
+        <file alias="icon.png">assets/characters/Lucia/LuciaIcon.png</file>
+        <file alias="iconCircle.png">assets/characters/Lucia/LuciaCircleIcon.png</file>
+        <file alias="MindscapeFull.png">assets/characters/Lucia/MindscapeLuciaFull.png</file>
+        <file alias="MindscapeHalf.png">assets/characters/Lucia/MindscapeLuciaHalf.png</file>
+        <file alias="MindscapeNone.png">assets/characters/Lucia/MindscapeLuciaNone.png</file>
     </qresource>
     <qresource prefix="/characters/lucy">
         <file alias="portrait.png">assets/characters/Lucy/LucyPortrait.png</file>
