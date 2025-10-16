@@ -18,6 +18,7 @@ public:
     window(QWidget *parent = nullptr);
     void setupWindow();
     void setupNavigation();
+    void setupWengines();
     void setupCharacters();
     void setupHome();
     void setupReference();
@@ -62,7 +63,17 @@ private:
     QLabel *refMindscapeImage;
     //calculator content
     QGridLayout *calcLayout;
-    QLabel *calcPlaceholderLabel;
+    QGridLayout *calcSelectLayout;
+    QComboBox *calcCharacterSelect;
+    QComboBox *calcWEngineSelect;
+    void setCurrentCalcCharacter(std::string &);
+    void setCurrentCalcWEngine(std::string &);
+    character::character currentCalcCharacter;
+    wengine::wengine currentWEngine;
+    void updateCalculator();
+    QGridLayout *calcInfo;
+    QLabel *calcWengineImage;
+    QLabel *calcMindscapeImage;
     //library content
     QHBoxLayout *libraryLayout;
     QLabel *libraryPlaceholderLabel;

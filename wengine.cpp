@@ -8,7 +8,7 @@ void wengine::setWengineData() {
     bashfulDemon.stat = "ATK";
     bashfulDemon.statPercent = 25;
     bashfulDemon.effect = R"(Increases Ice DMG by 15%/17.5%/20%/22%/24%. When launching an EX Special Attack, all squad members ' ATK increases by 2%/2.3%/2.6%/2.9%/3.2% for 12s, stacking up to 4 times. Repeated triggers reset the duration. Passive effects of the same name do not stack.)";
-    bashfulDemon.image = ":/wengines/bashfulDemon.png";
+    bashfulDemon.image = ":/wengines/support/BashfulDemon.png";
 
     bellicoseBlaze.name = "Bellicose Blaze";
     bellicoseBlaze.rarity = "S";
@@ -17,7 +17,7 @@ void wengine::setWengineData() {
     bellicoseBlaze.stat = "Energy Regen";
     bellicoseBlaze.statPercent = 60;
     bellicoseBlaze.effect = R"(Increases CRIT Rate by 20%/23%/26%/29%/32%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 15%/17.2%/19.5%/21.7%/24% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration.)";
-    bellicoseBlaze.image = ":/wengines/bellicoseBlaze.png";
+    bellicoseBlaze.image = ":/wengines/attack/BellicoseBlaze.png";
 
     bigCylinder.name = "Big Cylinder";
     bigCylinder.rarity = "A";

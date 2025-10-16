@@ -9,9 +9,14 @@
 window::window(QWidget *parent)
     : QMainWindow(parent)
 {
+    setupWengines();
     setupCharacters();
     setupWindow();
 
+}
+
+void window::setupWengines() {
+    wengine::setWengineData(); // populate image paths & stats
 }
 
 void window::setupCharacters() {
