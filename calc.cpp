@@ -24,7 +24,7 @@ void window::setupCalculator() {
 
     //set label locations
     calcLayout->addWidget(calcWengineImage, 0, 1, 1, 1);
-    calcLayout->addWidget(calcMindscapeImage, 1, 0, 1, 2);
+    calcLayout->addWidget(calcMindscapeImage, 1, 0, 1, -1);
     
 
     //character select combobox
@@ -90,4 +90,34 @@ void window::updateCalculator() {
     QSize characterAvailableSize = calc->size() * 3 / 4; // rough estimate of available space
     QPixmap scaledCharacterPix = characterPix.scaled(characterAvailableSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
     calcMindscapeImage->setPixmap(scaledCharacterPix);
+}
+
+void window::performCalculation(character::character& currentCalcCharacter, wengine::wengine& currentWEngine) {
+    character::character calcStats = currentCalcCharacter;
+    //apply w engine effects (unconditional)
+    calcStats.stats.atk += currentWEngine.baseAtk;
+    if (currentWEngine.stat == "ATK") {
+        calcStats.stats.atk *= (1 + currentWEngine.statPercent / 100.0);
+    } else if (currentWEngine.stat == "HP") {
+        calcStats.stats.hp *= (1 + currentWEngine.statPercent / 100.0);
+    } else if (currentWEngine.stat == "DEF") {
+        calcStats.stats.def *= (1 + currentWEngine.statPercent / 100.0);
+    } else if (currentWEngine.stat == "Impact") {
+        calcStats.stats.impact *= (1 + currentWEngine.statPercent / 100.0);
+    } else if (currentWEngine.stat == "CR") { //additive
+        calcStats.stats.cr += currentWEngine.statPercent;
+    } else if (currentWEngine.stat == "CD") {
+        calcStats.stats.cd += currentWEngine.statPercent;
+    } else if (currentWEngine.stat == "AM") {
+        calcStats.stats.am += currentWEngine.statPercent;
+    } else if (currentWEngine.stat == "AP") {
+        calcStats.stats.ap += currentWEngine.statPercent;
+    } else if (currentWEngine.stat == "PEN Ratio") {
+        calcStats.stats.penr += currentWEngine.statPercent;
+    } else if (currentWEngine.stat == "ER") {
+        calcStats.stats.er *= (1 + currentWEngine.statPercent / 100.0);
+    }
+
+    //update window with calcStats
+    updateCalculator();
 }

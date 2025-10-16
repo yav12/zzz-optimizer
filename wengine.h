@@ -15,7 +15,9 @@ struct wengine {
     std::string effect;
     std::string image;
 };
+// List of all W-engines
 inline std::vector<wengine> wengineList;
+
 
 void setWengineData();
 // W-engines parsed from data.txt (alphabetical)

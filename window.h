@@ -70,10 +70,13 @@ private:
     void setCurrentCalcWEngine(std::string &);
     character::character currentCalcCharacter;
     wengine::wengine currentWEngine;
+    character::character calcStats;
     void updateCalculator();
     QGridLayout *calcInfo;
+    QPushButton *calcCalculateButton;
     QLabel *calcWengineImage;
     QLabel *calcMindscapeImage;
+    void performCalculation(character::character&, wengine::wengine&);
     //library content
     QHBoxLayout *libraryLayout;
     QLabel *libraryPlaceholderLabel;

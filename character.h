@@ -39,7 +39,9 @@ struct character {
     wengine::wengine preferredWengine;
     assets images;
 };
+// List of all characters
 inline std::vector<character> characterList;
+
 
 void setCharacterData();
 inline character alice;
