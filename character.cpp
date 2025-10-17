@@ -21,12 +21,12 @@ void character::setCharacterData() {
     alice.stats.sf = 0;
     alice.stats.er = 1.2;
     alice.stats.aaa = 0;
-    alice.images.normalIcon = ":/characters/alice/icon.png";
-    alice.images.circleIcon = ":/characters/alice/iconCircle.png";
-    alice.images.portrait = ":/characters/alice/portrait.png";
-    alice.images.mindscapeNone = ":/characters/alice/MindscapeNone.png";
-    alice.images.mindscapeHalf = ":/characters/alice/MindscapeHalf.png";
-    alice.images.mindscapeFull = ":/characters/alice/MindscapeFull.png";
+    alice.images.normalIcon = ":/characters/alice/icon.jxl";
+    alice.images.circleIcon = ":/characters/alice/iconCircle.jxl";
+    alice.images.portrait = ":/characters/alice/portrait.jxl";
+    alice.images.mindscapeNone = ":/characters/alice/MindscapeNone.jxl";
+    alice.images.mindscapeHalf = ":/characters/alice/MindscapeHalf.jxl";
+    alice.images.mindscapeFull = ":/characters/alice/MindscapeFull.jxl";
     alice.preferredWengine = wengine::practicedPerfection;
 
     // anby
@@ -49,12 +49,12 @@ void character::setCharacterData() {
     anby.stats.sf = 0;
     anby.stats.er = 1.2;
     anby.stats.aaa = 0;
-    anby.images.normalIcon = ":/characters/anby/icon.png";
-    anby.images.circleIcon = ":/characters/anby/iconCircle.png";
-    anby.images.portrait = ":/characters/anby/portrait.png";
-    anby.images.mindscapeNone = ":/characters/anby/MindscapeNone.png";
-    anby.images.mindscapeHalf = ":/characters/anby/MindscapeHalf.png";
-    anby.images.mindscapeFull = ":/characters/anby/MindscapeFull.png";
+    anby.images.normalIcon = ":/characters/anby/icon.jxl";
+    anby.images.circleIcon = ":/characters/anby/iconCircle.jxl";
+    anby.images.portrait = ":/characters/anby/portrait.jxl";
+    anby.images.mindscapeNone = ":/characters/anby/MindscapeNone.jxl";
+    anby.images.mindscapeHalf = ":/characters/anby/MindscapeHalf.jxl";
+    anby.images.mindscapeFull = ":/characters/anby/MindscapeFull.jxl";
     anby.preferredWengine = wengine::demaraBatteryMarkII;
 
     // anton
@@ -77,12 +77,12 @@ void character::setCharacterData() {
     anton.stats.sf = 0;
     anton.stats.er = 1.2;
     anton.stats.aaa = 0;
-    anton.images.normalIcon = ":/characters/anton/icon.png";
-    anton.images.circleIcon = ":/characters/anton/iconCircle.png";
-    anton.images.portrait = ":/characters/anton/portrait.png";
-    anton.images.mindscapeNone = ":/characters/anton/MindscapeNone.png";
-    anton.images.mindscapeHalf = ":/characters/anton/MindscapeHalf.png";
-    anton.images.mindscapeFull = ":/characters/anton/MindscapeFull.png";
+    anton.images.normalIcon = ":/characters/anton/icon.jxl";
+    anton.images.circleIcon = ":/characters/anton/iconCircle.jxl";
+    anton.images.portrait = ":/characters/anton/portrait.jxl";
+    anton.images.mindscapeNone = ":/characters/anton/MindscapeNone.jxl";
+    anton.images.mindscapeHalf = ":/characters/anton/MindscapeHalf.jxl";
+    anton.images.mindscapeFull = ":/characters/anton/MindscapeFull.jxl";
     anton.preferredWengine = wengine::drillRigRedAxis;
 
     // astra
@@ -105,12 +105,12 @@ void character::setCharacterData() {
     astra.stats.sf = 0;
     astra.stats.er = 1.56;
     astra.stats.aaa = 0;
-    astra.images.normalIcon = ":/characters/astra/icon.png";
-    astra.images.circleIcon = ":/characters/astra/iconCircle.png";
-    astra.images.portrait = ":/characters/astra/portrait.png";
-    astra.images.mindscapeNone = ":/characters/astra/MindscapeNone.png";
-    astra.images.mindscapeHalf = ":/characters/astra/MindscapeHalf.png";
-    astra.images.mindscapeFull = ":/characters/astra/MindscapeFull.png";
+    astra.images.normalIcon = ":/characters/astra/icon.jxl";
+    astra.images.circleIcon = ":/characters/astra/iconCircle.jxl";
+    astra.images.portrait = ":/characters/astra/portrait.jxl";
+    astra.images.mindscapeNone = ":/characters/astra/MindscapeNone.jxl";
+    astra.images.mindscapeHalf = ":/characters/astra/MindscapeHalf.jxl";
+    astra.images.mindscapeFull = ":/characters/astra/MindscapeFull.jxl";
     astra.preferredWengine = wengine::elegantVanity;
 
     // ben
@@ -133,12 +133,12 @@ void character::setCharacterData() {
     ben.stats.sf = 0;
     ben.stats.er = 1.56;
     ben.stats.aaa = 0;
-    ben.images.normalIcon = ":/characters/ben/icon.png";
-    ben.images.circleIcon = ":/characters/ben/iconCircle.png";
-    ben.images.portrait = ":/characters/ben/portrait.png";
-    ben.images.mindscapeNone = ":/characters/ben/MindscapeNone.png";
-    ben.images.mindscapeHalf = ":/characters/ben/MindscapeHalf.png";
-    ben.images.mindscapeFull = ":/characters/ben/MindscapeFull.png";
+    ben.images.normalIcon = ":/characters/ben/icon.jxl";
+    ben.images.circleIcon = ":/characters/ben/iconCircle.jxl";
+    ben.images.portrait = ":/characters/ben/portrait.jxl";
+    ben.images.mindscapeNone = ":/characters/ben/MindscapeNone.jxl";
+    ben.images.mindscapeHalf = ":/characters/ben/MindscapeHalf.jxl";
+    ben.images.mindscapeFull = ":/characters/ben/MindscapeFull.jxl";
     ben.preferredWengine = wengine::bigCylinder;
 
     // billy
@@ -161,12 +161,12 @@ void character::setCharacterData() {
     billy.stats.sf = 0;
     billy.stats.er = 1.2;
     billy.stats.aaa = 0;
-    billy.images.normalIcon = ":/characters/billy/icon.png";
-    billy.images.circleIcon = ":/characters/billy/iconCircle.png";
-    billy.images.portrait = ":/characters/billy/portrait.png";
-    billy.images.mindscapeNone = ":/characters/billy/MindscapeNone.png";
-    billy.images.mindscapeHalf = ":/characters/billy/MindscapeHalf.png";
-    billy.images.mindscapeFull = ":/characters/billy/MindscapeFull.png";
+    billy.images.normalIcon = ":/characters/billy/icon.jxl";
+    billy.images.circleIcon = ":/characters/billy/iconCircle.jxl";
+    billy.images.portrait = ":/characters/billy/portrait.jxl";
+    billy.images.mindscapeNone = ":/characters/billy/MindscapeNone.jxl";
+    billy.images.mindscapeHalf = ":/characters/billy/MindscapeHalf.jxl";
+    billy.images.mindscapeFull = ":/characters/billy/MindscapeFull.jxl";
     billy.preferredWengine = wengine::starlightEngineReplica;
 
     // burnice
@@ -189,12 +189,12 @@ void character::setCharacterData() {
     burnice.stats.sf = 0;
     burnice.stats.er = 1.56;
     burnice.stats.aaa = 0;
-    burnice.images.normalIcon = ":/characters/burnice/icon.png";
-    burnice.images.circleIcon = ":/characters/burnice/iconCircle.png";
-    burnice.images.portrait = ":/characters/burnice/portrait.png";
-    burnice.images.mindscapeNone = ":/characters/burnice/MindscapeNone.png";
-    burnice.images.mindscapeHalf = ":/characters/burnice/MindscapeHalf.png";
-    burnice.images.mindscapeFull = ":/characters/burnice/MindscapeFull.png";
+    burnice.images.normalIcon = ":/characters/burnice/icon.jxl";
+    burnice.images.circleIcon = ":/characters/burnice/iconCircle.jxl";
+    burnice.images.portrait = ":/characters/burnice/portrait.jxl";
+    burnice.images.mindscapeNone = ":/characters/burnice/MindscapeNone.jxl";
+    burnice.images.mindscapeHalf = ":/characters/burnice/MindscapeHalf.jxl";
+    burnice.images.mindscapeFull = ":/characters/burnice/MindscapeFull.jxl";
     burnice.preferredWengine = wengine::flamemakerShaker;
 
     // caesar
@@ -217,12 +217,12 @@ void character::setCharacterData() {
     caesar.stats.sf = 0;
     caesar.stats.er = 1.2;
     caesar.stats.aaa = 0;
-    caesar.images.normalIcon = ":/characters/caesar/icon.png";
-    caesar.images.circleIcon = ":/characters/caesar/iconCircle.png";
-    caesar.images.portrait = ":/characters/caesar/portrait.png";
-    caesar.images.mindscapeNone = ":/characters/caesar/MindscapeNone.png";
-    caesar.images.mindscapeHalf = ":/characters/caesar/MindscapeHalf.png";
-    caesar.images.mindscapeFull = ":/characters/caesar/MindscapeFull.png";
+    caesar.images.normalIcon = ":/characters/caesar/icon.jxl";
+    caesar.images.circleIcon = ":/characters/caesar/iconCircle.jxl";
+    caesar.images.portrait = ":/characters/caesar/portrait.jxl";
+    caesar.images.mindscapeNone = ":/characters/caesar/MindscapeNone.jxl";
+    caesar.images.mindscapeHalf = ":/characters/caesar/MindscapeHalf.jxl";
+    caesar.images.mindscapeFull = ":/characters/caesar/MindscapeFull.jxl";
     caesar.preferredWengine = wengine::originalTransmorpher;
 
     // corin
@@ -245,12 +245,12 @@ void character::setCharacterData() {
     corin.stats.sf = 0;
     corin.stats.er = 1.2;
     corin.stats.aaa = 0;
-    corin.images.normalIcon = ":/characters/corin/icon.png";
-    corin.images.circleIcon = ":/characters/corin/iconCircle.png";
-    corin.images.portrait = ":/characters/corin/portrait.png";
-    corin.images.mindscapeNone = ":/characters/corin/MindscapeNone.png";
-    corin.images.mindscapeHalf = ":/characters/corin/MindscapeHalf.png";
-    corin.images.mindscapeFull = ":/characters/corin/MindscapeFull.png";
+    corin.images.normalIcon = ":/characters/corin/icon.jxl";
+    corin.images.circleIcon = ":/characters/corin/iconCircle.jxl";
+    corin.images.portrait = ":/characters/corin/portrait.jxl";
+    corin.images.mindscapeNone = ":/characters/corin/MindscapeNone.jxl";
+    corin.images.mindscapeHalf = ":/characters/corin/MindscapeHalf.jxl";
+    corin.images.mindscapeFull = ":/characters/corin/MindscapeFull.jxl";
     corin.preferredWengine = wengine::housekeeper;
 
     // ellen
@@ -273,12 +273,12 @@ void character::setCharacterData() {
     ellen.stats.sf = 0;
     ellen.stats.er = 1.2;
     ellen.stats.aaa = 0;
-    ellen.images.normalIcon = ":/characters/ellen/icon.png";
-    ellen.images.circleIcon = ":/characters/ellen/iconCircle.png";
-    ellen.images.portrait = ":/characters/ellen/portrait.png";
-    ellen.images.mindscapeNone = ":/characters/ellen/MindscapeNone.png";
-    ellen.images.mindscapeHalf = ":/characters/ellen/MindscapeHalf.png";
-    ellen.images.mindscapeFull = ":/characters/ellen/MindscapeFull.png";
+    ellen.images.normalIcon = ":/characters/ellen/icon.jxl";
+    ellen.images.circleIcon = ":/characters/ellen/iconCircle.jxl";
+    ellen.images.portrait = ":/characters/ellen/portrait.jxl";
+    ellen.images.mindscapeNone = ":/characters/ellen/MindscapeNone.jxl";
+    ellen.images.mindscapeHalf = ":/characters/ellen/MindscapeHalf.jxl";
+    ellen.images.mindscapeFull = ":/characters/ellen/MindscapeFull.jxl";
     ellen.preferredWengine = wengine::deepSeaVisitor;
 
     // evelyn
@@ -301,12 +301,12 @@ void character::setCharacterData() {
     evelyn.stats.sf = 0;
     evelyn.stats.er = 1.2;
     evelyn.stats.aaa = 0;
-    evelyn.images.normalIcon = ":/characters/evelyn/icon.png";
-    evelyn.images.circleIcon = ":/characters/evelyn/iconCircle.png";
-    evelyn.images.portrait = ":/characters/evelyn/portrait.png";
-    evelyn.images.mindscapeNone = ":/characters/evelyn/MindscapeNone.png";
-    evelyn.images.mindscapeHalf = ":/characters/evelyn/MindscapeHalf.png";
-    evelyn.images.mindscapeFull = ":/characters/evelyn/MindscapeFull.png";
+    evelyn.images.normalIcon = ":/characters/evelyn/icon.jxl";
+    evelyn.images.circleIcon = ":/characters/evelyn/iconCircle.jxl";
+    evelyn.images.portrait = ":/characters/evelyn/portrait.jxl";
+    evelyn.images.mindscapeNone = ":/characters/evelyn/MindscapeNone.jxl";
+    evelyn.images.mindscapeHalf = ":/characters/evelyn/MindscapeHalf.jxl";
+    evelyn.images.mindscapeFull = ":/characters/evelyn/MindscapeFull.jxl";
     evelyn.preferredWengine = wengine::heartstringNocturne;
 
     // grace
@@ -329,12 +329,12 @@ void character::setCharacterData() {
     grace.stats.sf = 0;
     grace.stats.er = 1.2;
     grace.stats.aaa = 0;
-    grace.images.normalIcon = ":/characters/grace/icon.png";
-    grace.images.circleIcon = ":/characters/grace/iconCircle.png";
-    grace.images.portrait = ":/characters/grace/portrait.png";
-    grace.images.mindscapeNone = ":/characters/grace/MindscapeNone.png";
-    grace.images.mindscapeHalf = ":/characters/grace/MindscapeHalf.png";
-    grace.images.mindscapeFull = ":/characters/grace/MindscapeFull.png";
+    grace.images.normalIcon = ":/characters/grace/icon.jxl";
+    grace.images.circleIcon = ":/characters/grace/iconCircle.jxl";
+    grace.images.portrait = ":/characters/grace/portrait.jxl";
+    grace.images.mindscapeNone = ":/characters/grace/MindscapeNone.jxl";
+    grace.images.mindscapeHalf = ":/characters/grace/MindscapeHalf.jxl";
+    grace.images.mindscapeFull = ":/characters/grace/MindscapeFull.jxl";
     grace.preferredWengine = wengine::electroLipGloss;
 
     // harumasa
@@ -357,12 +357,12 @@ void character::setCharacterData() {
     harumasa.stats.sf = 0;
     harumasa.stats.er = 1.2;
     harumasa.stats.aaa = 0;
-    harumasa.images.normalIcon = ":/characters/harumasa/icon.png";
-    harumasa.images.circleIcon = ":/characters/harumasa/iconCircle.png";
-    harumasa.images.portrait = ":/characters/harumasa/portrait.png";
-    harumasa.images.mindscapeNone = ":/characters/harumasa/MindscapeNone.png";
-    harumasa.images.mindscapeHalf = ":/characters/harumasa/MindscapeHalf.png";
-    harumasa.images.mindscapeFull = ":/characters/harumasa/MindscapeFull.png";
+    harumasa.images.normalIcon = ":/characters/harumasa/icon.jxl";
+    harumasa.images.circleIcon = ":/characters/harumasa/iconCircle.jxl";
+    harumasa.images.portrait = ":/characters/harumasa/portrait.jxl";
+    harumasa.images.mindscapeNone = ":/characters/harumasa/MindscapeNone.jxl";
+    harumasa.images.mindscapeHalf = ":/characters/harumasa/MindscapeHalf.jxl";
+    harumasa.images.mindscapeFull = ":/characters/harumasa/MindscapeFull.jxl";
     harumasa.preferredWengine = wengine::drillRigRedAxis;
 
     // hugo
@@ -385,12 +385,12 @@ void character::setCharacterData() {
     hugo.stats.sf = 0;
     hugo.stats.er = 1.2;
     hugo.stats.aaa = 0;
-    hugo.images.normalIcon = ":/characters/hugo/icon.png";
-    hugo.images.circleIcon = ":/characters/hugo/iconCircle.png";
-    hugo.images.portrait = ":/characters/hugo/portrait.png";
-    hugo.images.mindscapeNone = ":/characters/hugo/MindscapeNone.png";
-    hugo.images.mindscapeHalf = ":/characters/hugo/MindscapeHalf.png";
-    hugo.images.mindscapeFull = ":/characters/hugo/MindscapeFull.png";
+    hugo.images.normalIcon = ":/characters/hugo/icon.jxl";
+    hugo.images.circleIcon = ":/characters/hugo/iconCircle.jxl";
+    hugo.images.portrait = ":/characters/hugo/portrait.jxl";
+    hugo.images.mindscapeNone = ":/characters/hugo/MindscapeNone.jxl";
+    hugo.images.mindscapeHalf = ":/characters/hugo/MindscapeHalf.jxl";
+    hugo.images.mindscapeFull = ":/characters/hugo/MindscapeFull.jxl";
     hugo.preferredWengine = wengine::myriadEclipse;
 
     // jane
@@ -413,12 +413,12 @@ void character::setCharacterData() {
     jane.stats.sf = 0;
     jane.stats.er = 1.2;
     jane.stats.aaa = 0;
-    jane.images.normalIcon = ":/characters/jane/icon.png";
-    jane.images.circleIcon = ":/characters/jane/iconCircle.png";
-    jane.images.portrait = ":/characters/jane/portrait.png";
-    jane.images.mindscapeNone = ":/characters/jane/MindscapeNone.png";
-    jane.images.mindscapeHalf = ":/characters/jane/MindscapeHalf.png";
-    jane.images.mindscapeFull = ":/characters/jane/MindscapeFull.png";
+    jane.images.normalIcon = ":/characters/jane/icon.jxl";
+    jane.images.circleIcon = ":/characters/jane/iconCircle.jxl";
+    jane.images.portrait = ":/characters/jane/portrait.jxl";
+    jane.images.mindscapeNone = ":/characters/jane/MindscapeNone.jxl";
+    jane.images.mindscapeHalf = ":/characters/jane/MindscapeHalf.jxl";
+    jane.images.mindscapeFull = ":/characters/jane/MindscapeFull.jxl";
     jane.preferredWengine = wengine::sharpenedStinger; // matches declaration in wengine.h
 
     // jufufu
@@ -441,12 +441,12 @@ void character::setCharacterData() {
     jufufu.stats.sf = 0;
     jufufu.stats.er = 1.2;
     jufufu.stats.aaa = 0;
-    jufufu.images.normalIcon = ":/characters/jufufu/icon.png";
-    jufufu.images.circleIcon = ":/characters/jufufu/iconCircle.png";
-    jufufu.images.portrait = ":/characters/jufufu/portrait.png";
-    jufufu.images.mindscapeNone = ":/characters/jufufu/MindscapeNone.png";
-    jufufu.images.mindscapeHalf = ":/characters/jufufu/MindscapeHalf.png";
-    jufufu.images.mindscapeFull = ":/characters/jufufu/MindscapeFull.png";
+    jufufu.images.normalIcon = ":/characters/jufufu/icon.jxl";
+    jufufu.images.circleIcon = ":/characters/jufufu/iconCircle.jxl";
+    jufufu.images.portrait = ":/characters/jufufu/portrait.jxl";
+    jufufu.images.mindscapeNone = ":/characters/jufufu/MindscapeNone.jxl";
+    jufufu.images.mindscapeHalf = ":/characters/jufufu/MindscapeHalf.jxl";
+    jufufu.images.mindscapeFull = ":/characters/jufufu/MindscapeFull.jxl";
     jufufu.preferredWengine = wengine::boxCutter;
 
     // koleda
@@ -469,12 +469,12 @@ void character::setCharacterData() {
     koleda.stats.sf = 0;
     koleda.stats.er = 1.2;
     koleda.stats.aaa = 0;
-    koleda.images.normalIcon = ":/characters/koleda/icon.png";
-    koleda.images.circleIcon = ":/characters/koleda/iconCircle.png";
-    koleda.images.portrait = ":/characters/koleda/portrait.png";
-    koleda.images.mindscapeNone = ":/characters/koleda/MindscapeNone.png";
-    koleda.images.mindscapeHalf = ":/characters/koleda/MindscapeHalf.png";
-    koleda.images.mindscapeFull = ":/characters/koleda/MindscapeFull.png";
+    koleda.images.normalIcon = ":/characters/koleda/icon.jxl";
+    koleda.images.circleIcon = ":/characters/koleda/iconCircle.jxl";
+    koleda.images.portrait = ":/characters/koleda/portrait.jxl";
+    koleda.images.mindscapeNone = ":/characters/koleda/MindscapeNone.jxl";
+    koleda.images.mindscapeHalf = ":/characters/koleda/MindscapeHalf.jxl";
+    koleda.images.mindscapeFull = ":/characters/koleda/MindscapeFull.jxl";
     koleda.preferredWengine = wengine::hellfireGears;
 
     // lighter
@@ -497,12 +497,12 @@ void character::setCharacterData() {
     lighter.stats.sf = 0;
     lighter.stats.er = 1.2;
     lighter.stats.aaa = 0;
-    lighter.images.normalIcon = ":/characters/lighter/icon.png";
-    lighter.images.circleIcon = ":/characters/lighter/iconCircle.png";
-    lighter.images.portrait = ":/characters/lighter/portrait.png";
-    lighter.images.mindscapeNone = ":/characters/lighter/MindscapeNone.png";
-    lighter.images.mindscapeHalf = ":/characters/lighter/MindscapeHalf.png";
-    lighter.images.mindscapeFull = ":/characters/lighter/MindscapeFull.png";
+    lighter.images.normalIcon = ":/characters/lighter/icon.jxl";
+    lighter.images.circleIcon = ":/characters/lighter/iconCircle.jxl";
+    lighter.images.portrait = ":/characters/lighter/portrait.jxl";
+    lighter.images.mindscapeNone = ":/characters/lighter/MindscapeNone.jxl";
+    lighter.images.mindscapeHalf = ":/characters/lighter/MindscapeHalf.jxl";
+    lighter.images.mindscapeFull = ":/characters/lighter/MindscapeFull.jxl";
     lighter.preferredWengine = wengine::blazingLaurel;
 
     // lucia
@@ -525,12 +525,12 @@ void character::setCharacterData() {
     lucia.stats.sf = 0;
     lucia.stats.er = 1.56;
     lucia.stats.aaa = 0;
-    lucia.images.normalIcon = ":/characters/lucia/icon.png";
-    lucia.images.circleIcon = ":/characters/lucia/iconCircle.png";
-    lucia.images.portrait = ":/characters/lucia/portrait.png";
-    lucia.images.mindscapeNone = ":/characters/lucia/MindscapeNone.png";
-    lucia.images.mindscapeHalf = ":/characters/lucia/MindscapeHalf.png";
-    lucia.images.mindscapeFull = ":/characters/lucia/MindscapeFull.png";
+    lucia.images.normalIcon = ":/characters/lucia/icon.jxl";
+    lucia.images.circleIcon = ":/characters/lucia/iconCircle.jxl";
+    lucia.images.portrait = ":/characters/lucia/portrait.jxl";
+    lucia.images.mindscapeNone = ":/characters/lucia/MindscapeNone.jxl";
+    lucia.images.mindscapeHalf = ":/characters/lucia/MindscapeHalf.jxl";
+    lucia.images.mindscapeFull = ":/characters/lucia/MindscapeFull.jxl";
     lucia.preferredWengine = wengine::dreamlitHearth;
     
     // lucy
@@ -553,12 +553,12 @@ void character::setCharacterData() {
     lucy.stats.sf = 0;
     lucy.stats.er = 1.56;
     lucy.stats.aaa = 0;
-    lucy.images.normalIcon = ":/characters/lucy/icon.png";
-    lucy.images.circleIcon = ":/characters/lucy/iconCircle.png";
-    lucy.images.portrait = ":/characters/lucy/portrait.png";
-    lucy.images.mindscapeNone = ":/characters/lucy/MindscapeNone.png";
-    lucy.images.mindscapeHalf = ":/characters/lucy/MindscapeHalf.png";
-    lucy.images.mindscapeFull = ":/characters/lucy/MindscapeFull.png";
+    lucy.images.normalIcon = ":/characters/lucy/icon.jxl";
+    lucy.images.circleIcon = ":/characters/lucy/iconCircle.jxl";
+    lucy.images.portrait = ":/characters/lucy/portrait.jxl";
+    lucy.images.mindscapeNone = ":/characters/lucy/MindscapeNone.jxl";
+    lucy.images.mindscapeHalf = ":/characters/lucy/MindscapeHalf.jxl";
+    lucy.images.mindscapeFull = ":/characters/lucy/MindscapeFull.jxl";
     lucy.preferredWengine = wengine::kaboomTheCannon;
 
     // lycaon
@@ -581,12 +581,12 @@ void character::setCharacterData() {
     lycaon.stats.sf = 0;
     lycaon.stats.er = 1.2;
     lycaon.stats.aaa = 0;
-    lycaon.images.normalIcon = ":/characters/lycaon/icon.png";
-    lycaon.images.circleIcon = ":/characters/lycaon/iconCircle.png";
-    lycaon.images.portrait = ":/characters/lycaon/portrait.png";
-    lycaon.images.mindscapeNone = ":/characters/lycaon/MindscapeNone.png";
-    lycaon.images.mindscapeHalf = ":/characters/lycaon/MindscapeHalf.png";
-    lycaon.images.mindscapeFull = ":/characters/lycaon/MindscapeFull.png";
+    lycaon.images.normalIcon = ":/characters/lycaon/icon.jxl";
+    lycaon.images.circleIcon = ":/characters/lycaon/iconCircle.jxl";
+    lycaon.images.portrait = ":/characters/lycaon/portrait.jxl";
+    lycaon.images.mindscapeNone = ":/characters/lycaon/MindscapeNone.jxl";
+    lycaon.images.mindscapeHalf = ":/characters/lycaon/MindscapeHalf.jxl";
+    lycaon.images.mindscapeFull = ":/characters/lycaon/MindscapeFull.jxl";
     lycaon.preferredWengine = wengine::theRestrained; // not present in wengine.h
 
     // miyabi
@@ -609,12 +609,12 @@ void character::setCharacterData() {
     miyabi.stats.sf = 0;
     miyabi.stats.er = 1.2;
     miyabi.stats.aaa = 0;
-    miyabi.images.normalIcon = ":/characters/miyabi/icon.png";
-    miyabi.images.circleIcon = ":/characters/miyabi/iconCircle.png";
-    miyabi.images.portrait = ":/characters/miyabi/portrait.png";
-    miyabi.images.mindscapeNone = ":/characters/miyabi/MindscapeNone.png";
-    miyabi.images.mindscapeHalf = ":/characters/miyabi/MindscapeHalf.png";
-    miyabi.images.mindscapeFull = ":/characters/miyabi/MindscapeFull.png";
+    miyabi.images.normalIcon = ":/characters/miyabi/icon.jxl";
+    miyabi.images.circleIcon = ":/characters/miyabi/iconCircle.jxl";
+    miyabi.images.portrait = ":/characters/miyabi/portrait.jxl";
+    miyabi.images.mindscapeNone = ":/characters/miyabi/MindscapeNone.jxl";
+    miyabi.images.mindscapeHalf = ":/characters/miyabi/MindscapeHalf.jxl";
+    miyabi.images.mindscapeFull = ":/characters/miyabi/MindscapeFull.jxl";
     miyabi.preferredWengine = wengine::hailstormShrine;
 
     // nekomata
@@ -637,12 +637,12 @@ void character::setCharacterData() {
     nekomata.stats.sf = 0;
     nekomata.stats.er = 1.2;
     nekomata.stats.aaa = 0;
-    nekomata.images.normalIcon = ":/characters/nekomata/icon.png";
-    nekomata.images.circleIcon = ":/characters/nekomata/iconCircle.png";
-    nekomata.images.portrait = ":/characters/nekomata/portrait.png";
-    nekomata.images.mindscapeNone = ":/characters/nekomata/MindscapeNone.png";
-    nekomata.images.mindscapeHalf = ":/characters/nekomata/MindscapeHalf.png";
-    nekomata.images.mindscapeFull = ":/characters/nekomata/MindscapeFull.png";
+    nekomata.images.normalIcon = ":/characters/nekomata/icon.jxl";
+    nekomata.images.circleIcon = ":/characters/nekomata/iconCircle.jxl";
+    nekomata.images.portrait = ":/characters/nekomata/portrait.jxl";
+    nekomata.images.mindscapeNone = ":/characters/nekomata/MindscapeNone.jxl";
+    nekomata.images.mindscapeHalf = ":/characters/nekomata/MindscapeHalf.jxl";
+    nekomata.images.mindscapeFull = ":/characters/nekomata/MindscapeFull.jxl";
     nekomata.preferredWengine = wengine::steelCushion;
 
     // nicole
@@ -665,12 +665,12 @@ void character::setCharacterData() {
     nicole.stats.sf = 0;
     nicole.stats.er = 1.56;
     nicole.stats.aaa = 0;
-    nicole.images.normalIcon = ":/characters/nicole/icon.png";
-    nicole.images.circleIcon = ":/characters/nicole/iconCircle.png";
-    nicole.images.portrait = ":/characters/nicole/portrait.png";
-    nicole.images.mindscapeNone = ":/characters/nicole/MindscapeNone.png";
-    nicole.images.mindscapeHalf = ":/characters/nicole/MindscapeHalf.png";
-    nicole.images.mindscapeFull = ":/characters/nicole/MindscapeFull.png";
+    nicole.images.normalIcon = ":/characters/nicole/icon.jxl";
+    nicole.images.circleIcon = ":/characters/nicole/iconCircle.jxl";
+    nicole.images.portrait = ":/characters/nicole/portrait.jxl";
+    nicole.images.mindscapeNone = ":/characters/nicole/MindscapeNone.jxl";
+    nicole.images.mindscapeHalf = ":/characters/nicole/MindscapeHalf.jxl";
+    nicole.images.mindscapeFull = ":/characters/nicole/MindscapeFull.jxl";
     nicole.preferredWengine = wengine::theVault;
 
     // orphiemagus
@@ -693,12 +693,12 @@ void character::setCharacterData() {
     orphiemagus.stats.sf = 0;
     orphiemagus.stats.er = 1.56;
     orphiemagus.stats.aaa = 0;
-    orphiemagus.images.normalIcon = ":/characters/orphiemagus/icon.png";
-    orphiemagus.images.circleIcon = ":/characters/orphiemagus/iconCircle.png";
-    orphiemagus.images.portrait = ":/characters/orphiemagus/portrait.png";
-    orphiemagus.images.mindscapeNone = ":/characters/orphiemagus/MindscapeNone.png";
-    orphiemagus.images.mindscapeHalf = ":/characters/orphiemagus/MindscapeHalf.png";
-    orphiemagus.images.mindscapeFull = ":/characters/orphiemagus/MindscapeFull.png";
+    orphiemagus.images.normalIcon = ":/characters/orphiemagus/icon.jxl";
+    orphiemagus.images.circleIcon = ":/characters/orphiemagus/iconCircle.jxl";
+    orphiemagus.images.portrait = ":/characters/orphiemagus/portrait.jxl";
+    orphiemagus.images.mindscapeNone = ":/characters/orphiemagus/MindscapeNone.jxl";
+    orphiemagus.images.mindscapeHalf = ":/characters/orphiemagus/MindscapeHalf.jxl";
+    orphiemagus.images.mindscapeFull = ":/characters/orphiemagus/MindscapeFull.jxl";
     orphiemagus.preferredWengine = wengine::kaboomTheCannon;
 
     // piper
@@ -721,12 +721,12 @@ void character::setCharacterData() {
     piper.stats.sf = 0;
     piper.stats.er = 1.56;
     piper.stats.aaa = 0;
-    piper.images.normalIcon = ":/characters/piper/icon.png";
-    piper.images.circleIcon = ":/characters/piper/iconCircle.png";
-    piper.images.portrait = ":/characters/piper/portrait.png";
-    piper.images.mindscapeNone = ":/characters/piper/MindscapeNone.png";
-    piper.images.mindscapeHalf = ":/characters/piper/MindscapeHalf.png";
-    piper.images.mindscapeFull = ":/characters/piper/MindscapeFull.png";
+    piper.images.normalIcon = ":/characters/piper/icon.jxl";
+    piper.images.circleIcon = ":/characters/piper/iconCircle.jxl";
+    piper.images.portrait = ":/characters/piper/portrait.jxl";
+    piper.images.mindscapeNone = ":/characters/piper/MindscapeNone.jxl";
+    piper.images.mindscapeHalf = ":/characters/piper/MindscapeHalf.jxl";
+    piper.images.mindscapeFull = ":/characters/piper/MindscapeFull.jxl";
     piper.preferredWengine = wengine::roaringRide;
 
     // pulchra
@@ -749,12 +749,12 @@ void character::setCharacterData() {
     pulchra.stats.sf = 0;
     pulchra.stats.er = 1.2;
     pulchra.stats.aaa = 0;
-    pulchra.images.normalIcon = ":/characters/pulchra/icon.png";
-    pulchra.images.circleIcon = ":/characters/pulchra/iconCircle.png";
-    pulchra.images.portrait = ":/characters/pulchra/portrait.png";
-    pulchra.images.mindscapeNone = ":/characters/pulchra/MindscapeNone.png";
-    pulchra.images.mindscapeHalf = ":/characters/pulchra/MindscapeHalf.png";
-    pulchra.images.mindscapeFull = ":/characters/pulchra/MindscapeFull.png";
+    pulchra.images.normalIcon = ":/characters/pulchra/icon.jxl";
+    pulchra.images.circleIcon = ":/characters/pulchra/iconCircle.jxl";
+    pulchra.images.portrait = ":/characters/pulchra/portrait.jxl";
+    pulchra.images.mindscapeNone = ":/characters/pulchra/MindscapeNone.jxl";
+    pulchra.images.mindscapeHalf = ":/characters/pulchra/MindscapeHalf.jxl";
+    pulchra.images.mindscapeFull = ":/characters/pulchra/MindscapeFull.jxl";
     pulchra.preferredWengine = wengine::boxCutter;
 
     // qingyi
@@ -777,12 +777,12 @@ void character::setCharacterData() {
     qingyi.stats.sf = 0;
     qingyi.stats.er = 1.2;
     qingyi.stats.aaa = 0;
-    qingyi.images.normalIcon = ":/characters/qingyi/icon.png";
-    qingyi.images.circleIcon = ":/characters/qingyi/iconCircle.png";
-    qingyi.images.portrait = ":/characters/qingyi/portrait.png";
-    qingyi.images.mindscapeNone = ":/characters/qingyi/MindscapeNone.png";
-    qingyi.images.mindscapeHalf = ":/characters/qingyi/MindscapeHalf.png";
-    qingyi.images.mindscapeFull = ":/characters/qingyi/MindscapeFull.png";
+    qingyi.images.normalIcon = ":/characters/qingyi/icon.jxl";
+    qingyi.images.circleIcon = ":/characters/qingyi/iconCircle.jxl";
+    qingyi.images.portrait = ":/characters/qingyi/portrait.jxl";
+    qingyi.images.mindscapeNone = ":/characters/qingyi/MindscapeNone.jxl";
+    qingyi.images.mindscapeHalf = ":/characters/qingyi/MindscapeHalf.jxl";
+    qingyi.images.mindscapeFull = ":/characters/qingyi/MindscapeFull.jxl";
     qingyi.preferredWengine = wengine::iceJadeTeapot;
 
     // rina
@@ -805,12 +805,12 @@ void character::setCharacterData() {
     rina.stats.sf = 0;
     rina.stats.er = 1.2;
     rina.stats.aaa = 0;
-    rina.images.normalIcon = ":/characters/rina/icon.png";
-    rina.images.circleIcon = ":/characters/rina/iconCircle.png";
-    rina.images.portrait = ":/characters/rina/portrait.png";
-    rina.images.mindscapeNone = ":/characters/rina/MindscapeNone.png";
-    rina.images.mindscapeHalf = ":/characters/rina/MindscapeHalf.png";
-    rina.images.mindscapeFull = ":/characters/rina/MindscapeFull.png";
+    rina.images.normalIcon = ":/characters/rina/icon.jxl";
+    rina.images.circleIcon = ":/characters/rina/iconCircle.jxl";
+    rina.images.portrait = ":/characters/rina/portrait.jxl";
+    rina.images.mindscapeNone = ":/characters/rina/MindscapeNone.jxl";
+    rina.images.mindscapeHalf = ":/characters/rina/MindscapeHalf.jxl";
+    rina.images.mindscapeFull = ":/characters/rina/MindscapeFull.jxl";
     rina.preferredWengine = wengine::reelProjector;
 
     // s0anby
@@ -833,12 +833,12 @@ void character::setCharacterData() {
     s0anby.stats.sf = 0;
     s0anby.stats.er = 1.2;
     s0anby.stats.aaa = 0;
-    s0anby.images.normalIcon = ":/characters/s0anby/icon.png";
-    s0anby.images.circleIcon = ":/characters/s0anby/icon.png";
-    s0anby.images.portrait = ":/characters/s0anby/portrait.png";
-    s0anby.images.mindscapeNone = ":/characters/s0anby/MindscapeNone.png";
-    s0anby.images.mindscapeHalf = ":/characters/s0anby/MindscapeHalf.png";
-    s0anby.images.mindscapeFull = ":/characters/s0anby/MindscapeFull.png";
+    s0anby.images.normalIcon = ":/characters/s0anby/icon.jxl";
+    s0anby.images.circleIcon = ":/characters/s0anby/icon.jxl";
+    s0anby.images.portrait = ":/characters/s0anby/portrait.jxl";
+    s0anby.images.mindscapeNone = ":/characters/s0anby/MindscapeNone.jxl";
+    s0anby.images.mindscapeHalf = ":/characters/s0anby/MindscapeHalf.jxl";
+    s0anby.images.mindscapeFull = ":/characters/s0anby/MindscapeFull.jxl";
     s0anby.preferredWengine = wengine::bunnyBand;
 
     // seed
@@ -861,12 +861,12 @@ void character::setCharacterData() {
     seed.stats.sf = 0;
     seed.stats.er = 1.2;
     seed.stats.aaa = 0;
-    seed.images.normalIcon = ":/characters/seed/icon.png";
-    seed.images.circleIcon = ":/characters/seed/iconCircle.png";
-    seed.images.portrait = ":/characters/seed/portrait.png";
-    seed.images.mindscapeNone = ":/characters/seed/MindscapeNone.png";
-    seed.images.mindscapeHalf = ":/characters/seed/MindscapeHalf.png";
-    seed.images.mindscapeFull = ":/characters/seed/MindscapeFull.png";
+    seed.images.normalIcon = ":/characters/seed/icon.jxl";
+    seed.images.circleIcon = ":/characters/seed/iconCircle.jxl";
+    seed.images.portrait = ":/characters/seed/portrait.jxl";
+    seed.images.mindscapeNone = ":/characters/seed/MindscapeNone.jxl";
+    seed.images.mindscapeHalf = ":/characters/seed/MindscapeHalf.jxl";
+    seed.images.mindscapeFull = ":/characters/seed/MindscapeFull.jxl";
     seed.preferredWengine = wengine::fusionCompiler;
 
     // seth
@@ -889,12 +889,12 @@ void character::setCharacterData() {
     seth.stats.sf = 0;
     seth.stats.er = 1.56;
     seth.stats.aaa = 0;
-    seth.images.normalIcon = ":/characters/seth/icon.png";
-    seth.images.circleIcon = ":/characters/seth/iconCircle.png";
-    seth.images.portrait = ":/characters/seth/portrait.png";
-    seth.images.mindscapeNone = ":/characters/seth/MindscapeNone.png";
-    seth.images.mindscapeHalf = ":/characters/seth/MindscapeHalf.png";
-    seth.images.mindscapeFull = ":/characters/seth/MindscapeFull.png";
+    seth.images.normalIcon = ":/characters/seth/icon.jxl";
+    seth.images.circleIcon = ":/characters/seth/iconCircle.jxl";
+    seth.images.portrait = ":/characters/seth/portrait.jxl";
+    seth.images.mindscapeNone = ":/characters/seth/MindscapeNone.jxl";
+    seth.images.mindscapeHalf = ":/characters/seth/MindscapeHalf.jxl";
+    seth.images.mindscapeFull = ":/characters/seth/MindscapeFull.jxl";
     seth.preferredWengine = wengine::peacekeeperSpecialized;
 
     // soldier11
@@ -917,12 +917,12 @@ void character::setCharacterData() {
     soldier11.stats.sf = 0;
     soldier11.stats.er = 1.2;
     soldier11.stats.aaa = 0;
-    soldier11.images.normalIcon = ":/characters/soldier11/icon.png";
-    soldier11.images.circleIcon = ":/characters/soldier11/iconCircle.png";
-    soldier11.images.portrait = ":/characters/soldier11/portrait.png";
-    soldier11.images.mindscapeNone = ":/characters/soldier11/MindscapeNone.png";
-    soldier11.images.mindscapeHalf = ":/characters/soldier11/MindscapeHalf.png";
-    soldier11.images.mindscapeFull = ":/characters/soldier11/MindscapeFull.png";
+    soldier11.images.normalIcon = ":/characters/soldier11/icon.jxl";
+    soldier11.images.circleIcon = ":/characters/soldier11/iconCircle.jxl";
+    soldier11.images.portrait = ":/characters/soldier11/portrait.jxl";
+    soldier11.images.mindscapeNone = ":/characters/soldier11/MindscapeNone.jxl";
+    soldier11.images.mindscapeHalf = ":/characters/soldier11/MindscapeHalf.jxl";
+    soldier11.images.mindscapeFull = ":/characters/soldier11/MindscapeFull.jxl";
     soldier11.preferredWengine = wengine::steelCushion;
 
     // soukaku
@@ -945,12 +945,12 @@ void character::setCharacterData() {
     soukaku.stats.sf = 0;
     soukaku.stats.er = 1.56;
     soukaku.stats.aaa = 0;
-    soukaku.images.normalIcon = ":/characters/soukaku/icon.png";
-    soukaku.images.circleIcon = ":/characters/soukaku/iconCircle.png";
-    soukaku.images.portrait = ":/characters/soukaku/portrait.png";
-    soukaku.images.mindscapeNone = ":/characters/soukaku/MindscapeNone.png";
-    soukaku.images.mindscapeHalf = ":/characters/soukaku/MindscapeHalf.png";
-    soukaku.images.mindscapeFull = ":/characters/soukaku/MindscapeFull.png";
+    soukaku.images.normalIcon = ":/characters/soukaku/icon.jxl";
+    soukaku.images.circleIcon = ":/characters/soukaku/iconCircle.jxl";
+    soukaku.images.portrait = ":/characters/soukaku/portrait.jxl";
+    soukaku.images.mindscapeNone = ":/characters/soukaku/MindscapeNone.jxl";
+    soukaku.images.mindscapeHalf = ":/characters/soukaku/MindscapeHalf.jxl";
+    soukaku.images.mindscapeFull = ":/characters/soukaku/MindscapeFull.jxl";
     soukaku.preferredWengine = wengine::bashfulDemon;
 
     // trigger
@@ -973,12 +973,12 @@ void character::setCharacterData() {
     trigger.stats.sf = 0;
     trigger.stats.er = 1.2;
     trigger.stats.aaa = 0;
-    trigger.images.normalIcon = ":/characters/trigger/icon.png";
-    trigger.images.circleIcon = ":/characters/trigger/iconCircle.png";
-    trigger.images.portrait = ":/characters/trigger/portrait.png";
-    trigger.images.mindscapeNone = ":/characters/trigger/MindscapeNone.png";
-    trigger.images.mindscapeHalf = ":/characters/trigger/MindscapeHalf.png";
-    trigger.images.mindscapeFull = ":/characters/trigger/MindscapeFull.png";
+    trigger.images.normalIcon = ":/characters/trigger/icon.jxl";
+    trigger.images.circleIcon = ":/characters/trigger/iconCircle.jxl";
+    trigger.images.portrait = ":/characters/trigger/portrait.jxl";
+    trigger.images.mindscapeNone = ":/characters/trigger/MindscapeNone.jxl";
+    trigger.images.mindscapeHalf = ":/characters/trigger/MindscapeHalf.jxl";
+    trigger.images.mindscapeFull = ":/characters/trigger/MindscapeFull.jxl";
     trigger.preferredWengine = wengine::spectralGaze;
 
     // vivian
@@ -1001,12 +1001,12 @@ void character::setCharacterData() {
     vivian.stats.sf = 0;
     vivian.stats.er = 1.2;
     vivian.stats.aaa = 0;
-    vivian.images.normalIcon = ":/characters/vivian/icon.png";
-    vivian.images.circleIcon = ":/characters/vivian/iconCircle.png";
-    vivian.images.portrait = ":/characters/vivian/portrait.png";
-    vivian.images.mindscapeNone = ":/characters/vivian/MindscapeNone.png";
-    vivian.images.mindscapeHalf = ":/characters/vivian/MindscapeHalf.png";
-    vivian.images.mindscapeFull = ":/characters/vivian/MindscapeFull.png";
+    vivian.images.normalIcon = ":/characters/vivian/icon.jxl";
+    vivian.images.circleIcon = ":/characters/vivian/iconCircle.jxl";
+    vivian.images.portrait = ":/characters/vivian/portrait.jxl";
+    vivian.images.mindscapeNone = ":/characters/vivian/MindscapeNone.jxl";
+    vivian.images.mindscapeHalf = ":/characters/vivian/MindscapeHalf.jxl";
+    vivian.images.mindscapeFull = ":/characters/vivian/MindscapeFull.jxl";
     vivian.preferredWengine = wengine::flightOfFancy;
 
     // yanagi
@@ -1029,12 +1029,12 @@ void character::setCharacterData() {
     yanagi.stats.sf = 0;
     yanagi.stats.er = 1.2;
     yanagi.stats.aaa = 0;
-    yanagi.images.normalIcon = ":/characters/yanagi/icon.png";
-    yanagi.images.circleIcon = ":/characters/yanagi/iconCircle.png";
-    yanagi.images.portrait = ":/characters/yanagi/portrait.png";
-    yanagi.images.mindscapeNone = ":/characters/yanagi/MindscapeNone.png";
-    yanagi.images.mindscapeHalf = ":/characters/yanagi/MindscapeHalf.png";
-    yanagi.images.mindscapeFull = ":/characters/yanagi/MindscapeFull.png";
+    yanagi.images.normalIcon = ":/characters/yanagi/icon.jxl";
+    yanagi.images.circleIcon = ":/characters/yanagi/iconCircle.jxl";
+    yanagi.images.portrait = ":/characters/yanagi/portrait.jxl";
+    yanagi.images.mindscapeNone = ":/characters/yanagi/MindscapeNone.jxl";
+    yanagi.images.mindscapeHalf = ":/characters/yanagi/MindscapeHalf.jxl";
+    yanagi.images.mindscapeFull = ":/characters/yanagi/MindscapeFull.jxl";
     yanagi.preferredWengine = wengine::timeweaver;
 
     // yinhu
@@ -1057,12 +1057,12 @@ void character::setCharacterData() {
     yinhu.stats.sf = 0;
     yinhu.stats.er = 1.56;
     yinhu.stats.aaa = 0;
-    yinhu.images.normalIcon = ":/characters/yinhu/icon.png";
-    yinhu.images.circleIcon = ":/characters/yinhu/iconCircle.png";
-    yinhu.images.portrait = ":/characters/yinhu/portrait.png";
-    yinhu.images.mindscapeNone = ":/characters/yinhu/MindscapeNone.png";
-    yinhu.images.mindscapeHalf = ":/characters/yinhu/MindscapeHalf.png";
-    yinhu.images.mindscapeFull = ":/characters/yinhu/MindscapeFull.png";
+    yinhu.images.normalIcon = ":/characters/yinhu/icon.jxl";
+    yinhu.images.circleIcon = ":/characters/yinhu/iconCircle.jxl";
+    yinhu.images.portrait = ":/characters/yinhu/portrait.jxl";
+    yinhu.images.mindscapeNone = ":/characters/yinhu/MindscapeNone.jxl";
+    yinhu.images.mindscapeHalf = ":/characters/yinhu/MindscapeHalf.jxl";
+    yinhu.images.mindscapeFull = ":/characters/yinhu/MindscapeFull.jxl";
     yinhu.preferredWengine = wengine::tremorTrigramVessel;
 
     // yixuan
@@ -1085,12 +1085,12 @@ void character::setCharacterData() {
     yixuan.stats.sf = 1099;
     yixuan.stats.er = 0;
     yixuan.stats.aaa = 2;
-    yixuan.images.normalIcon = ":/characters/yixuan/icon.png";
-    yixuan.images.circleIcon = ":/characters/yixuan/iconCircle.png";
-    yixuan.images.portrait = ":/characters/yixuan/portrait.png";
-    yixuan.images.mindscapeNone = ":/characters/yixuan/MindscapeNone.png";
-    yixuan.images.mindscapeHalf = ":/characters/yixuan/MindscapeHalf.png";
-    yixuan.images.mindscapeFull = ":/characters/yixuan/MindscapeFull.png";
+    yixuan.images.normalIcon = ":/characters/yixuan/icon.jxl";
+    yixuan.images.circleIcon = ":/characters/yixuan/iconCircle.jxl";
+    yixuan.images.portrait = ":/characters/yixuan/portrait.jxl";
+    yixuan.images.mindscapeNone = ":/characters/yixuan/MindscapeNone.jxl";
+    yixuan.images.mindscapeHalf = ":/characters/yixuan/MindscapeHalf.jxl";
+    yixuan.images.mindscapeFull = ":/characters/yixuan/MindscapeFull.jxl";
     yixuan.preferredWengine = wengine::qingmingBirdcage;
 
     // yuzuha
@@ -1113,12 +1113,12 @@ void character::setCharacterData() {
     yuzuha.stats.sf = 0;
     yuzuha.stats.er = 1.2;
     yuzuha.stats.aaa = 0;
-    yuzuha.images.normalIcon = ":/characters/yuzuha/icon.png";
-    yuzuha.images.circleIcon = ":/characters/yuzuha/iconCircle.png";
-    yuzuha.images.portrait = ":/characters/yuzuha/portrait.png";
-    yuzuha.images.mindscapeNone = ":/characters/yuzuha/MindscapeNone.png";
-    yuzuha.images.mindscapeHalf = ":/characters/yuzuha/MindscapeHalf.png";
-    yuzuha.images.mindscapeFull = ":/characters/yuzuha/MindscapeFull.png";
+    yuzuha.images.normalIcon = ":/characters/yuzuha/icon.jxl";
+    yuzuha.images.circleIcon = ":/characters/yuzuha/iconCircle.jxl";
+    yuzuha.images.portrait = ":/characters/yuzuha/portrait.jxl";
+    yuzuha.images.mindscapeNone = ":/characters/yuzuha/MindscapeNone.jxl";
+    yuzuha.images.mindscapeHalf = ":/characters/yuzuha/MindscapeHalf.jxl";
+    yuzuha.images.mindscapeFull = ":/characters/yuzuha/MindscapeFull.jxl";
     yuzuha.preferredWengine = wengine::sliceOfTime;
 
     // zhuyuan
@@ -1141,12 +1141,12 @@ void character::setCharacterData() {
     zhuyuan.stats.sf = 0;
     zhuyuan.stats.er = 1.2;
     zhuyuan.stats.aaa = 0;
-    zhuyuan.images.normalIcon = ":/characters/zhuyuan/icon.png";
-    zhuyuan.images.circleIcon = ":/characters/zhuyuan/iconCircle.png";
-    zhuyuan.images.portrait = ":/characters/zhuyuan/portrait.png";
-    zhuyuan.images.mindscapeNone = ":/characters/zhuyuan/MindscapeNone.png";
-    zhuyuan.images.mindscapeHalf = ":/characters/zhuyuan/MindscapeHalf.png";
-    zhuyuan.images.mindscapeFull = ":/characters/zhuyuan/MindscapeFull.png";
+    zhuyuan.images.normalIcon = ":/characters/zhuyuan/icon.jxl";
+    zhuyuan.images.circleIcon = ":/characters/zhuyuan/iconCircle.jxl";
+    zhuyuan.images.portrait = ":/characters/zhuyuan/portrait.jxl";
+    zhuyuan.images.mindscapeNone = ":/characters/zhuyuan/MindscapeNone.jxl";
+    zhuyuan.images.mindscapeHalf = ":/characters/zhuyuan/MindscapeHalf.jxl";
+    zhuyuan.images.mindscapeFull = ":/characters/zhuyuan/MindscapeFull.jxl";
     zhuyuan.preferredWengine = wengine::riotSuppressorMarkVI;
 
     characterList = {

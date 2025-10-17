@@ -22,8 +22,6 @@ qt_add_executable(zzz-optimizer
     window.h
     resources.qrc
 
-
-
     test.h test.cpp test.ui
 
     character.h character.cpp
