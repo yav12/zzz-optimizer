@@ -30,10 +30,11 @@ qt_add_executable(zzz-optimizer
     library.cpp
     navigation.cpp
     home.cpp
-    calc.cpp
+
     reference.cpp
     calculator.h calculator.cpp
     wengine.h wengine.cpp
+    disc.h disc.cpp
 
 
 )
