@@ -18,6 +18,8 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     selectionsLayout->addWidget(characterSelect, 0, 0);
     connect(characterSelect, &QComboBox::currentTextChanged, [this]() {
         setCharacter(character::characterList[characterSelect->currentIndex()]);
+        wengineSelect->setCurrentText(QString::fromStdString(currentCharacter.preferredWengine.name));
+        setWengine(currentCharacter.preferredWengine);
     });
 
     //wengine select combobox
@@ -56,18 +58,47 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     statsLayout->addWidget(defLabel, 2, 0);
     impactLabel = new QLabel("Impact:");
     statsLayout->addWidget(impactLabel, 3, 0);
-    crLabel = new QLabel("CR:");
+    crLabel = new QLabel("Crit Rate:");
     statsLayout->addWidget(crLabel, 4, 0);
-    cdLabel = new QLabel("CD:");
+    cdLabel = new QLabel("Crit Damage:");
     statsLayout->addWidget(cdLabel, 5, 0);
-    amLabel = new QLabel("AM:");
+    amLabel = new QLabel("Anomaly Mastery:");
     statsLayout->addWidget(amLabel, 6, 0);
-    apLabel = new QLabel("AP:");
+    apLabel = new QLabel("Anomaly Proficiency:");
     statsLayout->addWidget(apLabel, 7, 0);
     penrLabel = new QLabel("PEN Ratio:");
     statsLayout->addWidget(penrLabel, 8, 0);
-    erLabel = new QLabel("ER:");
-    statsLayout->addWidget(erLabel, 9, 0);
+    penLabel = new QLabel("PEN:");
+    statsLayout->addWidget(penLabel, 9, 0);
+    sfLabel = new QLabel("SF:");
+    erLabel = new QLabel("Energy Regen:");
+    statsLayout->addWidget(erLabel, 10, 0);
+    aaaLabel = new QLabel("Automatic Adrenaline Accumulation:");
+
+    statsHP = new QLabel("?");
+    statsLayout->addWidget(statsHP, 0, 1);
+    statsATK = new QLabel("?");
+    statsLayout->addWidget(statsATK, 1, 1);
+    statsDEF = new QLabel("?");
+    statsLayout->addWidget(statsDEF, 2, 1);
+    statsImpact = new QLabel("?");
+    statsLayout->addWidget(statsImpact, 3, 1);
+    statsCR = new QLabel("?");
+    statsLayout->addWidget(statsCR, 4, 1);
+    statsCD = new QLabel("?");
+    statsLayout->addWidget(statsCD, 5, 1);
+    statsAM = new QLabel("?");
+    statsLayout->addWidget(statsAM, 6, 1);
+    statsAP = new QLabel("?");
+    statsLayout->addWidget(statsAP, 7, 1);
+    statsPENR = new QLabel("?");
+    statsLayout->addWidget(statsPENR, 8, 1);
+    statsPEN = new QLabel("?");
+    statsLayout->addWidget(statsPEN, 9, 1);
+    statsER = new QLabel("?");
+    statsLayout->addWidget(statsER, 10, 1);
+    statsSF = new QLabel("?");
+    statsAAA = new QLabel("?");
 }
 
 void calculator::redrawImages() {
@@ -99,19 +130,34 @@ void calculator::redrawImages() {
     }
 }
 
-void calculator::redrawStats() {
-    statsHP->setText(QString::number(currentCharacter.stats.hp));
-    statsATK->setText(QString::number(currentCharacter.stats.atk));
-    statsDEF->setText(QString::number(currentCharacter.stats.def));
-    statsImpact->setText(QString::number(currentCharacter.stats.impact));
-    statsCR->setText(QString::number(currentCharacter.stats.cr) + "%");
-    statsCD->setText(QString::number(currentCharacter.stats.cd) + "%");
-    statsAM->setText(QString::number(currentCharacter.stats.am) + "%");
-    statsAP->setText(QString::number(currentCharacter.stats.ap) + "%");
-    statsPENR->setText(QString::number(currentCharacter.stats.penr) + "%");
-    statsSF->setText(QString::number(currentCharacter.stats.sf));
-    statsER->setText(QString::number(currentCharacter.stats.er) + "%");
-    statsAAA->setText(QString::number(currentCharacter.stats.aaa) + "%");
+void calculator::redrawStats(character::character calcs) {
+    if (currentCharacter.attribute == "Rupture") {
+        //rupture units use sheer force & adrenaline not energy regen & pen
+        statsLayout->removeWidget(penrLabel);
+        statsLayout->removeWidget(penLabel);
+        statsLayout->removeWidget(erLabel);
+        statsLayout->addWidget(sfLabel, 8, 0);
+        statsLayout->addWidget(aaaLabel, 9, 0);
+
+        statsLayout->removeWidget(statsPENR);
+        statsLayout->removeWidget(statsPEN);
+        statsLayout->removeWidget(statsER);
+        statsLayout->addWidget(statsSF, 8, 1);
+        statsLayout->addWidget(statsAAA, 9, 1);
+    }
+
+    statsHP->setText(QString::number(calcs.stats.hp));
+    statsATK->setText(QString::number(calcs.stats.atk));
+    statsDEF->setText(QString::number(calcs.stats.def));
+    statsImpact->setText(QString::number(calcs.stats.impact));
+    statsCR->setText(QString::number(calcs.stats.cr) + "%");
+    statsCD->setText(QString::number(calcs.stats.cd) + "%");
+    statsAM->setText(QString::number(calcs.stats.am));
+    statsAP->setText(QString::number(calcs.stats.ap));
+    statsPENR->setText(QString::number(calcs.stats.penr) + "%");
+    statsSF->setText(QString::number(calcs.stats.sf));
+    statsER->setText(QString::number(calcs.stats.er));
+    statsAAA->setText(QString::number(calcs.stats.aaa));
 }
 
 void calculator::setCharacter(character::character c) {
@@ -125,7 +171,33 @@ void calculator::setWengine(wengine::wengine w) {
 }
 
 void calculator::recalculate() {
+    // start with base stats
+    calculatedCharacter = currentCharacter;
+    // apply wengine
+    calculatedCharacter.stats.atk += currentWengine.baseAtk;
+    // apply secondary stat bonus
+    if (currentWengine.stat == "HP") {
+        calculatedCharacter.stats.hp *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
+    } else if (currentWengine.stat == "ATK") {
+        calculatedCharacter.stats.atk *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
+    } else if (currentWengine.stat == "DEF") {
+        calculatedCharacter.stats.def *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
+    } else if (currentWengine.stat == "Impact") {
+        calculatedCharacter.stats.impact *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
+    } else if (currentWengine.stat == "Crit Rate") {
+        calculatedCharacter.stats.cr += static_cast<double>(currentWengine.statPercent);
+    } else if (currentWengine.stat == "Crit Damage") {
+        calculatedCharacter.stats.cd += static_cast<double>(currentWengine.statPercent);
+    } else if (currentWengine.stat == "Anomaly Proficiency") {
+        calculatedCharacter.stats.ap += static_cast<double>(currentWengine.statPercent);
+    } else if (currentWengine.stat == "PEN Ratio") {
+        calculatedCharacter.stats.penr += static_cast<double>(currentWengine.statPercent);
+    } else if (currentWengine.stat == "Energy Regen") {
+        calculatedCharacter.stats.er += static_cast<double>(currentWengine.statPercent);
+    } //no w engines give anomaly mastery or sheer force or adrenaline
 
+    // show the computed stats (no discs yet)
+    redrawStats(calculatedCharacter);
 }
 
 

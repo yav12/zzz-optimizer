@@ -33,12 +33,13 @@ public:
 private:
     character::character currentCharacter;
     wengine::wengine currentWengine;
+    character::character calculatedCharacter;
     //discs
     QComboBox *setBonus1;
     QComboBox *setBonus2;
     QComboBox *setBonus3;
 
-    void redrawStats();
+    void redrawStats(character::character);
     void redrawImages();
     //display items
     QGridLayout *layout;
@@ -68,6 +69,8 @@ private:
     QLabel *statsAP;
     QLabel *penrLabel;
     QLabel *statsPENR;
+    QLabel *penLabel;
+    QLabel *statsPEN;
     QLabel *sfLabel;
     QLabel *statsSF;
     QLabel *erLabel;
