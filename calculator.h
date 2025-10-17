@@ -5,6 +5,7 @@
 #include <QWidget>
 #include <QLabel>
 #include <QGridLayout>
+#include <QStackedLayout>
 #include <QComboBox>
 #include <QPushButton>
 #include "character.h"
@@ -51,6 +52,9 @@ private:
     QLabel *wengineImage;
     QGridLayout *statsLayout;
     //stats labels
+    QStackedLayout *ruptureStack;
+    QGridLayout *nonRuptureLayout;
+    QGridLayout *ruptureLayout;
     QLabel *hpLabel;
     QLabel *statsHP;
     QLabel *atkLabel;

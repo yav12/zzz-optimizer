@@ -50,6 +50,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     layout->addWidget(wengineImage, 2, 1);
 
     //stats labels
+    //unchanging labels
     hpLabel = new QLabel("HP:");
     statsLayout->addWidget(hpLabel, 0, 0);
     atkLabel = new QLabel("ATK:");
@@ -66,15 +67,38 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     statsLayout->addWidget(amLabel, 6, 0);
     apLabel = new QLabel("Anomaly Proficiency:");
     statsLayout->addWidget(apLabel, 7, 0);
-    penrLabel = new QLabel("PEN Ratio:");
-    statsLayout->addWidget(penrLabel, 8, 0);
-    penLabel = new QLabel("PEN:");
-    statsLayout->addWidget(penLabel, 9, 0);
-    sfLabel = new QLabel("SF:");
-    erLabel = new QLabel("Energy Regen:");
-    statsLayout->addWidget(erLabel, 10, 0);
-    aaaLabel = new QLabel("Automatic Adrenaline Accumulation:");
 
+    // will change based on rupture/not rupture
+    ruptureStack = new QStackedLayout();
+    ruptureStack->setContentsMargins(0, 0, 0, 0);
+    ruptureStack->setSpacing(0);
+    ruptureLayout = new QGridLayout();
+    ruptureLayout->setContentsMargins(0, 0, 0, 0);
+    nonRuptureLayout = new QGridLayout();
+    nonRuptureLayout->setContentsMargins(0, 0, 0, 0);
+    statsLayout->addLayout(ruptureStack, 8, 0, 3, 2);
+    //non-rupture layout
+    QWidget *nonRuptureWidget = new QWidget();
+    nonRuptureWidget->setLayout(nonRuptureLayout);
+    ruptureStack->addWidget(nonRuptureWidget);
+    penrLabel = new QLabel("PEN Ratio:");
+    nonRuptureLayout->addWidget(penrLabel, 0, 0);
+    penLabel = new QLabel("PEN:");
+    nonRuptureLayout->addWidget(penLabel, 1, 0);
+    erLabel = new QLabel("Energy Regen:");
+    nonRuptureLayout->addWidget(erLabel, 2, 0);
+    //rupture layout
+    QWidget *ruptureWidget = new QWidget();
+    ruptureWidget->setLayout(ruptureLayout);
+    ruptureStack->addWidget(ruptureWidget);
+    sfLabel = new QLabel("Sheer Force:");
+    ruptureLayout->addWidget(sfLabel, 0, 0);
+    aaaLabel = new QLabel("Automatic Adrenaline Accumulation:");
+    ruptureLayout->addWidget(aaaLabel, 1, 0);
+    QLabel *spacer = new QLabel(""); // empty spacer
+    ruptureLayout->addWidget(spacer, 2, 0);
+
+    //default values for stats
     statsHP = new QLabel("?");
     statsLayout->addWidget(statsHP, 0, 1);
     statsATK = new QLabel("?");
@@ -91,14 +115,17 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     statsLayout->addWidget(statsAM, 6, 1);
     statsAP = new QLabel("?");
     statsLayout->addWidget(statsAP, 7, 1);
+
     statsPENR = new QLabel("?");
-    statsLayout->addWidget(statsPENR, 8, 1);
+    nonRuptureLayout->addWidget(statsPENR, 0, 1);
     statsPEN = new QLabel("?");
-    statsLayout->addWidget(statsPEN, 9, 1);
+    nonRuptureLayout->addWidget(statsPEN, 1, 1);
     statsER = new QLabel("?");
-    statsLayout->addWidget(statsER, 10, 1);
+    nonRuptureLayout->addWidget(statsER, 2, 1);
     statsSF = new QLabel("?");
+    ruptureLayout->addWidget(statsSF, 0, 1);
     statsAAA = new QLabel("?");
+    ruptureLayout->addWidget(statsAAA, 1, 1);
 }
 
 void calculator::redrawImages() {
@@ -131,21 +158,7 @@ void calculator::redrawImages() {
 }
 
 void calculator::redrawStats(character::character calcs) {
-    if (currentCharacter.attribute == "Rupture") {
-        //rupture units use sheer force & adrenaline not energy regen & pen
-        statsLayout->removeWidget(penrLabel);
-        statsLayout->removeWidget(penLabel);
-        statsLayout->removeWidget(erLabel);
-        statsLayout->addWidget(sfLabel, 8, 0);
-        statsLayout->addWidget(aaaLabel, 9, 0);
-
-        statsLayout->removeWidget(statsPENR);
-        statsLayout->removeWidget(statsPEN);
-        statsLayout->removeWidget(statsER);
-        statsLayout->addWidget(statsSF, 8, 1);
-        statsLayout->addWidget(statsAAA, 9, 1);
-    }
-
+    //set labels
     statsHP->setText(QString::number(calcs.stats.hp));
     statsATK->setText(QString::number(calcs.stats.atk));
     statsDEF->setText(QString::number(calcs.stats.def));
@@ -155,9 +168,17 @@ void calculator::redrawStats(character::character calcs) {
     statsAM->setText(QString::number(calcs.stats.am));
     statsAP->setText(QString::number(calcs.stats.ap));
     statsPENR->setText(QString::number(calcs.stats.penr) + "%");
+    statsPEN->setText(QString::number(calcs.stats.pen));
     statsSF->setText(QString::number(calcs.stats.sf));
     statsER->setText(QString::number(calcs.stats.er));
     statsAAA->setText(QString::number(calcs.stats.aaa));
+
+    // choose the correct page based on the character specialty
+    if (calcs.specialty == "Rupture") {
+        ruptureStack->setCurrentIndex(1); // rupture
+    } else {
+        ruptureStack->setCurrentIndex(0); // not rupture
+    }
 }
 
 void calculator::setCharacter(character::character c) {
