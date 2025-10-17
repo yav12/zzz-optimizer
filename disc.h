@@ -44,18 +44,18 @@ private:
 
     struct baseValues {
         struct b {
-            double mainHP[10] = {};
-            double mainATK[10] = {};
-            double mainDEF[10] = {};
-            double mainHPPercent[10] = {};
-            double mainATKPercent[10] = {};
-            double mainDEFPercent[10] = {};
+            double mainHP[10] = {183, 243, 305, 366, 426, 488, 549, 609, 671, 732};
+            double mainATK[10] = {26, 34, 43, 52, 60, 69, 78, 86, 95, 104};
+            double mainDEF[10] = {15, 19, 25, 30, 34, 40, 45, 49, 55, 60};
+            double mainHPPercent[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
+            double mainATKPercent[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
+            double mainDEFPercent[10] = {4, 5.3, 6.7, 8, 9.3, 10.7, 12, 13.3, 14.7, 16};
             double mainCritRate[10] = {};
-            double mainCritDmg[10] = {};
+            double mainCritDmg[10] = {4, 5.3, 6.7, 8, 9.3, 10.7, 12, 13.3, 14.7, 16};
             double mainAP[10] = {};
-            double mainAM[10] = {};
+            double mainAM[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
             double mainPENR[10] = {};
-            double attributeBonus[10] = {};
+            double attributeBonus[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
             double mainImpact[10] = {};
             double mainER[10] = {};
 
@@ -72,18 +72,18 @@ private:
         };
         struct a {
             double mainHP[13] = {367, 458, 550, 642, 734, 825, 917, 1009, 1101, 1192, 1284, 1376, 1468};
-            double mainATK[13] = {};
-            double mainDEF[13] = {};
-            double mainHPPercent[13] = {};
-            double mainATKPercent[13] = {};
-            double mainDEFPercent[13] = {};
-            double mainCritRate[13] = {};
-            double mainCritDmg[13] = {};
-            double mainAP[13] = {};
-            double mainAM[13] = {};
-            double mainPENR[13] = {};
-            double attributeBonus[13] = {};
-            double mainImpact[13] = {};
+            double mainATK[13] = {53, 66, 79, 92, 106, 119, 132, 145, 159, 172, 185, 198, 212};
+            double mainDEF[13] = {31, 38, 46, 54, 62, 69, 77, 85, 93, 100, 108, 116, 124};
+            double mainHPPercent[13] = {5, 6.3, 7.5, 8.8, 10, 11.3, 12.5, 13.8, 15, 16.3, 17.5, 18.8, 20};
+            double mainATKPercent[13] = {5, 6.3, 7.5, 8.8, 10, 11.3, 12.5, 13.8, 15, 16.3, 17.5, 18.8, 20};
+            double mainDEFPercent[13] = {8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32};
+            double mainCritRate[13] = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+            double mainCritDmg[13] = {8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32};
+            double mainAP[13] = {15, 18, 22, 26, 30, 33, 37, 41, 45, 48, 52, 56, 60};
+            double mainAM[13] = {5, 6.3, 7.5, 8.8, 10, 11.3, 12.5, 13.8, 15, 16.3, 17.5, 18.8, 20};
+            double mainPENR[13] = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+            double attributeBonus[13] = {5, 6.3, 7.5, 8.8, 10, 11.3, 12.5, 13.8, 15, 16.3, 17.5, 18.8, 20};
+            double mainImpact[13] = {3, 3.8, 4.5, 5.3, 6, 6.8, 7.5, 8.3, 9, 9.8, 10.5, 11.3, 12};
             double mainER[13] = {10, 12.5, 15, 17.5, 20, 22.5, 25, 27.5, 30, 32.5, 35, 37.5, 40};
 
             double hp = 75;
