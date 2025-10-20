@@ -6,6 +6,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_standard_project_setup()
 
@@ -24,15 +25,17 @@ qt_add_executable(zzz-optimizer
 
     test.h test.cpp test.ui
 
-    character.h character.cpp
-    library.cpp
+    content/character.h content/character.cpp
+    content/library.cpp
     navigation.cpp
     home.cpp
 
-    reference.cpp
-    calculator.h calculator.cpp
+    content/reference.cpp
+    content/calculator.h content/calculator.cpp
     wengine.h wengine.cpp
     disc.h disc.cpp
+    selectors/charselector.h selectors/charselector.cpp
+    selectors/discselector.h selectors/discselector.cpp
 
 
 )
@@ -42,6 +45,7 @@ target_link_libraries(zzz-optimizer
         Qt::Core
         Qt::Widgets
 )
+target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
 target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
 target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
 target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)

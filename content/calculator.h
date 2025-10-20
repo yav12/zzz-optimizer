@@ -9,7 +9,7 @@
 #include <QComboBox>
 #include <QPushButton>
 #include "character.h"
-#include "wengine.h"
+#include "../wengine.h"
 #include <string>
 
 

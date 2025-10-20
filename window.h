@@ -1,8 +1,8 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include "character.h"
-#include "calculator.h"
+#include "content/character.h"
+#include "content/calculator.h"
 #include <QMainWindow>
 #include <QWidget>
 #include <QStackedWidget>
