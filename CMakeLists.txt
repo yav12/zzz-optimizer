@@ -30,12 +30,12 @@ qt_add_executable(zzz-optimizer
 
     data/wengine.h data/wengine.cpp
     data/character.h data/character.cpp
-    content/library.cpp
-
+    data/disc.h data/disc.cpp
 
     content/reference.cpp
     content/calculator.h content/calculator.cpp
-    data/disc.h data/disc.cpp
+    content/library.cpp
+
     selectors/charselector.h selectors/charselector.cpp
     selectors/discselector.h selectors/discselector.cpp
 
@@ -47,11 +47,6 @@ target_link_libraries(zzz-optimizer
         Qt::Core
         Qt::Widgets
 )
-target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
-target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
-target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
-target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
-target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
 
 include(GNUInstallDirs)
 
