@@ -50,14 +50,14 @@ private:
             double mainHPPercent[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
             double mainATKPercent[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
             double mainDEFPercent[10] = {4, 5.3, 6.7, 8, 9.3, 10.7, 12, 13.3, 14.7, 16};
-            double mainCritRate[10] = {};
+            double mainCritRate[10] = {2, 2.7, 3.3, 4, 4.7, 5.3, 6, 6.7, 7.3, 8};
             double mainCritDmg[10] = {4, 5.3, 6.7, 8, 9.3, 10.7, 12, 13.3, 14.7, 16};
-            double mainAP[10] = {};
+            double mainAP[10] = {8, 9, 10, 10, 11, 13, 13, 14, 14, 16}; //approximate values, validate later
             double mainAM[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
-            double mainPENR[10] = {};
+            double mainPENR[10] = {2, 2.7, 3.3, 4, 4.7, 5.3, 6, 6.7, 7.3, 8};
             double attributeBonus[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
-            double mainImpact[10] = {};
-            double mainER[10] = {};
+            double mainImpact[10] = {1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6};
+            double mainER[10] = {5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5}; //approximate values, validate later
 
             double hp = 39;
             double atk = 7;
@@ -98,7 +98,7 @@ private:
             double PEN = 6;
         };
         struct s {
-            double mainHP[16] = {500, 610, 720, 830, 940, 1050, 1160, 1270, 1380, 1490, 1600, 1710, 1820, 1930, 2040, 2150};
+            double mainHP[16] = {550, 660, 770, 880, 990, 1100, 1210, 1320, 1430, 1540, 1650, 1760, 1870, 1980, 2090, 2200};
             double mainATK[16] = {79, 94, 110, 126, 142, 158, 173, 189, 205, 221, 237, 252, 268, 284, 300, 316};
             double mainDEF[16] = {46, 55, 64, 73, 82, 92, 101, 110, 119, 128, 138, 147, 156, 165, 174, 184};
             double mainHPPercent[16] = {7.5, 9, 10.5, 12, 13.5, 15, 16.5, 18, 19.5, 21, 22.5, 24, 25.5, 27, 28.5, 30};
