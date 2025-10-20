@@ -8,8 +8,8 @@
 #include <QStackedLayout>
 #include <QComboBox>
 #include <QPushButton>
-#include "character.h"
-#include "../wengine.h"
+#include "../data/character.h"
+#include "../data/wengine.h"
 #include <string>
 
 

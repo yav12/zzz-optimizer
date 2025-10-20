@@ -1,5 +1,5 @@
 #include "window.h"
-#include "content/character.h"
+#include "data/character.h"
 
 void window::setupHome() {
     //set up layout

@@ -23,17 +23,19 @@ qt_add_executable(zzz-optimizer
     window.h
     resources.qrc
 
-    test.h test.cpp test.ui
-
-    content/character.h content/character.cpp
-    content/library.cpp
     navigation.cpp
     home.cpp
 
+    test.h test.cpp test.ui
+
+    data/wengine.h data/wengine.cpp
+    data/character.h data/character.cpp
+    content/library.cpp
+
+
     content/reference.cpp
     content/calculator.h content/calculator.cpp
-    wengine.h wengine.cpp
-    disc.h disc.cpp
+    data/disc.h data/disc.cpp
     selectors/charselector.h selectors/charselector.cpp
     selectors/discselector.h selectors/discselector.cpp
 

@@ -1,5 +1,5 @@
 #include "../window.h"
-#include "character.h"
+#include "../data/character.h"
 
 void window::setupReference() {
     //set up layout

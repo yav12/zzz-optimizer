@@ -4,7 +4,7 @@
 #include "QStackedWidget"
 #include "QLabel"
 #include "QPixmap"
-#include "content/character.h"
+#include "data/character.h"
 
 window::window(QWidget *parent)
     : QMainWindow(parent)

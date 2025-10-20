@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "../wengine.h"
+#include "wengine.h"
 
 namespace character {
 struct character {
