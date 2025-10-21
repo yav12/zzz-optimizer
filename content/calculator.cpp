@@ -31,9 +31,17 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     connect(wengineSelect, &QComboBox::currentTextChanged, [this]() {
         setWengine(wengine::wengineList[wengineSelect->currentIndex()]);
     });
+    //test character select button
+    characterSelectButton = new QPushButton("Select Character");
+    selectionsLayout->addWidget(characterSelectButton, 1, 0, 1, 2);
+    connect(characterSelectButton, &QPushButton::clicked, [this]() {
+        charSelectorWidget = new charSelector();
+        charSelectorWidget->setWindowModality(Qt::ApplicationModal);
+        charSelectorWidget->show();
+    });
     //calculate button
     calculateButton = new QPushButton("Calculate");
-    selectionsLayout->addWidget(calculateButton, 1, 0, 1, 2);
+    selectionsLayout->addWidget(calculateButton, 2, 0, 1, 2);
     connect(calculateButton, &QPushButton::clicked, this, &calculator::recalculate);
 
     //images

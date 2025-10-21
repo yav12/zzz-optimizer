@@ -8,9 +8,13 @@
 #include <QStackedLayout>
 #include <QComboBox>
 #include <QPushButton>
+
+#include <string>
+
 #include "../data/character.h"
 #include "../data/wengine.h"
-#include <string>
+
+#include "../selectors/charselector.h"
 
 
 class calculator : public QWidget
@@ -35,17 +39,22 @@ private:
     character::character currentCharacter;
     wengine::wengine currentWengine;
     character::character calculatedCharacter;
+
+    void redrawStats(character::character);
+    void redrawImages();
+
     //discs
     QComboBox *setBonus1;
     QComboBox *setBonus2;
     QComboBox *setBonus3;
 
-    void redrawStats(character::character);
-    void redrawImages();
+
     //display items
     QGridLayout *layout;
     QGridLayout *selectionsLayout;
     QComboBox *characterSelect;
+    QPushButton *characterSelectButton;
+    charSelector *charSelectorWidget;
     QComboBox *wengineSelect;
     QPushButton *calculateButton;
     QLabel *characterImage;
