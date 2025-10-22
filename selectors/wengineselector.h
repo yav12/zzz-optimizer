@@ -12,8 +12,7 @@
 #include <QResizeEvent>
 #include "../data/wengine.h"
 
-class wengineSelector : public QWidget
-{
+class wengineSelector : public QWidget {
     Q_OBJECT
 public:
     wengineSelector(QWidget *parent = nullptr);
@@ -29,7 +28,4 @@ private:
     int selectedIndex = -1;
     QList<QToolButton*> wengineButtons;
     QList<wengine::wengine> wengineCopies;
-    // handle responsive reflow
-protected:
-    void resizeEvent(QResizeEvent *event) override;
 };

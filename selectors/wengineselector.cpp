@@ -25,8 +25,9 @@ wengineSelector::wengineSelector(QWidget *parent) : QWidget(parent)
     scroll->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     mainLayout->addWidget(scroll);
 
-    // create buttons and keep them so we can reflow on resize
+    // create buttons and place them in a fixed 10-column grid
     int index = 0;
+    const int columns = 10;
     for (const auto& wengineItem : wengine::wengineList) {
         QToolButton *wengineButton = new QToolButton();
         QPixmap wenginePix(QString::fromStdString(wengineItem.image));
@@ -46,32 +47,19 @@ wengineSelector::wengineSelector(QWidget *parent) : QWidget(parent)
             emit wengineSelected(itemCopy);
         });
 
+        // set position of the button
+        int row = index / columns;
+        int col = index % columns;
+
+        // add the button centered inside the grid cell
+        selectionLayout->addWidget(wengineButton, row, col, Qt::AlignCenter);
+
         ++index;
     }
-
-    // initial layout will be done in resizeEvent
 }
 
 
-void wengineSelector::resizeEvent(QResizeEvent *event)
-{
-    QWidget::resizeEvent(event);
-
-    // determine columns based on current width (min 1)
-    int columns = std::max(1, width() / 100);
-
-    // clear existing items from layout (but don't delete widgets)
-    while (QLayoutItem *item = selectionLayout->takeAt(0)) {
-        // takeAt removes the layout item but doesn't delete the widget
-    }
-
-    // re-add widgets with new grid positions
-    for (int i = 0; i < wengineButtons.size(); ++i) {
-        int row = i / columns;
-        int col = i % columns;
-        selectionLayout->addWidget(wengineButtons[i], row, col);
-    }
-}
+// Responsive reflow removed: grid is populated with a fixed column count at construction
 
 wengineSelector::~wengineSelector()
 {
