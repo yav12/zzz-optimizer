@@ -24,6 +24,10 @@ void window::setupWindow() {
     layout = new QVBoxLayout();
     windowWidget->setLayout(layout);
 
+    // enforce a reasonable minimum window size so layouts remain usable
+    // (width x height). Adjust these values if you want a different minimum.
+    this->setMinimumSize(800, 600);
+
     //set navigation
     setupNavigation();
 

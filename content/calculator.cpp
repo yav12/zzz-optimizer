@@ -1,44 +1,83 @@
 #include "calculator.h"
 
 calculator::calculator(QWidget *parent) : QWidget(parent) {
-    //layout
+    // top-level pages stack: allows swapping the entire window
+    pagesStack = new QStackedLayout();
+    setLayout(pagesStack);
+
+    // add the selector widget as a full-window page directly to pagesStack
+    charSelectorWidget = new charSelector(this);
+    pagesStack->addWidget(charSelectorWidget);
+
+    // connect selector -> apply selection, update UI and switch back to controls page
+    connect(charSelectorWidget, &charSelector::characterSelected, this,
+            [this](const character::character &c)
+            {
+                setCharacter(c); // updates currentCharacter and images
+
+                // set default wengine from character
+                setWengine(c.preferredWengine);
+
+                // switch back to controls page (main page)
+                if (this->pagesStack)
+                    this->pagesStack->setCurrentWidget(this->mainPage);
+            });
+
+    // wengine selector widget
+    wengineSelectorWidget = new wengineSelector(this);
+    pagesStack->addWidget(wengineSelectorWidget);
+
+    // connect selector -> apply selection, update UI and switch back to controls page
+    connect(wengineSelectorWidget, &wengineSelector::wengineSelected, this,
+            [this](const wengine::wengine &w)
+            {
+                setWengine(w); // updates currentWengine and images
+
+                // switch back to controls page (main page)
+                if (this->pagesStack)
+                    this->pagesStack->setCurrentWidget(this->mainPage);
+            });
+
+    // main page: contains the original grid layout
+    mainPage = new QWidget();
     layout = new QGridLayout();
-    setLayout(layout);
+    mainPage->setLayout(layout);
+
     selectionsLayout = new QGridLayout(); // layout for selections & buttons
+
+    // add the container to the main page grid
     layout->addLayout(selectionsLayout, 0, 0, 1, 1);
     statsLayout = new QGridLayout(); // layout for stats display
     layout->addLayout(statsLayout, 0, 1, 1, 1);
 
+    // add the main page to the top-level pages stack
+    pagesStack->addWidget(mainPage);
+    pagesStack->setCurrentWidget(mainPage);
     
-    //character select combobox
-    characterSelect = new QComboBox();
-    for (const auto& character : character::characterList) {
-        characterSelect->addItem(QString::fromStdString(character.nickname));
-    }
+    //character select button
+    characterSelect = new QToolButton();
+    characterSelect->setText("Select Character");
+    characterSelect->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     selectionsLayout->addWidget(characterSelect, 0, 0);
-    connect(characterSelect, &QComboBox::currentTextChanged, [this]() {
-        setCharacter(character::characterList[characterSelect->currentIndex()]);
-        wengineSelect->setCurrentText(QString::fromStdString(currentCharacter.preferredWengine.name));
-        setWengine(currentCharacter.preferredWengine);
+    connect(characterSelect, &QToolButton::clicked, [this]() {
+        // switch entire window to selector page
+        if (this->pagesStack) {
+            this->pagesStack->setCurrentWidget(this->charSelectorWidget);
+        }
     });
 
-    //wengine select combobox
-    wengineSelect = new QComboBox();
-    for (const auto& wengine : wengine::wengineList) {
-        wengineSelect->addItem(QString::fromStdString(wengine.name));
-    }
+    //wengine select button
+    wengineSelect = new QToolButton();
+    wengineSelect->setText("Select Wengine");
+    wengineSelect->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     selectionsLayout->addWidget(wengineSelect, 0, 1);
-    connect(wengineSelect, &QComboBox::currentTextChanged, [this]() {
-        setWengine(wengine::wengineList[wengineSelect->currentIndex()]);
+    connect(wengineSelect, &QToolButton::clicked, [this]() {
+        // switch entire window to selector page
+        if (this->pagesStack) {
+            this->pagesStack->setCurrentWidget(this->wengineSelectorWidget);
+        }
     });
-    //test character select button
-    characterSelectButton = new QPushButton("Select Character");
-    selectionsLayout->addWidget(characterSelectButton, 1, 0, 1, 2);
-    connect(characterSelectButton, &QPushButton::clicked, [this]() {
-        charSelectorWidget = new charSelector();
-        charSelectorWidget->setWindowModality(Qt::ApplicationModal);
-        charSelectorWidget->show();
-    });
+
     //calculate button
     calculateButton = new QPushButton("Calculate");
     selectionsLayout->addWidget(calculateButton, 2, 0, 1, 2);
@@ -163,6 +202,18 @@ void calculator::redrawImages() {
     } else {
         wengineImage->clear();
     }
+
+    //redraw character button image
+    QPixmap iconPix(QString::fromStdString(currentCharacter.images.normalIcon));
+    characterSelect->setIcon(QIcon(iconPix));
+    characterSelect->setIconSize(QSize(100, 100));
+    characterSelect->setText(QString::fromStdString(currentCharacter.nickname));
+
+    //redraw wengine button image
+    QPixmap wiconPix(QString::fromStdString(currentWengine.image));
+    wengineSelect->setIcon(QIcon(wiconPix));
+    wengineSelect->setIconSize(QSize(100, 100));
+    wengineSelect->setText(QString::fromStdString(currentWengine.name));
 }
 
 void calculator::redrawStats(character::character calcs) {

@@ -1,31 +1,26 @@
-#ifndef CHARSELECTOR_H
-#define CHARSELECTOR_H
-
-#include <QDialog>
-#include <QLabel>
+#pragma once
+#include <QWidget>
 #include <QVBoxLayout>
+#include <QLabel>
 #include <QGridLayout>
 #include <QToolButton>
+#include <QPixmap>
+#include <QIcon>
+#include <QSize>
 #include "../data/character.h"
 
-class charSelector : public QDialog
-{
+class charSelector : public QWidget {
     Q_OBJECT
-
 public:
-    charSelector(QWidget *parent = nullptr);
+    explicit charSelector(QWidget *parent = nullptr);
     ~charSelector();
 
-    character::character picker(QWidget *parent = nullptr);
+signals:
+    void characterSelected(const character::character &c);
+
+private:
     QVBoxLayout *mainLayout;
-    QGridLayout *selectionLayout;
-
-    //title
     QLabel *titleLabel;
-
-    // character selection
-    QLabel *characterLabel;
+    QGridLayout *selectionLayout;
     int selectedIndex = -1;
 };
-
-#endif // CHARSELECTOR_H

@@ -3,7 +3,7 @@
 void window::setupNavigation() {
     //put the navigation layout in the window
     navLayout = new QHBoxLayout();
-    navLayout->setSizeConstraint(QLayout::SetMinimumSize);
+    navLayout->setSizeConstraint(QLayout::SetNoConstraint);
     layout->addLayout(navLayout);
 
     //set the buttons

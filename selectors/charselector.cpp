@@ -1,6 +1,6 @@
 #include "charselector.h"
 
-charSelector::charSelector(QWidget *parent) : QDialog(parent)
+charSelector::charSelector(QWidget *parent) : QWidget(parent)
 {
     //layout
     mainLayout = new QVBoxLayout();
@@ -17,7 +17,6 @@ charSelector::charSelector(QWidget *parent) : QDialog(parent)
     selectionLayout->setAlignment(Qt::AlignCenter);
     int characterCount = character::characterList.size();
     int columns = 6; // Number of columns in the grid
-    int rows = (characterCount + columns - 1) / columns; // Calculate required rows
     int index = 0;
 
     for (const auto& character : character::characterList) {
@@ -35,8 +34,10 @@ charSelector::charSelector(QWidget *parent) : QDialog(parent)
         ++index;
 
         connect(characterButton, &QToolButton::clicked, this, [this, buttonIndex]() {
+            // ai told me this would work
             selectedIndex = buttonIndex;
-            this->accept();
+            // emit selected character by value (safe)
+            emit characterSelected(character::characterList[buttonIndex]);
         });
     }
 }
@@ -45,11 +46,3 @@ charSelector::~charSelector()
 {
 }
 
-character::character charSelector::picker(QWidget *parent)
-{
-    charSelector dlg(parent);
-    if (dlg.exec() == QDialog::Accepted && dlg.selectedIndex >= 0) {
-        return character::characterList[dlg.selectedIndex];
-    }
-    return character::character();
-}

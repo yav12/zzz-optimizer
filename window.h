@@ -1,8 +1,7 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include "data/character.h"
-#include "content/calculator.h"
+
 #include <QMainWindow>
 #include <QWidget>
 #include <QStackedWidget>
@@ -10,6 +9,8 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QComboBox>
+#include "data/character.h"
+#include "content/calculator.h"
 
 class window : public QMainWindow
 {

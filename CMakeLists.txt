@@ -7,6 +7,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 qt_standard_project_setup()
 
@@ -38,6 +39,7 @@ qt_add_executable(zzz-optimizer
 
     selectors/charselector.h selectors/charselector.cpp
     selectors/discselector.h selectors/discselector.cpp
+    selectors/wengineselector.h selectors/wengineselector.cpp
 
 
 )
@@ -47,6 +49,7 @@ target_link_libraries(zzz-optimizer
         Qt::Core
         Qt::Widgets
 )
+target_link_libraries(zzz-optimizer PRIVATE Qt6::Widgets)
 
 include(GNUInstallDirs)
 

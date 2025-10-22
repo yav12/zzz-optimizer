@@ -14,8 +14,11 @@ void window::setupHome() {
 
     //display stuff
     homePlaceholderLabel = new QLabel;
-    homePlaceholderLabel->setPixmap(QPixmap(QString::fromStdString(character::jufufu.images.mindscapeFull)));
+    // allow the image to scale with the label when the window resizes
+    homePlaceholderLabel->setScaledContents(true);
+    homePlaceholderLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     homePlaceholderLabel->setAlignment(Qt::AlignCenter);
+    homePlaceholderLabel->setPixmap(QPixmap(QString::fromStdString(character::jufufu.images.mindscapeFull)));
     homeLayout->addWidget(homePlaceholderLabel);
 
 }

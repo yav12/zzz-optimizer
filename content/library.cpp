@@ -13,7 +13,10 @@ void window::setupLibrary() {
 
     //display stuff
     libraryPlaceholderLabel = new QLabel;
-    libraryPlaceholderLabel->setPixmap(QPixmap(QString::fromStdString(character::yixuan.images.mindscapeFull)));
+    // allow the image to scale with the label when the window resizes
+    libraryPlaceholderLabel->setScaledContents(true);
+    libraryPlaceholderLabel->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     libraryPlaceholderLabel->setAlignment(Qt::AlignCenter);
+    libraryPlaceholderLabel->setPixmap(QPixmap(QString::fromStdString(character::yixuan.images.mindscapeFull)));
     libraryLayout->addWidget(libraryPlaceholderLabel);
 }

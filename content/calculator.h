@@ -6,16 +6,17 @@
 #include <QLabel>
 #include <QGridLayout>
 #include <QStackedLayout>
+#include <QToolButton>
 #include <QComboBox>
 #include <QPushButton>
 
 #include <string>
 
+#include "../selectors/charselector.h"
+#include "../selectors/wengineselector.h"
+
 #include "../data/character.h"
 #include "../data/wengine.h"
-
-#include "../selectors/charselector.h"
-
 
 class calculator : public QWidget
 {
@@ -43,7 +44,15 @@ private:
     void redrawStats(character::character);
     void redrawImages();
 
-    //discs
+    //selectors
+    charSelector *charSelectorWidget = nullptr;
+    wengineSelector *wengineSelectorWidget = nullptr;
+
+    // top-level pages stack (used to swap entire window pages)
+    QStackedLayout *pagesStack = nullptr;
+    QWidget *mainPage = nullptr;
+
+    //discs (unused for now)
     QComboBox *setBonus1;
     QComboBox *setBonus2;
     QComboBox *setBonus3;
@@ -52,14 +61,13 @@ private:
     //display items
     QGridLayout *layout;
     QGridLayout *selectionsLayout;
-    QComboBox *characterSelect;
-    QPushButton *characterSelectButton;
-    charSelector *charSelectorWidget;
-    QComboBox *wengineSelect;
+    QToolButton *characterSelect;
+    QToolButton *wengineSelect;
     QPushButton *calculateButton;
     QLabel *characterImage;
     QLabel *wengineImage;
     QGridLayout *statsLayout;
+
     //stats labels
     QStackedLayout *ruptureStack;
     QGridLayout *nonRuptureLayout;

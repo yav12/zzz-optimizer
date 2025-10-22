@@ -23,6 +23,9 @@ void window::setupReference() {
     refFaction = new QLabel;
     refPortrait = new QLabel;
     refMindscapeImage = new QLabel;
+    // allow mindscape image to scale with the widget
+    refMindscapeImage->setScaledContents(true);
+    refMindscapeImage->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     
 
     //reference combobox
