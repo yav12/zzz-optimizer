@@ -11,6 +11,7 @@
 #include <QComboBox>
 #include "data/character.h"
 #include "content/calculator.h"
+#include "content/reference.h"
 
 class window : public QMainWindow
 {
@@ -39,28 +40,14 @@ private:
     QPushButton *importButton;
     //content widgets
     QStackedWidget *content;
-    QWidget *home;
-    QWidget *reference;
+    QWidget *home;    
     QWidget *calc;
     QWidget *library;
     //home content
     QHBoxLayout *homeLayout;
     QLabel *homePlaceholderLabel;
-    //reference content
-    QGridLayout *referenceLayout;
-    QComboBox *refCharacterSelect;
-    void setCurrentRefCharacter(std::string &);
-    character::character currentRefCharacter;
-    void updateReference();
-    QGridLayout *refInfo;
-    QLabel *refCharacter;
-    QLabel *refRarity;
-    QLabel *refSpecialty;
-    QLabel *refAttribute;
-    QLabel *refFactionText;
-    QLabel *refFaction;
-    QLabel *refPortrait;
-    QLabel *refMindscapeImage;
+    // reference content
+    reference *referenceWidget;
     //calculator content
     calculator *calcWidget;
     //library content

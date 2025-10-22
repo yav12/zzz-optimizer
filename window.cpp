@@ -35,13 +35,17 @@ void window::setupWindow() {
     content = new QStackedWidget;
     layout->addWidget(content);
     setupHome();
-    setupReference();
+    // create the new Reference page widget and add it to the content stack
+    referenceWidget = new reference(this);
+    content->addWidget(referenceWidget);
     calcWidget = new calculator(this);
     content->addWidget(calcWidget);
     setupLibrary();
 
     //navigation connects
     connect(calculatorButton, &QPushButton::clicked, [=]() { content->setCurrentWidget(calcWidget); });
+    // wire the reference navigation button to the new widget
+    connect(referenceButton, &QPushButton::clicked, [=]() { content->setCurrentWidget(referenceWidget); });
 }
 
 
