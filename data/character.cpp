@@ -617,6 +617,34 @@ void character::setCharacterData() {
     miyabi.images.mindscapeFull = ":/characters/miyabi/MindscapeFull.jxl";
     miyabi.preferredWengine = wengine::hailstormShrine;
 
+    // manato
+    manato.name = "Komano Manato";
+    manato.nickname = "Manato";
+    manato.rarity = "A";
+    manato.specialty = "Rupture";
+    manato.attribute = "Fire";
+    manato.faction = "Spook Shack";
+    manato.stats.hp = 7724;
+    manato.stats.atk = 755;
+    manato.stats.def = 443;
+    manato.stats.impact = 95;
+    manato.stats.cr = 5;
+    manato.stats.cd = 50;
+    manato.stats.am = 87;
+    manato.stats.ap = 90;
+    manato.stats.penr = 0;
+    manato.stats.pen = 0;
+    manato.stats.sf = 999;
+    manato.stats.er = 0; 
+    manato.stats.aaa = 0;
+    manato.images.normalIcon = ":/characters/manato/icon.jxl";
+    manato.images.circleIcon = ":/characters/manato/iconCircle.jxl";
+    manato.images.portrait = ":/characters/manato/portrait.jxl";
+    manato.images.mindscapeNone = ":/characters/manato/MindscapeNone.jxl";
+    manato.images.mindscapeHalf = ":/characters/manato/MindscapeHalf.jxl";
+    manato.images.mindscapeFull = ":/characters/manato/MindscapeFull.jxl";
+    manato.preferredWengine = wengine::grillOWisp;
+
     // nekomata
     nekomata.name = "Nekomiya Mana";
     nekomata.nickname = "Nekomata";
@@ -1152,8 +1180,8 @@ void character::setCharacterData() {
     characterList = {
         alice, anby, anton, astra, ben, billy, burnice, caesar, corin, ellen,
         evelyn, grace, harumasa, hugo, jane, jufufu, koleda, lighter, lucia, lucy,
-        lycaon, miyabi, nekomata, nicole, orphiemagus, piper, pulchra, qingyi,
-        rina, s0anby, seed, seth, soldier11, soukaku, trigger, vivian, yanagi,
-        yinhu, yixuan, yuzuha, zhuyuan
+        lycaon, miyabi, manato, nekomata, nicole, orphiemagus, piper, pulchra,
+        qingyi, rina, s0anby, seed, seth, soldier11, soukaku, trigger, vivian,
+        yanagi, yinhu, yixuan, yuzuha, zhuyuan
     };
 }

@@ -287,6 +287,14 @@
     <file alias="MindscapeHalf.jxl">assets/characters/Miyabi/MindscapeMiyabiHalf.jxl</file>
     <file alias="MindscapeNone.jxl">assets/characters/Miyabi/MindscapeMiyabiNone.jxl</file>
     </qresource>
+    <qresource prefix="/characters/manato">
+        <file alias="portrait.jxl">assets/characters/Manato/ManatoPortrait.jxl</file>
+        <file alias="icon.jxl">assets/characters/Manato/ManatoIcon.jxl</file>
+        <file alias="iconCircle.jxl">assets/characters/Manato/ManatoCircleIcon.jxl</file>
+    <file alias="MindscapeFull.jxl">assets/characters/Manato/MindscapeManatoFull.jxl</file>
+    <file alias="MindscapeHalf.jxl">assets/characters/Manato/MindscapeManatoHalf.jxl</file>
+    <file alias="MindscapeNone.jxl">assets/characters/Manato/MindscapeManatoNone.jxl</file>
+    </qresource>
     <qresource prefix="/characters/nekomata">
         <file alias="portrait.jxl">assets/characters/Nekomata/NekomataPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Nekomata/NekomataIcon.jxl</file>

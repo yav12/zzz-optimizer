@@ -69,6 +69,7 @@ inline character lucia;
 inline character lucy;
 inline character lycaon;
 inline character miyabi;
+inline character manato;
 inline character nekomata;
 inline character nicole;
 inline character orphiemagus;
