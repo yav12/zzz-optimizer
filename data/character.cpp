@@ -811,7 +811,7 @@ void character::setCharacterData() {
     rina.images.mindscapeNone = ":/characters/rina/MindscapeNone.jxl";
     rina.images.mindscapeHalf = ":/characters/rina/MindscapeHalf.jxl";
     rina.images.mindscapeFull = ":/characters/rina/MindscapeFull.jxl";
-    rina.preferredWengine = wengine::reelProjector;
+    rina.preferredWengine = wengine::weepingCradle;
 
     // s0anby
     s0anby.name = "Soldier 0 - Anby";
