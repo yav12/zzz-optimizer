@@ -32,7 +32,7 @@ wengineSelector::wengineSelector(QWidget *parent) : QWidget(parent)
         QToolButton *wengineButton = new QToolButton();
         QPixmap wenginePix(QString::fromStdString(wengineItem.image));
         wengineButton->setIcon(QIcon(wenginePix));
-        wengineButton->setIconSize(QSize(100, 100));
+        wengineButton->setIconSize(QSize(150, 150));
         wengineButton->setText(QString::fromStdString(wengineItem.name));
         wengineButton->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 

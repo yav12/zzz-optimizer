@@ -13,12 +13,11 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     connect(charSelectorWidget, &charSelector::characterSelected, this,
             [this](const character::character &c)
             {
-                setCharacter(c); // updates currentCharacter and images
-
+                setCharacter(c); 
                 // set default wengine from character
                 setWengine(c.preferredWengine);
 
-                // switch back to controls page (main page)
+                // switch back to main page
                 if (this->pagesStack)
                     this->pagesStack->setCurrentWidget(this->mainPage);
             });
