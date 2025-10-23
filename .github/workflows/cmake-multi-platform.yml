@@ -36,8 +36,8 @@ jobs:
       shell: bash
       run: |
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
-    - name: Setup Qt
-      uses: subosito/qt-action@v2
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v4
       with:
         qt-version: ${{ matrix.qt }}
 
