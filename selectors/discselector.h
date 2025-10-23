@@ -1,10 +1,24 @@
-#ifndef DISCSELECTOR_H
-#define DISCSELECTOR_H
 
-class discSelector
-{
+#pragma once
+
+#include <QWidget>
+#include <QVBoxLayout>
+#include <QLabel>
+#include <QGridLayout>
+#include <QToolButton>
+#include "../data/disc.h" // adjust if your data type header is different
+
+class discSelector : public QWidget {
+    Q_OBJECT
 public:
-    discSelector();
-};
+    discSelector(QWidget *parent = nullptr);
+    ~discSelector();
 
-#endif // DISCSELECTOR_H
+signals:
+
+private:
+    QVBoxLayout *mainLayout;
+    QLabel *titleLabel;
+    QGridLayout *selectionLayout;
+    int selectedIndex = -1;
+};

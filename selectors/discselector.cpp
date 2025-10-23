@@ -1,3 +1,11 @@
 #include "discselector.h"
 
-discSelector::discSelector() {}
+discSelector::discSelector(QWidget *parent) : QWidget(parent) 
+{
+
+}
+
+discSelector::~discSelector() 
+{
+
+}
