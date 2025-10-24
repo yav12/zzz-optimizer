@@ -45,9 +45,9 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     selectionsLayout = new QGridLayout(); // layout for selections & buttons
 
     // add the container to the main page grid
-    layout->addLayout(selectionsLayout, 0, 0, 1, 1);
+    layout->addLayout(selectionsLayout, 0, 1, 1, 1);
     statsLayout = new QGridLayout(); // layout for stats display
-    layout->addLayout(statsLayout, 0, 1, 1, 1);
+    layout->addLayout(statsLayout, 1, 1, 1, 1);
 
     // add the main page to the top-level pages stack
     pagesStack->addWidget(mainPage);
@@ -92,7 +92,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     wengineImage->setScaledContents(false);
     wengineImage->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     wengineImage->setAlignment(Qt::AlignCenter);
-    layout->addWidget(characterImage, 2, 0);
+    layout->addWidget(characterImage, 0, 0, -1, 1);
     layout->addWidget(wengineImage, 2, 1);
 
     //stats labels
