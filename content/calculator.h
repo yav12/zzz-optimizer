@@ -17,6 +17,7 @@
 
 #include "../data/character.h"
 #include "../data/wengine.h"
+#include "../data/disc.h"
 
 class calculator : public QWidget
 {
@@ -27,12 +28,6 @@ public:
     ~calculator();
     void setCharacter(character::character);
     void setWengine(wengine::wengine);
-    void setDisc1();
-    void setDisc2();
-    void setDisc3();
-    void setDisc4();
-    void setDisc5();
-    void setDisc6();
 
     void recalculate();
 
@@ -52,10 +47,14 @@ private:
     QStackedLayout *pagesStack = nullptr;
     QWidget *mainPage = nullptr;
 
-    //discs (unused for now)
-    QComboBox *setBonus1;
-    QComboBox *setBonus2;
-    QComboBox *setBonus3;
+    //discs
+    QHBoxLayout *discLayout;
+    QToolButton *disc1Button;
+    QToolButton *disc2Button;
+    QToolButton *disc3Button;
+    QToolButton *disc4Button;
+    QToolButton *disc5Button;
+    QToolButton *disc6Button;
 
 
     //display items

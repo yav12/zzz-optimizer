@@ -11,14 +11,17 @@
 class discSelector : public QWidget {
     Q_OBJECT
 public:
-    discSelector(QWidget *parent = nullptr);
+    discSelector(QWidget *parent = nullptr, int slotNumber = 0);
     ~discSelector();
 
 signals:
 
 private:
+    disc selectedDisc;
     QVBoxLayout *mainLayout;
     QLabel *titleLabel;
     QGridLayout *selectionLayout;
-    int selectedIndex = -1;
+    int slot;
+    
+
 };

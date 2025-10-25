@@ -43,6 +43,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     mainPage->setLayout(layout);
 
     selectionsLayout = new QGridLayout(); // layout for selections & buttons
+    selectionsLayout->setAlignment(Qt::AlignCenter);
 
     // add the container to the main page grid
     layout->addLayout(selectionsLayout, 0, 1, 1, 1);
@@ -57,7 +58,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     characterSelect = new QToolButton();
     characterSelect->setText("Select Character");
     characterSelect->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    selectionsLayout->addWidget(characterSelect, 0, 0);
+    selectionsLayout->addWidget(characterSelect, 0, 0, Qt::AlignCenter);
     connect(characterSelect, &QToolButton::clicked, [this]() {
         // switch entire window to selector page
         if (this->pagesStack) {
@@ -69,13 +70,48 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     wengineSelect = new QToolButton();
     wengineSelect->setText("Select Wengine");
     wengineSelect->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    selectionsLayout->addWidget(wengineSelect, 0, 1);
+    selectionsLayout->addWidget(wengineSelect, 0, 1, Qt::AlignCenter);
     connect(wengineSelect, &QToolButton::clicked, [this]() {
         // switch entire window to selector page
         if (this->pagesStack) {
             this->pagesStack->setCurrentWidget(this->wengineSelectorWidget);
         }
     });
+
+    // disc selector buttons
+    discLayout = new QHBoxLayout();
+    discLayout->setAlignment(Qt::AlignCenter);
+    selectionsLayout->addLayout(discLayout, 1, 0, 1, 2);
+
+    disc1Button = new QToolButton();
+    disc1Button->setText("Select Disc 1");
+    disc1Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    discLayout->addWidget(disc1Button);
+
+    disc2Button = new QToolButton();
+    disc2Button->setText("Select Disc 2");
+    disc2Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    discLayout->addWidget(disc2Button);
+
+    disc3Button = new QToolButton();
+    disc3Button->setText("Select Disc 3");
+    disc3Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    discLayout->addWidget(disc3Button);
+
+    disc4Button = new QToolButton();
+    disc4Button->setText("Select Disc 4");
+    disc4Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    discLayout->addWidget(disc4Button);
+
+    disc5Button = new QToolButton();
+    disc5Button->setText("Select Disc 5");
+    disc5Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    discLayout->addWidget(disc5Button);
+
+    disc6Button = new QToolButton();
+    disc6Button->setText("Select Disc 6");
+    disc6Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    discLayout->addWidget(disc6Button);
 
     //calculate button
     calculateButton = new QPushButton("Calculate");

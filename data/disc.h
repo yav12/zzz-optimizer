@@ -24,18 +24,22 @@ public:
 private:
     std::string rank;
     int slot;
+    
     std::string mainStat;
     double mainStatValue;
 
     std::string subStat1;
     int sub1Level;
     double subStat1Value;
+
     std::string subStat2;
     int sub2Level;
     double subStat2Value;
+
     std::string subStat3;
     int sub3Level;
     double subStat3Value;
+
     std::string subStat4;
     int sub4Level;
     double subStat4Value;
