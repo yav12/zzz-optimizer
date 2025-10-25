@@ -115,121 +115,121 @@
         <file alias="portrait.jxl">assets/characters/Alice/AlicePortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Alice/AliceIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Alice/AliceCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Alice/MindscapeAliceFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Alice/MindscapeAliceHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Alice/MindscapeAliceNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Alice/MindscapeAliceFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Alice/MindscapeAliceHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Alice/MindscapeAliceNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/anby">
         <file alias="portrait.jxl">assets/characters/Anby/AnbyPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Anby/AnbyIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Anby/AnbyCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Anby/MindscapeAnbyFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Anby/MindscapeAnbyHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Anby/MindscapeAnbyNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Anby/MindscapeAnbyFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Anby/MindscapeAnbyHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Anby/MindscapeAnbyNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/anton">
         <file alias="portrait.jxl">assets/characters/Anton/AntonPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Anton/AntonIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Anton/AntonCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Anton/MindscapeAntonFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Anton/MindscapeAntonHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Anton/MindscapeAntonNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Anton/MindscapeAntonFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Anton/MindscapeAntonHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Anton/MindscapeAntonNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/astra">
         <file alias="portrait.jxl">assets/characters/Astra/AstraPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Astra/AstraIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Astra/AstraCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Astra/MindscapeAstraFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Astra/MindscapeAstraHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Astra/MindscapeAstraNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Astra/MindscapeAstraFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Astra/MindscapeAstraHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Astra/MindscapeAstraNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/ben">
         <file alias="portrait.jxl">assets/characters/Ben/BenPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Ben/BenIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Ben/BenCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Ben/MindscapeBenFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Ben/MindscapeBenHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Ben/MindscapeBenNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Ben/MindscapeBenFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Ben/MindscapeBenHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Ben/MindscapeBenNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/billy">
         <file alias="portrait.jxl">assets/characters/Billy/BillyPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Billy/BillyIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Billy/BillyCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Billy/MindscapeBillyFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Billy/MindscapeBillyHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Billy/MindscapeBillyNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Billy/MindscapeBillyFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Billy/MindscapeBillyHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Billy/MindscapeBillyNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/burnice">
         <file alias="portrait.jxl">assets/characters/Burnice/BurnicePortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Burnice/BurniceIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Burnice/BurniceCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Burnice/MindscapeBurniceFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Burnice/MindscapeBurniceHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Burnice/MindscapeBurniceNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Burnice/MindscapeBurniceFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Burnice/MindscapeBurniceHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Burnice/MindscapeBurniceNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/caesar">
         <file alias="portrait.jxl">assets/characters/Caesar/CaesarPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Caesar/CaesarIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Caesar/CaesarCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Caesar/MindscapeCaesarFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Caesar/MindscapeCaesarHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Caesar/MindscapeCaesarNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Caesar/MindscapeCaesarFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Caesar/MindscapeCaesarHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Caesar/MindscapeCaesarNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/corin">
         <file alias="portrait.jxl">assets/characters/Corin/CorinPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Corin/CorinIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Corin/CorinCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Corin/MindscapeCorinFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Corin/MindscapeCorinHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Corin/MindscapeCorinNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Corin/MindscapeCorinFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Corin/MindscapeCorinHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Corin/MindscapeCorinNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/ellen">
         <file alias="portrait.jxl">assets/characters/Ellen/EllenPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Ellen/EllenIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Ellen/EllenCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Ellen/MindscapeEllenFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Ellen/MindscapeEllenHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Ellen/MindscapeEllenNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Ellen/MindscapeEllenFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Ellen/MindscapeEllenHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Ellen/MindscapeEllenNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/evelyn">
         <file alias="portrait.jxl">assets/characters/Evelyn/EvelynPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Evelyn/EvelynIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Evelyn/EvelynCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Evelyn/MindscapeEvelynFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Evelyn/MindscapeEvelynHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Evelyn/MindscapeEvelynNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Evelyn/MindscapeEvelynFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Evelyn/MindscapeEvelynHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Evelyn/MindscapeEvelynNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/grace">
         <file alias="portrait.jxl">assets/characters/Grace/GracePortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Grace/GraceIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Grace/GraceCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Grace/MindscapeGraceFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Grace/MindscapeGraceHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Grace/MindscapeGraceNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Grace/MindscapeGraceFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Grace/MindscapeGraceHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Grace/MindscapeGraceNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/harumasa">
         <file alias="portrait.jxl">assets/characters/Harumasa/HarumasaPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Harumasa/HarumasaIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Harumasa/HarumasaCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Harumasa/MindscapeHarumasaFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Harumasa/MindscapeHarumasaHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Harumasa/MindscapeHarumasaNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Harumasa/MindscapeHarumasaFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Harumasa/MindscapeHarumasaHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Harumasa/MindscapeHarumasaNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/hugo">
         <file alias="portrait.jxl">assets/characters/Hugo/HugoPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Hugo/HugoIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Hugo/HugoCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Hugo/MindscapeHugoFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Hugo/MindscapeHugoHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Hugo/MindscapeHugoNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Hugo/MindscapeHugoFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Hugo/MindscapeHugoHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Hugo/MindscapeHugoNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/jane">
         <file alias="portrait.jxl">assets/characters/Jane/JanePortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Jane/JaneIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Jane/JaneCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Jane/MindscapeJaneFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Jane/MindscapeJaneHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Jane/MindscapeJaneNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Jane/MindscapeJaneFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Jane/MindscapeJaneHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Jane/MindscapeJaneNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/jufufu">
         <file alias="portrait.jxl">assets/characters/Ju Fufu/JuFufuPortrait.jxl</file>
@@ -243,17 +243,17 @@
         <file alias="portrait.jxl">assets/characters/Koleda/KoledaPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Koleda/KoledaIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Koleda/KoledaCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Koleda/MindscapeKoledaFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Koleda/MindscapeKoledaHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Koleda/MindscapeKoledaNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Koleda/MindscapeKoledaFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Koleda/MindscapeKoledaHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Koleda/MindscapeKoledaNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/lighter">
         <file alias="portrait.jxl">assets/characters/Lighter/LighterPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Lighter/LighterIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Lighter/LighterCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Lighter/MindscapeLighterFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Lighter/MindscapeLighterHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Lighter/MindscapeLighterNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Lighter/MindscapeLighterFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Lighter/MindscapeLighterHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Lighter/MindscapeLighterNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/lucia">
         <file alias="portrait.jxl">assets/characters/Lucia/LuciaPortrait.jxl</file>
@@ -267,89 +267,89 @@
         <file alias="portrait.jxl">assets/characters/Lucy/LucyPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Lucy/LucyIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Lucy/LucyCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Lucy/MindscapeLucyFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Lucy/MindscapeLucyHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Lucy/MindscapeLucyNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Lucy/MindscapeLucyFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Lucy/MindscapeLucyHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Lucy/MindscapeLucyNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/lycaon">
         <file alias="portrait.jxl">assets/characters/Lycaon/LycaonPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Lycaon/LycaonIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Lycaon/LycaonCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Lycaon/MindscapeLycaonFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Lycaon/MindscapeLycaonHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Lycaon/MindscapeLycaonNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Lycaon/MindscapeLycaonFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Lycaon/MindscapeLycaonHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Lycaon/MindscapeLycaonNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/miyabi">
         <file alias="portrait.jxl">assets/characters/Miyabi/MiyabiPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Miyabi/MiyabiIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Miyabi/MiyabiCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Miyabi/MindscapeMiyabiFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Miyabi/MindscapeMiyabiHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Miyabi/MindscapeMiyabiNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Miyabi/MindscapeMiyabiFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Miyabi/MindscapeMiyabiHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Miyabi/MindscapeMiyabiNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/manato">
         <file alias="portrait.jxl">assets/characters/Manato/ManatoPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Manato/ManatoIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Manato/ManatoCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Manato/MindscapeManatoFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Manato/MindscapeManatoHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Manato/MindscapeManatoNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Manato/MindscapeManatoFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Manato/MindscapeManatoHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Manato/MindscapeManatoNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/nekomata">
         <file alias="portrait.jxl">assets/characters/Nekomata/NekomataPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Nekomata/NekomataIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Nekomata/NekomataCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Nekomata/MindscapeNekomataFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Nekomata/MindscapeNekomataHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Nekomata/MindscapeNekomataNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Nekomata/MindscapeNekomataFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Nekomata/MindscapeNekomataHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Nekomata/MindscapeNekomataNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/nicole">
         <file alias="portrait.jxl">assets/characters/Nicole/NicolePortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Nicole/NicoleIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Nicole/NicoleCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Nicole/MindscapeNicoleFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Nicole/MindscapeNicoleHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Nicole/MindscapeNicoleNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Nicole/MindscapeNicoleFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Nicole/MindscapeNicoleHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Nicole/MindscapeNicoleNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/orphiemagus">
         <file alias="portrait.jxl">assets/characters/OrphieMagus/OrphieMagusPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/OrphieMagus/OrphieMagusIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/OrphieMagus/OrphieMagusCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/OrphieMagus/MindscapeOrphieMagusFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/OrphieMagus/MindscapeOrphieMagusHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/OrphieMagus/MindscapeOrphieMagusNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/OrphieMagus/MindscapeOrphieMagusFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/OrphieMagus/MindscapeOrphieMagusHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/OrphieMagus/MindscapeOrphieMagusNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/piper">
         <file alias="portrait.jxl">assets/characters/Piper/PiperPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Piper/PiperIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Piper/PiperCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Piper/MindscapePiperFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Piper/MindscapePiperHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Piper/MindscapePiperNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Piper/MindscapePiperFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Piper/MindscapePiperHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Piper/MindscapePiperNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/pulchra">
         <file alias="portrait.jxl">assets/characters/Pulchra/PulchraPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Pulchra/PulchraIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Pulchra/PulchraCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Pulchra/MindscapePulchraFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Pulchra/MindscapePulchraHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Pulchra/MindscapePulchraNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Pulchra/MindscapePulchraFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Pulchra/MindscapePulchraHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Pulchra/MindscapePulchraNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/qingyi">
         <file alias="portrait.jxl">assets/characters/Qingyi/QingyiPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Qingyi/QingyiIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Qingyi/QingyiCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Qingyi/MindscapeQingyiFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Qingyi/MindscapeQingyiHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Qingyi/MindscapeQingyiNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Qingyi/MindscapeQingyiFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Qingyi/MindscapeQingyiHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Qingyi/MindscapeQingyiNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/rina">
         <file alias="portrait.jxl">assets/characters/Rina/RinaPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Rina/RinaIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Rina/RinaCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Rina/MindscapeRinaFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Rina/MindscapeRinaHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Rina/MindscapeRinaNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Rina/MindscapeRinaFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Rina/MindscapeRinaHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Rina/MindscapeRinaNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/s0anby">
         <file alias="portrait.jxl">assets/characters/S0Anby/S0-AnbyPortrait.jxl</file>
@@ -363,73 +363,73 @@
         <file alias="portrait.jxl">assets/characters/Seed/SeedPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Seed/SeedIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Seed/SeedCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Seed/MindscapeSeedFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Seed/MindscapeSeedHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Seed/MindscapeSeedNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Seed/MindscapeSeedFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Seed/MindscapeSeedHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Seed/MindscapeSeedNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/seth">
         <file alias="portrait.jxl">assets/characters/Seth/SethPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Seth/SethIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Seth/SethCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Seth/MindscapeSethFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Seth/MindscapeSethHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Seth/MindscapeSethNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Seth/MindscapeSethFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Seth/MindscapeSethHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Seth/MindscapeSethNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/soldier11">
         <file alias="portrait.jxl">assets/characters/Soldier11/Soldier11Portrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Soldier11/Soldier11Icon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Soldier11/Soldier11CircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Soldier11/MindscapeSoldier11Full.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Soldier11/MindscapeSoldier11Half.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Soldier11/MindscapeSoldier11None.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Soldier11/MindscapeSoldier11Full.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Soldier11/MindscapeSoldier11Half.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Soldier11/MindscapeSoldier11None.jxl</file>
     </qresource>
     <qresource prefix="/characters/soukaku">
         <file alias="portrait.jxl">assets/characters/Soukaku/SoukakuPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Soukaku/SoukakuIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Soukaku/SoukakuCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Soukaku/MindscapeSoukakuFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Soukaku/MindscapeSoukakuHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Soukaku/MindscapeSoukakuNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Soukaku/MindscapeSoukakuFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Soukaku/MindscapeSoukakuHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Soukaku/MindscapeSoukakuNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/trigger">
         <file alias="portrait.jxl">assets/characters/Trigger/TriggerPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Trigger/TriggerIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Trigger/TriggerCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Trigger/MindscapeTriggerFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Trigger/MindscapeTriggerHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Trigger/MindscapeTriggerNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Trigger/MindscapeTriggerFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Trigger/MindscapeTriggerHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Trigger/MindscapeTriggerNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/vivian">
         <file alias="portrait.jxl">assets/characters/Vivian/VivianPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Vivian/VivianIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Vivian/VivianCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Vivian/MindscapeVivianFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Vivian/MindscapeVivianHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Vivian/MindscapeVivianNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Vivian/MindscapeVivianFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Vivian/MindscapeVivianHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Vivian/MindscapeVivianNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/yanagi">
         <file alias="portrait.jxl">assets/characters/Yanagi/YanagiPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Yanagi/YanagiIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Yanagi/YanagiCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Yanagi/MindscapeYanagiFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Yanagi/MindscapeYanagiHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Yanagi/MindscapeYanagiNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Yanagi/MindscapeYanagiFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Yanagi/MindscapeYanagiHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Yanagi/MindscapeYanagiNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/yinhu">
         <file alias="portrait.jxl">assets/characters/Yinhu/YinhuPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Yinhu/YinhuIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Yinhu/YinhuCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Yinhu/MindscapeYinhuFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Yinhu/MindscapeYinhuHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Yinhu/MindscapeYinhuNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Yinhu/MindscapeYinhuFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Yinhu/MindscapeYinhuHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Yinhu/MindscapeYinhuNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/yixuan">
         <file alias="portrait.jxl">assets/characters/Yixuan/YixuanPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Yixuan/YixuanIcon.jxl</file>
         <file alias="iconCircle.jxl">assets/characters/Yixuan/YixuanCircleIcon.jxl</file>
-    <file alias="MindscapeFull.jxl">assets/characters/Yixuan/MindscapeYixuanFull.jxl</file>
-    <file alias="MindscapeHalf.jxl">assets/characters/Yixuan/MindscapeYixuanHalf.jxl</file>
-    <file alias="MindscapeNone.jxl">assets/characters/Yixuan/MindscapeYixuanNone.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Yixuan/MindscapeYixuanFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Yixuan/MindscapeYixuanHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Yixuan/MindscapeYixuanNone.jxl</file>
     </qresource>
     <qresource prefix="/characters/yuzuha">
         <file alias="portrait.jxl">assets/characters/Yuzuha/YuzuhaPortrait.jxl</file>
