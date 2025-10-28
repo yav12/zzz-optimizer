@@ -223,7 +223,7 @@ void character::setCharacterData() {
     caesar.images.mindscapeNone = ":/characters/caesar/MindscapeNone.jxl";
     caesar.images.mindscapeHalf = ":/characters/caesar/MindscapeHalf.jxl";
     caesar.images.mindscapeFull = ":/characters/caesar/MindscapeFull.jxl";
-    caesar.preferredWengine = wengine::originalTransmorpher;
+    caesar.preferredWengine = wengine::tusksOfFury;
 
     // corin
     corin.name = "Corin Wickes";
@@ -727,7 +727,7 @@ void character::setCharacterData() {
     orphiemagus.images.mindscapeNone = ":/characters/orphiemagus/MindscapeNone.jxl";
     orphiemagus.images.mindscapeHalf = ":/characters/orphiemagus/MindscapeHalf.jxl";
     orphiemagus.images.mindscapeFull = ":/characters/orphiemagus/MindscapeFull.jxl";
-    orphiemagus.preferredWengine = wengine::kaboomTheCannon;
+    orphiemagus.preferredWengine = wengine::bellicoseBlaze;
 
     // piper
     piper.name = "Piper Wheel";
@@ -951,7 +951,7 @@ void character::setCharacterData() {
     soldier11.images.mindscapeNone = ":/characters/soldier11/MindscapeNone.jxl";
     soldier11.images.mindscapeHalf = ":/characters/soldier11/MindscapeHalf.jxl";
     soldier11.images.mindscapeFull = ":/characters/soldier11/MindscapeFull.jxl";
-    soldier11.preferredWengine = wengine::steelCushion;
+    soldier11.preferredWengine = wengine::theBrimstone;
 
     // soukaku
     soukaku.name = "Soukaku";
