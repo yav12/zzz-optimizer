@@ -3,6 +3,10 @@
 disc::disc() {
 
 }
+void disc::setName(std::string discName) {
+    // Implementation for setting the name of the disc
+    name = discName;
+}
 
 void disc::setSlot(int slotNumber) {
     // Implementation for setting the slot of the disc (1-6)

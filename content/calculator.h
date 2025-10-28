@@ -14,6 +14,7 @@
 
 #include "../selectors/charselector.h"
 #include "../selectors/wengineselector.h"
+#include "../selectors/discselector.h"
 
 #include "../data/character.h"
 #include "../data/wengine.h"
@@ -38,6 +39,7 @@ private:
 
     void redrawStats(character::character);
     void redrawImages();
+    void redrawDisc(int slotNumber);
 
     //selectors
     charSelector *charSelectorWidget = nullptr;

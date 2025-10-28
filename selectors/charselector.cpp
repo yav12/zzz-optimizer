@@ -27,7 +27,7 @@ charSelector::charSelector(QWidget *parent) : QWidget(parent)
         QPixmap charPix(QString::fromStdString(character.images.normalIcon));
         characterButton->setIcon(QIcon(charPix));
         characterButton->setIconSize(QSize(150, 150));
-        characterButton->setText(QString::fromStdString(character.nickname));
+        characterButton->setText(QString::fromStdString(character.nickname).replace('&', "&&")); // make & actually show up 
         characterButton->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         selectionLayout->addWidget(characterButton, row, col);
         int buttonIndex = index;
@@ -36,7 +36,6 @@ charSelector::charSelector(QWidget *parent) : QWidget(parent)
         connect(characterButton, &QToolButton::clicked, this, [this, buttonIndex]() {
             // ai told me this would work
             selectedIndex = buttonIndex;
-            // emit selected character by value (safe)
             emit characterSelected(character::characterList[buttonIndex]);
         });
     }

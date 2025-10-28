@@ -2,11 +2,13 @@
 #define DISC_H
 
 #include <string>
+#include <vector> // added
 
 class disc
 {
 public:
     disc();
+    void setName(std::string); //name of the disc (what set is it)
     void setRank(std::string); //rarity of disc (B, A, S)
     void setSlot(int); //slot of the disc (1-6)
     void setMainStat(std::string); // main stat of the disc (e.g., ATK%, CRIT Rate, etc)
@@ -21,10 +23,40 @@ public:
     double getSub3Value();
     double getSub4Value();
 
+    struct DiscInfo {
+        std::string resource;
+        std::string displayName;
+    };
+    inline static const std::vector<DiscInfo> discList = {
+        {":/discs/AstralVoice.jxl", "Astral Voice"},
+        {":/discs/BranchBladeSong.jxl", "Branch & Blade Song"},
+        {":/discs/ChaosJazz.jxl", "Chaos Jazz"},
+        {":/discs/ChaoticMetal.jxl", "Chaotic Metal"},
+        {":/discs/DawnsBloom.jxl", "Dawn's Bloom"},
+        {":/discs/FangedMetal.jxl", "Fanged Metal"},
+        {":/discs/FreedomBlues.jxl", "Freedom Blues"},
+        {":/discs/HormonePunk.jxl", "Hormone Punk"},
+        {":/discs/InfernoMetal.jxl", "Inferno Metal"},
+        {":/discs/KingoftheSummit.jxl", "King of the Summit"},
+        {":/discs/MoonlightLullaby.jxl", "Moonlight Lullaby"},
+        {":/discs/PhaethonsMelody.jxl", "Phaethon's Melody"},
+        {":/discs/PolarMetal.jxl", "Polar Metal"},
+        {":/discs/ProtoPunk.jxl", "Proto Punk"},
+        {":/discs/PufferElectro.jxl", "Puffer Electro"},
+        {":/discs/ShadowHarmony.jxl", "Shadow Harmony"},
+        {":/discs/ShockstarDisco.jxl", "Shockstar Disco"},
+        {":/discs/SoulRock.jxl", "Soul Rock"},
+        {":/discs/SwingJazz.jxl", "Swing Jazz"},
+        {":/discs/ThunderMetal.jxl", "Thunder Metal"},
+        {":/discs/WoodpeckerElectro.jxl", "Woodpecker Electro"},
+        {":/discs/YunkuiTales.jxl", "Yunkui Tales"}
+    };
+
 private:
     std::string rank;
     int slot;
-    
+    std::string name;
+
     std::string mainStat;
     double mainStatValue;
 
@@ -46,8 +78,10 @@ private:
 
     void calculateSubValue(int, std::string, double&); // helper function to calculate substat value based on level
 
-    struct baseValues {
-        struct b {
+    struct baseValues
+    {
+        struct b
+        {
             double mainHP[10] = {183, 243, 305, 366, 426, 488, 549, 609, 671, 732};
             double mainATK[10] = {26, 34, 43, 52, 60, 69, 78, 86, 95, 104};
             double mainDEF[10] = {15, 19, 25, 30, 34, 40, 45, 49, 55, 60};
@@ -56,12 +90,12 @@ private:
             double mainDEFPercent[10] = {4, 5.3, 6.7, 8, 9.3, 10.7, 12, 13.3, 14.7, 16};
             double mainCritRate[10] = {2, 2.7, 3.3, 4, 4.7, 5.3, 6, 6.7, 7.3, 8};
             double mainCritDmg[10] = {4, 5.3, 6.7, 8, 9.3, 10.7, 12, 13.3, 14.7, 16};
-            double mainAP[10] = {8, 9, 10, 10, 11, 13, 13, 14, 14, 16}; //approximate values, validate later
+            double mainAP[10] = {8, 9, 10, 10, 11, 13, 13, 14, 14, 16}; // approximate values, validate later
             double mainAM[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
             double mainPENR[10] = {2, 2.7, 3.3, 4, 4.7, 5.3, 6, 6.7, 7.3, 8};
             double attributeBonus[10] = {2.5, 3.3, 4.2, 5, 5.8, 6.7, 7.5, 8.3, 9.2, 10};
             double mainImpact[10] = {1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6};
-            double mainER[10] = {5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5}; //approximate values, validate later
+            double mainER[10] = {5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5}; // approximate values, validate later
 
             double hp = 39;
             double atk = 7;
@@ -74,7 +108,8 @@ private:
             double AP = 3;
             double PEN = 3;
         };
-        struct a {
+        struct a
+        {
             double mainHP[13] = {367, 458, 550, 642, 734, 825, 917, 1009, 1101, 1192, 1284, 1376, 1468};
             double mainATK[13] = {53, 66, 79, 92, 106, 119, 132, 145, 159, 172, 185, 198, 212};
             double mainDEF[13] = {31, 38, 46, 54, 62, 69, 77, 85, 93, 100, 108, 116, 124};
@@ -101,7 +136,8 @@ private:
             double AP = 6;
             double PEN = 6;
         };
-        struct s {
+        struct s
+        {
             double mainHP[16] = {550, 660, 770, 880, 990, 1100, 1210, 1320, 1430, 1540, 1650, 1760, 1870, 1980, 2090, 2200};
             double mainATK[16] = {79, 94, 110, 126, 142, 158, 173, 189, 205, 221, 237, 252, 268, 284, 300, 316};
             double mainDEF[16] = {46, 55, 64, 73, 82, 92, 101, 110, 119, 128, 138, 147, 156, 165, 174, 184};
@@ -129,7 +165,6 @@ private:
             double PEN = 9;
         };
     };
-
 };
 
 #endif // DISC_H

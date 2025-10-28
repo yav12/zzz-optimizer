@@ -9,7 +9,6 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QComboBox>
-#include "data/character.h"
 #include "content/calculator.h"
 #include "content/reference.h"
 

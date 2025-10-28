@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "wengine.h"
+#include "disc.h"
 
 namespace character {
 struct character {
@@ -37,8 +38,10 @@ struct character {
         std::string mindscapeHalf;
         std::string mindscapeFull;
     };
-    wengine::wengine preferredWengine;
     assets images;
+    std::vector <disc> discs;
+    wengine::wengine preferredWengine;
+
 };
 // List of all characters
 inline std::vector<character> characterList;

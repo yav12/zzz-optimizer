@@ -87,6 +87,19 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     disc1Button->setText("Select Disc 1");
     disc1Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     discLayout->addWidget(disc1Button);
+    connect(disc1Button, &QToolButton::clicked, [this]() {
+        // open disc selector for disc 1
+        discSelector *selector = new discSelector(this);
+        selector->setWindowModality(Qt::ApplicationModal);
+        selector->setAttribute(Qt::WA_DeleteOnClose);
+        connect(selector, &discSelector::discSelected, this, [this, selector](const disc &d) {
+            // set disc 1 to selected disc
+            this->currentCharacter.discs[0] = d;
+            this->redrawDisc(1);
+            selector->close();
+        });
+        selector->show();
+    });
 
     disc2Button = new QToolButton();
     disc2Button->setText("Select Disc 2");
@@ -242,7 +255,7 @@ void calculator::redrawImages() {
     QPixmap iconPix(QString::fromStdString(currentCharacter.images.normalIcon));
     characterSelect->setIcon(QIcon(iconPix));
     characterSelect->setIconSize(QSize(100, 100));
-    characterSelect->setText(QString::fromStdString(currentCharacter.nickname));
+    characterSelect->setText(QString::fromStdString(currentCharacter.nickname).replace('&', "&&")); // make & actually show up
 
     //redraw wengine button image
     QPixmap wiconPix(QString::fromStdString(currentWengine.image));
@@ -273,6 +286,10 @@ void calculator::redrawStats(character::character calcs) {
     } else {
         ruptureStack->setCurrentIndex(0); // not rupture
     }
+}
+
+void calculator::redrawDisc(int slotNumber) {
+    // Implementation for redrawing a specific disc slot
 }
 
 void calculator::setCharacter(character::character c) {
