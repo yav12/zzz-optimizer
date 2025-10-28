@@ -686,21 +686,6 @@ void wengine::setWengineData() {
     zanshinHerbCase.image = ":/wengines/attack/ZanshinHerbCase.jxl";
 
     wengineList = {
-        bashfulDemon, bellicoseBlaze, bigCylinder, blazingLaurel, boxCutter, bunnyBand,
-        cannonRotor, cinderCobalt, cordisGermina, deepSeaVisitor, demaraBatteryMarkII,
-        dreamlitHearth, drillRigRedAxis, elegantVanity, electroLipGloss, gildedBlossom,
-        grillOWisp, hailstormShrine, heartstringNocturne, hellfireGears, housekeeper,
-        iceJadeTeapot, identityBase, identityInflection, kaboomTheCannon,
-        lunarDecrescent, lunarNoviluna, lunarPleniluna, marcatoDesire, metanukimorphosis,
-        myriadEclipse, originalTransmorpher, peacekeeperSpecialized, practicedPerfection,
-        preciousFossilizedCore, puzzleSphere, qingmingBirdcage, radiowaveJourney,
-        rainforestGourmet, reelProjector, reverbMarkI, reverbMarkII, reverbMarkIII,
-        riotSuppressorMarkVI, roaringFurnace, roaringRide, sixShooter, sliceOfTime,
-        springEmbrace, steelCushion, starlightEngine, starlightEngineReplica, steamOven,
-        streetSuperstar, theVault, tremorTrigramVessel, unfetteredGameBall, vortexArrow,
-        vortexHatchet, vortexRevolver, weepingGemini, flamemakerShaker, flightOfFancy,
-        fusionCompiler, magneticStormAlpha, magneticStormBravo, magneticStormCharlie,
-        severedInnocence, sharpenedStinger, spectralGaze, theBrimstone, theRestrained,
-        timeweaver, tusksOfFury, weepingCradle, zanshinHerbCase
+        bashfulDemon, bellicoseBlaze, bigCylinder, blazingLaurel, boxCutter, bunnyBand, cannonRotor, cinderCobalt, cordisGermina, deepSeaVisitor, demaraBatteryMarkII, dreamlitHearth, drillRigRedAxis, electroLipGloss, elegantVanity, flamemakerShaker, flightOfFancy, fusionCompiler, gildedBlossom, grillOWisp, hailstormShrine, heartstringNocturne, hellfireGears, housekeeper, iceJadeTeapot, identityBase, identityInflection, kaboomTheCannon, lunarDecrescent, lunarNoviluna, lunarPleniluna, magneticStormAlpha, magneticStormBravo, magneticStormCharlie, marcatoDesire, metanukimorphosis, myriadEclipse, originalTransmorpher, peacekeeperSpecialized, practicedPerfection, preciousFossilizedCore, puzzleSphere, qingmingBirdcage, radiowaveJourney, rainforestGourmet, reelProjector, reverbMarkI, reverbMarkII, reverbMarkIII, riotSuppressorMarkVI, roaringFurnace, roaringRide, severedInnocence, sharpenedStinger, sixShooter, sliceOfTime, spectralGaze, springEmbrace, starlightEngine, starlightEngineReplica, steamOven, steelCushion, streetSuperstar, theBrimstone, theRestrained, theVault, timeweaver, tremorTrigramVessel, tusksOfFury, unfetteredGameBall, vortexArrow, vortexHatchet, vortexRevolver, weepingCradle, weepingGemini, zanshinHerbCase
     };
 }

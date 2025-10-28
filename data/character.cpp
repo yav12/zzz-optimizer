@@ -587,7 +587,7 @@ void character::setCharacterData() {
     lycaon.images.mindscapeNone = ":/characters/lycaon/MindscapeNone.jxl";
     lycaon.images.mindscapeHalf = ":/characters/lycaon/MindscapeHalf.jxl";
     lycaon.images.mindscapeFull = ":/characters/lycaon/MindscapeFull.jxl";
-    lycaon.preferredWengine = wengine::theRestrained; // not present in wengine.h
+    lycaon.preferredWengine = wengine::theRestrained; 
 
     // miyabi
     miyabi.name = "Hoshimi Miyabi";
@@ -1147,7 +1147,7 @@ void character::setCharacterData() {
     yuzuha.images.mindscapeNone = ":/characters/yuzuha/MindscapeNone.jxl";
     yuzuha.images.mindscapeHalf = ":/characters/yuzuha/MindscapeHalf.jxl";
     yuzuha.images.mindscapeFull = ":/characters/yuzuha/MindscapeFull.jxl";
-    yuzuha.preferredWengine = wengine::sliceOfTime;
+    yuzuha.preferredWengine = wengine::metanukimorphosis;
 
     // zhuyuan
     zhuyuan.name = "Zhu Yuan";
