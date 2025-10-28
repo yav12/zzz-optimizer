@@ -335,7 +335,7 @@ void character::setCharacterData() {
     grace.images.mindscapeNone = ":/characters/grace/MindscapeNone.jxl";
     grace.images.mindscapeHalf = ":/characters/grace/MindscapeHalf.jxl";
     grace.images.mindscapeFull = ":/characters/grace/MindscapeFull.jxl";
-    grace.preferredWengine = wengine::electroLipGloss;
+    grace.preferredWengine = wengine::fusionCompiler;
 
     // harumasa
     harumasa.name = "Asaba Harumasa";
@@ -363,7 +363,7 @@ void character::setCharacterData() {
     harumasa.images.mindscapeNone = ":/characters/harumasa/MindscapeNone.jxl";
     harumasa.images.mindscapeHalf = ":/characters/harumasa/MindscapeHalf.jxl";
     harumasa.images.mindscapeFull = ":/characters/harumasa/MindscapeFull.jxl";
-    harumasa.preferredWengine = wengine::drillRigRedAxis;
+    harumasa.preferredWengine = wengine::zanshinHerbCase;
 
     // hugo
     hugo.name = "Hugo Vlad";
