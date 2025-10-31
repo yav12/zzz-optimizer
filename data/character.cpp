@@ -867,7 +867,7 @@ void character::setCharacterData() {
     s0anby.images.mindscapeNone = ":/characters/s0anby/MindscapeNone.jxl";
     s0anby.images.mindscapeHalf = ":/characters/s0anby/MindscapeHalf.jxl";
     s0anby.images.mindscapeFull = ":/characters/s0anby/MindscapeFull.jxl";
-    s0anby.preferredWengine = wengine::bunnyBand;
+    s0anby.preferredWengine = wengine::severedInnocence;
 
     // seed
     seed.name = "Seed";
