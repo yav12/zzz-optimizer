@@ -1,8 +1,11 @@
 #ifndef DISC_H
 #define DISC_H
+#pragma once
 
 #include <string>
-#include <vector> // added
+#include <vector> 
+#include "../calculations/calc.h"
+
 
 class disc
 {
@@ -17,7 +20,8 @@ public:
     void setSub3(std::string, int); // third substat of the disc
     void setSub4(std::string, int); // fourth substat of the disc
 
-    double getMainStatValue();
+    calc::mainStat getMainStat() const;
+    double getMainStatValue() const;
     double getSub1Value();
     double getSub2Value();
     double getSub3Value();
@@ -57,7 +61,7 @@ private:
     int slot;
     std::string name;
 
-    std::string mainStat;
+    calc::mainStat mainStat;
     double mainStatValue;
 
     std::string subStat1;

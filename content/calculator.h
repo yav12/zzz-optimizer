@@ -11,6 +11,7 @@
 #include <QPushButton>
 
 #include <string>
+#include <vector>
 
 #include "../selectors/charselector.h"
 #include "../selectors/wengineselector.h"
@@ -19,6 +20,8 @@
 #include "../data/character.h"
 #include "../data/wengine.h"
 #include "../data/disc.h"
+
+#include "../calculations/calc.h"
 
 class calculator : public QWidget
 {

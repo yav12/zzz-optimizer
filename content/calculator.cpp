@@ -83,49 +83,29 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     discLayout->setAlignment(Qt::AlignCenter);
     selectionsLayout->addLayout(discLayout, 1, 0, 1, 2);
 
-    disc1Button = new QToolButton();
-    disc1Button->setText("Select Disc 1");
-    disc1Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    discLayout->addWidget(disc1Button);
-    connect(disc1Button, &QToolButton::clicked, [this]() {
-        // open disc selector for disc 1
-        discSelector *selector = new discSelector(this);
-        selector->setWindowModality(Qt::ApplicationModal);
-        selector->setAttribute(Qt::WA_DeleteOnClose);
-        connect(selector, &discSelector::discSelected, this, [this, selector](const disc &d) {
-            // set disc 1 to selected disc
-            this->currentCharacter.discs[0] = d;
-            this->redrawDisc(1);
-            selector->close();
+    std::vector<QToolButton*> discButtons;
+
+    for (int i = 0; i < 6; ++i) {
+        discButtons.push_back(new QToolButton());
+        discButtons[i]->setText(QString("Select Disc %1").arg(i + 1));
+        discButtons[i]->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+        discLayout->addWidget(discButtons[i]);
+        connect(discButtons[i], &QToolButton::clicked, [this, i]() {
+            // open disc selector for disc i + 1 (?) (it might work not sure)
+            discSelector *selector = new discSelector(this, i + 1);
+            selector->setAttribute(Qt::WA_DeleteOnClose);
+            //make it centered on screen
+            selector->setFixedSize(400, 300);
+            
+            connect(selector, &discSelector::discSelected, this, [this, selector, i](const disc &d) {
+                // set disc i + 1 to selected disc (also guessing cuz idk what index its supposed to be)
+                this->currentCharacter.discs[i + 1] = d;
+                this->redrawDisc(i + 1);
+                selector->close();
+            });
+            selector->show();
         });
-        selector->show();
-    });
-
-    disc2Button = new QToolButton();
-    disc2Button->setText("Select Disc 2");
-    disc2Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    discLayout->addWidget(disc2Button);
-
-    disc3Button = new QToolButton();
-    disc3Button->setText("Select Disc 3");
-    disc3Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    discLayout->addWidget(disc3Button);
-
-    disc4Button = new QToolButton();
-    disc4Button->setText("Select Disc 4");
-    disc4Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    discLayout->addWidget(disc4Button);
-
-    disc5Button = new QToolButton();
-    disc5Button->setText("Select Disc 5");
-    disc5Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    discLayout->addWidget(disc5Button);
-
-    disc6Button = new QToolButton();
-    disc6Button->setText("Select Disc 6");
-    disc6Button->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-    discLayout->addWidget(disc6Button);
-
+    }
     //calculate button
     calculateButton = new QPushButton("Calculate");
     selectionsLayout->addWidget(calculateButton, 2, 0, 1, 2);

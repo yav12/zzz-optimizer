@@ -32,7 +32,7 @@ discSelector::discSelector(QWidget *parent, int slotNumber) : QWidget(parent), s
         QPixmap discPix(QString::fromStdString(discItem.resource));
         discButton->setIcon(QIcon(discPix));
         discButton->setIconSize(QSize(150, 150));
-        discButton->setText(QString::fromStdString(discItem.displayName));
+        discButton->setText(QString::fromStdString(discItem.displayName).replace('&', "&&")); 
         discButton->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         selectionLayout->addWidget(discButton, row, col, Qt::AlignCenter);
 

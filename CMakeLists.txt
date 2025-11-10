@@ -27,6 +27,8 @@ qt_add_executable(zzz-optimizer
     data/character.h data/character.cpp
     data/disc.h data/disc.cpp
 
+    calculations/calc.h calculations/calc.cpp
+
     content/reference.cpp content/reference.h
     content/calculator.h content/calculator.cpp
     content/library.cpp
