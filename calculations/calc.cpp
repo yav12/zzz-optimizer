@@ -26,22 +26,46 @@ namespace calc {
                     totalStats.percentHP += d.getMainStatValue();
                     break;
                 case mainStat::CritRate:
+                    totalStats.critRate += d.getMainStatValue();
+                    break;
                 case mainStat::CritDamage:
+                    totalStats.critDamage += d.getMainStatValue();
+                    break;
                 case mainStat::AnomalyProficiency:
+                    totalStats.anomalyProficiency += d.getMainStatValue();
+                    break;
                 case mainStat::AnomalyMastery:
+                    totalStats.anomalyMastery += d.getMainStatValue();
+                    break;
                 case mainStat::PenRatio:
+                    totalStats.penRatio += d.getMainStatValue();
+                    break;
                 case mainStat::FireDamage:
+                    totalStats.fireDamage += d.getMainStatValue();
+                    break;
                 case mainStat::PhysicalDamage:
+                    totalStats.physicalDamage += d.getMainStatValue();
+                    break;
                 case mainStat::EtherDamage:
+                    totalStats.etherDamage += d.getMainStatValue();
+                    break;
                 case mainStat::IceDamage:
+                    totalStats.iceDamage += d.getMainStatValue();
+                    break;
                 case mainStat::ElectricDamage:
+                    totalStats.electricDamage += d.getMainStatValue();
+                    break;
                 case mainStat::Impact:
+                    totalStats.impact += d.getMainStatValue();
+                    break;
                 case mainStat::EnergyRegen:
+                    totalStats.energyRegen += d.getMainStatValue();
+                    break;
                 default:
-                    break; // ignore other stats for now
+                    break; // there are no other main stats, unless i messed up
             }
-
-            // similarly handle substats if needed
+            
+            // substats
         }
     }
 

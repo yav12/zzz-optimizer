@@ -35,6 +35,18 @@ namespace calc {
         double percentDef;
         int flatHP;
         double percentHP;
+        double critRate;
+        double critDamage;
+        double anomalyProficiency;
+        double anomalyMastery;
+        double penRatio;
+        double fireDamage;
+        double physicalDamage;
+        double etherDamage;
+        double iceDamage;
+        double electricDamage;
+        double impact;
+        double energyRegen;
     };
     
     // calculation of disc stats to be used in overall calculations
