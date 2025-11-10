@@ -4,7 +4,7 @@
 
 #include <string>
 #include <vector> 
-#include "../calculations/calc.h"
+#include "../calculations/types.h"
 
 
 class disc
@@ -20,7 +20,7 @@ public:
     void setSub3(std::string, int); // third substat of the disc
     void setSub4(std::string, int); // fourth substat of the disc
 
-    calc::mainStat getMainStat() const;
+    calc::stats getMainStat() const;
     double getMainStatValue() const;
     double getSub1Value();
     double getSub2Value();
@@ -61,7 +61,7 @@ private:
     int slot;
     std::string name;
 
-    calc::mainStat mainStat;
+    calc::stats mainStat;
     double mainStatValue;
 
     std::string subStat1;

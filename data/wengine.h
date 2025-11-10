@@ -4,13 +4,15 @@
 #include <string>
 #include <vector>
 
+#include "../calculations/types.h"
+
 namespace wengine {
 struct wengine {
     std::string name; //w-engine name
     std::string rarity; //w-engine rarity
     std::string specialty; //w-engine specialty (attack, defense, support, stun, anomaly or rupture)
     double baseAtk; //base attack provided by w-engine
-    std::string stat; //primary stat provided by w-engine
+    calc::stats stat; //primary stat provided by w-engine
     int statPercent; //percentage value of the primary stat (not always a percentage)
     std::string effect; //special effect description
     std::string image; //path to the w-engine image

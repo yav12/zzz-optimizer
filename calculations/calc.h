@@ -1,34 +1,18 @@
 #pragma once
 
-#include "../data/character.h"
-#include "../data/wengine.h"
-#include "../data/disc.h"
+#include <vector>
+#include <string>
+#include "types.h"
+
+// forward declarations to avoid pulling in data headers here and creating include cycles (ai told me to do this)
+namespace character { struct character; }
+namespace wengine { struct wengine; }
+class disc;
 
 namespace calc {
-    //enum for different main stats
-    enum class mainStat {
-        ATK,
-        ATKPercent,
-        DEF,
-        DEFPercent,
-        HP,
-        HPPercent,
-        CritRate,
-        CritDamage,
-        AnomalyProficiency,
-        AnomalyMastery,
-        PenRatio,
-        FireDamage,
-        PhysicalDamage,
-        EtherDamage,
-        IceDamage,
-        ElectricDamage,
-        Impact,
-        EnergyRegen
-    };
     
-    // struct to hold calculated disc stats
-    struct discStats {
+    // struct to hold calculated stat bonuses
+    struct statBonuses {
         int flatAtk;
         double percentAtk;
         int flatDef;
@@ -38,25 +22,50 @@ namespace calc {
         double critRate;
         double critDamage;
         double anomalyProficiency;
-        double anomalyMastery;
+        double flatAnomalyMastery;
+        double percentAnomalyMastery;
         double penRatio;
+        double PEN;
         double fireDamage;
         double physicalDamage;
         double etherDamage;
         double iceDamage;
         double electricDamage;
-        double impact;
-        double energyRegen;
+        double flatImpact;
+        double percentImpact;
+        double flatEnergyRegen;
+        double percentEnergyRegen;
     };
-    
+    // struct for the wengine bonus
+    struct wengineBonus {
+        stats stat;
+        double value;
+    };
     // calculation of disc stats to be used in overall calculations
-    discStats calculateDiscStats(const std::vector<disc> & discs);
+    statBonuses calculateDiscStats(const std::vector<disc> & discs);
 
+    //calculate the wengine bonuses
+    wengineBonus calculateWengineBonus(const wengine::wengine & baseWengine);
+    statBonuses calculateWengineEffect(const character::character & baseCharacter, const wengine::wengine & baseWengine);
 
-    double calculateATK(const character::character & baseCharacter, const wengine::wengine & baseWengine, const discStats & ds);
-    double calculateDEF(const character::character & baseCharacter, const wengine::wengine & baseWengine, const discStats & ds);
-    double calculateHP(const character::character & baseCharacter, const wengine::wengine & baseWengine, const discStats & ds);
+    //calculate out of combat stats
+    double calculateATK(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateDEF(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateHP(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateImpact(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateAnomalyProficiency(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateAnomalyMastery(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateFireDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculatePhysicalDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateEtherDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateIceDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateElectricDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateCritRate(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateCritDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateDamagePercent(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculatePEN(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateER(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
 
-    //  the calculate everything function
+    // the calculate everything function
     character::character calculateAll(const character::character & baseCharacter, const wengine::wengine & baseWengine, const std::vector<disc> & discs);
 }

@@ -16,44 +16,44 @@ void disc::setSlot(int slotNumber) {
 void disc::setMainStat(std::string stat) {
     // set what the main stat should be based on string (or slot if 1-3)
     if (slot == 1) {
-        mainStat = calc::mainStat::ATK;
+        mainStat = calc::stats::ATK;
     } else if (slot == 2) {
-        mainStat = calc::mainStat::ATKPercent;
+        mainStat = calc::stats::ATKPercent;
     } else if (slot == 3) {
-        mainStat = calc::mainStat::DEF;
+        mainStat = calc::stats::DEF;
     } else {
         if (stat == "HP") {
-            mainStat = calc::mainStat::HP;
+            mainStat = calc::stats::HP;
         } else if (stat == "ATK") {
-            mainStat = calc::mainStat::ATK;
+            mainStat = calc::stats::ATK;
         } else if (stat == "DEF") {
-            mainStat = calc::mainStat::DEF;
+            mainStat = calc::stats::DEF;
         } else if (stat == "HP%") {
-            mainStat = calc::mainStat::HPPercent;
+            mainStat = calc::stats::HPPercent;
         } else if (stat == "ATK%") {
-            mainStat = calc::mainStat::ATKPercent;
+            mainStat = calc::stats::ATKPercent;
         } else if (stat == "DEF%") {
-            mainStat = calc::mainStat::DEFPercent;
+            mainStat = calc::stats::DEFPercent;
         } else if (stat == "CRIT Rate") {
-            mainStat = calc::mainStat::CritRate;
+            mainStat = calc::stats::CritRate;
         } else if (stat == "CRIT Damage") {
-            mainStat = calc::mainStat::CritDamage;
+            mainStat = calc::stats::CritDamage;
         } else if (stat == "Anomaly Proficiency") {
-            mainStat = calc::mainStat::AnomalyProficiency;
+            mainStat = calc::stats::AnomalyProficiency;
         } else if (stat == "Anomaly Mastery") {
-            mainStat = calc::mainStat::AnomalyMastery;
+            mainStat = calc::stats::AnomalyMastery;
         } else if (stat == "PEN Ratio") {
-            mainStat = calc::mainStat::PenRatio;
+            mainStat = calc::stats::PenRatio;
         } else if (stat == "Fire Damage") {
-            mainStat = calc::mainStat::FireDamage;
+            mainStat = calc::stats::FireDamage;
         } else if (stat == "Physical Damage") {
-            mainStat = calc::mainStat::PhysicalDamage;
+            mainStat = calc::stats::PhysicalDamage;
         } else if (stat == "Ether Damage") {
-            mainStat = calc::mainStat::EtherDamage;
+            mainStat = calc::stats::EtherDamage;
         } else if (stat == "Ice Damage") {
-            mainStat = calc::mainStat::IceDamage;
+            mainStat = calc::stats::IceDamage;
         } else if (stat == "Electric Damage") {
-            mainStat = calc::mainStat::ElectricDamage;
+            mainStat = calc::stats::ElectricDamage;
         }
     }
 }
@@ -127,7 +127,7 @@ void disc::calculateSubValue(int level, std::string stat, double& value) {
     }
 }
 
-calc::mainStat disc::getMainStat() const {
+calc::stats disc::getMainStat() const {
     return mainStat;
 }
 double disc::getMainStatValue() const {

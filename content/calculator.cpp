@@ -283,30 +283,8 @@ void calculator::setWengine(wengine::wengine w) {
 }
 
 void calculator::recalculate() {
-    // start with base stats
-    calculatedCharacter = currentCharacter;
-    // apply wengine
-    calculatedCharacter.stats.atk += currentWengine.baseAtk;
-    // apply secondary stat bonus
-    if (currentWengine.stat == "HP") {
-        calculatedCharacter.stats.hp *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
-    } else if (currentWengine.stat == "ATK") {
-        calculatedCharacter.stats.atk *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
-    } else if (currentWengine.stat == "DEF") {
-        calculatedCharacter.stats.def *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
-    } else if (currentWengine.stat == "Impact") {
-        calculatedCharacter.stats.impact *= (1.0 + static_cast<double>(currentWengine.statPercent) / 100.0);
-    } else if (currentWengine.stat == "Crit Rate") {
-        calculatedCharacter.stats.cr += static_cast<double>(currentWengine.statPercent);
-    } else if (currentWengine.stat == "Crit Damage") {
-        calculatedCharacter.stats.cd += static_cast<double>(currentWengine.statPercent);
-    } else if (currentWengine.stat == "Anomaly Proficiency") {
-        calculatedCharacter.stats.ap += static_cast<double>(currentWengine.statPercent);
-    } else if (currentWengine.stat == "PEN Ratio") {
-        calculatedCharacter.stats.penr += static_cast<double>(currentWengine.statPercent);
-    } else if (currentWengine.stat == "Energy Regen") {
-        calculatedCharacter.stats.er += static_cast<double>(currentWengine.statPercent);
-    } //no w engines give anomaly mastery or sheer force or adrenaline
+    // calculate all stats
+    calculatedCharacter = calc::calculateAll(currentCharacter, currentWengine, currentCharacter.discs);
 
     // show the computed stats (no discs yet)
     redrawStats(calculatedCharacter);

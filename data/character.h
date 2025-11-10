@@ -3,16 +3,19 @@
 
 #include <string>
 #include <vector>
+
 #include "wengine.h"
 #include "disc.h"
+
+#include "../calculations/types.h"
 
 namespace character {
 struct character {
     std::string name;
     std::string nickname;
     std::string rarity;
-    std::string specialty;
-    std::string attribute;
+    calc::specialty specialty;
+    calc::attribute attribute;
     std::string faction;
     struct stats {
         double hp;
