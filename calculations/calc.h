@@ -1,7 +1,6 @@
 #pragma once
 
 #include <vector>
-#include <string>
 #include "types.h"
 
 // forward declarations to avoid pulling in data headers here and creating include cycles (ai told me to do this)
@@ -63,8 +62,9 @@ namespace calc {
     double calculateCritRate(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
     double calculateCritDamage(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
     double calculateDamagePercent(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
-    double calculatePEN(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculatePENRatio(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
     double calculateER(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
+    double calculateSF(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses & ds);
 
     // the calculate everything function
     character::character calculateAll(const character::character & baseCharacter, const wengine::wengine & baseWengine, const std::vector<disc> & discs);

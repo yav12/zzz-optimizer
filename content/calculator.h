@@ -1,5 +1,6 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
+#include <qlabel.h>
 #pragma once
 
 #include <QWidget>
@@ -102,7 +103,6 @@ private:
     QLabel *statsER;
     QLabel *aaaLabel;
     QLabel *statsAAA;
-
 
 };
 

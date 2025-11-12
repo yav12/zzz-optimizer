@@ -261,7 +261,7 @@ void calculator::redrawStats(character::character calcs) {
     statsAAA->setText(QString::number(calcs.stats.aaa));
 
     // choose the correct page based on the character specialty
-    if (calcs.specialty == "Rupture") {
+    if (calcs.specialty == calc::specialty::Rupture) {
         ruptureStack->setCurrentIndex(1); // rupture
     } else {
         ruptureStack->setCurrentIndex(0); // not rupture

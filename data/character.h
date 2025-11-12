@@ -31,6 +31,7 @@ struct character {
         double sf;
         double er;
         double aaa;
+        double damagePercent;
     };
     stats stats;
     struct assets {

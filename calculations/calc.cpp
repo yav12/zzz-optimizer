@@ -112,7 +112,11 @@ namespace calc {
         int baseATK = baseCharacter.stats.atk;
         
         // apply stat bonuses
-        double totalATK = (baseATK * (1 + ds.percentAtk / 100.0)) + ds.flatAtk;
+        double unconditionalPercent = ds.percentAtk;
+        double unconditionalFlat = ds.flatAtk ;
+        
+        // total
+        double totalATK = (baseATK * (1 + unconditionalPercent / 100.0)) + unconditionalFlat;
 
         return totalATK;
     }
@@ -127,12 +131,22 @@ namespace calc {
         return totalDEF;
     }
 
-    double calculateHP(const character::character & baseCharacter, const wengine::wengine & baseWengine, const statBonuses& ds) {
+    double calculateHP(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
         // character HP
         double baseHP = baseCharacter.stats.hp;
 
         // apply stat bonuses
-        double totalHP = (baseHP * (1 + ds.percentHP / 100.0)) + ds.flatHP;
+        double unconditionalPercent = ds.percentHP;
+        double unconditionalFlat = ds.flatHP;
+
+        if (wb.stat == stats::HPPercent) {
+            unconditionalPercent += wb.value;
+        } else if (wb.stat == stats::HP) {
+            unconditionalFlat += wb.value;
+        }
+
+        // total
+        double totalHP = (baseHP * (1 + unconditionalPercent / 100.0)) + unconditionalFlat;
 
         return totalHP;
     }
@@ -150,25 +164,70 @@ namespace calc {
 
         return totalCD;
     }
+
+    double calculateAnomalyProficiency(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
+        // apply stat bonuses
+        double totalAP = baseCharacter.stats.ap + ds.anomalyProficiency;
+
+        return totalAP;
+    }
+
+    double calculateAnomalyMastery(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
+        // apply stat bonuses
+        double totalAM = baseCharacter.stats.am + ds.percentAnomalyMastery;
+
+        return totalAM;
+    }
+
+    double calculateImpact(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
+        // apply stat bonuses
+        double totalImpact = baseCharacter.stats.impact + ds.percentImpact;
+
+        return totalImpact;
+    }
+
+    double calculatePEN(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
+        // apply stat bonuses
+        double totalPEN = baseCharacter.stats.pen + ds.penRatio;
+
+        return totalPEN;
+    }
+
+    double calculatePENRatio(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
+        
+        // apply stat bonuses
+        double totalPENRatio = baseCharacter.stats.penr + ds.penRatio;
+        //pen ratio is only additive (its a percentage to begin with) so nothing else to be done
+        return totalPENRatio;
+    }
+
     double calculateDamagePercent(const character::character & baseCharacter, const wengineBonus & wb, const statBonuses& ds) {
         // a switch to check character attribute and add corresponding damage bonus
         switch (baseCharacter.attribute) {
-            case "Fire":
+            case attribute::Fire:
                 return ds.fireDamage;
-            case "Physical":
+            case attribute::Physical:
                 return ds.physicalDamage;
-            case "Ether":
+            case attribute::Ether:
                 return ds.etherDamage;
-            case "Ice":
+            case attribute::Ice:
                 return ds.iceDamage;
-            case "Electric":
+            case attribute::Electric:
                 return ds.electricDamage;
             default:
                 return 0.0;
         }
-        double totalDP = baseCharacter.stats.ap + ds.fireDamage + ds.physicalDamage + ds.etherDamage + ds.iceDamage + ds.electricDamage;
+    }
 
-        return totalDP;
+    double calculateER(const character::character &baseCharacter, const wengineBonus &wb, const statBonuses &ds) {
+        // apply stat bonuses
+        double totalER = baseCharacter.stats.er + ds.percentEnergyRegen;
+
+        return totalER;
+    }
+    double calculateSF(const character::character &baseCharacter, const wengineBonus &wb, const statBonuses &ds) {
+        // sheer force is special, calculated as 30% of attack stat (game mechanic) + 10% of hp (all rupture agent core passive) + any additional sources
+        return baseCharacter.stats.atk * 0.3 + baseCharacter.stats.hp * 0.1;
     }
 
     character::character calculateAll(const character::character & baseCharacter, const wengine::wengine & baseWengine, const std::vector<disc> & discs) {
@@ -177,43 +236,23 @@ namespace calc {
         statBonuses ds = calculateDiscStats(discs);
         wengineBonus wb = calculateWengineBonus(baseWengine);
 
-        //switch to add wengine advanced stat to stat bonuses
-        switch (wb.stat) {
-            case stats::ATKPercent:
-                ds.percentAtk += wb.value;
-                break;
-            case stats::DEFPercent:
-                ds.percentDef += wb.value;
-                break;
-            case stats::HPPercent:
-                ds.percentHP += wb.value;
-                break;
-            case stats::CritRate:
-                ds.critRate += wb.value;
-                break;
-            case stats::CritDamage:
-                ds.critDamage += wb.value;
-                break;
-            case stats::AnomalyProficiency:
-                ds.anomalyProficiency += wb.value;
-                break;
-            case stats::AnomalyMastery:
-                ds.percentAnomalyMastery += wb.value;
-                break;
-            case stats::PenRatio:
-                ds.penRatio += wb.value;
-                break;
-            case stats::Impact:
-                ds.percentImpact += wb.value;
-                break;
-            case stats::EnergyRegen:
-                ds.percentEnergyRegen += wb.value;
-                break;
-        }
+        //add base attack from wengines
+        ds.flatAtk += baseWengine.baseAtk;
 
         calculatedCharacter.stats.atk = calculateATK(calculatedCharacter, wb, ds);
         calculatedCharacter.stats.def = calculateDEF(calculatedCharacter, wb, ds);
         calculatedCharacter.stats.hp = calculateHP(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.cr = calculateCritRate(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.cd = calculateCritDamage(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.am = calculateAnomalyMastery(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.ap = calculateAnomalyProficiency(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.penr = calculatePENRatio(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.impact = calculateImpact(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.er = calculateER(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.aaa = calculateDamagePercent(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.pen = calculatePEN(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.damagePercent = calculateDamagePercent(calculatedCharacter, wb, ds);
+        calculatedCharacter.stats.sf = calculateSF(calculatedCharacter, wb, ds);
 
         return calculatedCharacter;
     }

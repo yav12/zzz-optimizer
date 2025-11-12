@@ -82,8 +82,8 @@ void reference::updateReference() {
     // text
     refCharacter->setText(QString::fromStdString(currentRefCharacter.name));
     refRarity->setText(QString::fromStdString(currentRefCharacter.rarity + " rank"));
-    refSpecialty->setText(QString::fromStdString(currentRefCharacter.specialty));
-    refAttribute->setText(QString::fromStdString(currentRefCharacter.attribute));
+    refSpecialty->setText(QString::fromStdString(calc::specialtyString(currentRefCharacter.specialty)));
+    refAttribute->setText(QString::fromStdString(calc::attributeString(currentRefCharacter.attribute)));
     refFactionText->setText("Faction:");
     refFaction->setText(QString::fromStdString(currentRefCharacter.faction));
     // image
