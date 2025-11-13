@@ -92,6 +92,7 @@ inline character soukaku;
 inline character trigger;
 inline character vivian;
 inline character yanagi;
+inline character yidhari;
 inline character yinhu;
 inline character yixuan;
 inline character yuzuha;

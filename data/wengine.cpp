@@ -226,6 +226,15 @@ void wengine::setWengineData() {
     kaboomTheCannon.effect = R"(When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 2.5%/2.8%/3.2%/3.6%/4% for 8s, stacking up to 4 times. Passive effects of the same name do not stack.)";
     kaboomTheCannon.image = ":/wengines/support/KaboomtheCannon.jxl";
 
+    krakensCradle.name = "Kraken's Cradle";
+    krakensCradle.rarity = "S";
+    krakensCradle.specialty = "Rupture";
+    krakensCradle.baseAtk = 713;
+    krakensCradle.stat = calc::stats::HPPercent;
+    krakensCradle.statPercent = 30;
+    krakensCradle.effect = R"(When the equipper's HP decreases, their Ice Sheer DMG increases by 6%/7%/8%/9%/10%, stacking up to 3 times and lasting 25s. The duration of each stack is calculated separately. This effect can trigger once every 0.5s. When the equipper's HP falls to 50% of Max HP or below, CRIT Rate increases by 20%/23%/26%/29%/32%.)";
+    krakensCradle.image = ":/wengines/rupture/KrakensCradle.jxl";
+
     lunarDecrescent.name = "[Lunar] Decrescent";
     lunarDecrescent.rarity = "B";
     lunarDecrescent.specialty = "Attack";
@@ -686,6 +695,6 @@ void wengine::setWengineData() {
     zanshinHerbCase.image = ":/wengines/attack/ZanshinHerbCase.jxl";
 
     wengineList = {
-        bashfulDemon, bellicoseBlaze, bigCylinder, blazingLaurel, boxCutter, bunnyBand, cannonRotor, cinderCobalt, cordisGermina, deepSeaVisitor, demaraBatteryMarkII, dreamlitHearth, drillRigRedAxis, electroLipGloss, elegantVanity, flamemakerShaker, flightOfFancy, fusionCompiler, gildedBlossom, grillOWisp, hailstormShrine, heartstringNocturne, hellfireGears, housekeeper, iceJadeTeapot, identityBase, identityInflection, kaboomTheCannon, lunarDecrescent, lunarNoviluna, lunarPleniluna, magneticStormAlpha, magneticStormBravo, magneticStormCharlie, marcatoDesire, metanukimorphosis, myriadEclipse, originalTransmorpher, peacekeeperSpecialized, practicedPerfection, preciousFossilizedCore, puzzleSphere, qingmingBirdcage, radiowaveJourney, rainforestGourmet, reelProjector, reverbMarkI, reverbMarkII, reverbMarkIII, riotSuppressorMarkVI, roaringFurnace, roaringRide, severedInnocence, sharpenedStinger, sixShooter, sliceOfTime, spectralGaze, springEmbrace, starlightEngine, starlightEngineReplica, steamOven, steelCushion, streetSuperstar, theBrimstone, theRestrained, theVault, timeweaver, tremorTrigramVessel, tusksOfFury, unfetteredGameBall, vortexArrow, vortexHatchet, vortexRevolver, weepingCradle, weepingGemini, zanshinHerbCase
+        bashfulDemon, bellicoseBlaze, bigCylinder, blazingLaurel, boxCutter, bunnyBand, cannonRotor, cinderCobalt, cordisGermina, deepSeaVisitor, demaraBatteryMarkII, dreamlitHearth, drillRigRedAxis, electroLipGloss, elegantVanity, flamemakerShaker, flightOfFancy, fusionCompiler, gildedBlossom, grillOWisp, hailstormShrine, heartstringNocturne, hellfireGears, housekeeper, iceJadeTeapot, identityBase, identityInflection, kaboomTheCannon, krakensCradle, lunarDecrescent, lunarNoviluna, lunarPleniluna, magneticStormAlpha, magneticStormBravo, magneticStormCharlie, marcatoDesire, metanukimorphosis, myriadEclipse, originalTransmorpher, peacekeeperSpecialized, practicedPerfection, preciousFossilizedCore, puzzleSphere, qingmingBirdcage, radiowaveJourney, rainforestGourmet, reelProjector, reverbMarkI, reverbMarkII, reverbMarkIII, riotSuppressorMarkVI, roaringFurnace, roaringRide, severedInnocence, sharpenedStinger, sixShooter, sliceOfTime, spectralGaze, springEmbrace, starlightEngine, starlightEngineReplica, steamOven, steelCushion, streetSuperstar, theBrimstone, theRestrained, theVault, timeweaver, tremorTrigramVessel, tusksOfFury, unfetteredGameBall, vortexArrow, vortexHatchet, vortexRevolver, weepingCradle, weepingGemini, zanshinHerbCase
     };
 }

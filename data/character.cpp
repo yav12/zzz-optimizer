@@ -1,4 +1,5 @@
 #include "character.h"
+#include "wengine.h"
 
 void character::setCharacterData() {
     // alice
@@ -1065,6 +1066,35 @@ void character::setCharacterData() {
     yanagi.images.mindscapeFull = ":/characters/yanagi/MindscapeFull.jxl";
     yanagi.preferredWengine = wengine::timeweaver;
 
+    // yidhari
+    yidhari.name = "Yidhari Murphy";
+    yidhari.nickname = "Yidhari";
+    yidhari.rarity = "S";
+    yidhari.specialty = calc::specialty::Rupture;
+    yidhari.attribute = calc::attribute::Ice;
+    yidhari.faction = "Spook Shack";
+    yidhari.stats.hp = 8497;
+    yidhari.stats.atk = 859;
+    yidhari.stats.def = 448;
+    yidhari.stats.impact = 95;
+    yidhari.stats.cr = 19.4;
+    yidhari.stats.cd = 50;
+    yidhari.stats.am = 87;
+    yidhari.stats.ap = 90;
+    yidhari.stats.penr = 0;
+    yidhari.stats.pen = 0;
+    yidhari.stats.sf = 1107;
+    yidhari.stats.er = 0;
+    yidhari.stats.aaa = 2;
+    yidhari.images.normalIcon = ":/characters/yidhari/icon.jxl";
+    yidhari.images.circleIcon = ":/characters/yidhari/iconCircle.jxl";
+    yidhari.images.portrait = ":/characters/yidhari/portrait.jxl";
+    yidhari.images.mindscapeNone = ":/characters/yidhari/MindscapeNone.jxl";
+    yidhari.images.mindscapeHalf = ":/characters/yidhari/MindscapeHalf.jxl";
+    yidhari.images.mindscapeFull = ":/characters/yidhari/MindscapeFull.jxl";
+    yidhari.preferredWengine = wengine::krakensCradle;
+    
+
     // yinhu
     yinhu.name = "Pan Yinhu";
     yinhu.nickname = "Yinhu";
@@ -1182,6 +1212,6 @@ void character::setCharacterData() {
         evelyn, grace, harumasa, hugo, jane, jufufu, koleda, lighter, lucia, lucy,
         lycaon, miyabi, manato, nekomata, nicole, orphiemagus, piper, pulchra,
         qingyi, rina, s0anby, seed, seth, soldier11, soukaku, trigger, vivian,
-        yanagi, yinhu, yixuan, yuzuha, zhuyuan
+    yanagi, yidhari, yinhu, yixuan, yuzuha, zhuyuan
     };
 }

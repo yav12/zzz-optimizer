@@ -69,6 +69,7 @@
     <qresource prefix="/wengines/rupture">
         <file alias="CinderCobalt.jxl">assets/wengines/rupture/(Cinder)Cobalt.jxl</file>
         <file alias="GrillOWisp.jxl">assets/wengines/rupture/GrillOWisp.jxl</file>
+        <file alias="KrakensCradle.jxl">assets/wengines/rupture/KrakensCradle.jxl</file>
         <file alias="PuzzleSphere.jxl">assets/wengines/rupture/PuzzleSphere.jxl</file>
         <file alias="QingmingBirdcage.jxl">assets/wengines/rupture/QingmingBirdcage.jxl</file>
         <file alias="RadiowaveJourney.jxl">assets/wengines/rupture/RadiowaveJourney.jxl</file>
@@ -415,6 +416,14 @@
         <file alias="MindscapeHalf.jxl">assets/characters/Yanagi/MindscapeYanagiHalf.jxl</file>
         <file alias="MindscapeNone.jxl">assets/characters/Yanagi/MindscapeYanagiNone.jxl</file>
     </qresource>
+        <qresource prefix="/characters/yidhari">
+        <file alias="portrait.jxl">assets/characters/Yidhari/YidhariPortrait.jxl</file>
+        <file alias="icon.jxl">assets/characters/Yidhari/YidhariIcon.jxl</file>
+        <file alias="iconCircle.jxl">assets/characters/Yidhari/YidhariCircleIcon.jxl</file>
+        <file alias="MindscapeFull.jxl">assets/characters/Yidhari/MindscapeYidhariFull.jxl</file>
+        <file alias="MindscapeHalf.jxl">assets/characters/Yidhari/MindscapeYidhariHalf.jxl</file>
+        <file alias="MindscapeNone.jxl">assets/characters/Yidhari/MindscapeYidhariNone.jxl</file>
+    </qresource>
     <qresource prefix="/characters/yinhu">
         <file alias="portrait.jxl">assets/characters/Yinhu/YinhuPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Yinhu/YinhuIcon.jxl</file>
@@ -423,6 +432,7 @@
         <file alias="MindscapeHalf.jxl">assets/characters/Yinhu/MindscapeYinhuHalf.jxl</file>
         <file alias="MindscapeNone.jxl">assets/characters/Yinhu/MindscapeYinhuNone.jxl</file>
     </qresource>
+
     <qresource prefix="/characters/yixuan">
         <file alias="portrait.jxl">assets/characters/Yixuan/YixuanPortrait.jxl</file>
         <file alias="icon.jxl">assets/characters/Yixuan/YixuanIcon.jxl</file>

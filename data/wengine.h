@@ -52,6 +52,7 @@ inline wengine iceJadeTeapot;
 inline wengine identityBase;
 inline wengine identityInflection;
 inline wengine kaboomTheCannon;
+inline wengine krakensCradle;
 inline wengine lunarDecrescent;
 inline wengine lunarNoviluna;
 inline wengine lunarPleniluna;
