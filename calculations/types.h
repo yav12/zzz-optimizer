@@ -7,24 +7,27 @@ namespace calc {
     // enum for different main stats moved out of calc.h to break include cycles
     enum class stats
     {
-        ATK,
+        ATKFlat,
         ATKPercent,
-        DEF,
+        DEFFlat,
         DEFPercent,
-        HP,
+        HPFlat,
         HPPercent,
         CritRate,
         CritDamage,
         AnomalyProficiency,
         AnomalyMastery,
+        PEN,
         PenRatio,
         FireDamage,
         PhysicalDamage,
         EtherDamage,
         IceDamage,
         ElectricDamage,
-        Impact,
-        EnergyRegen,
+        ImpactFlat,
+        ImpactPercent,
+        EnergyRegenFlat,
+        EnergyRegenPercent,
         SheerForce,
         AdrenalineRegen
     };

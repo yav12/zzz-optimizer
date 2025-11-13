@@ -14,7 +14,7 @@ void wengine::setWengineData() {
     bellicoseBlaze.rarity = "S";
     bellicoseBlaze.specialty = "Attack";
     bellicoseBlaze.baseAtk = 713;
-    bellicoseBlaze.stat = calc::stats::EnergyRegen;
+    bellicoseBlaze.stat = calc::stats::EnergyRegenPercent;
     bellicoseBlaze.statPercent = 60;
     bellicoseBlaze.effect = R"(Increases CRIT Rate by 20%/23%/26%/29%/32%. When the equipper triggers an Aftershock that deals Fire DMG, their attacks ignore 15%/17.2%/19.5%/21.7%/24% of the target's DEF for 8s. Can stack once every 3s, up to 2 stacks. Repeated triggers reset the duration.)";
     bellicoseBlaze.image = ":/wengines/attack/BellicoseBlaze.jxl";
@@ -32,7 +32,7 @@ void wengine::setWengineData() {
     blazingLaurel.rarity = "S";
     blazingLaurel.specialty = "Stun";
     blazingLaurel.baseAtk = 713;
-    blazingLaurel.stat = calc::stats::Impact;
+    blazingLaurel.stat = calc::stats::ImpactPercent;
     blazingLaurel.statPercent = 18;
     blazingLaurel.effect = R"(Upon launching a Quick Assist or Perfect Assist, the equipper's Impact increases by 25%/28.75%/32.5%/36.25%/40% for 8s. When the equipper launches and hits an enemy with a Basic Attack, apply Wilt to the target for 30s, stacking up to 20 times, repeated triggers reset the duration. When any squad member hits an enemy, for every stack of Wilt applied to the target, the CRIT DMG of the Ice DMG and Fire DMG dealt by that attack increases by 1.5%/1.72%/1.95%/2.17%/2.4%. Only one instance of this effect can exist in the same squad.)";
     blazingLaurel.image = ":/wengines/stun/BlazingLaurel.jxl";
@@ -41,7 +41,7 @@ void wengine::setWengineData() {
     boxCutter.rarity = "A";
     boxCutter.specialty = "Stun";
     boxCutter.baseAtk = 624;
-    boxCutter.stat = calc::stats::Impact;
+    boxCutter.stat = calc::stats::ImpactPercent;
     boxCutter.statPercent = 15;
     boxCutter.effect = R"(Upon launching an Aftershock, the equipper's Physical DMG increases by 15%/17.3%/19.5%/21.8%/24%, and Daze increases by 10%/11.5%/13%/14.5%/16%, lasting 10s.)";
     boxCutter.image = ":/wengines/stun/BoxCutter.jxl";
@@ -95,7 +95,7 @@ void wengine::setWengineData() {
     demaraBatteryMarkII.rarity = "A";
     demaraBatteryMarkII.specialty = "Stun";
     demaraBatteryMarkII.baseAtk = 624;
-    demaraBatteryMarkII.stat = calc::stats::Impact;
+    demaraBatteryMarkII.stat = calc::stats::ImpactPercent;
     demaraBatteryMarkII.statPercent = 15;
     demaraBatteryMarkII.effect = R"(Increases Electric DMG by 15%/17.5%/20%/22%/24%. When the equipper hits an enemy with a Dodge Counter or Assist Attack, their Energy Generation Rate increases by 18%/20.5%/23%/25%/27.5% for 8s.)";
     demaraBatteryMarkII.image = ":/wengines/stun/DemaraBatteryMarkII.jxl";
@@ -113,7 +113,7 @@ void wengine::setWengineData() {
     drillRigRedAxis.rarity = "A";
     drillRigRedAxis.specialty = "Attack";
     drillRigRedAxis.baseAtk = 624;
-    drillRigRedAxis.stat = calc::stats::EnergyRegen;
+    drillRigRedAxis.stat = calc::stats::EnergyRegenPercent;
     drillRigRedAxis.statPercent = 50;
     drillRigRedAxis.effect = R"(When launching an EX Special Attack or Chain Attack, Electric DMG from Basic Attacks and Dash Attacks increases by 50%/57.5%/65%/72.5%/80% for 10s. This effect can trigger once every 15s.)";
     drillRigRedAxis.image = ":/wengines/attack/DrillRig-RedAxis.jxl";
@@ -176,7 +176,7 @@ void wengine::setWengineData() {
     hellfireGears.rarity = "S";
     hellfireGears.specialty = "Stun";
     hellfireGears.baseAtk = 684;
-    hellfireGears.stat = calc::stats::Impact;
+    hellfireGears.stat = calc::stats::ImpactPercent;
     hellfireGears.statPercent = 18;
     hellfireGears.effect = R"(While off-field, the equipper's Energy Regen increases by 0.6/0.75/0.9/1.05/1.2/s. When using an EX Special Attack, the equipper's Impact is increased by 10%/12.5%/15%/17.5%/20% for 10s, stacking up to 2 times.)";
     hellfireGears.image = ":/wengines/stun/HellfireGears.jxl";
@@ -194,7 +194,7 @@ void wengine::setWengineData() {
     iceJadeTeapot.rarity = "S";
     iceJadeTeapot.specialty = "Stun";
     iceJadeTeapot.baseAtk = 713;
-    iceJadeTeapot.stat = calc::stats::Impact;
+    iceJadeTeapot.stat = calc::stats::ImpactPercent;
     iceJadeTeapot.statPercent = 18;
     iceJadeTeapot.effect = R"(When a Basic Attack hits an enemy, gain 1 stack of Tea-riffic. Each stack increases Impact and can lead to a squad-wide DMG buff when ≥15 stacks.)";
     iceJadeTeapot.image = ":/wengines/stun/Ice-JadeTeapot.jxl";
@@ -221,7 +221,7 @@ void wengine::setWengineData() {
     kaboomTheCannon.rarity = "A";
     kaboomTheCannon.specialty = "Support";
     kaboomTheCannon.baseAtk = 624;
-    kaboomTheCannon.stat = calc::stats::EnergyRegen;
+    kaboomTheCannon.stat = calc::stats::EnergyRegenPercent;
     kaboomTheCannon.statPercent = 50;
     kaboomTheCannon.effect = R"(When any friendly unit in the squad attacks and hits an enemy, all friendly units' ATK increases by 2.5%/2.8%/3.2%/3.6%/4% for 8s, stacking up to 4 times. Passive effects of the same name do not stack.)";
     kaboomTheCannon.image = ":/wengines/support/KaboomtheCannon.jxl";
@@ -266,7 +266,7 @@ void wengine::setWengineData() {
     metanukimorphosis.rarity = "S";
     metanukimorphosis.specialty = "Support";
     metanukimorphosis.baseAtk = 713;
-    metanukimorphosis.stat = calc::stats::EnergyRegen;
+    metanukimorphosis.stat = calc::stats::EnergyRegenPercent;
     metanukimorphosis.statPercent = 60;
     metanukimorphosis.effect = R"(When the equipper's EX Special Attack or Ultimate deals Physical DMG, their Anomaly Mastery increases by 30/34/39/43/48 for 40s. When the equipper's Aftershock hits an enemy, all squad members' Anomaly Proficiency increases by 60 for 40s.)";
     metanukimorphosis.image = ":/wengines/support/Metanukimorphosis.jxl";
@@ -311,7 +311,7 @@ void wengine::setWengineData() {
     preciousFossilizedCore.rarity = "A";
     preciousFossilizedCore.specialty = "Stun";
     preciousFossilizedCore.baseAtk = 594;
-    preciousFossilizedCore.stat = calc::stats::Impact;
+    preciousFossilizedCore.stat = calc::stats::ImpactPercent;
     preciousFossilizedCore.statPercent = 15;
     preciousFossilizedCore.effect = R"(When the target's HP is no lower than 50%, the equipper inflicts 10%/11.5%/13%/14.5%/16% more Daze to the target. When the target's HP is no lower than 75%, this bonus is further increased by 10%/11.5%/13%/14.5%/16%.)";
     preciousFossilizedCore.image = ":/wengines/stun/PreciousFossilizedCore.jxl";
@@ -356,7 +356,7 @@ void wengine::setWengineData() {
     reelProjector.rarity = "A";
     reelProjector.specialty = "Defense";
     reelProjector.baseAtk = 594;
-    reelProjector.stat = calc::stats::Impact;
+    reelProjector.stat = calc::stats::ImpactPercent;
     reelProjector.statPercent = 15;
     reelProjector.effect = R"(When a squad member's HP is >=50%, they take less DMG and less Miasma Contamination. Only one instance of this effect can exist in the same squad.)";
     reelProjector.image = ":/wengines/defense/ReelProjector.jxl";
@@ -374,7 +374,7 @@ void wengine::setWengineData() {
     reverbMarkII.rarity = "B";
     reverbMarkII.specialty = "Support";
     reverbMarkII.baseAtk = 475;
-    reverbMarkII.stat = calc::stats::EnergyRegen;
+    reverbMarkII.stat = calc::stats::EnergyRegenPercent;
     reverbMarkII.statPercent = 40;
     reverbMarkII.effect = R"(Launching an EX Special Attack or Chain Attack increases all squad members' Anomaly Mastery and Anomaly Proficiency by 10/12/13/15/16 for 10s.)";
     reverbMarkII.image = ":/wengines/support/ReverbMarkII.jxl";
@@ -419,7 +419,7 @@ void wengine::setWengineData() {
     sixShooter.rarity = "A";
     sixShooter.specialty = "Stun";
     sixShooter.baseAtk = 594;
-    sixShooter.stat = calc::stats::Impact;
+    sixShooter.stat = calc::stats::ImpactPercent;
     sixShooter.statPercent = 15;
     sixShooter.effect = R"(The equipper gains 1 Charge stack every 3s, stacking up to 6 times. When launching an EX Special Attack, consumes all Charge stacks and each stack consumed increases the skill's Daze inflicted.)";
     sixShooter.image = ":/wengines/stun/SixShooter.jxl";
@@ -473,7 +473,7 @@ void wengine::setWengineData() {
     steamOven.rarity = "A";
     steamOven.specialty = "Stun";
     steamOven.baseAtk = 594;
-    steamOven.stat = calc::stats::EnergyRegen;
+    steamOven.stat = calc::stats::EnergyRegenPercent;
     steamOven.statPercent = 50;
     steamOven.effect = R"(For every 10 Energy accumulated, the equipper's Impact is increased by 2%/2.3%/2.6%/2.9%/3.2%, stacking up to 8 times. After Energy is consumed, this bonus remains for 8 more seconds.)";
     steamOven.image = ":/wengines/stun/SteamOven.jxl";
@@ -491,7 +491,7 @@ void wengine::setWengineData() {
     theVault.rarity = "A";
     theVault.specialty = "Support";
     theVault.baseAtk = 624;
-    theVault.stat = calc::stats::EnergyRegen;
+    theVault.stat = calc::stats::EnergyRegenPercent;
     theVault.statPercent = 50;
     theVault.effect = R"(Dealing Ether DMG using an EX Special Attack, Chain Attack, or Ultimate increases all units' DMG against the target by 15%/17.5%/20%/22%/24% and increases the equipper's Energy Regen by 0.5/0.58/0.65/0.72/0.8 /s for 2s.)";
     theVault.image = ":/wengines/support/TheVault.jxl";
@@ -509,7 +509,7 @@ void wengine::setWengineData() {
     unfetteredGameBall.rarity = "A";
     unfetteredGameBall.specialty = "Support";
     unfetteredGameBall.baseAtk = 594;
-    unfetteredGameBall.stat = calc::stats::EnergyRegen;
+    unfetteredGameBall.stat = calc::stats::EnergyRegenPercent;
     unfetteredGameBall.statPercent = 50;
     unfetteredGameBall.effect = R"(Whenever the equipper's attack triggers an Attribute Counter effect, all units' CRIT Rate against the struck enemy increases by 12%/13.5%/15.5%/17.5%/20% for 12s. Passive effects of the same name do not stack.)";
     unfetteredGameBall.image = ":/wengines/support/UnfetteredGameBall.jxl";
@@ -518,7 +518,7 @@ void wengine::setWengineData() {
     vortexArrow.rarity = "B";
     vortexArrow.specialty = "Stun";
     vortexArrow.baseAtk = 475;
-    vortexArrow.stat = calc::stats::Impact;
+    vortexArrow.stat = calc::stats::ImpactPercent;
     vortexArrow.statPercent = 12;
     vortexArrow.effect = R"(The equipper's attacks inflict 8%/9%/10%/11%/12% more Daze on their main target.)";
     vortexArrow.image = ":/wengines/stun/VortexArrow.jxl";
@@ -527,7 +527,7 @@ void wengine::setWengineData() {
     vortexHatchet.rarity = "B";
     vortexHatchet.specialty = "Stun";
     vortexHatchet.baseAtk = 475;
-    vortexHatchet.stat = calc::stats::EnergyRegen;
+    vortexHatchet.stat = calc::stats::EnergyRegenPercent;
     vortexHatchet.statPercent = 40;
     vortexHatchet.effect = R"(Upon entering combat or switching in, the equipper's Impact increases by 9%/10%/11%/12%/13% for 10s. This effect can trigger once every 20s.)";
     vortexHatchet.image = ":/wengines/stun/VortexHatchet.jxl";
@@ -644,7 +644,7 @@ void wengine::setWengineData() {
     theRestrained.rarity = "S";
     theRestrained.specialty = "Stun";
     theRestrained.baseAtk = 684;
-    theRestrained.stat = calc::stats::Impact;
+    theRestrained.stat = calc::stats::ImpactPercent;
     theRestrained.statPercent = 18;
     theRestrained.effect = R"(When an attack hits an enemy, DMG and Daze from Basic Attacks increase by 6%/7.5%/9%/10.5%/12% for 8s, stacking up to 5 times. This effect can trigger at most once during each skill. The duration of each stack is calculated separately.)";
     theRestrained.image = ":/wengines/stun/TheRestrained.jxl";
@@ -662,7 +662,7 @@ void wengine::setWengineData() {
     tusksOfFury.rarity = "S";
     tusksOfFury.specialty = "Defense";
     tusksOfFury.baseAtk = 713;
-    tusksOfFury.stat = calc::stats::Impact;
+    tusksOfFury.stat = calc::stats::ImpactPercent;
     tusksOfFury.statPercent = 18;
     tusksOfFury.effect = R"(The Shield value provided by the equipper increases by 30%/38%/46%/52%/60%. When any squad member triggers Interrupt or Perfect Dodge, all squad members ' DMG increases by 18%/22.5%/27%/31.5%/36% and Daze dealt increases by 12%/15%/18%/21%/24% for 20s. Passive effects of the same name do not stack.)";
     tusksOfFury.image = ":/wengines/defense/TusksofFury.jxl";

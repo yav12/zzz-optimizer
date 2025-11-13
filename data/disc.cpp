@@ -16,18 +16,18 @@ void disc::setSlot(int slotNumber) {
 void disc::setMainStat(std::string stat) {
     // set what the main stat should be based on string (or slot if 1-3)
     if (slot == 1) {
-        mainStat = calc::stats::ATK;
+        mainStat = calc::stats::ATKFlat;
     } else if (slot == 2) {
         mainStat = calc::stats::ATKPercent;
     } else if (slot == 3) {
-        mainStat = calc::stats::DEF;
+        mainStat = calc::stats::DEFFlat;
     } else {
         if (stat == "HP") {
-            mainStat = calc::stats::HP;
+            mainStat = calc::stats::HPFlat;
         } else if (stat == "ATK") {
-            mainStat = calc::stats::ATK;
+            mainStat = calc::stats::ATKFlat;
         } else if (stat == "DEF") {
-            mainStat = calc::stats::DEF;
+            mainStat = calc::stats::DEFFlat;
         } else if (stat == "HP%") {
             mainStat = calc::stats::HPPercent;
         } else if (stat == "ATK%") {
