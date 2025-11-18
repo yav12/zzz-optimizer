@@ -43,7 +43,7 @@ struct character {
         std::string mindscapeFull;
     };
     assets images;
-    std::vector <disc> discs;
+    std::vector <disc> discs = std::vector<disc>(6); // 6 disc slots
     wengine::wengine preferredWengine;
 
 };

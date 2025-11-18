@@ -16,7 +16,7 @@ charSelector::charSelector(QWidget *parent) : QWidget(parent)
     mainLayout->addLayout(selectionLayout);
     selectionLayout->setAlignment(Qt::AlignCenter);
     int characterCount = character::characterList.size();
-    int columns = 7; // Number of columns in the grid
+    int columns = 8; // Number of columns in the grid
     int index = 0;
 
     for (const auto& character : character::characterList) {
@@ -26,7 +26,7 @@ charSelector::charSelector(QWidget *parent) : QWidget(parent)
         QToolButton *characterButton = new QToolButton();
         QPixmap charPix(QString::fromStdString(character.images.normalIcon));
         characterButton->setIcon(QIcon(charPix));
-        characterButton->setIconSize(QSize(150, 150));
+        characterButton->setIconSize(QSize(135, 135));
         characterButton->setText(QString::fromStdString(character.nickname).replace('&', "&&")); // make & actually show up 
         characterButton->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         selectionLayout->addWidget(characterButton, row, col);

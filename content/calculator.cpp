@@ -1,41 +1,17 @@
 #include "calculator.h"
 
+#include <QGuiApplication>
+
+#include "../selectors/charselector.h"
+#include "../selectors/discselector.h"
+#include "../selectors/wengineselector.h"
+
+#include "../data/disc.h"
+
 calculator::calculator(QWidget *parent) : QWidget(parent) {
     // top-level pages stack: allows swapping the entire window
     pagesStack = new QStackedLayout();
     setLayout(pagesStack);
-
-    // add the selector widget as a full-window page directly to pagesStack
-    charSelectorWidget = new charSelector(this);
-    pagesStack->addWidget(charSelectorWidget);
-
-    // connect selector -> apply selection, update UI and switch back to controls page
-    connect(charSelectorWidget, &charSelector::characterSelected, this,
-            [this](const character::character &c)
-            {
-                setCharacter(c); 
-                // set default wengine from character
-                setWengine(c.preferredWengine);
-
-                // switch back to main page
-                if (this->pagesStack)
-                    this->pagesStack->setCurrentWidget(this->mainPage);
-            });
-
-    // wengine selector widget
-    wengineSelectorWidget = new wengineSelector(this);
-    pagesStack->addWidget(wengineSelectorWidget);
-
-    // connect selector -> apply selection, update UI and switch back to controls page
-    connect(wengineSelectorWidget, &wengineSelector::wengineSelected, this,
-            [this](const wengine::wengine &w)
-            {
-                setWengine(w); // updates currentWengine and images
-
-                // switch back to controls page (main page)
-                if (this->pagesStack)
-                    this->pagesStack->setCurrentWidget(this->mainPage);
-            });
 
     // main page: contains the original grid layout
     mainPage = new QWidget();
@@ -53,28 +29,66 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     // add the main page to the top-level pages stack
     pagesStack->addWidget(mainPage);
     pagesStack->setCurrentWidget(mainPage);
-    
-    //character select button
+
+    // character select button
     characterSelect = new QToolButton();
     characterSelect->setText("Select Character");
     characterSelect->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     selectionsLayout->addWidget(characterSelect, 0, 0, Qt::AlignCenter);
     connect(characterSelect, &QToolButton::clicked, [this]() {
-        // switch entire window to selector page
+        // create character selector
+        charSelector *charSelectorWidget = new charSelector(this);
+        pagesStack->addWidget(charSelectorWidget);
+
+        // switch to selector page
         if (this->pagesStack) {
-            this->pagesStack->setCurrentWidget(this->charSelectorWidget);
+        this->pagesStack->setCurrentWidget(charSelectorWidget);
         }
+
+        // connect selector -> apply selection, update UI and switch back to
+        // calculator page
+        // NOTE: capture charSelectorWidget by value (not by reference) to avoid
+        // a dangling reference when this lambda returns.
+        connect(charSelectorWidget, &charSelector::characterSelected, this,
+                [this, charSelectorWidget](const character::character &c) {
+                setCharacter(c);
+                // set default wengine from character
+                setWengine(c.preferredWengine);
+
+                // switch back to main page
+                if (this->pagesStack) {
+                    this->pagesStack->setCurrentWidget(this->mainPage);
+                }
+
+                // delete selector widget
+                charSelectorWidget->deleteLater();
+                });
     });
 
-    //wengine select button
+    // wengine select button
     wengineSelect = new QToolButton();
     wengineSelect->setText("Select Wengine");
     wengineSelect->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     selectionsLayout->addWidget(wengineSelect, 0, 1, Qt::AlignCenter);
     connect(wengineSelect, &QToolButton::clicked, [this]() {
+        // wengine selector widget
+        wengineSelector *wengineSelectorWidget = new wengineSelector(this);
+        pagesStack->addWidget(wengineSelectorWidget);
+
+        // connect selector -> apply selection, update UI and switch back to
+        // calculator page
+        connect(wengineSelectorWidget, &wengineSelector::wengineSelected, this,
+                [this](const wengine::wengine &w) {
+                setWengine(w); // updates currentWengine and images
+
+                // switch back to controls page (main page)
+                if (this->pagesStack)
+                    this->pagesStack->setCurrentWidget(this->mainPage);
+                });
+
         // switch entire window to selector page
         if (this->pagesStack) {
-            this->pagesStack->setCurrentWidget(this->wengineSelectorWidget);
+        this->pagesStack->setCurrentWidget(wengineSelectorWidget);
         }
     });
 
@@ -83,35 +97,47 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     discLayout->setAlignment(Qt::AlignCenter);
     selectionsLayout->addLayout(discLayout, 1, 0, 1, 2);
 
-    std::vector<QToolButton*> discButtons;
-
     for (int i = 0; i < 6; ++i) {
-        discButtons.push_back(new QToolButton());
-        discButtons[i]->setText(QString("Select Disc %1").arg(i + 1));
-        discButtons[i]->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
-        discLayout->addWidget(discButtons[i]);
+        this->discButtons.push_back(new QToolButton());
+        this->discButtons[i]->setText(QString("Select Disc %1").arg(i + 1));
+        this->discButtons[i]->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+        discLayout->addWidget(this->discButtons[i]);
         connect(discButtons[i], &QToolButton::clicked, [this, i]() {
             // open disc selector for disc i + 1 (?) (it might work not sure)
             discSelector *selector = new discSelector(this, i + 1);
             selector->setAttribute(Qt::WA_DeleteOnClose);
-            //make it centered on screen
-            selector->setFixedSize(400, 300);
-            
-            connect(selector, &discSelector::discSelected, this, [this, selector, i](const disc &d) {
-                // set disc i + 1 to selected disc (also guessing cuz idk what index its supposed to be)
-                this->currentCharacter.discs[i + 1] = d;
-                this->redrawDisc(i + 1);
-                selector->close();
-            });
+
+            //positioning by ai:
+            // make it centered on screen: set size first, then move so rect() has correct size
+            selector->setFixedSize(700, 800);
+            if (QScreen *screen = QGuiApplication::primaryScreen()) {
+                // center inside the available geometry (accounts for taskbars)
+                QRect avail = screen->availableGeometry();
+                selector->move(avail.center() - selector->rect().center());
+            } else {
+                // fallback: center relative to this widget
+                selector->move(this->geometry().center() - selector->rect().center());
+            }
+
+            // make it do something and update the page itself
+            connect(selector, &discSelector::discSelected, this,
+                    [this, selector, i](const disc &d) {
+                        // set disc i to selected disc (also guessing cuz idk what
+                        // index its supposed to be)
+                        this->currentCharacter.discs[i] = d;
+                        this->redrawDisc(i);
+                        selector->close();
+                    });
             selector->show();
         });
     }
-    //calculate button
+    // calculate button
     calculateButton = new QPushButton("Calculate");
     selectionsLayout->addWidget(calculateButton, 2, 0, 1, 2);
-    connect(calculateButton, &QPushButton::clicked, this, &calculator::recalculate);
+    connect(calculateButton, &QPushButton::clicked, this,
+            &calculator::recalculate);
 
-    //images
+    // images
     characterImage = new QLabel;
     wengineImage = new QLabel;
     characterImage->setScaledContents(false);
@@ -124,8 +150,8 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     layout->addWidget(characterImage, 0, 0, -1, 1);
     layout->addWidget(wengineImage, 2, 1);
 
-    //stats labels
-    //unchanging labels
+    // stats labels
+    // unchanging labels
     hpLabel = new QLabel("HP:");
     statsLayout->addWidget(hpLabel, 0, 0);
     atkLabel = new QLabel("ATK:");
@@ -152,7 +178,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     nonRuptureLayout = new QGridLayout();
     nonRuptureLayout->setContentsMargins(0, 0, 0, 0);
     statsLayout->addLayout(ruptureStack, 8, 0, 3, 2);
-    //non-rupture layout
+    // non-rupture layout
     QWidget *nonRuptureWidget = new QWidget();
     nonRuptureWidget->setLayout(nonRuptureLayout);
     ruptureStack->addWidget(nonRuptureWidget);
@@ -162,7 +188,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     nonRuptureLayout->addWidget(penLabel, 1, 0);
     erLabel = new QLabel("Energy Regen:");
     nonRuptureLayout->addWidget(erLabel, 2, 0);
-    //rupture layout
+    // rupture layout
     QWidget *ruptureWidget = new QWidget();
     ruptureWidget->setLayout(ruptureLayout);
     ruptureStack->addWidget(ruptureWidget);
@@ -173,7 +199,7 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
     QLabel *spacer = new QLabel(""); // empty spacer
     ruptureLayout->addWidget(spacer, 2, 0);
 
-    //default values for stats
+    // default values for stats
     statsHP = new QLabel("?");
     statsLayout->addWidget(statsHP, 0, 1);
     statsATK = new QLabel("?");
@@ -231,13 +257,13 @@ void calculator::redrawImages() {
         wengineImage->clear();
     }
 
-    //redraw character button image
+    // redraw character button image
     QPixmap iconPix(QString::fromStdString(currentCharacter.images.normalIcon));
     characterSelect->setIcon(QIcon(iconPix));
     characterSelect->setIconSize(QSize(100, 100));
     characterSelect->setText(QString::fromStdString(currentCharacter.nickname).replace('&', "&&")); // make & actually show up
 
-    //redraw wengine button image
+    // redraw wengine button image
     QPixmap wiconPix(QString::fromStdString(currentWengine.image));
     wengineSelect->setIcon(QIcon(wiconPix));
     wengineSelect->setIconSize(QSize(100, 100));
@@ -245,7 +271,7 @@ void calculator::redrawImages() {
 }
 
 void calculator::redrawStats(character::character calcs) {
-    //set labels
+    // set labels
     statsHP->setText(QString::number(calcs.stats.hp));
     statsATK->setText(QString::number(calcs.stats.atk));
     statsDEF->setText(QString::number(calcs.stats.def));
@@ -269,11 +295,19 @@ void calculator::redrawStats(character::character calcs) {
 }
 
 void calculator::redrawDisc(int slotNumber) {
-    // Implementation for redrawing a specific disc slot
+    // redraw the disc button for that slot
+    disc redrawnDisc = currentCharacter.discs[slotNumber];
+
+    discButtons[slotNumber]->setText(QString::fromStdString(redrawnDisc.discMap.at(redrawnDisc.getSet()).displayName).replace('&', "&&"));
+
+    QPixmap discPix(QString::fromStdString(redrawnDisc.discMap.at(redrawnDisc.getSet()).resource));
+    discButtons[slotNumber]->setIcon(QIcon(discPix));
+    discButtons[slotNumber]->setIconSize(QSize(80, 80));
+
 }
 
 void calculator::setCharacter(character::character c) {
-    currentCharacter = c; 
+    currentCharacter = c;
     redrawImages();
 }
 
@@ -290,6 +324,4 @@ void calculator::recalculate() {
     redrawStats(calculatedCharacter);
 }
 
-
-calculator::~calculator() {
-}
+calculator::~calculator() {}

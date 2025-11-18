@@ -3,7 +3,7 @@
 #pragma once
 
 #include <string>
-#include <vector> 
+#include <map> 
 #include "../calculations/types.h"
 
 
@@ -11,15 +11,18 @@ class disc
 {
 public:
     disc();
-    void setName(std::string); //name of the disc (what set is it)
+    void setSet(calc::discSet); //name of the disc (what set is it)
     void setRank(std::string); //rarity of disc (B, A, S)
     void setSlot(int); //slot of the disc (1-6)
-    void setMainStat(std::string); // main stat of the disc (e.g., ATK%, CRIT Rate, etc)
-    void setSub1(std::string, int); // first substat of the disc
-    void setSub2(std::string, int); // second substat of the disc
-    void setSub3(std::string, int); // third substat of the disc
-    void setSub4(std::string, int); // fourth substat of the disc
+    void setMainStat(calc::stats); // main stat of the disc (e.g., ATK%, CRIT Rate, etc)
+    void setSub1(calc::stats, int); // first substat of the disc
+    void setSub2(calc::stats, int); // second substat of the disc
+    void setSub3(calc::stats, int); // third substat of the disc
+    void setSub4(calc::stats, int); // fourth substat of the disc
 
+    calc::discSet getSet() const;
+    int getSlot() const;
+    std::string getRank() const;
     calc::stats getMainStat() const;
     double getMainStatValue() const;
     double getSub1Value();
@@ -28,59 +31,63 @@ public:
     double getSub4Value();
 
     struct DiscInfo {
-        std::string resource;
         std::string displayName;
+        std::string resource;
+        calc::stats bonus2pc;
+        int bonus2pcValue;
+        std::string bonus4pcEffect;
     };
-    inline static const std::vector<DiscInfo> discList = {
-        {":/discs/AstralVoice.jxl", "Astral Voice"},
-        {":/discs/BranchBladeSong.jxl", "Branch & Blade Song"},
-        {":/discs/ChaosJazz.jxl", "Chaos Jazz"},
-        {":/discs/ChaoticMetal.jxl", "Chaotic Metal"},
-        {":/discs/DawnsBloom.jxl", "Dawn's Bloom"},
-        {":/discs/FangedMetal.jxl", "Fanged Metal"},
-        {":/discs/FreedomBlues.jxl", "Freedom Blues"},
-        {":/discs/HormonePunk.jxl", "Hormone Punk"},
-        {":/discs/InfernoMetal.jxl", "Inferno Metal"},
-        {":/discs/KingoftheSummit.jxl", "King of the Summit"},
-        {":/discs/MoonlightLullaby.jxl", "Moonlight Lullaby"},
-        {":/discs/PhaethonsMelody.jxl", "Phaethon's Melody"},
-        {":/discs/PolarMetal.jxl", "Polar Metal"},
-        {":/discs/ProtoPunk.jxl", "Proto Punk"},
-        {":/discs/PufferElectro.jxl", "Puffer Electro"},
-        {":/discs/ShadowHarmony.jxl", "Shadow Harmony"},
-        {":/discs/ShockstarDisco.jxl", "Shockstar Disco"},
-        {":/discs/SoulRock.jxl", "Soul Rock"},
-        {":/discs/SwingJazz.jxl", "Swing Jazz"},
-        {":/discs/ThunderMetal.jxl", "Thunder Metal"},
-        {":/discs/WoodpeckerElectro.jxl", "Woodpecker Electro"},
-        {":/discs/YunkuiTales.jxl", "Yunkui Tales"}
+
+    inline static const std::map<calc::discSet, DiscInfo> discMap = {
+        {calc::discSet::AstralVoice, {"Astral Voice", ":/discs/AstralVoice.jxl", calc::stats::ATKPercent, 10, "Whenever any squad member enters the field using a Quick Assist, all squad members gain 1 stack of Astral, up to a maximum of 3 stacks, and lasting 15s. Repeated triggers reset the duration. Each stack of Astral increases the DMG dealt by the character entering the field using a Quick Assist by 8%. Passive effects of the same name do not stack."}},
+        {calc::discSet::BranchAndBladeSong, {"Branch & Blade Song", ":/discs/BranchBladeSong.jxl", calc::stats::CritDamage, 16, "When Anomaly Mastery exceeds or equals 115 points, the equipper's CRIT DMG increases by 30%. When any squad member applies Freeze or triggers the Shatter effect on an enemy, the equipper's CRIT Rate increases by 12%, lasting 15s."}},
+        {calc::discSet::ChaosJazz, {"Chaos Jazz", ":/discs/ChaosJazz.jxl", calc::stats::AnomalyProficiency, 30, "Fire DMG and Electric DMG increases by 15%. While off-field, EX Special Attack and Assist Attack DMG increases by 20%. When switching on-field, this buff continues for 5s, and this continuation effect can trigger once every 7.5s."}},
+        {calc::discSet::ChaoticMetal, {"Chaotic Metal", ":/discs/ChaoticMetal.jxl", calc::stats::EtherDamage, 10, "The equipper's CRIT DMG increases by 20%. When any character in the squad triggers Corruption's additional DMG, this effect further increases by 5.5% for 8s, stacking up to 6 times. Repeated triggers reset the duration."}},
+        {calc::discSet::DawnsBloom, {"Dawn's Bloom", ":/discs/DawnsBloom.jxl", calc::stats::BasicAttackDamage, 15, "Increases Basic Attack DMG by 20%. When equipped by an Attack character, using an EX Special Attack or Ultimate will further increase Basic Attack DMG by 20% for 25s. Repeated triggers reset the duration."}},
+        {calc::discSet::FangedMetal, {"Fanged Metal", ":/discs/FangedMetal.jxl", calc::stats::PhysicalDamage, 10, "Whenever a squad member inflicts Assault on an enemy, the equipper deals 35% additional DMG to the target for 12s."}},
+        {calc::discSet::FreedomBlues, {"Freedom Blues", ":/discs/FreedomBlues.jxl", calc::stats::AnomalyProficiency, 30, "When an EX Special Attack hits an enemy, reduce the target's Anomaly Buildup RES to the equipper's Attribute by 20% for 8s. This effect does not stack with others of the same attribute."}},
+        {calc::discSet::HormonePunk, {"Hormone Punk", ":/discs/HormonePunk.jxl", calc::stats::ATKPercent, 25, "Upon becoming the active character in combat, the equipper's ATK increases by 25% for 10s. This effect can trigger once every 20s."}},
+        {calc::discSet::InfernoMetal, {"Inferno Metal", ":/discs/InfernoMetal.jxl", calc::stats::FireDamage, 10, "Upon hitting a Burning enemy, the equipper's CRIT Rate is increased by 28% for 8s."}},
+        {calc::discSet::KingOfTheSummit, {"King of the Summit", ":/discs/KingoftheSummit.jxl", calc::stats::ImpactPercent, 6, "When the equipper is a Stun character and uses an EX Special Attack or Chain Attack, increases CRIT DMG of all squad members by 15%, and when the equipper's CRIT Rate is more than or equal to 50%, further increases CRIT DMG by 15%, lasting 15s. Repeated triggers reset the duration. Passive effects of the same name do not stack."}},
+        {calc::discSet::MoonlightLullaby, {"Moonlight Lullaby", ":/discs/MoonlightLullaby.jxl", calc::stats::EnergyRegenPercent, 20, "When the equipper is a Support character and uses an EX Special Attack or Ultimate, the DMG dealt by all squad members increases by 18% for 25s. Repeated triggers reset the duration. Passive effects of the same name do not stack."}},
+        {calc::discSet::PhaethonsMelody, {"Phaethon's Melody", ":/discs/PhaethonsMelody.jxl", calc::stats::AnomalyMastery, 8, "When any squad member uses an EX Special Attack, the equipper's Anomaly Proficiency increases by 45 for 8s. If the character using the EX Special Attack is not the equipper, the equipper's Ether DMG is increased by 25%."}},
+        {calc::discSet::PolarMetal, {"Polar Metal", ":/discs/PolarMetal.jxl", calc::stats::IceDamage, 10, "Increase the DMG of Basic Attack and Dash Attack by 20%. When any squad member inflicts Freeze or Shatter, this effect increases by an additional 20% for 12s."}},
+        {calc::discSet::ProtoPunk, {"Proto Punk", ":/discs/ProtoPunk.jxl", calc::stats::ShieldBonus, 15, "When any squad member triggers a Defensive Assist or Evasive Assist, all squad members deal 15% increased DMG, lasting 10s. Passive effects of the same name do not stack."}},
+        {calc::discSet::PufferElectro, {"Puffer Electro", ":/discs/PufferElectro.jxl", calc::stats::PenRatio, 8, "Ultimate DMG increases by 20%. Launching an Ultimate increases the equipper's ATK by 15% for 12s."}},
+        {calc::discSet::ShadowHarmony, {"Shadow Harmony", ":/discs/ShadowHarmony.jxl", calc::stats::AftershockBonus, 15, "Upon hitting an enemy with an Aftershock or Dash Attack, if the DMG dealt aligns with the equipper's attribute, the equipper gains 1 stack of a buff effect, at most once per use of a skill. For each stack, the equipper's ATK increases by 4%, and CRIT Rate increases by 4%. The effect can stack up to 3 times and lasts for 15s. Repeated triggers reset the duration."}},
+        {calc::discSet::ShockstarDisco, {"Shockstar Disco", ":/discs/ShockstarDisco.jxl", calc::stats::DazeBonus, 20, "Basic Attacks, Dash Attacks, and Dodge Counters inflict 20% more Daze to the main target."}},
+        {calc::discSet::SoulRock, {"Soul Rock", ":/discs/SoulRock.jxl", calc::stats::DamageReduction, 40, "Upon receiving an enemy attack and losing HP, the equipper takes 40% less DMG for 2.5s. This effect can trigger once every 15s."}},
+        {calc::discSet::SwingJazz, {"Swing Jazz", ":/discs/SwingJazz.jxl", calc::stats::EnergyRegenPercent, 20, "Launching a Chain Attack or Ultimate increases all squad members' DMG by 15% for 12s. Passive effects of the same name do not stack."}},
+        {calc::discSet::ThunderMetal, {"Thunder Metal", ":/discs/ThunderMetal.jxl", calc::stats::ElectricDamage, 10, "As long as an enemy in combat is Shocked, the equipper's ATK is increased by 28%."}},
+        {calc::discSet::WoodpeckerElectro, {"Woodpecker Electro", ":/discs/WoodpeckerElectro.jxl", calc::stats::CritRate, 8, "Landing a critical hit on an enemy with a Basic Attack, Dodge Counter, or EX Special Attack increases the equipper's ATK by 9% for 6s. The buff duration for different skills are calculated separately."}},
+        {calc::discSet::YunkuiTales, {"Yunkui Tales", ":/discs/YunkuiTales.jxl", calc::stats::HPPercent, 10, "When using EX Special Attack, Chain Attack, or Ultimate, CRIT Rate increases by 4%, stacking up to 3 times and lasting 15s. Repeated triggers reset the duration. When having 3 stacks of this effect, Sheer DMG increases by 10%."}}
     };
 
 private:
     std::string rank;
     int slot;
-    std::string name;
+    calc::discSet set;
 
     calc::stats mainStat;
     double mainStatValue;
 
-    std::string subStat1;
+    calc::stats subStat1;
     int sub1Level;
     double subStat1Value;
 
-    std::string subStat2;
+    calc::stats subStat2;
     int sub2Level;
     double subStat2Value;
 
-    std::string subStat3;
+    calc::stats subStat3;
     int sub3Level;
     double subStat3Value;
 
-    std::string subStat4;
+    calc::stats subStat4;
     int sub4Level;
     double subStat4Value;
 
-    void calculateSubValue(int, std::string, double&); // helper function to calculate substat value based on level
+    void calculateSubValue(int, calc::stats, double&); // helper function to calculate substat value based on level
 
     struct baseValues
     {

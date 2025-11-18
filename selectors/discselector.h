@@ -8,6 +8,7 @@
 #include <QGridLayout>
 #include <QToolButton>
 #include <QShortcut>
+#include <qwidget.h>
 #include "../data/disc.h" // adjust if your data type header is different
 
 class discSelector : public QWidget {
@@ -18,14 +19,15 @@ public:
 
 signals:
     void discSelected(const disc &d);
+
 private:
     disc selectedDisc;
     QStackedLayout *mainLayout;
+    QWidget *discWidget;
     QVBoxLayout *discLayout;
-    QHBoxLayout *subsLayout;
+    QWidget *subsWidget;
+    QVBoxLayout *subsLayout;
     QLabel *titleLabel;
     QGridLayout *selectionLayout;
     int slot;
-    
-
 };

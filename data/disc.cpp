@@ -3,9 +3,9 @@
 disc::disc() {
 
 }
-void disc::setName(std::string discName) {
+void disc::setSet(calc::discSet discSet) {
     // Implementation for setting the name of the disc
-    name = discName;
+    set = discSet;
 }
 
 void disc::setSlot(int slotNumber) {
@@ -13,7 +13,7 @@ void disc::setSlot(int slotNumber) {
     slot = slotNumber;
 }
 
-void disc::setMainStat(std::string stat) {
+void disc::setMainStat(calc::stats stat) {
     // set what the main stat should be based on string (or slot if 1-3)
     if (slot == 1) {
         mainStat = calc::stats::ATKFlat;
@@ -22,94 +22,74 @@ void disc::setMainStat(std::string stat) {
     } else if (slot == 3) {
         mainStat = calc::stats::DEFFlat;
     } else {
-        if (stat == "HP") {
-            mainStat = calc::stats::HPFlat;
-        } else if (stat == "ATK") {
-            mainStat = calc::stats::ATKFlat;
-        } else if (stat == "DEF") {
-            mainStat = calc::stats::DEFFlat;
-        } else if (stat == "HP%") {
-            mainStat = calc::stats::HPPercent;
-        } else if (stat == "ATK%") {
-            mainStat = calc::stats::ATKPercent;
-        } else if (stat == "DEF%") {
-            mainStat = calc::stats::DEFPercent;
-        } else if (stat == "CRIT Rate") {
-            mainStat = calc::stats::CritRate;
-        } else if (stat == "CRIT Damage") {
-            mainStat = calc::stats::CritDamage;
-        } else if (stat == "Anomaly Proficiency") {
-            mainStat = calc::stats::AnomalyProficiency;
-        } else if (stat == "Anomaly Mastery") {
-            mainStat = calc::stats::AnomalyMastery;
-        } else if (stat == "PEN Ratio") {
-            mainStat = calc::stats::PenRatio;
-        } else if (stat == "Fire Damage") {
-            mainStat = calc::stats::FireDamage;
-        } else if (stat == "Physical Damage") {
-            mainStat = calc::stats::PhysicalDamage;
-        } else if (stat == "Ether Damage") {
-            mainStat = calc::stats::EtherDamage;
-        } else if (stat == "Ice Damage") {
-            mainStat = calc::stats::IceDamage;
-        } else if (stat == "Electric Damage") {
-            mainStat = calc::stats::ElectricDamage;
-        }
+        mainStat = stat;
     }
 }
 
-void disc::setSub1(std::string stat, int level) {
+void disc::setSub1(calc::stats stat, int level) {
     // Implementation for setting the first substat of the disc
     subStat1 = stat;
     sub1Level = level;
     calculateSubValue(sub1Level, subStat1, subStat1Value);
 }
 
-void disc::setSub2(std::string stat, int level) {
+void disc::setSub2(calc::stats stat, int level) {
     // Implementation for setting the second substat of the disc
     subStat2 = stat;
     sub2Level = level;
     calculateSubValue(sub2Level, subStat2, subStat2Value);
 }
 
-void disc::setSub3(std::string stat, int level) {
+void disc::setSub3(calc::stats stat, int level) {
     // Implementation for setting the third substat of the disc
     subStat3 = stat;
     sub3Level = level;
     calculateSubValue(sub3Level, subStat3, subStat3Value);
 }
 
-void disc::setSub4(std::string stat, int level) {
+void disc::setSub4(calc::stats stat, int level) {
     // Implementation for setting the fourth substat of the disc
     subStat4 = stat;
     sub4Level = level;
     calculateSubValue(sub4Level, subStat4, subStat4Value);
 }
 
-void disc::calculateSubValue(int level, std::string stat, double& value) {
+void disc::calculateSubValue(int level, calc::stats stat, double& value) {
     auto apply = [&](auto &base){
-        if (stat == "HP") {
-            value = base.hp * level;
-        } else if (stat == "ATK") {
-            value = base.atk * level;
-        } else if (stat == "DEF") {
-            value = base.def * level;
-        } else if (stat == "HP%") {
-            value = base.hpPercent * level;
-        } else if (stat == "ATK%") {
-            value = base.atkPercent * level;
-        } else if (stat == "DEF%") {
-            value = base.defPercent * level;
-        } else if (stat == "CRIT Rate") {
-            value = base.critRate * level;
-        } else if (stat == "CRIT Damage") {
-            value = base.critDmg * level;
-        } else if (stat == "Anomaly Proficiency") {
-            value = base.AP * level;
-        } else if (stat == "PEN") {
-            value = base.PEN * level;
-        } else {
-            value = 0; // how did you get this?
+        switch (stat) {
+            case calc::stats::HPFlat:
+                value = base.hp * level;
+                break;
+            case calc::stats::ATKFlat:
+                value = base.atk * level;
+                break;
+            case calc::stats::DEFFlat:
+                value = base.def * level;
+                break;
+            case calc::stats::HPPercent:
+                value = base.hpPercent * level;
+                break;
+            case calc::stats::ATKPercent:
+                value = base.atkPercent * level;
+                break;
+            case calc::stats::DEFPercent:
+                value = base.defPercent * level;
+                break;
+            case calc::stats::CritRate:
+                value = base.critRate * level;
+                break;
+            case calc::stats::CritDamage:
+                value = base.critDmg * level;
+                break;
+            case calc::stats::AnomalyProficiency:
+                value = base.AP * level;
+                break;
+            case calc::stats::PEN:
+                value = base.PEN * level;
+                break;
+            default:
+                value = 0;
+                break;
         }
     };
 
@@ -125,6 +105,10 @@ void disc::calculateSubValue(int level, std::string stat, double& value) {
     } else {
         value = 0; // unknown rank
     }
+}
+
+calc::discSet disc::getSet() const {
+    return set;
 }
 
 calc::stats disc::getMainStat() const {

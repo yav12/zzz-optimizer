@@ -1,6 +1,6 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
-#include <qlabel.h>
+#include <qtoolbutton.h>
 #pragma once
 
 #include <QWidget>
@@ -11,16 +11,10 @@
 #include <QComboBox>
 #include <QPushButton>
 
-#include <string>
 #include <vector>
-
-#include "../selectors/charselector.h"
-#include "../selectors/wengineselector.h"
-#include "../selectors/discselector.h"
 
 #include "../data/character.h"
 #include "../data/wengine.h"
-#include "../data/disc.h"
 
 #include "../calculations/calc.h"
 
@@ -45,23 +39,13 @@ private:
     void redrawImages();
     void redrawDisc(int slotNumber);
 
-    //selectors
-    charSelector *charSelectorWidget = nullptr;
-    wengineSelector *wengineSelectorWidget = nullptr;
-
     // top-level pages stack (used to swap entire window pages)
     QStackedLayout *pagesStack = nullptr;
     QWidget *mainPage = nullptr;
 
     //discs
     QHBoxLayout *discLayout;
-    QToolButton *disc1Button;
-    QToolButton *disc2Button;
-    QToolButton *disc3Button;
-    QToolButton *disc4Button;
-    QToolButton *disc5Button;
-    QToolButton *disc6Button;
-
+    std::vector<QToolButton *> discButtons;
 
     //display items
     QGridLayout *layout;

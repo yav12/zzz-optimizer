@@ -1,60 +1,233 @@
 #include "discselector.h"
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QFormLayout>
+#include <QGridLayout>
+#include <QToolButton>
+#include <QComboBox>
+#include <QSpinBox>
+#include <QLabel>
+#include <QPushButton>
+#include <QStackedLayout>
+#include <qboxlayout.h>
+#include <qcombobox.h>
+#include <QFrame>        // added
+#include <vector>
 
 discSelector::discSelector(QWidget *parent, int slotNumber) : QWidget(parent), slot(slotNumber)
 {
-    //layout
+    // Use a stacked layout for the main content and center it
     mainLayout = new QStackedLayout();
-    setLayout(mainLayout);
+    QWidget *stackContainer = new QWidget(this);
+    stackContainer->setLayout(mainLayout);
+    QHBoxLayout *outerLayout = new QHBoxLayout(this);
+    outerLayout->addWidget(stackContainer, 0, Qt::AlignCenter);
+    setLayout(outerLayout);
 
-    // disc set portion
-    discLayout = new QVBoxLayout();
-    QWidget *discWidget = new QWidget();
-    discWidget->setLayout(discLayout);
-    mainLayout->addWidget(discWidget);
-
-    //title
+    // --- Disc selection page ---
+    // use a QFrame so we can style a visible background
+    discWidget = new QFrame(this);
+    auto discFrame = qobject_cast<QFrame*>(discWidget);
+    discFrame->setFrameShape(QFrame::StyledPanel);
+    discFrame->setFrameShadow(QFrame::Raised);
+    // square background styling — adjust size/color/border as needed
+    discFrame->setStyleSheet("background-color: rgba(40,40,40,0.95);");
+    // force a square background (change 600 to desired dimension)
+    discFrame->setFixedSize(600, 600);
+    discLayout = new QVBoxLayout(discFrame);
+    discLayout->setContentsMargins(12, 12, 12, 12);
+    //title for selection page
     titleLabel = new QLabel("Select Disc for Slot " + QString::number(slot + 1));
     titleLabel->setAlignment(Qt::AlignCenter);
     discLayout->addWidget(titleLabel);
 
-    // disc selection
+    // disc selection grid
     selectionLayout = new QGridLayout();
     discLayout->addLayout(selectionLayout);
     selectionLayout->setAlignment(Qt::AlignCenter);
-    const int columns = 5; // choose columns
+    const int columns = 6; // choose columns
     int index = 0;
 
-    for (const auto &discItem : disc::discList) {
+    // Create the subs page early so lambdas can reference its widgets
+    subsWidget = new QFrame(this);
+    auto subsFrame = qobject_cast<QFrame*>(subsWidget);
+    subsFrame->setFrameShape(QFrame::StyledPanel);
+    subsFrame->setFrameShadow(QFrame::Raised);
+    subsFrame->setStyleSheet("background-color: rgba(40,40,40,0.95);");
+    subsFrame->setFixedSize(600, 600);
+    subsLayout = new QVBoxLayout(subsFrame);
+    subsLayout->setContentsMargins(12, 12, 12, 12);
+
+    // subs page header and main stat selector
+    QLabel *subsTitleLabel = new QLabel("Disc details");
+    subsTitleLabel->setAlignment(Qt::AlignCenter);
+    subsLayout->addWidget(subsTitleLabel);
+
+    QLabel *subsMainLabel = new QLabel("Select main stat for disc:");
+    subsLayout->addWidget(subsMainLabel);
+    QComboBox *mainStatComboBox = new QComboBox();
+    subsLayout->addWidget(mainStatComboBox);
+
+    //substats area
+    QFormLayout *subsSubsLayout = new QFormLayout();
+    subsLayout->addLayout(subsSubsLayout);
+    QLabel *subsSubsLabel = new QLabel("Select Substats:");
+    subsSubsLayout->addWidget(subsSubsLabel);
+    std::vector<QComboBox*> subCombos;
+    std::vector<QSpinBox*> subRolls;
+
+    QComboBox *sub1 = new QComboBox();
+    QSpinBox *sub1rolls = new QSpinBox();
+    subCombos.push_back(sub1);
+    subRolls.push_back(sub1rolls);
+    subsSubsLayout->addRow(sub1, sub1rolls);
+    QComboBox *sub2 = new QComboBox();
+    QSpinBox *sub2rolls = new QSpinBox();
+    subCombos.push_back(sub2);
+    subRolls.push_back(sub2rolls);
+    subsSubsLayout->addRow(sub2, sub2rolls);
+    QComboBox *sub3 = new QComboBox();
+    QSpinBox *sub3rolls = new QSpinBox();
+    subCombos.push_back(sub3);
+    subRolls.push_back(sub3rolls);
+    subsSubsLayout->addRow(sub3, sub3rolls);
+    QComboBox *sub4 = new QComboBox();
+    QSpinBox *sub4rolls = new QSpinBox();
+    subCombos.push_back(sub4);
+    subRolls.push_back(sub4rolls);
+    subsSubsLayout->addRow(sub4, sub4rolls);
+
+    for (size_t i = 0; i < subCombos.size(); ++i) {
+        subCombos[i]->addItem(""); // empty roll cuz they might not have 4 subs
+
+        // add all possible substats
+        subCombos[i]->addItem("HP");
+        subCombos[i]->addItem("ATK");
+        subCombos[i]->addItem("DEF");
+        subCombos[i]->addItem("HP%");
+        subCombos[i]->addItem("ATK%");
+        subCombos[i]->addItem("DEF%");
+        subCombos[i]->addItem("CRIT Rate");
+        subCombos[i]->addItem("CRIT Damage");
+        subCombos[i]->addItem("Anomaly Proficiency");
+        subCombos[i]->addItem("PEN");
+
+        // configure roll spinboxes
+        subRolls[i]->setRange(0, 5); // you can only have max 5 rolls
+        subRolls[i]->setValue(0);    // default to 0 rolls
+    }
+
+    QPushButton *confirmButton = new QPushButton("Done");
+    subsLayout->addWidget(confirmButton);
+
+    // populate the disc selection grid
+    for (const auto &discItem : disc::discMap) {
         int row = index / columns;
         int col = index % columns;
 
         QToolButton *discButton = new QToolButton();
-        QPixmap discPix(QString::fromStdString(discItem.resource));
+        QPixmap discPix(QString::fromStdString(discItem.second.resource));
         discButton->setIcon(QIcon(discPix));
-        discButton->setIconSize(QSize(150, 150));
-        discButton->setText(QString::fromStdString(discItem.displayName).replace('&', "&&")); 
+        discButton->setIconSize(QSize(100, 100));
+        discButton->setText(QString::fromStdString(discItem.second.displayName).replace('&', "&&")); 
         discButton->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
         selectionLayout->addWidget(discButton, row, col, Qt::AlignCenter);
 
-        int buttonIndex = index;
         auto itemCopy = discItem; // capture per-iteration copy
-        ++index;
-        connect(discButton, &QToolButton::clicked, this, [this, buttonIndex, itemCopy]() {
+        connect(discButton, &QToolButton::clicked, this, [this, itemCopy, mainStatComboBox, subsTitleLabel]() {
             // store selected disc
-            selectedDisc.setName(itemCopy.displayName);
-            selectedDisc.setSlot(slot);
+            selectedDisc.setSet(itemCopy.first);
+            selectedDisc.setSlot(slot + 1);
+            // update subs header and main-stat combobox
+            subsTitleLabel->setText(QString::fromStdString(itemCopy.second.displayName));
+            mainStatComboBox->clear();
+            mainStatComboBox->setCurrentText("");
+            switch (slot) {
+                case 1:
+                    mainStatComboBox->addItem("ATK");
+                    mainStatComboBox->setCurrentText("ATK");
+                    mainStatComboBox->setEnabled(false);
+                    break;
+                case 2:
+                    mainStatComboBox->addItem("DEF");
+                    mainStatComboBox->setCurrentText("DEF");
+                    mainStatComboBox->setEnabled(false);
+                    break;
+                case 3:
+                    mainStatComboBox->addItem("HP");
+                    mainStatComboBox->setCurrentText("HP");
+                    mainStatComboBox->setEnabled(false);
+                    break;
+                case 4:
+                    mainStatComboBox->addItem("HP%");
+                    mainStatComboBox->addItem("ATK%");
+                    mainStatComboBox->addItem("DEF%");
+                    mainStatComboBox->addItem("CRIT Rate");
+                    mainStatComboBox->addItem("CRIT Damage");
+                    mainStatComboBox->addItem("Anomaly Proficiency");
+                    break;
+                case 5:
+                    mainStatComboBox->addItem("HP%");
+                    mainStatComboBox->addItem("ATK%");
+                    mainStatComboBox->addItem("DEF%");
+                    mainStatComboBox->addItem("PEN Ratio%");
+                    mainStatComboBox->addItem("Fire Damage%");
+                    mainStatComboBox->addItem("Physical Damage%");
+                    mainStatComboBox->addItem("Ether Damage%");
+                    mainStatComboBox->addItem("Ice Damage%");
+                    mainStatComboBox->addItem("Electric Damage%");
+                    break;
+                case 6:
+                    mainStatComboBox->addItem("HP%");
+                    mainStatComboBox->addItem("ATK%");
+                    mainStatComboBox->addItem("DEF%");
+                    mainStatComboBox->addItem("Anomaly Mastery%");
+                    mainStatComboBox->addItem("Energy Regen%");
+                    mainStatComboBox->addItem("Impact%");
+                    break;
+            }
+
+            // switch to the subs/configuration page
+            mainLayout->setCurrentWidget(subsWidget);
         });
+
+        ++index;
     }
 
-    // disc subs portion
-    subsLayout = new QHBoxLayout();
-    discLayout->addLayout(subsLayout);
+    // add both pages to the stacked layout
+    mainLayout->addWidget(discWidget);
+    mainLayout->addWidget(subsWidget);
 
-    emit discSelected(selectedDisc);
-
-    //stop everything and close
+    // stop everything and close when esc is pressed
     QShortcut *escShortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
     connect(escShortcut, &QShortcut::activated, this, [this]() {
+        this->deleteLater();
+    });
+
+    // confirm button emits selection and closes
+    connect(confirmButton, &QPushButton::clicked, this, [this, mainStatComboBox, subCombos, subRolls]() {
+        //set the disc
+        selectedDisc.setMainStat(calc::stringToStats(mainStatComboBox->currentText().toStdString()));
+        for (size_t i = 0; i < subCombos.size(); ++i) {
+            calc::stats subStat = calc::stringToStats(subCombos[i]->currentText().toStdString());
+            int rolls = subRolls[i]->value();
+            switch (i) {
+                case 0:
+                    selectedDisc.setSub1(subStat, rolls);
+                    break;
+                case 1:
+                    selectedDisc.setSub2(subStat, rolls);
+                    break;
+                case 2:
+                    selectedDisc.setSub3(subStat, rolls);
+                    break;
+                case 3:
+                    selectedDisc.setSub4(subStat, rolls);
+                    break;
+            }
+        }
+
+        emit discSelected(selectedDisc);
         this->deleteLater();
     });
 }
