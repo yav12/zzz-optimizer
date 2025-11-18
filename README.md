@@ -8,7 +8,7 @@ i made this because i suck at programming and wanted to get better, also theres 
 
 you clone the repo as you do, and then i have no clue how you are supposed to generically compile this. i add it as a project in qt creator, and i am too lazy to figure out a different way
 
-oh yeah, i remembered that you also need kimageformats cuz im using jxl for assets since this guy in dawn winery convinced me to
+oh yeah, i remembered that you also need [kimageformats](https://marketplace.qt.io/products/kimageformats) cuz im using jxl for assets since this guy in dawn winery convinced me to
 
 ## building
 
