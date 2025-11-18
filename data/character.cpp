@@ -448,7 +448,7 @@ void character::setCharacterData() {
     jufufu.images.mindscapeNone = ":/characters/jufufu/MindscapeNone.jxl";
     jufufu.images.mindscapeHalf = ":/characters/jufufu/MindscapeHalf.jxl";
     jufufu.images.mindscapeFull = ":/characters/jufufu/MindscapeFull.jxl";
-    jufufu.preferredWengine = wengine::boxCutter;
+    jufufu.preferredWengine = wengine::roaringFurnace;
 
     // koleda
     koleda.name = "Koleda Belobog";
