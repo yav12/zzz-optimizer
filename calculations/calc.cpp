@@ -3,12 +3,23 @@
 #include "../data/wengine.h"
 #include "../data/disc.h"
 #include <map>
+#include <QDebug>
 
 namespace calc {
-    std::map<stats, double> calculateDiscStats(const std::vector<disc> & discs) {
+    std::map<stats, double> calculateDiscStats(const std::vector<disc> & discs, const std::map<stats, double> & bonus) {
         // the holder of all stats to be returned
-        std::map<stats, double> discStats;
-        // not yet implemented, to do later
+        std::map<stats, double> discStats = bonus;
+
+        // go through each disc and add its stats to the total
+        for (const disc & thisDisc : discs) {
+            // get the main stat for this disc
+            discStats[thisDisc.getMainStat()] += thisDisc.getMainStatValue();
+            // get the substats for this disc
+            discStats[thisDisc.getSubStat1()] += thisDisc.getSub1Value();
+            discStats[thisDisc.getSubStat2()] += thisDisc.getSub2Value();
+            discStats[thisDisc.getSubStat3()] += thisDisc.getSub3Value();
+            discStats[thisDisc.getSubStat4()] += thisDisc.getSub4Value();
+        }
         return discStats;
     }
 
@@ -186,6 +197,14 @@ namespace calc {
     }
 
     character::character calculateAll(const character::character & baseCharacter, const wengine::wengine & baseWengine, const std::vector<disc> & discs) {
+
+      for (size_t i = 0; i < discs.size(); ++i) {
+        qDebug() << "disc" << i << "mainStat"
+                 << static_cast<int>(discs[i].getMainStat()) << "mainVal"
+                 << discs[i].getMainStatValue() << "sub1"
+                 << static_cast<int>(discs[i].getSubStat1()) << "v"
+                 << discs[i].getSub1Value();
+      }
         character::character calculatedCharacter = baseCharacter;
 
         // maps for stat bonuses
@@ -221,6 +240,10 @@ namespace calc {
         // statBonuses = calculateDiscStats(discs); <- to be implemented later
         wengineBonus = calculateWengineBonus(baseWengine, wengineBonus);
 
+        // calculate disc bonuses
+        statBonuses = calculateDiscStats(discs, statBonuses);
+
+        
         //add base attack from wengines
         statBonuses[stats::ATKFlat] += baseWengine.baseAtk;
 

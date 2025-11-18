@@ -11,7 +11,7 @@ class disc;
 
 namespace calc {
     // calculation of disc stats to be used in overall calculations
-    std::map<stats, double> calculateDiscStats(const std::vector<disc> & discs);
+    std::map<stats, double> calculateDiscStats(const std::vector<disc> & discs, const std::map<stats, double> & bonus);
 
     //calculate the wengine bonuses
     std::map<stats, double> calculateWengineBonus(const wengine::wengine & baseWengine);
