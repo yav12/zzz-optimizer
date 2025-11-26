@@ -20,6 +20,21 @@ namespace calc {
             discStats[thisDisc.getSubStat3()] += thisDisc.getSub3Value();
             discStats[thisDisc.getSubStat4()] += thisDisc.getSub4Value();
         }
+
+        //apply 2p set bonuses
+        std::map<calc::discSet, int> setCounts;
+        for (const disc & thisDisc : discs) {
+            setCounts[thisDisc.getSet()]++;
+        }
+
+        for (const auto & pair : setCounts) {
+            if (pair.second >= 2) {
+                // apply 2pc bonus
+                const disc::DiscInfo & info = disc::discMap.at(pair.first);
+                discStats[info.bonus2pc] += info.bonus2pcValue;
+            }
+        }
+        
         return discStats;
     }
 
