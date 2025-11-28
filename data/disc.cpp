@@ -3,6 +3,7 @@
 disc::disc() {
     // Default constructor
     rank = "S";
+    set = calc::discSet::None;
 }
 void disc::setSet(calc::discSet discSet) {
     // Implementation for setting the name of the disc

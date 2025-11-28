@@ -29,6 +29,10 @@ namespace calc {
 
         for (const auto & pair : setCounts) {
             if (pair.second >= 2) {
+                // skip empty sets
+                if (pair.first == calc::discSet::None)
+                  continue;
+
                 // apply 2pc bonus
                 const disc::DiscInfo & info = disc::discMap.at(pair.first);
                 discStats[info.bonus2pc] += info.bonus2pcValue;

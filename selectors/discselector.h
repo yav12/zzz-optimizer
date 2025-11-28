@@ -9,12 +9,15 @@
 #include <QToolButton>
 #include <QShortcut>
 #include <qwidget.h>
+#include <QComboBox>
+#include <QSpinBox>
+#include <vector>
 #include "../data/disc.h" // adjust if your data type header is different
 
 class discSelector : public QWidget {
     Q_OBJECT
 public:
-    discSelector(QWidget *parent = nullptr, int slotNumber = 0);
+    discSelector(QWidget *parent = nullptr, int slotNumber = 0, disc initialDisc = disc());
     ~discSelector();
 
 signals:
@@ -26,8 +29,11 @@ private:
     QWidget *discWidget;
     QVBoxLayout *discLayout;
     QWidget *subsWidget;
-    QVBoxLayout *subsLayout;
+    QGridLayout *subsLayout;
     QLabel *titleLabel;
     QGridLayout *selectionLayout;
     int slot;
+    // per-disc substat widgets (4 subs)
+    std::vector<QComboBox*> subCombos;
+    std::vector<QSpinBox*> subRolls;
 };

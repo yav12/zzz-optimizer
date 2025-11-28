@@ -12,9 +12,10 @@
 #include <qboxlayout.h>
 #include <qcombobox.h>
 #include <QFrame>        // added
+#include <qpushbutton.h>
 #include <vector>
 
-discSelector::discSelector(QWidget *parent, int slotNumber) : QWidget(parent), slot(slotNumber)
+discSelector::discSelector(QWidget *parent, int slotNumber, disc initialDisc) : QWidget(parent), slot(slotNumber), selectedDisc(initialDisc)
 {
     // Use a stacked layout for the main content and center it
     mainLayout = new QStackedLayout();
@@ -55,49 +56,30 @@ discSelector::discSelector(QWidget *parent, int slotNumber) : QWidget(parent), s
     subsFrame->setFrameShadow(QFrame::Raised);
     subsFrame->setStyleSheet("background-color: rgba(40,40,40,0.95);");
     subsFrame->setFixedSize(600, 600);
-    subsLayout = new QVBoxLayout(subsFrame);
+    subsLayout = new QGridLayout(subsFrame);
     subsLayout->setContentsMargins(12, 12, 12, 12);
 
     // subs page header and main stat selector
     QLabel *subsTitleLabel = new QLabel("Disc details");
     subsTitleLabel->setAlignment(Qt::AlignCenter);
-    subsLayout->addWidget(subsTitleLabel);
+    subsLayout->addWidget(subsTitleLabel, 0, 0, 1, 2);
 
     QLabel *subsMainLabel = new QLabel("Select main stat for disc:");
-    subsLayout->addWidget(subsMainLabel);
+    subsLayout->addWidget(subsMainLabel, 1, 0);
     QComboBox *mainStatComboBox = new QComboBox();
-    subsLayout->addWidget(mainStatComboBox);
+    subsLayout->addWidget(mainStatComboBox, 1, 1);
 
-    //substats area
+    
     QFormLayout *subsSubsLayout = new QFormLayout();
-    subsLayout->addLayout(subsSubsLayout);
+    subsLayout->addLayout(subsSubsLayout, 2, 0, 1, 2);
     QLabel *subsSubsLabel = new QLabel("Select Substats:");
     subsSubsLayout->addWidget(subsSubsLabel);
-    std::vector<QComboBox*> subCombos;
-    std::vector<QSpinBox*> subRolls;
+    // 
+    subCombos.assign(4, new QComboBox());
+    subRolls.assign(4, new QSpinBox());
 
-    QComboBox *sub1 = new QComboBox();
-    QSpinBox *sub1rolls = new QSpinBox();
-    subCombos.push_back(sub1);
-    subRolls.push_back(sub1rolls);
-    subsSubsLayout->addRow(sub1, sub1rolls);
-    QComboBox *sub2 = new QComboBox();
-    QSpinBox *sub2rolls = new QSpinBox();
-    subCombos.push_back(sub2);
-    subRolls.push_back(sub2rolls);
-    subsSubsLayout->addRow(sub2, sub2rolls);
-    QComboBox *sub3 = new QComboBox();
-    QSpinBox *sub3rolls = new QSpinBox();
-    subCombos.push_back(sub3);
-    subRolls.push_back(sub3rolls);
-    subsSubsLayout->addRow(sub3, sub3rolls);
-    QComboBox *sub4 = new QComboBox();
-    QSpinBox *sub4rolls = new QSpinBox();
-    subCombos.push_back(sub4);
-    subRolls.push_back(sub4rolls);
-    subsSubsLayout->addRow(sub4, sub4rolls);
-
-    for (size_t i = 0; i < subCombos.size(); ++i) {
+    for (size_t i = 0; i < 4; ++i) {
+        subsSubsLayout->addRow(subCombos[i], subRolls[i]);
         subCombos[i]->addItem(""); // empty roll cuz they might not have 4 subs
 
         // add all possible substats
@@ -117,8 +99,10 @@ discSelector::discSelector(QWidget *parent, int slotNumber) : QWidget(parent), s
         subRolls[i]->setValue(0);    // default to 0 rolls
     }
 
+    QPushButton *backButton = new QPushButton("Back");
+    subsLayout->addWidget(backButton, 3, 0, 1, 1, Qt::AlignCenter);
     QPushButton *confirmButton = new QPushButton("Done");
-    subsLayout->addWidget(confirmButton);
+    subsLayout->addWidget(confirmButton, 3, 1, 1, 1, Qt::AlignCenter);
 
     // populate the disc selection grid
     for (const auto &discItem : disc::discMap) {
@@ -198,19 +182,33 @@ discSelector::discSelector(QWidget *parent, int slotNumber) : QWidget(parent), s
     mainLayout->addWidget(discWidget);
     mainLayout->addWidget(subsWidget);
 
+    // start on the subs page when an initial disc is provided; otherwise show selector
+    if (initialDisc.getSet() != calc::discSet::None) {
+        mainLayout->setCurrentWidget(subsWidget);
+    } else {
+        mainLayout->setCurrentWidget(discWidget);
+    }
+
+    
+
     // stop everything and close when esc is pressed
     QShortcut *escShortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
     connect(escShortcut, &QShortcut::activated, this, [this]() {
         this->deleteLater();
     });
 
+    // back button returns to disc selection
+    connect(backButton, &QPushButton::clicked, this, [this]() {
+        mainLayout->setCurrentWidget(discWidget);
+    });
+    
     // confirm button emits selection and closes
-    connect(confirmButton, &QPushButton::clicked, this, [this, mainStatComboBox, subCombos, subRolls]() {
+    connect(confirmButton, &QPushButton::clicked, this, [this, mainStatComboBox]() {
         //set the disc
         selectedDisc.setMainStat(calc::stringToStats(mainStatComboBox->currentText().toStdString()));
         for (size_t i = 0; i < subCombos.size(); ++i) {
-            calc::stats subStat = calc::stringToStats(subCombos[i]->currentText().toStdString());
-            int rolls = subRolls[i]->value();
+            calc::stats subStat = calc::stringToStats(this->subCombos[i]->currentText().toStdString());
+            int rolls = this->subRolls[i]->value();
             switch (i) {
                 case 0:
                     selectedDisc.setSub1(subStat, rolls);
@@ -236,3 +234,4 @@ discSelector::~discSelector()
 {
 
 }
+ 

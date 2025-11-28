@@ -28,7 +28,8 @@ namespace calc {
         SwingJazz,
         ThunderMetal,
         WoodpeckerElectro,
-        YunkuiTales
+        YunkuiTales,
+        None
     };
 
     // enum for different main stats moved out of calc.h to break include cycles

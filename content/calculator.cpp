@@ -104,7 +104,8 @@ calculator::calculator(QWidget *parent) : QWidget(parent) {
         discLayout->addWidget(this->discButtons[i]);
         connect(discButtons[i], &QToolButton::clicked, [this, i]() {
             // open disc selector for disc i + 1 (?) (it might work not sure)
-            discSelector *selector = new discSelector(this, i + 1);
+            discSelector *selector = new discSelector(this, i + 1,
+                                                      this->currentCharacter.discs[i]);
             selector->setAttribute(Qt::WA_DeleteOnClose);
 
             //positioning by ai:
