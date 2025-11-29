@@ -10,6 +10,12 @@ you clone the repo as you do, and then i have no clue how you are supposed to ge
 
 oh yeah, i remembered that you also need [kimageformats](https://marketplace.qt.io/products/kimageformats) cuz im using jxl for assets since this guy in dawn winery convinced me to
 
+also because im trying to do a thing you need to run this too (or so im told)
+
+```bash
+git submodule update --init --recursive
+```
+
 ## building
 
 i think this is how you do it, if it doesnt work, go back to qt creator and press run i guess:
