@@ -1,13 +1,8 @@
 cmake_minimum_required(VERSION 3.19)
-
-if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
-    set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
-endif()
-
 project(zzz-optimizer LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
-find_package(PcapPlusPlus REQUIRED)
+find_package(PcapPlusPlus CONFIG REQUIRED)
 
 qt_standard_project_setup()
 
@@ -16,8 +11,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
-
 
 qt_add_executable(zzz-optimizer
     WIN32 MACOSX_BUNDLE
@@ -52,14 +45,6 @@ target_link_libraries(zzz-optimizer
     PRIVATE
         Qt::Core
         Qt::Widgets
-)
-target_link_libraries(zzz-optimizer
-    PRIVATE
-        PcapPlusPlus::PcapPlusPlus
-        PCAP::PCAP
-        PcapPlusPlus::Pcap++
-        PcapPlusPlus::Common++
-        PcapPlusPlus::Packet++
 )
 
 include(GNUInstallDirs)
