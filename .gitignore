@@ -84,3 +84,4 @@ CMakeLists.txt.user*
 .rcc/
 .uic/
 /build*/
+/vcpkg_installed/
