@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.19)
+set(CMAKE_TOOLCHAIN_FILE "/home/kwame/Documents/GitHub/vcpkg/scripts/buildsystems/vcpkg.cmake")
 project(zzz-optimizer LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 find_package(PcapPlusPlus CONFIG REQUIRED)
-
 qt_standard_project_setup()
 
 set(CMAKE_AUTORCC ON)
@@ -38,6 +38,7 @@ qt_add_executable(zzz-optimizer
     selectors/discselector.h selectors/discselector.cpp
     selectors/wengineselector.h selectors/wengineselector.cpp
 
+    import/scanner.h import/scanner.cpp
 
 )
 
@@ -45,6 +46,10 @@ target_link_libraries(zzz-optimizer
     PRIVATE
         Qt::Core
         Qt::Widgets
+        PCAP::PCAP
+        PcapPlusPlus::Pcap++
+        PcapPlusPlus::Common++
+        PcapPlusPlus::Packet++
 )
 
 include(GNUInstallDirs)
